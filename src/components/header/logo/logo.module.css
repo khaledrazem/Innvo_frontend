@@ -1,0 +1,11 @@
+.logo{
+    color: var(--color-main-text);
+    font-size: xx-large;
+    font-weight: 700;
+    display: flex;
+    padding-left: 40px;
+    svg{
+      width: 130px;
+    }
+  }
+  

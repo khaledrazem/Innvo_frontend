@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-main-text);
+  border-radius: 25px;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+.title {
+  font-weight: bold;
+  margin: 0;
+}
+.titlecontainer{
+  width: 35px;
+  height: 100%;
+  }
+.userinput {
+  flex-grow: 1;
+  padding: 4px;
+  border: none;
+}
+
+.postfix {
+  margin-left: 8px;
+  font-weight: normal;
+}
+.dividervertical {
+  width: 1px;
+  height: 24px;
+  background-color: var(--color-main-text);
+  margin: 0 8px;
+}

@@ -1,0 +1,111 @@
+.container{
+
+  width: 60%;
+  align-self: start;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
+.descriptiontitle{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  h3{
+    margin: 0;
+  }
+  label{
+    font-size: 12px;
+  }
+}
+
+
+.bio textarea{
+  resize: none;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 20px;
+  border-radius: 12px;
+}
+
+.descriptionimages{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.labelledImage{
+  display: flex;
+  flex-direction: column;
+}
+.labelledimages{
+  width: 100%;
+  padding: 0 30px 0 0;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.imagelabelinput{
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 5px;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.descriptioncontainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.imagecontainer{
+  display: flex;
+  border: 1px solid var(--color-main-text);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.emptyimage{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  gap: 15px;
+
+
+  label{
+    font-weight: 600;
+    border: 1px solid var(--color-main-text);
+    border-radius: 12px;
+    padding: 10px;
+  
+  }
+
+  svg{
+    width: 30%;
+  }
+
+  a{
+    color: #9c9c9c;
+    width: 70%;
+  }
+
+  input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+  }
+}

@@ -1,0 +1,79 @@
+.divider{
+  height: 1px;
+  background-color: var(--color-main-text);
+  flex-grow: 1;
+}
+
+.container {
+  padding-left: 5%;
+
+}
+
+.overviewbubble {
+  border-radius: 12px;
+  flex-direction: column;
+  display: flex;
+  border: 1px solid var(--color-main-text);
+  width: 90%;
+  padding: 20px 0 0 0;
+  margin-bottom: 20px;
+}
+
+.overviewbubble h4 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  align-self: self-start;
+  font-size: 1.5rem;
+  margin-left: 5%;
+}
+
+/* Styling for the row of base analytics */
+.baseanalyticsrow {
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+/* Year analytics section styling */
+.yearanalytics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  height: 200px;
+}
+
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  width: 175px;
+  height: 90px;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-radius: 20px;
+  border-bottom: 1px solid var(--color-main-text);
+  border-right: 1px solid var(--color-main-text);
+  border-left: 1px solid var(--color-main-text);
+
+}
+
+.dropdownstat {
+  display: flex;
+  align-items: center;
+  margin: 5px 10px 15px 10px;
+  color: var(--color-secondary);
+  svg{
+    width: 20px;
+    margin-right: 5px;
+  }
+}
+
+.dropdownstat h1 {
+  font-size: 2rem;
+  margin: 0;
+}

@@ -1,0 +1,15 @@
+{
+  "settings": [
+    { "svg": "User Activity", "label": "User Activity" },
+    { "svg": "Device IDs", "label": "Device Ids" },
+    { "svg": "User Inputs", "label": "User Inputs" },
+    { "svg": "Location Data", "label": "Location Data" },
+    { "svg": "Data Sharing", "label": "Data Sharing & Disclosure" },
+    { "svg": "Location Data", "label": "Cookies & Tracking" },
+    { "svg": "User Inputs", "label": "Data Storage & Security" },
+    { "svg": "Location Data", "label": "Third-Party Services" },
+    { "svg": "User Inputs", "label": "User Rights & Control" },
+    { "svg": "Location Data", "label": "Data Retention & Deletion" }
+    
+  ]
+}

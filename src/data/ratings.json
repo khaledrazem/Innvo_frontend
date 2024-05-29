@@ -1,0 +1,76 @@
+[
+  {
+    "reviewer": {
+      "profileimg": {
+      },
+      "firstname": "John",
+      "lastname": "Doe",
+      "jobtitle": "Software Engineer"
+    },
+    "rating": 4,
+    "title": "Great product!",
+    "body": "I've been using this product for a month now and it has exceeded my expectations. Highly recommend!",
+    "likes": 23,
+    "helped": 45
+  },
+  {
+    "reviewer": {
+      "profileimg": {
+        "url": "https://i.ibb.co/CJHd0zb/0011ff.png"
+      },
+      "firstname": "Jane",
+      "lastname": "Smith",
+      "jobtitle": "Product Manager"
+    },
+    "rating": 5,
+    "title": "Fantastic quality",
+    "body": "The quality of this product is fantastic. It is durable and works exactly as advertised.",
+    "likes": 30,
+    "helped": 45
+  },
+  {
+    "reviewer": {
+      "profileimg": {
+        "url": ""
+      },
+      "firstname": "Alice",
+      "lastname": "Johnson",
+      "jobtitle": "Graphic Designer"
+    },
+    "rating": 3,
+    "title": "Good, but could be better",
+    "body": "The product is good overall, but I had some issues with the initial setup. Customer service was helpful though.",
+    "likes": 15,
+    "helped": 45
+  },
+  {
+    "reviewer": {
+      "profileimg": {
+        "url": "https://example.com/images/user4.jpg"
+      },
+      "firstname": "Bob",
+      "lastname": "Brown",
+      "jobtitle": "Data Scientist"
+    },
+    "rating": 2,
+    "title": "Not satisfied",
+    "body": "I expected more from this product. It didn't meet my needs and I found it quite difficult to use.",
+    "likes": 5,
+    "helped": 45
+  },
+  {
+    "reviewer": {
+      "profileimg": {
+        "url": "https://example.com/images/user5.jpg"
+      },
+      "firstname": "Charlie",
+      "lastname": "Davis",
+      "jobtitle": "Marketing Specialist"
+    },
+    "rating": 5,
+    "title": "Exceeded expectations!",
+    "body": "Absolutely love this product! It has exceeded all my expectations and the quality is top-notch.",
+    "likes": 45,
+    "helped": 45
+  }
+]

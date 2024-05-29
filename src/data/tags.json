@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "displayName": "Tech"
+    },
+    {
+        "id": 2,
+        "displayName": "Fashion"
+    },
+    {
+        "id": 3,
+        "displayName": "Literature"
+    },
+    {
+        "id": 4,
+        "displayName": "Play"
+    }
+]

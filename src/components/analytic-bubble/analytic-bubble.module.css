@@ -1,0 +1,43 @@
+/* Base container styling */
+.container, .containeruptick {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--color-main-text);
+  border-radius: 10px;
+  text-align: center;
+  width: 175px;
+  height: 110px;
+  box-sizing: border-box;
+  position: relative;
+  justify-content: center;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+    margin-top: 0;
+  }
+
+  label {
+    font-size: 0.6rem;
+    font-weight: 700;
+  }
+
+  a {
+    font-size: 0.6rem;
+    color: #ccc;
+    margin-top: 5px;
+}
+}
+
+.containeruptick {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+
+  svg {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+  }
+}

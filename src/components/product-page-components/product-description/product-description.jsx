@@ -1,0 +1,72 @@
+import logo from "src/logo.svg";
+import InvoHeader from "src/components/header/invo-header";
+import "src/variables.css";
+import SideNavBar from "src/components/side-navbar/side-navbar";
+import classes from "./product-description.module.css";
+import Footer from "src/components/footer/footer";
+import ProductCarousel from "src/components/product-page-components/product-carousel/product-carousel";
+import ProductInfo from "src/components/product-page-components/product-info/product-info";
+import prodDatajson from "src/data/products.json";
+
+const imageStyle = (width, height) => ({
+  maxWidth: width,
+  maxHeight: height,
+});
+
+function ProductDescription({
+   productDescription=null,
+  imageWidth = 1000,
+  imageHeight = 560,
+  labelledImageWidth = 313,
+  labelledImageHeight = 175,
+}) {
+  return productDescription!=null? (
+    <div className={classes.container}>
+      <div className={classes.descriptiontitle}>
+        <h3>From the developer</h3>
+        <div className={classes.divider}></div>
+      </div>
+      <div className={classes.descriptioncontainer}>
+        <div className={classes.bio}>
+          <label>{productDescription.bio}</label>
+        </div>
+
+        <div className={classes.descriptionimages}>
+          {Array.isArray(productDescription.images) &&
+          productDescription.images.length > 0
+            ? productDescription.images.map((image) => {
+                return (
+                  <img
+                    src={image.url}
+                    style={imageStyle(imageWidth, imageHeight)}
+                  />
+                );
+              })
+            : null}
+        </div>
+
+        <div className={classes.labelledimages}>
+          {Array.isArray(productDescription.labelledImages) &&
+          productDescription.labelledImages.length > 0
+            ? productDescription.labelledImages.map((image) => {
+                return (
+                  <div className={classes.labelledImage}>
+                    <img
+                      src={image.url}
+                      style={imageStyle(
+                        labelledImageWidth,
+                        labelledImageHeight
+                      )}
+                    />
+                    <label>{image.label}</label>
+                  </div>
+                );
+              })
+            : null}
+        </div>
+      </div>
+    </div>
+  ): null;
+}
+
+export default ProductDescription;

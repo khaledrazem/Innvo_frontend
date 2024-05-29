@@ -1,0 +1,54 @@
+.wrapper {
+    position:relative;
+    width: 45%;
+    min-width: 220px;
+    height: 100%;
+
+}
+.filter{
+    width: 18%;
+    min-width: 100px;
+    height: 100%;
+    min-height: 25px;
+    padding-right: 6px;;
+    padding-left: 6px;;
+
+}
+.icon {
+height: 1.5rem;
+width: 1.5rem;
+background-color: red;
+padding: 4px;
+position: absolute;
+box-sizing:border-box;
+top:50%;
+left:10px;
+transform: translateY(-50%);
+}
+
+.input {
+    width: 100%;
+border-width: 1px;
+border-radius:100px;
+padding-left: 3rem;
+height: 100%;
+
+}
+
+.headersearch{
+    width: 55%;
+    min-width: 550px;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 80px;
+}
+
+.reseticon{
+    color: var(--color-main-text);
+    align-self: center;
+    padding-left: 4px;
+    font-size: x-large;
+    font-weight: 200;
+    cursor:pointer;
+}

@@ -1,0 +1,126 @@
+.container {
+  border: 1px solid var(--color-main-text);
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 16px 28px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.reviewerimage {
+  margin-right: 10px;
+}
+
+.reviewerimage img,
+.reviewerimage svg {
+  width: 35px;
+  height: 35px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--color-main-text);
+  object-fit: cover;
+}
+
+.reviewerimage svg {
+  padding: 5px;
+}
+
+.reviewerinfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.reviewerinfo label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.reviewerinfo a {
+  font-size: 12px;
+  color: #888;
+}
+
+.ratings {
+  border: 1px solid var(--color-main-text);
+  width: fit-content;
+  padding: 5px 15px 5px 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.ratings label {
+  margin-left: 8px;
+}
+
+.ratingsblank {
+  color: var(--color-main-text);
+}
+
+.ratingsfill {
+  color: var(--color-secondary);
+}
+
+.review {
+  margin-bottom: 16px;
+}
+
+.review h6 {
+  font-size: 12px;
+  margin: 0;
+}
+
+.review label {
+  font-size: 12px;
+}
+
+.interactions {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.interactions svg {
+  cursor: pointer;
+  margin: 0 4px;
+  width: 14px;
+}
+
+.interactions label {
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+.interactions button {
+  padding: 2px 14px;
+  font-size: 14px;
+  background-color: var(--color-background);
+  color: var(--color-main-text);
+  border: 1px solid var(--color-main-text);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  margin-left: auto;
+}
+
+:global(.rs-pagination-group) {
+  text-align: center;
+}

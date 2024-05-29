@@ -1,0 +1,25 @@
+.container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 5%;
+}
+
+.explorebutton{
+  padding: 10px 0;
+  display: flex;
+    align-self: flex-end;
+    position: relative;
+    right: 24%;
+
+  button{
+    background: var(--color-background);
+        border-radius: 15px;
+        font-size: 15px;
+        padding: 6px 16px;
+        border-width: 1px;
+        color: var(--color-main-text);
+        cursor: pointer;
+  }
+}

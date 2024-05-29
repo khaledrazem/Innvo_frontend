@@ -1,0 +1,141 @@
+/* product-card.module.css */
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 290px;
+  height: 140px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  padding: 8% 5% 8% 10.5%;
+    border: 1px solid var(--color-main-text);
+  border-radius: 8px;
+  background-color: var(--color-background);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  flex: 0 0 50px;
+  align-self: top;
+  display: flex;
+  margin-right: 10px;
+}
+
+.logo::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.summary {
+  display: inline-flex;
+  flex-direction: column;
+  height: 100%;
+  width: 65%;
+}
+
+.header{
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.body{
+  font-size: 9px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 10px;
+}
+
+.metrics {
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  text-overflow: ellipsis;
+  height: 70%;
+}
+.ratings{
+  border-right: 1px solid var(--color-main-text);
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+    gap: 1px;
+}
+.ratingsblank {
+  color: var(--color-main-text);
+  width: 11px;
+  height: 11px;
+}
+
+.ratingsfill {
+  width: 12px;
+  height: 12px;
+  color: var(--color-secondary);
+}
+
+
+.ratings label {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.downloads {
+  
+  display: inline-flex;
+  margin-left: 5px;
+  align-items: center;
+
+  svg{
+    width: 13px;
+    padding-right: 5px;
+  }
+
+  label{
+    font-size: 12px;
+  }
+}
+
+.subscriptionelite{
+width: 16px;
+    stroke-width: 1px;
+    position: absolute;
+    color: var(--color-subscription-elite);
+    top: 10px;
+    right: 13px;
+}
+
+.subscriptionprof{
+  position: absolute;
+    width: 16px;
+    right: 13px;
+    top: 9px;
+    color: var(--color-subscription-professional);
+}
+
+.productlink{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+}

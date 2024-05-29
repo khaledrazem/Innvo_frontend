@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <defs>
+
+  </defs>
+  <path  d="m1000,2000C448.59,2000,0,1551.39,0,1000.02S448.59,0,1000,0s1000,448.61,1000,1000.02-448.59,999.98-1000,999.98Zm0-1933.86c-514.93,0-933.86,418.93-933.86,933.87s418.93,933.84,933.86,933.84,933.86-418.93,933.86-933.84S1514.93,66.14,1000,66.14Z"/>
+  <rect fill="currentColor" stroke="currentColor" x="966.93" y="572.47" width="66.14" height="855.07"/>
+  <rect fill="currentColor" stroke="currentColor" x="572.47" y="966.94" width="855.08" height="66.14"/>
+</svg>
