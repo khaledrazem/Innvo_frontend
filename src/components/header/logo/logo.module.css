@@ -4,8 +4,19 @@
     font-weight: 700;
     display: flex;
     padding-left: 40px;
+    position: relative;
     svg{
       width: 130px;
     }
   }
   
+
+.link{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+
+}

@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
 import { ReactComponent as EliteLogo } from "src/public/svg/Logo_Crown.svg";
 import { ReactComponent as ProfessionalLogo } from "src/public/svg/Logo_Spark.svg";
+import { Link } from "react-router-dom";
 
 
 
@@ -14,6 +15,10 @@ function Logo() {
 
   return (
     <div className={classes.logo}>
+      <a
+          className={classes.link}
+          href="/"
+        />
       {subscription == "elite" ? (
         <div className={classes.subscriptionelite}>
           <EliteLogo />
