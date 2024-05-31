@@ -4,6 +4,7 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 32vw;
+  user-select: none;
 }
 
 .carouselcontainer{
@@ -16,7 +17,7 @@
   overflow: hidden;
 
   position: relative;
-       
+  width: 100%;
 
 
   ul {
@@ -31,6 +32,7 @@
     height: 10px;
     width: 10px;
     margin: 0;
+    left: 0;
   }
 
   :global(.rs-carousel-label-wrapper:has(> input:checked)) {
@@ -39,7 +41,9 @@
 :global(.rs-carousel-slider) {
   display: flex;
 }
-
+:global(.rs-carousel-slider-after){
+  display: none;
+}
   :global(.rs-carousel-toolbar) {
     position: absolute;
     width: 100%;

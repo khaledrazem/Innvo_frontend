@@ -3,11 +3,25 @@ import classes from "./add-product-info.module.css";
 
 import { ReactComponent as UpArrowIcon } from "src/public/svg/Up Arrow_Black.svg";
 
-function AddProductInfo({ register, name }) {
+function AddProductInfo({setValue, formImage=null, register, name }) {
   const [image, setImage] = useState(null);
 
+  useEffect(() => {
+    if (formImage!=null) {
+      setImage(formImage);
+    }
+  },[formImage])
+
   function toBulletPoints(text) {
-    return text.split("\n");
+    if (typeof text === 'string') {
+      return text.split('\n').map(line => line.trim().startsWith('•') ? line.trim() : `• ${line.trim()}`).join('\n');
+    }
+    return text;
+  }
+
+  function handleFeaturesChange(event) {
+    const formattedText = toBulletPoints(event.target.value);
+    setValue(name + ".features", formattedText);
   }
 
   function handleImageUpload (event) {
@@ -75,7 +89,8 @@ function AddProductInfo({ register, name }) {
         <h4> Add Your Key Features</h4>
         <label>List the primary features that highlight the value of your tool.</label>
         <textarea
-          {...register(name+".features", {setValueAs: v => toBulletPoints(v)})}
+       {...register(name + ".features", {
+        onChange: (event) => handleFeaturesChange(event)})}
           required
           placeholder=" • Add Text
           • Add Text

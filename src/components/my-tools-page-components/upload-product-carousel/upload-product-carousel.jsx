@@ -12,9 +12,17 @@ const imageStyle = (width, height) => ({
 
 });
 
-function UploadProductCarousel({ height, width, register, name }) {
+function UploadProductCarousel({ formImages=null, height, width, register, name }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [images, setImages] = useState(new Array(5).fill(null));
+
+  useEffect(() => {
+    console.log(formImages)
+    if (formImages != null) {
+      setImages(formImages);
+
+    }
+  }, [formImages])
 
   function handleImageUpload (event, index) {
 

@@ -10,6 +10,7 @@ import TestPage from './test/test';
 import DashboardPage from './dashboard/dashboard';
 import MyToolsPage from './my-tools/my-tools';
 import CreateToolsPage from './create-tools/create-tools';
+import EditToolsPage from './edit-tools/edit-tools';
 
 function DeveloperPage() {
 
@@ -29,6 +30,7 @@ function DeveloperPage() {
           <Route path='dashboard' element={<DashboardPage/>} />
           <Route path='my-tools' element={<MyToolsPage/>} />
           <Route path='my-tools/new' element={<CreateToolsPage/>} />
+          <Route path='my-tools/edit/:toolId' element={<EditToolsPage/>} />
 
           <Route path='test' element={<TestPage/>} />
 

@@ -7,7 +7,7 @@ export const UserSessionProvider = ({ children }) => {
     const [loggedIn, setLoggedIn] = React.useState(false);
     const [userName, setUserName] = React.useState(false);
     const [userEmail, setUserEmail] = React.useState(false)
-    const [subscription, seSubscription] = React.useState('professional')
+    const [subscription, seSubscription] = React.useState('elite')
 
     return (
         <div>

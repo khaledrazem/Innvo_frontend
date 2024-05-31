@@ -29,5 +29,5 @@
   border-radius: 10px;
   background: var(--color-main-text);
   color: var(--color-background);
-
+  white-space: pre-line;
 }

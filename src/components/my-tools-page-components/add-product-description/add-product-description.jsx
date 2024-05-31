@@ -9,6 +9,7 @@ const imageStyle = (width, height) => ({
 });
 
 function AddProductDescription({
+  formImages,
   register,
   name,
   imageWidth = 1000,
@@ -24,6 +25,7 @@ function AddProductDescription({
     const files = Array.from(event.target.files);
     const newImages = files.map((file) => URL.createObjectURL(file));
 
+
     setFunction((prevImages) => {
       const updatedImages = [...prevImages];
       updatedImages[index] = newImages[0];
@@ -31,6 +33,18 @@ function AddProductDescription({
     });
   }
 
+
+  
+  useEffect(() => {
+    if (formImages?.largeImages!=null) {
+      setImages(formImages.largeImages)
+    }
+
+    if (formImages?.labelledImages != null) {
+      console.log(formImages.labelledImages.map(imageLabel => imageLabel.image))
+      setLabelledImages(formImages.labelledImages.map((imageLabel => imageLabel.image)))
+    }
+  }, formImages)
   return (
     <div className={classes.container}>
       <div className={classes.descriptiontitle}>
@@ -87,7 +101,7 @@ function AddProductDescription({
                  <div className={classes.emptyimage} >
                   <input
                   type="file"
-                  {...register(name + ".labelledImages." + index + ".images", {
+                  {...register(name + ".labelledImages." + index + ".image", {
                     onChange: (e) =>
                       handleImageUpload(setLabelledImages, e, index),
                   })}

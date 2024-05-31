@@ -22,7 +22,7 @@ function ToolCard({ toolData }) {
       <button>
         <Link
           className={classes.toollink}
-          to={"/dev/tool/edit/" + toolData.id}
+          to={"/dev/my-tools/edit/" + toolData.id}
         />
         Edit Page
       </button>

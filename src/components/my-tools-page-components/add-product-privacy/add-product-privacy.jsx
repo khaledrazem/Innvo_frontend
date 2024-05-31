@@ -4,18 +4,34 @@ import privacySettingDatajson from "src/data/privacysettings.json";
 import { ReactComponent as SafeIcon } from "src/public/svg/Safe.svg";
 import { useEffect, useState } from "react";
 
-function AddProductPrivacy({ register, name }) {
+function AddProductPrivacy({ formSettings=null, register, setValue, name }) {
   const [selectedSettings, setSelectedSettings] = useState([]);
 
   let privacyData = privacySettingDatajson.settings;
 
   useEffect(() => {
-    register(name + ".selectedSettings", { value: selectedSettings.label, validate: {
-      length: value => value.length >= 4 || "At least 4 settings are required"
+    console.log(formSettings)
+    if (formSettings != null) {
+      setSelectedSettings(formSettings)
     }
-     });
-  }, [selectedSettings, register, name]);
-  
+
+  },[formSettings])
+
+  useEffect(() => {
+    register(name + ".selectedSettings", {
+      validate: value => value.length <5, message: "error plz chjeck"
+    });
+  }, [register, name]);
+
+  useEffect(() => {
+    console.log(selectedSettings);
+    console.log("ASDQWE")
+
+    setValue(name + ".selectedSettings",  selectedSettings  )
+    
+
+  }, [selectedSettings, setValue, name]);
+
   function handleSettingAdd(setting) {
     const isAlreadySelected = selectedSettings.some(item => item === setting);
     if (selectedSettings.length < 4 && !isAlreadySelected) {
@@ -52,7 +68,7 @@ function AddProductPrivacy({ register, name }) {
           <div className={classes.settingsrow}>
             {selectedSettings.map((setting) => {
               return setting != null ? (
-                <div className={classes.settings} onClick={() => handleSettingRemove(setting)}>
+                <div className={classes.settings}   onClick={() => handleSettingRemove(setting)}>
                   <SvgLoader svg={setting.svg} />
                   <label>{setting.label}</label>
                 </div>

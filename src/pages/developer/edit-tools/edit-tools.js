@@ -1,15 +1,15 @@
 import { useForm } from "react-hook-form";
-import AddProductInfo from "src/components/my-tools-page-components/add-product-info/add-product-info";
-import UploadProductCarousel from "src/components/my-tools-page-components/upload-product-carousel/upload-product-carousel";
-import ProductDescription from "src/components/product-page-components/product-description/product-description";
-import ProductFaq from "src/components/product-page-components/product-faq/product-faq";
-import ProductPrivacy from "src/components/product-page-components/product-privacy/product-privacy";
-import classes from "./create-tools.module.css";
 import AddProductDescription from "src/components/my-tools-page-components/add-product-description/add-product-description";
 import AddProductFaq from "src/components/my-tools-page-components/add-product-faq/add-product-faq";
+import AddProductInfo from "src/components/my-tools-page-components/add-product-info/add-product-info";
 import AddProductPrivacy from "src/components/my-tools-page-components/add-product-privacy/add-product-privacy";
+import UploadProductCarousel from "src/components/my-tools-page-components/upload-product-carousel/upload-product-carousel";
+import classes from "./edit-tools.module.css";
+import toolDetailsDatajson from "src/data/tooldetails.json";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
 
-function CreateToolsPage() {
+function EditToolsPage() {
   const {
     register,
     getValues,
@@ -20,8 +20,19 @@ function CreateToolsPage() {
     formState: { errors },
   } = useForm();
 
+  let toolData = toolDetailsDatajson;
+
+  useState(() => {
+    reset(toolData);
+
+  },[toolData])
+
+
   const onSubmit = (data, e) => console.log(data, e)
-  const onError = (errors, e) => console.log(errors, e)
+  const onError = (errors, e) => {console.log(getValues());
+    console.log(errors, e)
+  }
+  let { userId } = useParams();
 
 
   return (
@@ -30,15 +41,17 @@ function CreateToolsPage() {
       <form onSubmit={handleSubmit(onSubmit, onError)}>
         <div className={classes.info}>
           <UploadProductCarousel
+          formImages={getValues("productImages").images}
             register={register}
             name={"productImages"}
             height={435}
             width={665}
           />
-          <AddProductInfo setValue={setValue} register={register} name={"productInfo"} />
+          <AddProductInfo setValue={setValue} formImage={getValues("productInfo").logoimage} register={register} name={"productInfo"} />
         </div>
         <br /> <br />
         <AddProductDescription
+         formImages={getValues("productDescription")}
           register={register}
           name={"productDescription"}
         />
@@ -46,9 +59,9 @@ function CreateToolsPage() {
         <AddProductFaq register={register} name={"productFaq"} />
         <br /> <br />
         <br /> <br />
-        <AddProductPrivacy register={register} setValue={setValue} name={"productPrivacy"}/>
+        <AddProductPrivacy formSettings={getValues("productPrivacy").selectedSettings} setValue={setValue} register={register} name={"productPrivacy"}/>
         <br /> <br />
-      <button className={classes.submitbutton} type="submit">Submit</button>
+      <button className={classes.submitbutton} onClick={console.log(getValues())} type="submit">Submit</button>
 <br /> <br />
 
       </form>
@@ -56,4 +69,4 @@ function CreateToolsPage() {
   );
 }
 
-export default CreateToolsPage;
+export default EditToolsPage;
