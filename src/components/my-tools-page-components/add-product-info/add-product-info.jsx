@@ -14,7 +14,7 @@ function AddProductInfo({setValue, formImage=null, register, name }) {
 
   function toBulletPoints(text) {
     if (typeof text === 'string') {
-      return text.split('\n').map(line => line.trim().startsWith('•') ? line.trim() : `• ${line.trim()}`).join('\n');
+      return text.split('\n').map(line => line.trim().startsWith('•') ? line : `• ${line}`).join('\n');
     }
     return text;
   }
