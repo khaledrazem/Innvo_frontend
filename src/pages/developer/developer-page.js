@@ -1,16 +1,15 @@
 
-import 'src/variables.css'
-import SideNavBar from 'src/components/side-navbar/side-navbar';
-import classes from './developer-page.module.css'
-import { BrowserRouter, Route, Routes,Navigate, useResolvedPath } from "react-router-dom";
-import DiscoverPage from './discover/discover';
-import ProductPage from './product/product';
+import { Navigate, Route, Routes, useResolvedPath } from "react-router-dom";
 import Footer from 'src/components/footer/footer';
-import TestPage from './test/test';
+import SideNavBar from 'src/components/side-navbar/side-navbar';
+import 'src/variables.css';
 import DashboardPage from './dashboard/dashboard';
-import MyToolsPage from './my-tools/my-tools';
-import CreateToolsPage from './create-tools/create-tools';
+import classes from './developer-page.module.css';
+import DiscoverPage from './discover/discover';
 import EditToolsPage from './edit-tools/edit-tools';
+import MyToolsPage from './my-tools/my-tools';
+import ProductPage from './product/product';
+import TestPage from './test/test';
 
 function DeveloperPage() {
 
@@ -29,8 +28,9 @@ function DeveloperPage() {
           <Route path='discover/product/:productId' element={<ProductPage/>} />
           <Route path='dashboard' element={<DashboardPage/>} />
           <Route path='my-tools' element={<MyToolsPage/>} />
-          <Route path='my-tools/new' element={<CreateToolsPage/>} />
+          <Route path='my-tools/new' element={<EditToolsPage/>} />
           <Route path='my-tools/edit/:toolId' element={<EditToolsPage/>} />
+          <Route path='my-tools/edit/preview' element={<ProductPage/>} />
 
           <Route path='test' element={<TestPage/>} />
 

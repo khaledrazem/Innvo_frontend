@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import classes from "./add-product-info.module.css";
 
 import { ReactComponent as UpArrowIcon } from "src/public/svg/Up Arrow_Black.svg";
+import { Link } from "react-router-dom";
 
-function AddProductInfo({setValue, formImage=null, register, name }) {
+function AddProductInfo({setValue, formImage=null, register, name, getValues }) {
   const [image, setImage] = useState(null);
 
   useEffect(() => {
@@ -14,15 +15,27 @@ function AddProductInfo({setValue, formImage=null, register, name }) {
 
   function toBulletPoints(text) {
     if (typeof text === 'string') {
-      return text.split('\n').map(line => line.trim().startsWith('•') ? line : `• ${line}`).join('\n');
+      return text.split('\n').map(line => line.trim().startsWith('•') || line.trim() === "" ? line : `• ${line}`).join('\n');
+      
     }
     return text;
   }
 
   function handleFeaturesChange(event) {
+    const textarea = event.target;
+    const cursorPosition = textarea.selectionStart;
+    const originalText = event.target.value;
+
     const formattedText = toBulletPoints(event.target.value);
+  
     setValue(name + ".features", formattedText);
+  
+    if(formattedText!=originalText){
+    textarea.selectionStart = cursorPosition+2;
+    textarea.selectionEnd = cursorPosition+2;
+    }
   }
+  
 
   function handleImageUpload (event) {
 
@@ -110,7 +123,9 @@ function AddProductInfo({setValue, formImage=null, register, name }) {
       </div>
 
       <div className={classes.previewbutton}>
-        <button>Preview Tool Page</button>
+        <button>
+        <Link className={classes.productlink}  to={"/dev/my-tools/edit/preview"} state={ getValues() }/>
+Preview Tool Page</button>
       </div>
     </div>
   );

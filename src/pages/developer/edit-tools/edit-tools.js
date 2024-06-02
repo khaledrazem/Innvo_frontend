@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form";
+ import { useForm } from "react-hook-form";
 import AddProductDescription from "src/components/my-tools-page-components/add-product-description/add-product-description";
 import AddProductFaq from "src/components/my-tools-page-components/add-product-faq/add-product-faq";
 import AddProductInfo from "src/components/my-tools-page-components/add-product-info/add-product-info";
@@ -23,8 +23,10 @@ function EditToolsPage() {
   let toolData = toolDetailsDatajson;
 
   useState(() => {
-    reset(toolData);
 
+    if (toolData) {
+    reset(toolData);
+    }
   },[toolData])
 
 
@@ -47,7 +49,7 @@ function EditToolsPage() {
             height={435}
             width={665}
           />
-          <AddProductInfo setValue={setValue} formImage={getValues("productInfo").logoimage} register={register} name={"productInfo"} />
+          <AddProductInfo getValues={getValues} setValue={setValue} formImage={getValues("productInfo").logoimage} register={register} name={"productInfo"} />
         </div>
         <br /> <br />
         <AddProductDescription

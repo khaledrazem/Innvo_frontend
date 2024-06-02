@@ -116,7 +116,7 @@ button {
   border: 1px solid var(--color-main-text);
   background-color: var(--color-primary);
     color: #fff;
-  font-size: 16px;
+  font-size: 16px; 
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -124,5 +124,14 @@ button {
 
 .previewbutton{
   padding: 5px;
+  position: relative;
 }
 
+.productlink{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+}
