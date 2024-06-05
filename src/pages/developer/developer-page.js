@@ -1,43 +1,40 @@
-
 import { Navigate, Route, Routes, useResolvedPath } from "react-router-dom";
-import Footer from 'src/components/footer/footer';
-import SideNavBar from 'src/components/side-navbar/side-navbar';
-import 'src/variables.css';
-import DashboardPage from './dashboard/dashboard';
-import classes from './developer-page.module.css';
-import DiscoverPage from './discover/discover';
-import EditToolsPage from './edit-tools/edit-tools';
-import MyToolsPage from './my-tools/my-tools';
-import ProductPage from './product/product';
-import TestPage from './test/test';
+import Footer from "src/components/footer/footer";
+import SideNavBar from "src/components/side-navbar/side-navbar";
+import "src/variables.css";
+import DashboardPage from "./dashboard/dashboard";
+import classes from "./developer-page.module.css";
+import DiscoverPage from "./discover/discover";
+import EditToolsPage from "./edit-tools/edit-tools";
+import MyToolsPage from "./my-tools/my-tools";
+import ProductPage from "./product/product";
+import TestPage from "./test/test";
+import ProfilePage from "./profile/profile";
 
 function DeveloperPage() {
-
   const url = useResolvedPath("").pathname;
 
   return (
     <div className="App">
-      <SideNavBar/>
+      <SideNavBar />
 
       <div className={classes.devbody}>
+        <Routes>
+          <Route path="/" element={<Navigate to="discover" replace />} />
+          <Route path="discover" element={<DiscoverPage />} />
+          <Route path="discover/product/:productId" element={<ProductPage />} />
+          <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="my-tools" element={<MyToolsPage />} />
+          <Route path="my-tools/new" element={<EditToolsPage />} />
+          <Route path="my-tools/edit/:toolId" element={<EditToolsPage />} />
+          <Route path="my-tools/edit/preview" element={<ProductPage />} />
 
-      <Routes>
+          <Route path="profile" element={<ProfilePage />} />
 
-          <Route path='/' element={<Navigate to='discover' replace />} />
-          <Route path='discover' element={<DiscoverPage/>} />
-          <Route path='discover/product/:productId' element={<ProductPage/>} />
-          <Route path='dashboard' element={<DashboardPage/>} />
-          <Route path='my-tools' element={<MyToolsPage/>} />
-          <Route path='my-tools/new' element={<EditToolsPage/>} />
-          <Route path='my-tools/edit/:toolId' element={<EditToolsPage/>} />
-          <Route path='my-tools/edit/preview' element={<ProductPage/>} />
+          <Route path="test" element={<TestPage />} />
+        </Routes>
 
-          <Route path='test' element={<TestPage/>} />
-
-      </Routes>
-      
-      <Footer></Footer>
-
+        <Footer></Footer>
       </div>
     </div>
   );

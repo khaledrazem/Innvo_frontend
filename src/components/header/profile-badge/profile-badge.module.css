@@ -22,4 +22,14 @@
 .username {
     padding-left: 8px;
     font-weight: 600;
-    font-size: large;}
+    font-size: large;
+}
+
+    .productlink{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 1000;
+      }
