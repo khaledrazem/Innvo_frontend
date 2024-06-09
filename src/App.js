@@ -1,28 +1,24 @@
-import logo from "./logo.svg";
-import "./App.css";
-import InvoHeader from "./components/header/invo-header";
-import "./variables.css";
-import SideNavBar from "src/components/side-navbar/side-navbar";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import DeveloperPage from "src/pages/developer/developer-page";
-import { BrowserRouter, Route, Routes,Navigate } from "react-router-dom";
+import LoginPage from "src/pages/login/login-page";
 import UserPage from "src/pages/user/user-page";
+import "./App.css";
+import "./variables.css";
 
 function App() {
   return (
     <div>
-    <InvoHeader/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route index element={<Navigate to="/login" replace />} />
+            <Route path="/dev/*" element={<DeveloperPage />} />
+            <Route path="/login/*" element={<LoginPage />} />
 
-    <BrowserRouter>
-      <Routes>
-        <Route path="/">
-          <Route index element={<Navigate to="/dev" replace />} />
-          <Route path="/dev/*" element={<DeveloperPage/>}/>
-          <Route path="/user/*" element={<UserPage/>}/>
-
-        </Route>
-      </Routes>
-      
-    </BrowserRouter>
+            <Route path="/user/*" element={<UserPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

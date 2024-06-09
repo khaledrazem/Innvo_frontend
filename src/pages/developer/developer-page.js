@@ -10,12 +10,15 @@ import MyToolsPage from "./my-tools/my-tools";
 import ProductPage from "./product/product";
 import TestPage from "./test/test";
 import ProfilePage from "./profile/profile";
+import InvoHeader from "src/components/header/invo-header";
 
 function DeveloperPage() {
   const url = useResolvedPath("").pathname;
 
   return (
     <div className="App">
+      <InvoHeader />
+
       <SideNavBar />
 
       <div className={classes.devbody}>

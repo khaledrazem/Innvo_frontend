@@ -1,0 +1,90 @@
+import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
+import { ReactComponent as AppleLogo } from "src/public/svg/Apple Logo.svg";
+import { ReactComponent as GoogleLogo } from "src/public/svg/Google Logo.svg";
+import classes from "./sign-in.module.css";
+
+function SignInPage() {
+  const {
+    register,
+    getValues,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data, e) => {
+    console.log(data, e);
+    window.location.href = "/dev";
+  };
+  const onError = (errors, e) => {
+    console.log(getValues());
+    console.log(errors, e);
+  };
+
+  return (
+    <form
+      className={classes.container}
+      onSubmit={handleSubmit(onSubmit, onError)}
+    >
+      <div className={classes.head}>
+        <h1>INNVO</h1>
+
+        <label className={classes.welcometext}>Welcome Back</label>
+
+        <div className={classes.signinbuttons}>
+          <button type="button">
+            <GoogleLogo />
+            <label>Continue with Google</label>
+          </button>
+          <button type="button">
+            <AppleLogo />
+            <label>Continue with Apple</label>
+          </button>
+        </div>
+      </div>
+
+      <div className={classes.divider}></div>
+
+      <div className={classes.inputfields}>
+        <label>Email</label>
+        <input
+          type="text"
+          {...register("email", {
+            required: "Email is required",
+            pattern: {
+              value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+              message: "Invalid email address",
+            },
+          })}
+        />
+        {errors.email && (
+          <p className={classes.error}>{errors.email.message}</p>
+        )}
+      </div>
+      <div className={classes.inputfields}>
+        <label>Password</label>
+        <input
+          type="password"
+          {...register("password", {
+            required: "Password is required",
+            minLength: {
+              value: 6,
+              message: "Password must be at least 6 characters long",
+            },
+          })}
+        />
+        {errors.password && (
+          <p className={classes.error}>{errors.password.message}</p>
+        )}
+      </div>
+      <div className={classes.signup}>
+        <label>Don't have an account?</label>{" "}
+        <Link to={"/login/sign-up/dev"}>Sign up</Link>
+      </div>
+
+      <button type="submit">Continue</button>
+    </form>
+  );
+}
+
+export default SignInPage;

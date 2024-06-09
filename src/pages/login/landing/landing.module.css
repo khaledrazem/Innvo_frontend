@@ -1,0 +1,66 @@
+.container {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  place-content: center;
+  align-items: center;
+  user-select: none;
+  box-sizing: border-box;
+  padding: 7.5% 3% 4.7% 3%;
+  justify-content: space-between;
+
+  h1{
+    font-size: 3.7em;
+    margin: 0;
+  }
+
+
+  button{
+    border-radius: 50px;
+    border-width: 2px;
+    background: var(--color-background);
+    color: var(--color-main-text);
+    padding: 10px 66px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+
+  button:hover{
+    background: var(--color-secondary);
+    color: var(--color-background);
+  
+  }
+  button:disabled{
+    cursor: not-allowed;
+  }
+}
+
+.userchoice, .userchoiceselected{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--color-main-text);
+  border-radius: 22px;
+  box-sizing: border-box;
+  padding: 4% 3% 3.5% 3%;
+  width: 35.5vh;
+  height: 35.5vh;
+  cursor: pointer;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2.2em;
+  gap: 25px;
+}
+
+.userchoiceselected{
+  border-color: var(--color-secondary);
+}
+
+.loginchoices{
+  width: 100%;
+  justify-content: CENTER;
+  gap: 17%;
+  display: flex;
+  
+}

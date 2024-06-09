@@ -45,7 +45,7 @@ function InformationTab({ data, register, errors }) {
             <h4>{data.companyName}</h4>
             <label>{data.secondaryCompanyName}</label>
             <label>{data.devName}</label>
-          </div>{" "}
+          </div>
         </div>
 
         <div className={classes.banner}>

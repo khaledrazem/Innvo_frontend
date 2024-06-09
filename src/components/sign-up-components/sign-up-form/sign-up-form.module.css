@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  height: 90%;
+      width: 100%;
+  flex-direction: column;
+  place-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 0.8%;
+  h1{
+    font-size: 3.8em;
+    margin: 0;
+  }
+
+}
+
+.head{
+  height: 34%;
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signinbuttons{
+  gap: 23px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+  margin-top: 0.3%;
+  button{
+    padding: 0;
+    padding-left: 1%;
+    width: 19.5%;
+        display: flex;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    align-items: center;
+    gap: 14px;
+    text-wrap: nowrap;
+    border-width: 2px;
+    background: var(--color-background);
+    color: var(--color-main-text);
+    box-sizing: border-box;
+  }
+
+  button:hover{
+    background: var(--color-secondary);
+    color: var(--color-background);
+
+    svg{
+      color: var(--color-background);
+      fill: var(--color-background);
+
+    }
+  
+  }
+  button:disabled{
+    cursor: not-allowed;
+  }
+
+
+  label{
+    cursor: pointer;
+  }
+
+  svg{
+    width: 22px;
+    height: 22px;
+  }
+
+}
+
+.welcometext{
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.divider{
+  height: 2px;
+  background-color: var(--color-main-text);
+  width: 100%;
+  margin: 2% 0 2.5% 0;
+}
+
+.signup{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: auto;
+  a{
+  text-decoration: none;
+}
+p{
+  cursor: pointer;
+  color: var(--color-secondary);
+  margin: 5px;
+
+}
+}
+
+.imageupload{
+  text-align: left;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.formcontainer{
+  display: flex;
+  width: 100%;
+}
+.forminputs{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  column-gap: 40px;
+}
+
+.inputfield{
+  display: flex;
+  width: 30%;
+  text-align: left;
+  flex-direction: column;
+  gap: 5px;
+
+  label{
+    font-size: 16px;
+    font-weight: 500;
+    text-wrap: nowrap;
+    margin-left: 10px;
+  }
+
+  input {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border-width: 2px;
+    height: 41px;
+  }
+
+}
+
+.error{
+  margin: 0;
+    font-size: 16px;
+    color: red;
+}

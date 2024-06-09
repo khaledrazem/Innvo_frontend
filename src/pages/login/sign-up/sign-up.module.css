@@ -1,0 +1,57 @@
+.container {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  width: 80%;
+  align-items: center;
+  user-select: none;
+  box-sizing: border-box;
+  padding: 4.5% 0 3% 0;
+    gap: 10px;
+}
+
+  .createbutton, .backbutton, .acceptbutton{
+    border-radius: 50px;
+    border-width: 2px;
+    background: var(--color-background);
+    color: var(--color-main-text);
+    padding: 10px 66px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+
+  .acceptbutton{
+    background: var(--color-secondary);
+    color: var(--color-background);
+  }
+
+  .createbutton:hover, .backbutton:hover{
+    background: var(--color-secondary);
+    color: var(--color-background);
+
+    svg{
+      color: var(--color-background);
+      fill: var(--color-background);
+
+    }
+  
+  }
+
+  .acceptbutton:hover{
+    background: var(--color-background);
+    color: var(--color-main-text);
+
+   
+  
+  }
+  .createbutton:disabled{
+    cursor: not-allowed;
+  }
+
+
+  .buttons{
+    display: flex;
+    align-self: start;
+    gap: 30px;
+  }
