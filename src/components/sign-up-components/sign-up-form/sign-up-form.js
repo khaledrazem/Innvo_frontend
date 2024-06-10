@@ -88,7 +88,7 @@ function SignUpForm({ register, errors, getValues }) {
               {...register("phoneNumber", {
                 required: "is required",
                 pattern: {
-                  value: /^\d{10}$/,
+                  value: /^\d{8,}$/,
                   message: "is invalid",
                 },
               })}

@@ -46,36 +46,40 @@ function SignInPage() {
       <div className={classes.divider}></div>
 
       <div className={classes.inputfields}>
-        <label>Email</label>
+        <label>
+          Email
+          {errors.email && (
+            <label className={classes.error}>{errors.email.message}</label>
+          )}
+        </label>
         <input
           type="text"
           {...register("email", {
-            required: "Email is required",
+            required: "is required",
             pattern: {
               value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-              message: "Invalid email address",
+              message: "is invalid",
             },
           })}
         />
-        {errors.email && (
-          <p className={classes.error}>{errors.email.message}</p>
-        )}
       </div>
       <div className={classes.inputfields}>
-        <label>Password</label>
+        <label>
+          Password
+          {errors.password && (
+            <label className={classes.error}>{errors.password.message}</label>
+          )}
+        </label>
         <input
           type="password"
           {...register("password", {
-            required: "Password is required",
+            required: "is required",
             minLength: {
               value: 6,
-              message: "Password must be at least 6 characters long",
+              message: "must be at least 6 characters long",
             },
           })}
         />
-        {errors.password && (
-          <p className={classes.error}>{errors.password.message}</p>
-        )}
       </div>
       <div className={classes.signup}>
         <label>Don't have an account?</label>{" "}

@@ -9,7 +9,7 @@ function Logo() {
 
   return (
     <div className={classes.logo}>
-      <a className={classes.link} href="/dev" />
+      <a className={classes.link} href="/dev\" />
       {subscription == "elite" ? (
         <div className={classes.subscriptionelite}>
           <EliteLogo />

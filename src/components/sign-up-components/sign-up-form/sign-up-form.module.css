@@ -19,26 +19,27 @@
     width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 7.2%;
 }
 
 .signinbuttons{
-  gap: 23px;
-  display: flex;
+  gap: 2%;
+    display: flex;
   width: 100%;
   justify-content: center;
-  height: 50px;
-  margin-top: 0.3%;
+  height: 24%;
+    margin-top: 0.3%;
+
   button{
     padding: 0;
     padding-left: 1%;
     width: 19.5%;
         display: flex;
     border-radius: 12px;
-    font-size: 13px;
+    font-size: 0.8em;
     font-weight: 600;
     align-items: center;
-    gap: 14px;
+    gap: 7%;
     text-wrap: nowrap;
     border-width: 2px;
     background: var(--color-background);
@@ -67,14 +68,13 @@
   }
 
   svg{
-    width: 22px;
-    height: 22px;
+    height: 50%;
   }
 
 }
 
 .welcometext{
-  font-size: 36px;
+  font-size: 2.2em;
   font-weight: 500;
 }
 
@@ -86,17 +86,11 @@
 }
 
 .signup{
-  font-size: 20px;
+  font-size: 1.3em;
   font-weight: 500;
   margin-top: auto;
   a{
   text-decoration: none;
-}
-p{
-  cursor: pointer;
-  color: var(--color-secondary);
-  margin: 5px;
-
 }
 }
 
@@ -105,7 +99,7 @@ p{
   gap: 4px;
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
 }
 
@@ -118,8 +112,8 @@ p{
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 32px;
-  column-gap: 40px;
+  row-gap: 12.5%;
+  column-gap: 5%;
 }
 
 .inputfield{
@@ -130,25 +124,25 @@ p{
   gap: 5px;
 
   label{
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
     text-wrap: nowrap;
-    margin-left: 10px;
+    margin-left: 4%;
   }
 
   input {
-    padding: 5px;
-    font-size: 18px;
+    padding: 2%;
+    font-size: 1.1em;
     border-radius: 25px;
     box-sizing: border-box;
     border-width: 2px;
-    height: 41px;
+    height: 70%;
   }
 
 }
 
 .error{
   margin: 0;
-    font-size: 16px;
+  font-size: 0.8em;
     color: red;
 }
