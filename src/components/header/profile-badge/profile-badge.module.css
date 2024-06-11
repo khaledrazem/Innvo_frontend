@@ -1,35 +1,43 @@
-.profilebadgecontainer {
-    justify-content: left;
-    position: relative;
-    width: 15%;
-    min-width: 220px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-
+.container {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: start;
+  margin-left: auto;
+  gap: 1vw;
 }
 
+.profile {
+  position: relative;
+  display: flex;
+  place-items: center;
+}
 
 .profileimg {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid var(--color-main-text);
-    object-fit: cover;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 2px solid var(--color-main-text);
+  box-sizing: border-box;
 }
 
 .username {
-    padding-left: 8px;
-    font-weight: 600;
-    font-size: large;
+  padding-left: 8px;
+  font-weight: 600;
+  font-size: 1.2em;
 }
 
-    .productlink{
-        position: absolute;
-        width: 100%;
-        left: 0;
-        top: 0;
-        height: 100%;
-        z-index: 1000;
-      }
+.productlink {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+}
+
+.notification {
+  height: 50%;
+  padding-top: 3%;
+}

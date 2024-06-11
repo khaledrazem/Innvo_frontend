@@ -1,34 +1,33 @@
 .dropdowncontainer {
-    position:relative;
-    width: 100%;
-    min-width: 100px;
-    height: 100%;
-    min-height: 25px;
-
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3E%3C/svg%3E");
-    background-size: 10px;
-    background-repeat: no-repeat;
-    background-position: calc(100% - 8px) center;
-  }
+  background-image: url("/src/public/svg/UP-Down Arrow.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: calc(90%) center;
+}
 
 .input {
-    width: 100%;
-    font-size: x-small;
-    border-width: 1px;
-    border-radius: 100px;
-    height: 100%;
-    padding-left: 15px;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 600;
+  border-width: 2px;
+  border-radius: 25px;
+  border-color: var(--color-main-text);
+  height: 100%;
+  padding-left: 12%;
+  font-family: var(--main-font);
 }
 
-select:focus, input:focus{
-    outline: none;
+select:focus,
+input:focus {
+  outline: none;
 }
 
 select {
-    -webkit-appearance: none;
-    appearance: none;
-  }
-
-
+  -webkit-appearance: none;
+  appearance: none;
+}

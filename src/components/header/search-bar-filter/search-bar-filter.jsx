@@ -7,7 +7,7 @@ import tagsData from "src/data/tags.json";
 
 import SearchBar from "src/components/data-input/search-bar/search-bar";
 import Dropdown from "src/components/data-input/dropdown/dropdown";
-import { GrPowerReset } from "react-icons/gr";
+import { ReactComponent as ResetIcon } from "src/public/svg/Reset.svg";
 
 function HeaderSearchBar() {
   const [selectedCategories, setSelectedCategories] = useState("");
@@ -24,32 +24,37 @@ function HeaderSearchBar() {
   }
   return (
     <div className={classes.headersearch}>
-      <SearchBar searchData={searchData} setSearchData={setSearchData} />
-      <div className={classes.filter}>
-        <Dropdown
-          options={categoriesData}
-          selectedOption={selectedCategories}
-          setSelectedOption={setSelectedCategories}
-          placeholder="Categories"
-        />
+      <div className={classes.search}>
+        <SearchBar searchData={searchData} setSearchData={setSearchData} />
       </div>
-      <div className={classes.filter}>
-        <Dropdown
-          options={industriesData}
-          selectedOption={selectedIndustries}
-          setSelectedOption={setSelectedIndustries}
-          placeholder="Industries"
-        />
-      </div>{" "}
-      <div className={classes.filter}>
-        <Dropdown
-          options={tagsData}
-          selectedOption={selectedTags}
-          setSelectedOption={setSelectedTags}
-          placeholder="Tags"
-        />
+      <div className={classes.filters}>
+        <div className={classes.filter}>
+          <Dropdown
+            options={categoriesData}
+            selectedOption={selectedCategories}
+            setSelectedOption={setSelectedCategories}
+            placeholder="Categories"
+          />
+        </div>
+        <div className={classes.filter}>
+          <Dropdown
+            options={industriesData}
+            selectedOption={selectedIndustries}
+            setSelectedOption={setSelectedIndustries}
+            placeholder="Industries"
+          />
+        </div>{" "}
+        <div className={classes.filter}>
+          <Dropdown
+            options={tagsData}
+            selectedOption={selectedTags}
+            setSelectedOption={setSelectedTags}
+            placeholder="Tags"
+          />
+        </div>
       </div>
-      <GrPowerReset onClick={resetFilters} className={classes.reseticon} />
+
+      <ResetIcon onClick={resetFilters} className={classes.reseticon} />
     </div>
   );
 }

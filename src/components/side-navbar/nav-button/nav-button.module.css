@@ -1,56 +1,38 @@
-.container {
-
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 9px 0px 9px 10px;
-  font-size: 11px;
+.container,
+.selectedcontainer {
+  padding: 1% 10.5% 1% 7%;
+  font-size: 1.3em;
+  font-weight: 500;
   display: flex;
   align-items: center;
-  width: 75%;
+  box-sizing: border-box;
+  text-wrap: nowrap;
+  width: fit-content;
   cursor: pointer;
+  gap: 9%;
 
-  svg{
-    padding-right: 8px;
-     font-size: 20px;
-      width: 18px;
+  label {
+    cursor: pointer;
+  }
+
+  svg {
+    height: 1.8em;
+    aspect-ratio: 1;
   }
 }
 
 .selectedcontainer {
-
-    background-color: var(--color-secondary);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 9px 0px 9px 10px;
-    border: 1px solid var(--color-main-text);
-    color: var(--color-background);
-    fill: var(--color-background);
-    border-radius: 6px;
-    font-size: 11px;
-    display: flex;
-    align-items: center;
-    width: 75%;
-    cursor: pointer;
-
-    svg{
-      padding-right: 8px;
-       font-size: 20px;
-        width: 18px;
-    }
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-main-text);
+  color: var(--color-background);
+  border-radius: 10px;
 }
 
-.navlink{
+.selectedcontainer svg {
+  fill: var(--color-background);
+}
+
+.navlink {
   text-decoration: none;
   color: var(--color-main-text);
-}
-
-
-.buttonselected {
-  background-color: var(--color-secondary);
-  border: 1px solid var(--color-main-text);
-  border-radius: 16%;
-}
-
-.buttondefault{
-
 }

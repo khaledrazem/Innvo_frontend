@@ -1,12 +1,14 @@
 .logo{
     color: var(--color-main-text);
-    font-size: xx-large;
+    font-size: 2.4em;
     font-weight: 700;
-    display: flex;
-    padding-left: 40px;
     position: relative;
+    width: 9%;
+    
     svg{
-      width: 130px;
+      width: auto;
+      height: auto;
+      transform: translateY(-40%);
     }
   }
   

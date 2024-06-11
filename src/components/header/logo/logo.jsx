@@ -11,13 +11,9 @@ function Logo() {
     <div className={classes.logo}>
       <a className={classes.link} href="/dev\" />
       {subscription == "elite" ? (
-        <div className={classes.subscriptionelite}>
-          <EliteLogo />
-        </div>
+        <EliteLogo />
       ) : subscription == "professional" ? (
-        <div className={classes.subscriptionprofessional}>
-          <ProfessionalLogo />
-        </div>
+        <ProfessionalLogo />
       ) : (
         <label>INNVO</label>
       )}
