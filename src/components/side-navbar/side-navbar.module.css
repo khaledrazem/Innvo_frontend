@@ -27,10 +27,11 @@
 .subscriptionmessage {
   margin-top: auto;
   margin-bottom: 15%;
+  margin-left: 29%;
   padding: 5.2% 13.8%;
   font-size: 1em;
-  align-self: center;
   border-radius: 10px;
+  width: fit-content;
   background: var(--color-main-text);
   color: var(--color-background);
   white-space: pre-line;
