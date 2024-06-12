@@ -8,6 +8,7 @@
   left: 0px;
   z-index: 980;
   user-select: none;
+  background: var(--color-background);
 }
 
 .navigation {
