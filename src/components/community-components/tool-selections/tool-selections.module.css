@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2.4em;
+  height: 100%;
+  width: 90%;
+  overflow-x: auto;
+  user-select: none;
+  cursor: pointer;
+}
+
+.toolcard,
+.activetoolcard {
+  display: flex;
+  font-size: 1.45em;
+  gap: 0.7em;
+  border: 2px solid var(--color-main-text);
+  border-radius: 14px;
+  box-sizing: border-box;
+  width: 15vw;
+  min-width: 15vw;
+  height: 10.5vh;
+  align-items: center;
+  justify-content: center;
+
+  h5 {
+    font-weight: 600;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  label {
+    user-select: none;
+    cursor: pointer;
+  }
+}
+
+.activetoolcard {
+  border-color: var(--color-secondary);
+}
+
+.titles {
+  text-align: start;
+}
+
+.toolimg {
+  max-width: 43px;
+  max-height: 43px;
+  height: 4.6vh;
+  width: 4.6vh;
+  box-sizing: border-box;
+  border-radius: 27.5px;
+  overflow: hidden;
+  border: 0 solid var(--color-main-text);
+}

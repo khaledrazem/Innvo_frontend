@@ -1,0 +1,55 @@
+[
+    {
+      "reviewer": {
+        "profileimg": {
+          "url": "https://example.com/profile1.jpg"
+        },
+        "firstname": "John",
+        "lastname": "Doe"
+      },
+      "likedByOwner": true,
+      "body": "This product is amazing!",
+      "likes": 12,
+      "dislikes": 2
+    },
+    {
+      "reviewer": {
+        "profileimg": {
+          "url": ""
+        },
+        "firstname": "Jane",
+        "lastname": "Smith"
+      },
+      "likedByOwner": false,
+      "body": "I had a bad experience with this product.",
+      "likes": 3,
+      "dislikes": 10
+    },
+    {
+      "reviewer": {
+        "profileimg": {
+          "url": "https://example.com/profile2.jpg"
+        },
+        "firstname": "Alice",
+        "lastname": "Johnson"
+      },
+      "likedByOwner": true,
+      "body": "Works as expected. Will buy again.",
+      "likes": 8,
+      "dislikes": 1
+    },
+    {
+      "reviewer": {
+        "profileimg": {
+          "url": "https://example.com/profile3.jpg"
+        },
+        "firstname": "Bob",
+        "lastname": "Brown"
+      },
+      "likedByOwner": false,
+      "body": "Not worth the price.",
+      "likes": 2,
+      "dislikes": 5
+    }
+  ]
+  

@@ -1,12 +1,13 @@
 .divider{
-  height: 1px;
+  height: 2px;
   background-color: var(--color-main-text);
   flex-grow: 1;
 }
 
 .container {
   padding-left: 5%;
-
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .overviewbubble {

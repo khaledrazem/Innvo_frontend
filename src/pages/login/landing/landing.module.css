@@ -10,34 +10,33 @@
   padding: 7.5% 3% 4.7% 3%;
   justify-content: space-between;
 
-  h1{
+  h1 {
     font-size: 3.7em;
     margin: 0;
   }
 
-
-  button{
+  button {
     border-radius: 50px;
     border-width: 2px;
     background: var(--color-background);
     color: var(--color-main-text);
-    padding: 10px 66px;
+    padding: 1.1vh 3.5vw;
     box-sizing: border-box;
     font-weight: 500;
     font-size: 1.5em;
   }
 
-  button:hover{
+  button:hover {
     background: var(--color-secondary);
     color: var(--color-background);
-  
   }
-  button:disabled{
+  button:disabled {
     cursor: not-allowed;
   }
 }
 
-.userchoice, .userchoiceselected{
+.userchoice,
+.userchoiceselected {
   display: flex;
   flex-direction: column;
   border: 2px solid var(--color-main-text);
@@ -53,14 +52,13 @@
   gap: 25px;
 }
 
-.userchoiceselected{
+.userchoiceselected {
   border-color: var(--color-secondary);
 }
 
-.loginchoices{
+.loginchoices {
   width: 100%;
   justify-content: CENTER;
   gap: 17%;
   display: flex;
-  
 }

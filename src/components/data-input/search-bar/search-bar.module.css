@@ -19,11 +19,12 @@ input:focus {
 
 .input {
   color: var(--color-main-text);
-  width: 89%;
+  width: 100%;
   font-size: 1em;
   border-width: 2px;
   font-weight: 600;
   border-radius: 25px;
   padding-left: 3rem;
-  height: 86%;
+  height: 100%;
+  box-sizing: border-box;
 }

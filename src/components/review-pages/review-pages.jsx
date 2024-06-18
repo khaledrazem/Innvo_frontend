@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import classes from "./product-review-pages.module.css";
+import classes from "./review-pages.module.css";
 import ratingDatajson from "src/data/ratings.json";
 import { Pagination } from "rsuite";
-import ReviewCard from "../review-card/review-card";
+import ReviewCard from "src/components/review-card/review-card";
 
-function ProductReviewPage({ productId, itemsPerPage = 10 }) {
+function ReviewPage({ productId, itemsPerPage = 10 }) {
   let reviewData = ratingDatajson;
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -78,7 +78,7 @@ function ProductReviewPage({ productId, itemsPerPage = 10 }) {
       <Pagination
         prev={true}
         next={true}
-        total={currentReviews.length/itemsPerPage}
+        total={currentReviews.length / itemsPerPage}
         maxButtons={5}
         ellipsis={true}
         boundaryLinks={true}
@@ -90,4 +90,4 @@ function ProductReviewPage({ productId, itemsPerPage = 10 }) {
   );
 }
 
-export default ProductReviewPage;
+export default ReviewPage;

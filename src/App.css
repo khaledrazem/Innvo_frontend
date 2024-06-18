@@ -3,6 +3,8 @@
   width: 100%;
   min-height: 100vh;
   background: var(--color-background);
+  font-family: var(--main-font);
+  color: var(--color-main-text);
   margin: 0;
   padding: 0;
 }

@@ -1,0 +1,92 @@
+.container {
+  box-sizing: border-box;
+  padding: 0 2.1% calc(23.1vh * 0.08) 4.1%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.4em;
+  margin-bottom: 0.5vh;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+}
+
+.reviewerimage img,
+.reviewerimage svg {
+  max-width: 47px;
+  max-height: 47px;
+  height: 6vh;
+  width: 6vh;
+  box-sizing: border-box;
+  border-radius: 27.5px;
+  overflow: hidden;
+  border: 2px solid var(--color-main-text);
+}
+
+.reviewerimage svg {
+  padding: 5%;
+}
+
+.reviewerinfo {
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+.reviewerinfo label {
+  font-weight: 600;
+  font-size: 1.1em;
+  gap: 0.8em;
+  display: flex;
+}
+
+.reviewerinfo p {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: var(--color-main-text);
+}
+
+.interactions {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1.7vw;
+  margin-top: 1em;
+  user-select: none;
+}
+
+.interactions .like,
+.interactions .likeactive {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.interactions .like svg,
+.interactions .likeactive svg {
+  cursor: pointer;
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.likeactive {
+  fill: var(--color-secondary);
+}
+
+.interactions label {
+  font-size: 0.95em;
+}
+
+.dislike {
+  scale: -1;
+}

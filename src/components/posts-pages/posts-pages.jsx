@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import classes from "./product-review-pages.module.css";
-import ratingDatajson from "src/data/ratings.json";
+import classes from "./posts-pages.module.css";
+import ratingDatajson from "src/data/postdata.json";
 import { Pagination } from "rsuite";
-import ReviewCard from "../review-card/review-card";
+import PostCard from "src/components/post-card/post-card";
+import SearchBar from "src/components/data-input/search-bar/search-bar";
 
-function ProductReviewPage({ productId, itemsPerPage = 10 }) {
+function PostsPage({ productId, itemsPerPage = 10, setSelectedPost }) {
   let reviewData = ratingDatajson;
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -19,6 +20,7 @@ function ProductReviewPage({ productId, itemsPerPage = 10 }) {
       (currentPage - 1) * itemsPerPage,
       currentPage * itemsPerPage
     );
+    console.log(currentReviews);
   }, [reviewData]);
 
   return (
@@ -26,33 +28,26 @@ function ProductReviewPage({ productId, itemsPerPage = 10 }) {
       <div className={classes.reviewpagination}>
         <div className={classes.reviewpagination}>
           <div className={classes.filters}>
-            <h4>Filters</h4>
+            <div className={classes.filtersearch}>
+              <SearchBar></SearchBar>
+            </div>
+
             <label className={classes.filterbox}>
-              Most Helpful
+              Latest
               <input
                 type="radio"
                 name="checkbox"
-                value="Most Helpful"
+                value="Latest"
                 className={classes.circleCheckbox}
               />
             </label>
 
             <label className={classes.filterbox}>
-              Highest Rating
+              Popular
               <input
                 type="radio"
                 name="checkbox"
-                value="Highest Rating"
-                className={classes.circleCheckbox}
-              />
-            </label>
-
-            <label className={classes.filterbox}>
-              Most Recent
-              <input
-                type="radio"
-                name="checkbox"
-                value="Most Recent"
+                value="Popular"
                 className={classes.circleCheckbox}
               />
             </label>
@@ -60,25 +55,22 @@ function ProductReviewPage({ productId, itemsPerPage = 10 }) {
         </div>
       </div>
 
-      <div className={classes.reviewnumbers}>
-        <label>
-          Displaying {(currentPage - 1) * itemsPerPage + 1} -{" "}
-          {Math.min(reviewData.length, currentPage * itemsPerPage)} out of{" "}
-          {reviewData.length} reviews
-        </label>
-      </div>
-
       <div className={classes.paginationcontent}>
         <div className={classes.reviewlist}>
           {currentReviews.map((review, index) => (
-            <ReviewCard key={index} reviewData={review} />
+            <div
+              className={classes.post}
+              onClick={() => setSelectedPost(review.id)}
+            >
+              <PostCard postData={review} />
+            </div>
           ))}
         </div>
       </div>
       <Pagination
         prev={true}
         next={true}
-        total={currentReviews.length/itemsPerPage}
+        total={currentReviews.length / itemsPerPage}
         maxButtons={5}
         ellipsis={true}
         boundaryLinks={true}
@@ -90,4 +82,4 @@ function ProductReviewPage({ productId, itemsPerPage = 10 }) {
   );
 }
 
-export default ProductReviewPage;
+export default PostsPage;

@@ -1,4 +1,4 @@
- import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import AddProductDescription from "src/components/my-tools-page-components/add-product-description/add-product-description";
 import AddProductFaq from "src/components/my-tools-page-components/add-product-faq/add-product-faq";
 import AddProductInfo from "src/components/my-tools-page-components/add-product-info/add-product-info";
@@ -23,37 +23,40 @@ function EditToolsPage() {
   let toolData = toolDetailsDatajson;
 
   useState(() => {
-
     if (toolData) {
-    reset(toolData);
+      reset(toolData);
     }
-  },[toolData])
+  }, [toolData]);
 
-
-  const onSubmit = (data, e) => console.log(data, e)
-  const onError = (errors, e) => {console.log(getValues());
-    console.log(errors, e)
-  }
-  let { userId } = useParams();
-
+  const onSubmit = (data, e) => console.log(data, e);
+  const onError = (errors, e) => {
+    console.log(getValues());
+    console.log(errors, e);
+  };
+  let { toolId } = useParams();
 
   return (
     <div className={classes.container}>
-
       <form onSubmit={handleSubmit(onSubmit, onError)}>
         <div className={classes.info}>
           <UploadProductCarousel
-          formImages={getValues("productImages").images}
+            formImages={getValues("productImages").images}
             register={register}
             name={"productImages"}
             height={435}
             width={665}
           />
-          <AddProductInfo getValues={getValues} setValue={setValue} formImage={getValues("productInfo").logoimage} register={register} name={"productInfo"} />
+          <AddProductInfo
+            getValues={getValues}
+            setValue={setValue}
+            formImage={getValues("productInfo").logoimage}
+            register={register}
+            name={"productInfo"}
+          />
         </div>
         <br /> <br />
         <AddProductDescription
-         formImages={getValues("productDescription")}
+          formImages={getValues("productDescription")}
           register={register}
           name={"productDescription"}
         />
@@ -61,11 +64,21 @@ function EditToolsPage() {
         <AddProductFaq register={register} name={"productFaq"} />
         <br /> <br />
         <br /> <br />
-        <AddProductPrivacy formSettings={getValues("productPrivacy").selectedSettings} setValue={setValue} register={register} name={"productPrivacy"}/>
+        <AddProductPrivacy
+          formSettings={getValues("productPrivacy").selectedSettings}
+          setValue={setValue}
+          register={register}
+          name={"productPrivacy"}
+        />
         <br /> <br />
-      <button className={classes.submitbutton} onClick={console.log(getValues())} type="submit">Submit</button>
-<br /> <br />
-
+        <button
+          className={classes.submitbutton}
+          onClick={console.log(getValues())}
+          type="submit"
+        >
+          Submit
+        </button>
+        <br /> <br />
       </form>
     </div>
   );

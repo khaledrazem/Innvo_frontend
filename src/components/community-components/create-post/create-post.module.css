@@ -1,0 +1,195 @@
+/* tool-selections.module.css */
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3.5% 3.2%;
+  border: 0 solid var(--color-background);
+  border-radius: 35px;
+  background-color: var(--color-main-text);
+  color: var(--color-background);
+  text-align: left;
+  user-select: none;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.expandablebutton {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--color-background);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+  height: 65%;
+  padding: 2.5%;
+  margin-top: 1%;
+
+  svg {
+    width: 2.3em;
+    aspect-ratio: 1;
+    fill: var(--color-background);
+  }
+}
+
+.expandablebutton:hover {
+  background-color: var(--color-background);
+  color: var(--color-main-text);
+
+  svg {
+    fill: var(--color-main-text);
+  }
+}
+
+.expandablebutton label {
+  cursor: pointer;
+  margin-left: 1.8%;
+  font-size: 1.5em;
+}
+
+.createpostform {
+  margin-top: 20px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputform {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.inputform input::placeholder,
+.inputform textarea::placeholder {
+  color: var(--color-background);
+  opacity: 1;
+}
+
+.inputform label {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.inputform input,
+.inputform textarea {
+  padding: 1.6% 2.5%;
+  box-sizing: border-box;
+  border: 2px solid var(--color-background);
+  border-radius: 32.5px;
+  background-color: var(--color-main-text);
+  color: var(--color-background);
+  font-size: 1.4em;
+}
+
+.inputform textarea {
+  resize: none;
+  min-height: 22vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.media {
+  display: flex;
+  gap: 20px;
+}
+
+.media label {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  cursor: pointer;
+  transition: color 0.3s, fill 0.3s;
+  font-size: 1.2em;
+  font-weight: 500;
+  position: relative;
+}
+
+.media label svg {
+  width: 1.3em;
+  aspect-ratio: 1;
+  fill: var(--color-background);
+}
+
+.media label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+}
+
+.media label:hover {
+  color: var(--color-secondary);
+
+  svg {
+    fill: var(--color-secondary);
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 1.2em;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 20.5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.2em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 1.1% 3.7%;
+  gap: 0.5em;
+  svg {
+    width: 1.2em;
+    aspect-ratio: 1;
+    fill: var(--color-background);
+  }
+}
+
+.buttons button:first-child {
+  background-color: var(--color-background);
+  color: var(--color-main-text);
+}
+
+.buttons button:first-child:hover {
+  background-color: var(--color-background);
+}
+
+.buttons button:last-child {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.buttons button:last-child:hover {
+  background-color: var(--color-secondary);
+}
+
+.dividervertical {
+  width: 1px;
+  height: 24px;
+  background-color: var(--color-background);
+  margin: 0 8px;
+}

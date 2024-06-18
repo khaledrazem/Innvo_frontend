@@ -1,8 +1,7 @@
 [
   {
     "reviewer": {
-      "profileimg": {
-      },
+      "profileimg": {},
       "firstname": "John",
       "lastname": "Doe",
       "jobtitle": "Software Engineer"
@@ -11,7 +10,10 @@
     "title": "Great product!",
     "body": "I've been using this product for a month now and it has exceeded my expectations. Highly recommend!",
     "likes": 23,
-    "helped": 45
+    "helped": 45,
+    "replies": 10,
+    "likedByOwner": true,
+    "comments": 10
   },
   {
     "reviewer": {
@@ -26,7 +28,10 @@
     "title": "Fantastic quality",
     "body": "The quality of this product is fantastic. It is durable and works exactly as advertised.",
     "likes": 30,
-    "helped": 45
+    "helped": 45,
+    "replies": 8,
+    "likedByOwner": true,
+    "comments": 8
   },
   {
     "reviewer": {
@@ -41,7 +46,10 @@
     "title": "Good, but could be better",
     "body": "The product is good overall, but I had some issues with the initial setup. Customer service was helpful though.",
     "likes": 15,
-    "helped": 45
+    "helped": 45,
+    "replies": 5,
+    "likedByOwner": false,
+    "comments": 5
   },
   {
     "reviewer": {
@@ -56,7 +64,10 @@
     "title": "Not satisfied",
     "body": "I expected more from this product. It didn't meet my needs and I found it quite difficult to use.",
     "likes": 5,
-    "helped": 45
+    "helped": 45,
+    "replies": 2,
+    "likedByOwner": false,
+    "comments": 2
   },
   {
     "reviewer": {
@@ -71,6 +82,9 @@
     "title": "Exceeded expectations!",
     "body": "Absolutely love this product! It has exceeded all my expectations and the quality is top-notch.",
     "likes": 45,
-    "helped": 45
+    "helped": 45,
+    "replies": 12,
+    "likedByOwner": true,
+    "comments": 12
   }
 ]

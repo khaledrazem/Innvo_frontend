@@ -1,9 +1,9 @@
 .faqcontainer {
-  width: 55%;
+  width: 100%;
   align-self: start;
-    text-align: left;
+  text-align: left;
 
-  h3{
+  h3 {
     border-bottom: 1px solid var(--color-main-text);
     margin-block-end: 0;
     padding-block-end: 0.75em;
@@ -14,7 +14,6 @@
   border-bottom: 1px solid var(--color-main-text);
   padding: 15px 0;
   cursor: pointer;
-
 }
 
 .faqquestion {

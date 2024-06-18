@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "First Post",
+    "description": "This is the body of the first post.",
+    "media": {
+      "videos": [],
+      "images": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    "likes": 10,
+    "comments": 5
+  },
+  {
+    "id": 2,
+    "title": "Second Post",
+    "description": "This is the body of the second post.",
+    "media": {
+      "videos": ["http://media.w3.org/2010/05/sintel/trailer.mp4"],
+      "images": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    "likes": 20,
+    "comments": 10
+  },
+  {
+    "id": 3,
+    "title": "Third Post",
+    "description": "This is the body of the third post.",
+    "media": {
+      "videos": [],
+      "images": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    "likes": 5,
+    "comments": 2
+  },
+  {
+    "id": 4,
+    "title": "Fourth Post",
+    "description": "This is the body of the fourth post.",
+    "media": {
+      "videos": [],
+      "images": []
+    },
+    "likes": 15,
+    "comments": 7
+  },
+  {
+    "id": 5,
+    "title": "Fifth Post",
+    "description": "This is the body of the fifth post.",
+    "media": {
+      "videos": [],
+      "images": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    "likes": 25,
+    "comments": 12
+  }
+]

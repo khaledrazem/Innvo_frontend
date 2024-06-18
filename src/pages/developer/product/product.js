@@ -6,7 +6,7 @@ import ProductDescription from "src/components/product-page-components/product-d
 import ProductFaq from "src/components/product-page-components/product-faq/product-faq";
 import ProductReviews from "src/components/product-page-components/product-reviews/product-reviews";
 import ratingDatajson from "src/data/ratings.json";
-import ProductReviewPage from "src/components/product-page-components/product-review-pages/product-review-pages";
+import ReviewPage from "src/components/review-pages/review-pages";
 import ProductPrivacy from "src/components/product-page-components/product-privacy/product-privacy";
 import ProductSlider from "src/components/product-slider/product-slider";
 import { useEffect, useState } from "react";
@@ -82,14 +82,16 @@ function ProductPage() {
         <ProductInfo productData={productData}></ProductInfo>
       </div>
       <br /> <br />
-      <ProductDescription productDescription={productData.description} />
-      <br /> <br />
-      <ProductFaq productQuestions={productData.faq} />
-      <br /> <br />
-      <ProductReviews productReviews={productData.reviews} />
-      <br /> <br />
-      <ProductReviewPage reviewData={reviewData} />
-      <br /> <br />
+      <div className={classes.bodies}>
+        <ProductDescription productDescription={productData.description} />
+        <br /> <br />
+        <ProductFaq productQuestions={productData.faq} />
+        <br /> <br />
+        <ProductReviews productReviews={productData.reviews} />
+        <br /> <br />
+        <ReviewPage reviewData={reviewData} />
+        <br /> <br />
+      </div>
       <ProductPrivacy></ProductPrivacy>
       <br /> <br />
       <ProductSlider

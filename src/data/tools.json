@@ -23,22 +23,6 @@
           "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
         },
         "active": true
-      },
-      {
-        "id": 4,
-        "title": "Tool Four",
-        "logo": {
-          "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
-        },
-        "active": false
-      },
-      {
-        "id": 5,
-        "title": "Tool Five",
-        "logo": {
-          "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
-        },
-        "active": true
       }
     ]
   }

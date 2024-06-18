@@ -10,6 +10,7 @@
   width: 81vw;
   height: 100%;
   margin-left: auto;
+  box-sizing: border-box;
 }
 .App-logo {
   height: 40vmin;
