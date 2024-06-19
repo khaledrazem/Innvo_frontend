@@ -1,0 +1,43 @@
+{
+    "subscriptions": [
+      {
+        "title": "Essential",
+        "target1": "Individual developers",
+        "target2": "small teams",
+        "features": [
+          "Access to core development tools",
+          "Basic analytics and reporting",
+          "Community forum access",
+          "Monthly updates and improvements"
+        ],
+        "price": 10
+      },
+      {
+        "title": "Professional",
+        "target1": "Growing Teams",
+        "target2": "Advanced Businesses",
+        "features": [
+          "All features of the Essential Plan",
+          "Advanced analytics and reporting",
+          "Enhanced security features",
+          "Integration with third-party tools",
+          "Bi-weekly updates and improvements"
+        ],
+        "price": 30
+      },
+      {
+        "title": "Elite",
+        "target1": "Large Teams",
+        "target2": "Enterprises",
+        "features": [
+          "All features of the Professional Plan",
+          "Customizable dashboards and reports",
+          "Team collaboration tools",
+          "Custom integration and API access",
+          "Weekly updates and improvements"
+        ],
+        "price": 70
+      }
+    ]
+  }
+  

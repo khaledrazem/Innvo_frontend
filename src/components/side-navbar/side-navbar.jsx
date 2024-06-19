@@ -5,10 +5,11 @@ import NavButton from "./nav-button/nav-button";
 import subscriptionMessage from "src/public/text/upgrade-subscription.json";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
 
-import {ReactComponent  as DashboardIcon} from "src/public/svg/Dashboard.svg";
-import {ReactComponent  as DiscoverIcon} from "src/public/svg/Discover.svg";
-import {ReactComponent  as ToolsIcon} from "src/public/svg/My Tools.svg";
-import {ReactComponent  as CommunityIcon} from "src/public/svg/Community.svg";
+import { ReactComponent as DashboardIcon } from "src/public/svg/Dashboard.svg";
+import { ReactComponent as DiscoverIcon } from "src/public/svg/Discover.svg";
+import { ReactComponent as ToolsIcon } from "src/public/svg/My Tools.svg";
+import { ReactComponent as CommunityIcon } from "src/public/svg/Community.svg";
+import { Link } from "react-router-dom";
 
 function SideNavBar() {
   const { subscription } = useContext(UserSessionContext);
@@ -45,9 +46,13 @@ function SideNavBar() {
         </ul>
       </nav>
 
-      <div className={classes.subscriptionmessage}>
-      <label dangerouslySetInnerHTML={{ __html: subscriptionMessage[subscription] }} />
-      </div>
+      <Link className={classes.subscriptionmessage} to={"subscriptions"}>
+        <label
+          dangerouslySetInnerHTML={{
+            __html: subscriptionMessage[subscription],
+          }}
+        />
+      </Link>
     </div>
   );
 }

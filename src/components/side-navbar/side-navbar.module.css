@@ -23,6 +23,12 @@
     height: 100%;
     flex-direction: column;
   }
+  a:active,
+  a:focus,
+  a:hover {
+    outline: 0;
+    text-decoration: none;
+  }
 }
 
 .subscriptionmessage {
@@ -36,4 +42,11 @@
   background: var(--color-main-text);
   color: var(--color-background);
   white-space: pre-line;
+  text-decoration: none;
+
+  label {
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+  }
 }

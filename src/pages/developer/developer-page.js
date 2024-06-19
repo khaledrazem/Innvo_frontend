@@ -12,6 +12,7 @@ import TestPage from "./test/test";
 import ProfilePage from "./profile/profile";
 import InvoHeader from "src/components/header/invo-header";
 import CommunityPage from "./community/community";
+import SubscriptionsPage from "./subscriptions/subscriptions";
 
 function DeveloperPage() {
   const url = useResolvedPath("").pathname;
@@ -33,6 +34,7 @@ function DeveloperPage() {
           <Route path="my-tools/edit/:toolId" element={<EditToolsPage />} />
           <Route path="my-tools/edit/preview" element={<ProductPage />} />
           <Route path="community" element={<CommunityPage />} />
+          <Route path="subscriptions" element={<SubscriptionsPage />} />
 
           <Route path="profile" element={<ProfilePage />} />
 
