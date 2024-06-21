@@ -1,24 +1,22 @@
-.logo{
-    color: var(--color-main-text);
-    font-size: 2.4em;
-    font-weight: 700;
-    position: relative;
-    width: 9%;
-    
-    svg{
-      width: auto;
-      height: auto;
-      transform: translateY(-40%);
-    }
-  }
-  
+.logo {
+  color: var(--color-main-text);
+  font-size: 2.6em;
+  font-weight: 700;
+  position: relative;
+  width: 9%;
 
-.link{
+  svg {
+    width: auto;
+    height: auto;
+    transform: translateY(-40%);
+  }
+}
+
+.link {
   position: absolute;
   width: 100%;
   left: 0;
   top: 0;
   height: 100%;
   z-index: 1000;
-
 }

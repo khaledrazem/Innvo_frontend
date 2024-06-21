@@ -7,7 +7,8 @@ export const UserSessionProvider = ({ children }) => {
   const [loggedIn, setLoggedIn] = React.useState(false);
   const [userName, setUserName] = React.useState(false);
   const [userEmail, setUserEmail] = React.useState(false);
-  const [subscription, seSubscription] = React.useState("essential");
+  const [subscription, setSubscription] = React.useState("essential");
+  const [notifications, setNotifications] = React.useState(3);
 
   return (
     <div>
@@ -20,7 +21,9 @@ export const UserSessionProvider = ({ children }) => {
           userEmail,
           setUserEmail,
           subscription,
-          seSubscription,
+          setSubscription,
+          notifications,
+          setNotifications,
         }}
       >
         {children}

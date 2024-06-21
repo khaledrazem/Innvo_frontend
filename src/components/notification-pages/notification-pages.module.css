@@ -1,0 +1,45 @@
+.pagination {
+  width: 100%;
+  align-self: start;
+  text-align: left;
+  margin-bottom: 2.2em;
+}
+
+:global(.rs-pagination-group) {
+  place-content: center;
+}
+
+:global(.rs-pagination-btn) {
+  height: 3em;
+  width: 3em;
+  border-radius: 50px !important;
+  background-color: var(--color-background) !important;
+  color: var(--color-main-text) !important;
+  border-color: var(--color-main-text) !important;
+  margin: 0 0.4em !important;
+
+  svg {
+    scale: 2;
+  }
+}
+
+:global(.rs-pagination-btn-active) {
+  border-radius: 50px !important;
+  background-color: var(--color-main-text) !important;
+  color: var(--color-background) !important;
+}
+
+.paginationcontent {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  padding-bottom: 4em;
+}
+
+.list {
+  width: 100%;
+  display: grid;
+  gap: 1.6em;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+}

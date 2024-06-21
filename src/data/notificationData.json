@@ -1,0 +1,43 @@
+{
+  "notifications": [
+    {
+      "logo": {
+      },
+      "title": "New Feedback on ChatGPT",
+      "body": "You have received new user feedback on ChatGPT. A user has provided valuable insights and suggestions for improvement. Click here to review and respond.",
+      "dateCreated": "2024-06-20T12:30:00.000Z",
+      "seen": false,
+      "href": "/dev/my-tools"
+    },
+    {
+      "logo": {
+        "url": "https://i.ibb.co/CJHd0zb/0011ff.png"
+      },
+      "title": "New Comment on Your Post",
+      "body": "Your recent post has received a new comment. Click here to view the comment and reply to the user.",
+      "dateCreated": "2024-04-21T14:45:00.000Z",
+      "seen": false,
+      "href": "/dev/my-tools"
+    },
+    {
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Weekly Report",
+      "body": "Your weekly performance report is now available. Click here to view your statistics and achievements for the week.",
+      "dateCreated": "2024-06-19T08:00:00.000Z",
+      "seen": false,
+      "href": "/dev/my-tools"
+    },
+    {
+      "logo": {
+        "url":"https://i.ibb.co/CJHd0zb/0011ff.png"
+      },
+      "title": "Security Alert",
+      "body": "We detected a new login to your account from an unfamiliar device. If this was not you, please secure your account immediately.",
+      "dateCreated": "2024-06-20T05:30:00.000Z",
+      "seen": true,
+      "href": "/dev/profile"
+    }
+  ]
+}
