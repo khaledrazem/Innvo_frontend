@@ -5,13 +5,14 @@
   width: 100%;
   place-content: center;
   align-items: center;
+  -webkit-user-select: none;
   user-select: none;
   box-sizing: border-box;
-  padding: 7.5% 3% 4.7% 3%;
+  padding: 11% 5.8% 6.2% 4%;
   justify-content: space-between;
 
   h1 {
-    font-size: 3.7em;
+    font-size: 4.3em;
     margin: 0;
   }
 
@@ -20,10 +21,11 @@
     border-width: 2px;
     background: var(--color-background);
     color: var(--color-main-text);
-    padding: 1.1vh 3.5vw;
+    padding: 0.8vh 3vw;
     box-sizing: border-box;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    margin-left: 2%;
   }
 
   button:hover {
@@ -59,6 +61,6 @@
 .loginchoices {
   width: 100%;
   justify-content: CENTER;
-  gap: 17%;
+  gap: 15.5em;
   display: flex;
 }

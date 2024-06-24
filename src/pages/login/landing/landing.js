@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as DeveloperIcon } from "src/public/svg/My Tools.svg";
+import { ReactComponent as DeveloperIcon } from "src/public/svg/Dev Icon.svg";
 import { ReactComponent as UserIcon } from "src/public/svg/User Inputs.svg";
 import classes from "./landing.module.css";
 

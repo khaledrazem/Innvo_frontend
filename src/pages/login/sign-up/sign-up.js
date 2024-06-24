@@ -33,7 +33,7 @@ function SignUpPage() {
   };
   return (
     <form
-      className={classes.container}
+      className={tos ? classes.toscontainer : classes.container}
       onSubmit={handleSubmit(onSubmit, onError)}
     >
       {tos ? (

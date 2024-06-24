@@ -7,15 +7,16 @@
   align-items: center;
   user-select: none;
   box-sizing: border-box;
-  padding: 8.5% 3% 5% 3%;
-    justify-content: space-between;
+  padding: 9.1% 3% 4% 3%;
+  justify-content: flex-start;
 
-  h1{
-    font-size: 3.8em;
+  h1 {
+    font-size: 4.3em;
     margin: 0;
+    margin-bottom: 4%;
   }
 
-  button{
+  button {
     border-radius: 50px;
     border-width: 2px;
     background: var(--color-background);
@@ -26,38 +27,34 @@
     font-size: 1.5em;
   }
 
-  button:hover{
+  button:hover {
     background: var(--color-secondary);
     color: var(--color-background);
 
-    svg{
+    svg {
       color: var(--color-background);
       fill: var(--color-background);
-
     }
-  
   }
-  button:disabled{
+  button:disabled {
     cursor: not-allowed;
   }
 }
 
-.head{
-  height: 37%;
+.head {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 7.2%;
+  margin-bottom: 3.2%;
 }
 
-.signinbuttons{
+.signinbuttons {
   gap: 2%;
   display: flex;
   width: 100%;
   justify-content: center;
-  height: 24%;
-
-  button{
+  height: 22.5%;
+  button {
     padding: 0;
     padding-left: 2%;
     width: 35.5%;
@@ -68,44 +65,43 @@
     align-items: center;
     gap: 7%;
     text-wrap: nowrap;
-
   }
 
-  label{
+  label {
     cursor: pointer;
   }
 
-  svg{
+  svg {
     height: 50%;
   }
-
 }
 
-.welcometext{
-  font-size: 2.2em;
-    font-weight: 500;
+.welcometext {
+  font-size: 2.55em;
+  font-weight: 500;
+  margin-bottom: 2.5%;
 }
 
-.divider{
+.divider {
   height: 2px;
   background-color: var(--color-main-text);
   width: 100%;
 }
 
-.inputfields{
+.inputfields {
   display: flex;
   flex-direction: column;
   font-size: 1.2em;
   width: 100%;
   text-align: start;
+  margin-top: 5%;
 
-  label{
+  label {
     padding-left: 10px;
     font-weight: 500;
-
   }
 
-  input{
+  input {
     width: 100%;
     height: 5.6vh;
     padding: 2%;
@@ -117,17 +113,18 @@
   }
 }
 
-.signup{
+.signup {
   font-size: 1.3em;
   font-weight: 500;
-  a{
-  text-decoration: none;
-}
+  margin-top: 6.7%;
+  margin-bottom: 2.5%;
+  a {
+    text-decoration: none;
+  }
 }
 
-
-.error{
+.error {
   margin: 0;
-    font-size: 0.8em;
-    color: red;
+  font-size: 0.8em;
+  color: red;
 }

@@ -42,9 +42,7 @@ function SignInPage() {
           </button>
         </div>
       </div>
-
       <div className={classes.divider}></div>
-
       <div className={classes.inputfields}>
         <label>
           Email
@@ -85,7 +83,6 @@ function SignInPage() {
         <label>Don't have an account?</label>{" "}
         <Link to={"/login/sign-up/dev"}>Sign up</Link>
       </div>
-
       <button type="submit">Continue</button>
     </form>
   );

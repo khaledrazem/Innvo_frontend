@@ -6,46 +6,45 @@
   place-content: flex-start;
   box-sizing: border-box;
 
-  h1{
+  h1 {
     font-size: 2.6em;
     margin: 0;
   }
-
 }
 
-.head{
+.head {
   height: 22%;
-    width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.4vh;
   text-align: left;
 }
 
-.toslist{
+.toslist {
   display: flex;
   flex-direction: column;
   height: fit-content;
   overflow-y: scroll;
-  gap: 1vh;
+  gap: 2.2vh;
 }
 
-.termitem{
+.termitem {
   display: flex;
   flex-direction: column;
   text-align: left;
-  font-size: 1em;
+  font-size: 1.15em;
   font-weight: 500;
+  line-height: 1.2em;
 }
-.welcometext{
+.welcometext {
   font-size: 2.25em;
-    font-weight: 600;
+  font-weight: 600;
 }
 
-.divider{
+.divider {
   height: 3px;
   background-color: var(--color-main-text);
   width: 100%;
-  margin: 1% 0 2% 0;
+  margin: 1% 0 1.8% 0;
 }
-

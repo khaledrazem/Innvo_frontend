@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import classes from "./upload-image.module.css";
 
-import { ReactComponent as UpArrowIcon } from "src/public/svg/UP-Down_Arrow.svg";
+import { ReactComponent as UpArrowIcon } from "src/public/svg/Up Arrow_Black.svg";
 
 function UploadImage({
   formImage = null,

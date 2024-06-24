@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  margin-right: 22px;
   flex-direction: column;
   box-sizing: border-box;
   width: 32vw;
@@ -11,7 +10,7 @@
   overflow: hidden;
   position: relative;
 
-  input{
+  input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -21,34 +20,34 @@
     width: 100%;
     height: 100%;
     z-index: 150;
-
   }
 }
 
-.emptyimage{
+.emptyimage {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-  gap: 15px;
+  gap: 0.5em;
 
-  label{
+  label {
     font-weight: 500;
     padding: 10px;
-    font-size: 20px;
-  
+    font-size: 1.3em;
   }
 
-  svg{
+  svg {
     width: 35.5%;
-        rotate: -90deg;
+    border: 2px solid var(--color-main-text);
+    aspect-ratio: 1;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 11.5%;
   }
 
-  a{
+  a {
     color: #9c9c9c;
     width: 70%;
   }
-
-
 }
