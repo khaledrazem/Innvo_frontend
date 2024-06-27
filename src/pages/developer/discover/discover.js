@@ -9,6 +9,7 @@ const DiscoverPage = React.memo(() => {
   const [mostUsed, setMostUsed] = React.useState([]);
   const [risingStars, setRisingStars] = React.useState([]);
   const [noteworthy, setNoteworthy] = React.useState([]);
+  const [explore, setExplore] = React.useState([]);
 
   React.useEffect(() => {
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/top-rated`)
@@ -66,6 +67,21 @@ const DiscoverPage = React.memo(() => {
       .catch((error) => {
         console.error("Fetch error:", error);
       });
+
+    fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/explore`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setExplore((prev) => [...data]);
+      })
+      .catch((error) => {
+        console.error("Fetch error:", error);
+      });
+
   }, []);
 
   return (
@@ -120,6 +136,19 @@ const DiscoverPage = React.memo(() => {
         />
       ) : (
         <p>No noteworthy products available</p>
+      )}
+
+      <br /> <br />
+
+      {explore && explore.length > 0 ? (
+        <ProductSlider
+          titleText={"Explore"}
+          productData={explore.length > 0 ? explore : []}
+          pagination={false}
+          itemsPerPage={18}
+        />
+      ) : (
+        <p>No explore products available</p>
       )}
 
       <div className={classes.explorebutton}>
