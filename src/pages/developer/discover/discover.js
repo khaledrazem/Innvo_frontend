@@ -7,6 +7,7 @@ import React from "react";
 const DiscoverPage = React.memo(() => {
   const [topRated, setTopRated] = React.useState([]);
   const [mostUsed, setMostUsed] = React.useState([]);
+  const [risingStars, setRisingStars] = React.useState([]);
 
   React.useEffect(() => {
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/top-rated`)
@@ -32,6 +33,20 @@ const DiscoverPage = React.memo(() => {
       })
       .then((data) => {
         setMostUsed((prev) => [...data]);
+      })
+      .catch((error) => {
+        console.error("Fetch error:", error);
+      });
+
+    fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/rising-stars`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setRisingStars((prev) => [...data]);
       })
       .catch((error) => {
         console.error("Fetch error:", error);
@@ -68,7 +83,16 @@ const DiscoverPage = React.memo(() => {
         <p>No most used products available</p>
       )}
       <br /> <br />
-      
+
+      {risingStars && risingStars.length > 0 ? (
+        <ProductSlider
+          titleText={"Rising Stars"}
+          productData={risingStars.length > 0 ? risingStars : []}
+        />
+      ) : (
+        <p>No rising stars products available</p>
+      )}
+
       <div className={classes.explorebutton}>
         <button>View more</button>
       </div>
