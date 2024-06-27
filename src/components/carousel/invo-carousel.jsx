@@ -14,8 +14,6 @@ function InvoCarousel({ images, videos, height, width }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    console.log(images);
-    console.log(videos);
   }, [images]);
   function rightButton() {
     if (activeIndex == images.length - 1) {
