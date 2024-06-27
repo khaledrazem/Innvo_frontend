@@ -6,6 +6,7 @@ import React from "react";
 
 const DiscoverPage = React.memo(() => {
   const [topRated, setTopRated] = React.useState([]);
+  const [mostUsed, setMostUsed] = React.useState([]);
 
   React.useEffect(() => {
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/top-rated`)
@@ -17,6 +18,20 @@ const DiscoverPage = React.memo(() => {
       })
       .then((data) => {
         setTopRated((prev) => [...data]);
+      })
+      .catch((error) => {
+        console.error("Fetch error:", error);
+      });
+
+    fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/most-used`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setMostUsed((prev) => [...data]);
       })
       .catch((error) => {
         console.error("Fetch error:", error);
@@ -43,7 +58,17 @@ const DiscoverPage = React.memo(() => {
         <p>No top rated products available</p>
       )}
       <br /> <br />
-      {/* Uncomment other ProductSliders as needed */}
+      
+      {mostUsed && mostUsed.length > 0 ? (
+        <ProductSlider
+          titleText={"Most Used"}
+          productData={mostUsed.length > 0 ? mostUsed : []}
+        />
+      ) : (
+        <p>No most used products available</p>
+      )}
+      <br /> <br />
+      
       <div className={classes.explorebutton}>
         <button>View more</button>
       </div>
