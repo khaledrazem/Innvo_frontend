@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 function ProductCard({ productData }) {
 
   useEffect(() => {
-    console.log(productData);
+    console.log("ProductCard productData:", productData);
   }, [productData]);
 
   function truncateDescription(text) {
@@ -21,32 +21,39 @@ function ProductCard({ productData }) {
         return text;
     }  }
 
-  return productData != null ? (
+  return productData !== null ? (
     <div className={classes.container}>
-          <Link className={classes.productlink}  to={"/dev/discover/product/"+productData.id}/>
+      <Link className={classes.productlink}  to={"/dev/discover/product/"+productData.id}/>
 
-          <div >
-      {productData.subscription==="elite" ? <EliteIcon className={classes.subscriptionelite}/>: productData.subscription==="professional"? <ProfessionalIcon className={classes.subscriptionprof}/>:null}
-</div>
+      <div>
+        {
+          productData.subscription_tier === "elite" 
+          ? <EliteIcon className={classes.subscriptionelite}/>
+          : productData.subscription_tier === "professional" 
+            ? <ProfessionalIcon className={classes.subscriptionprof}/>
+            : null
+        }
+      </div>
+
       <div className={classes.logo}>
-        <img src={productData.logo.url}></img>
+        <img src={productData.logo}></img>
       </div>
 
       <div className={classes.summary}>
-      <div className={classes.text}>
-
-        <label className={classes.header}>{productData.title}</label>
-        <label className={classes.body}>{truncateDescription(productData.summary)}</label>
+        <div className={classes.text}>
+          <label className={classes.header}>{productData.title}</label>
+          <label className={classes.body}>{truncateDescription(productData.summary)}</label>
         </div>
+
         <div className={classes.metrics}>
           <div className={classes.ratings}>
-            {[...Array(productData.rating)].map((e, i) => (
+            {[...Array(parseInt(productData.rating))].map((e, i) => (
               <StarFillIcon className={classes.ratingsfill} key={i} />
             ))}
-            {[...Array(5 - productData.rating)].map((e, i) => (
+            {[...Array(5 - parseInt(productData.rating))].map((e, i) => (
               <StarEmptyIcon className={classes.ratingsblank} key={i} />
             ))}
-            <label>{productData.rating}</label>
+            <label>{parseInt(productData.rating)}</label>
           </div>
           <div className={classes.downloads}>
             <UserIcon />
@@ -54,6 +61,7 @@ function ProductCard({ productData }) {
           </div>
         </div>
       </div>
+
     </div>
   ) : null;
 }
