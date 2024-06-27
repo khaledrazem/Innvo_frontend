@@ -27,7 +27,7 @@ function ProductSlider({titleText=null, productData, itemsPerPage = 6, paginatio
     setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
   };
 
-  return (
+  return productData.length > 0 ? (
     <div className={classes.productpagination}>
       <div className={classes.header}>
         <label>
@@ -49,7 +49,7 @@ function ProductSlider({titleText=null, productData, itemsPerPage = 6, paginatio
           {currentProducts.map((product, index) => (
             <ProductCard key={index} productData={product} />
           ))}
-          
+
           <UpDownArrow 
             style={{ visibility: currentPage === totalPages || !pagination ? 'hidden' : null }} 
             className={classes.rightarrow} 
@@ -72,7 +72,7 @@ function ProductSlider({titleText=null, productData, itemsPerPage = 6, paginatio
 
       </div>
     </div>
-  );
+  ) : null;
 }
 
 export default ProductSlider;
