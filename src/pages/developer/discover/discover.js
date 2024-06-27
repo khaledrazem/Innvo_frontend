@@ -8,6 +8,7 @@ const DiscoverPage = React.memo(() => {
   const [topRated, setTopRated] = React.useState([]);
   const [mostUsed, setMostUsed] = React.useState([]);
   const [risingStars, setRisingStars] = React.useState([]);
+  const [noteworthy, setNoteworthy] = React.useState([]);
 
   React.useEffect(() => {
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/top-rated`)
@@ -51,6 +52,20 @@ const DiscoverPage = React.memo(() => {
       .catch((error) => {
         console.error("Fetch error:", error);
       });
+
+    fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/noteworthy`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setNoteworthy((prev) => [...data]);
+      })
+      .catch((error) => {
+        console.error("Fetch error:", error);
+      });
   }, []);
 
   return (
@@ -64,6 +79,7 @@ const DiscoverPage = React.memo(() => {
           "https://i.ibb.co/cQ1rkPT/000000-text-Dummy-header-test.png",
         ]}
       />
+
       {topRated && topRated.length > 0 ? (
         <ProductSlider
           titleText={"Top Rated"}
@@ -72,6 +88,7 @@ const DiscoverPage = React.memo(() => {
       ) : (
         <p>No top rated products available</p>
       )}
+
       <br /> <br />
       
       {mostUsed && mostUsed.length > 0 ? (
@@ -82,6 +99,7 @@ const DiscoverPage = React.memo(() => {
       ) : (
         <p>No most used products available</p>
       )}
+
       <br /> <br />
 
       {risingStars && risingStars.length > 0 ? (
@@ -91,6 +109,17 @@ const DiscoverPage = React.memo(() => {
         />
       ) : (
         <p>No rising stars products available</p>
+      )}
+
+      <br /> <br />
+
+      {noteworthy && noteworthy.length > 0 ? (
+        <ProductSlider
+          titleText={"Noteworthy"}
+          productData={noteworthy.length > 0 ? noteworthy : []}
+        />
+      ) : (
+        <p>No noteworthy products available</p>
       )}
 
       <div className={classes.explorebutton}>
