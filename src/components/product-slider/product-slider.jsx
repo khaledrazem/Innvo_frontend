@@ -13,67 +13,64 @@ function ProductSlider({titleText=null, productData, itemsPerPage = 6, paginatio
   );
 
   useEffect(() => {
-    console.log(currentProducts)
-    console.log(productData)
-currentProducts = productData.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
-  }, [productData])
+    currentProducts = productData.slice(
+      (currentPage - 1) * itemsPerPage,
+      currentPage * itemsPerPage
+    );
+  }, [productData]);
+
   const handlePreviousPage = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
-    console.log(currentProducts)
-    console.log(productData)
   };
 
   const handleNextPage = () => {
     setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
-    console.log(currentProducts)
-    console.log(productData)
   };
-
-
 
   return (
     <div className={classes.productpagination}>
-        <div className={classes.header}>
-            <label>
-            {titleText}
-            </label>
-        </div>
-            <div className={classes.paginationcontent}>
-
-       
-
-      <div className={classes.productlist}>
-      <UpDownArrow  style={{ visibility: currentPage === 1 || !pagination ? 'hidden' : null }}
-        className={classes.leftarrow} onClick={handlePreviousPage} >
-          &lt;
-        </UpDownArrow>
-        {currentProducts.map((product, index) => (
-          <ProductCard key={index} productData={product} />
-        ))}
-        <UpDownArrow  style={{ visibility: currentPage === totalPages || !pagination ? 'hidden' : null }}
-       className={classes.rightarrow} onClick={handleNextPage} >
-          &gt;
-        </UpDownArrow>
+      <div className={classes.header}>
+        <label>
+          {titleText}
+        </label>
       </div>
-      <div className={classes.paginationcontrols}  style={{ visibility: !pagination ? 'hidden' : null }}>
-        
-        <div className={classes.pagedots}>
-          {Array.from({ length: totalPages }, (_, index) => (
-            <span
-              key={index}
-              className={currentPage === index + 1 ? classes.dotactive : classes.dot}
-            ></span>
-          ))}
-        </div>
-       
-      </div>
-      
-      </div>
-
     
+      <div className={classes.paginationcontent}>
+
+        <div className={classes.productlist}>
+          <UpDownArrow 
+            style={{ visibility: currentPage === 1 || !pagination ? 'hidden' : null }} 
+            className={classes.leftarrow} 
+            onClick={handlePreviousPage}
+          >
+            &lt;
+          </UpDownArrow>
+
+          {currentProducts.map((product, index) => (
+            <ProductCard key={index} productData={product} />
+          ))}
+          
+          <UpDownArrow 
+            style={{ visibility: currentPage === totalPages || !pagination ? 'hidden' : null }} 
+            className={classes.rightarrow} 
+            onClick={handleNextPage}
+          >
+            &gt;
+          </UpDownArrow>
+        </div>
+
+        <div className={classes.paginationcontrols} style={{ visibility: !pagination ? 'hidden' : null }}>
+          <div className={classes.pagedots}>
+            {Array.from({ length: totalPages }, (_, index) => (
+              <span
+                key={index}
+                className={currentPage === index + 1 ? classes.dotactive : classes.dot}
+              ></span>
+            ))}
+          </div>   
+        </div>
+
+      </div>
     </div>
   );
 }
