@@ -1,14 +1,16 @@
 .container {
   display: flex;
   width: 100%;
-
+  margin-top: 2.8%;
   margin-right: auto;
   user-select: none;
 }
 
 .arrowiconleft {
-  width: 2.2em;
-  transform: translateX(-1.1em);
+  stroke: var(--color-main-text);
+  stroke-width: 55px;
+  width: 2.4em;
+  transform: translateX(-2.8em);
   scale: -1 1;
 }
 .arrowContainer {
@@ -22,8 +24,11 @@
 }
 
 .arrowiconright {
-  width: 2.2em;
-  transform: translateX(-3.3em);
+  stroke: var(--color-main-text);
+  stroke-width: 55px;
+  width: 2.4em;
+  transform: translateX(-5em);
+  scale: 1 -1;
 }
 
 .customslider {
@@ -78,8 +83,9 @@
   :global(.rs-carousel-label-wrapper) {
     cursor: pointer !important;
     position: relative !important;
-    height: 1.4em !important;
-    width: 1.4em !important;
+    height: 0.7em !important;
+    width: 0.7em !important;
+    box-sizing: content-box;
     border: 2px solid var(--color-main-text) !important;
     border-radius: 50% !important;
     margin: 0 5px !important;
@@ -89,5 +95,5 @@
 :global(.rs-carousel) {
   height: auto !important;
   background-color: inherit !important;
-  padding-bottom: 2em !important;
+  padding-bottom: 2.5em !important;
 }
