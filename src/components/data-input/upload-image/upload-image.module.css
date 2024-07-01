@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 32vw;
   -webkit-user-select: none;
   user-select: none;
   border: 2px solid var(--color-main-text);
   border-radius: 25px;
   overflow: hidden;
   position: relative;
+  width: 100%;
 
   input {
     position: absolute;

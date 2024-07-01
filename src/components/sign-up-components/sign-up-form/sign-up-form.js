@@ -31,12 +31,15 @@ function SignUpForm({ register, errors, getValues }) {
       <div className={classes.formcontainer}>
         <div className={classes.imageupload}>
           <label>Logo/Image</label>
+          <div className={classes.imageuploadcont}>
+
           <UploadImage
             register={register}
             name={"profileicon"}
             height={237}
             width={245}
           ></UploadImage>
+        </div>
         </div>
 
         <div className={classes.forminputs}>

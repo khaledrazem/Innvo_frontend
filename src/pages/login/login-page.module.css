@@ -12,7 +12,7 @@
 
 .bubblecontainer {
   border: 2px solid var(--color-main-text);
-  border-radius: 40px;
+  border-radius: 20px;
   box-sizing: border-box;
   width: 70.3vw;
   height: 86vh;

@@ -7,7 +7,7 @@
   align-items: center;
   box-sizing: border-box;
   h1 {
-    font-size: 4.3em;
+    font-size: 3vw;
     margin: 0;
   }
 }
@@ -16,7 +16,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.2em;
+  gap: 1vh;
 }
 
 .signinbuttons {
@@ -29,10 +29,10 @@
     padding: 0;
     padding-left: 1%;
     width: 19.5%;
-    height: 4em;
+    height: 6vh;
     display: flex;
     border-radius: 12px;
-    font-size: 0.9em;
+    font-size: 0.7vw;
     font-weight: 600;
     align-items: center;
     gap: 7%;
@@ -66,7 +66,7 @@
 }
 
 .welcometext {
-  font-size: 2.6em;
+  font-size: 1.9vw;
   font-weight: 500;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .signup {
-  font-size: 1.45em;
+  font-size: 1.1vw;
   font-weight: 500;
   margin-top: auto;
   a {
@@ -91,14 +91,19 @@
   gap: 4px;
   display: flex;
   flex-direction: column;
-  font-size: 1.15em;
+  font-size: 0.85vw;
   font-weight: 500;
   margin-right: 2.2em;
+  height: 100%;
 }
 
+.imageuploadcont{
+  width: 13vw;
+}
 .formcontainer {
   display: flex;
   width: 100%;
+  height: 45%;
 }
 .forminputs {
   display: flex;
@@ -117,7 +122,7 @@
   gap: 0.15em;
 
   label {
-    font-size: 1.15em;
+    font-size: 0.85vw;
     font-weight: 500;
     text-wrap: nowrap;
     margin-left: 4%;
@@ -125,11 +130,10 @@
 
   input {
     padding: 2%;
-    font-size: 1.1em;
+    font-size: 0.85vw;
     border-radius: 25px;
     box-sizing: border-box;
     border-width: 2px;
-    height: 70%;
   }
 }
 

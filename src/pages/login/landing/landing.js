@@ -12,17 +12,7 @@ function LandingPage() {
       <h1>INNVO</h1>
 
       <div className={classes.loginchoices}>
-        <div
-          className={
-            selectedUser == "dev"
-              ? classes.userchoiceselected
-              : classes.userchoice
-          }
-          onClick={() => setSelectedUser("dev")}
-        >
-          <DeveloperIcon />
-          <label>Developer</label>
-        </div>
+  
 
         <div
           className={
@@ -34,6 +24,18 @@ function LandingPage() {
         >
           <UserIcon />
           <label>User</label>
+        </div>
+
+        <div
+          className={
+            selectedUser == "dev"
+              ? classes.userchoiceselected
+              : classes.userchoice
+          }
+          onClick={() => setSelectedUser("dev")}
+        >
+          <DeveloperIcon />
+          <label>Developer</label>
         </div>
       </div>
       {selectedUser == null ? (
