@@ -7,6 +7,8 @@ import classes from "./discover.module.css";
 function DiscoverPage() {
   return (
     <div className={classes.container}>
+          <div className={classes.carouselcontainer}>
+
       <InvoCarousel
         height={225}
         width={1265}
@@ -16,6 +18,8 @@ function DiscoverPage() {
           "https://i.ibb.co/cQ1rkPT/000000-text-Dummy-header-test.png",
         ]}
       />
+          </div>
+
       <ProductSlider
         titleText={"Top Rated"}
         productData={prodDatajson.products}

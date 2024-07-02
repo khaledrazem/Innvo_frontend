@@ -14,7 +14,7 @@ function ProductCard({ productData }) {
   }, [productData]);
 
   function truncateDescription(text) {
-    const maxLength = 160;
+    const maxLength = 128;
     if (text.length > maxLength) {
         return text.substring(0, maxLength) + "...";
     } else {

@@ -21,6 +21,7 @@ function Footer() {
       </div>
 
       <div className={classes.subscriptions}>
+      <div>
         <h5>Subscriptions</h5>
         <ul>
         <div className={classes.essential}>
@@ -37,6 +38,7 @@ function Footer() {
           <li >Elite</li>
           </div>
         </ul>
+      </div>
       </div>
 
       <div className={classes.company}>

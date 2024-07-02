@@ -16,8 +16,8 @@
   .productlist {
     display: grid;
     position: relative;
-
-    gap: 20px;
+    row-gap: 1.5vw;
+    column-gap: 3vw;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -88,6 +88,6 @@
     position: relative;
     align-self: start;
     text-align: center;
-    font-size: 17px;
+    font-size: 1.1vw;
     font-weight: 600;
 }

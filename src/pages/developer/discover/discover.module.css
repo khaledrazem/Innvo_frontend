@@ -3,9 +3,14 @@
   display: flex;
   align-items: center;
   height: 100%;
-  padding-left: 5%;
+  padding-left: 4%;
   box-sizing: border-box;
   
+}
+
+.carouselcontainer{
+  width: 85.5%;
+  align-self: start;
 }
 
 .explorebutton{
@@ -13,15 +18,17 @@
   display: flex;
     align-self: flex-end;
     position: relative;
-    right: 24%;
+    right: 14.5%;
 
   button{
+    box-sizing: border-box;
+    width: 8vw;
     background: var(--color-background);
-        border-radius: 15px;
-        font-size: 15px;
-        padding: 6px 16px;
-        border-width: 1px;
-        color: var(--color-main-text);
-        cursor: pointer;
+    border-radius: 25px;
+    font-size: 0.8vw;
+    font-weight: 500;
+    border-width: 2px;
+    color: var(--color-main-text);
+    cursor: pointer;
   }
 }

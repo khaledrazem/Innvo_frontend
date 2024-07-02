@@ -7,8 +7,8 @@
 
 .filters {
   display: flex;
-  width: 54%;
-  gap: 1.5%;
+  width: 50.6%;
+  gap: 2%;
 }
 
 .filter {
@@ -37,7 +37,7 @@
 
 .headersearch {
   width: 66.1%;
-  height: 57%;
+  height: 60%;
   display: flex;
   gap: 2%;
   margin-left: 8%;
@@ -51,6 +51,6 @@
 
 .search {
   position: relative;
-  width: 43.5%;
+  width: 41%;
   height: 100%;
 }

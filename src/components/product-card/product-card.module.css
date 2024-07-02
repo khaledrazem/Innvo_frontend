@@ -4,12 +4,14 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  width: 290px;
-  height: 140px;
+  min-width: 273px;
+  width: 20vw;
+  min-height: 126px;
+  height: 4vh;
   box-sizing: border-box;
   align-items: flex-start;
-  padding: 8% 5% 8% 10.5%;
-    border: 1px solid var(--color-main-text);
+  padding: 7% 6% 6% 9%;
+  border: 2px solid var(--color-main-text);
   border-radius: 8px;
   background-color: var(--color-background);
   transition: box-shadow 0.3s ease-in-out;
@@ -20,10 +22,11 @@
 }
 
 .logo {
-  flex: 0 0 50px;
+  flex: 0 0 54px;
   align-self: top;
   display: flex;
   margin-right: 10px;
+  margin-top: 4%;
 }
 
 .logo::before {
@@ -42,21 +45,21 @@
   display: inline-flex;
   flex-direction: column;
   height: 100%;
-  width: 65%;
+  width: 85%;
 }
 
 .header{
   text-align: left;
-  font-size: 11px;
-  font-weight: 700;
-  margin-bottom: 4px;
+  font-size: 0.8vw;
+  font-weight: 600;
+  margin-bottom: 1.5%;
 }
 
 .body{
-  font-size: 9px;
-    font-weight: 500;
-    text-align: justify;
-    line-height: 10px;
+  font-size: 0.7vw;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 11px;
 }
 
 .metrics {

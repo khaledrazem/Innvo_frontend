@@ -9,9 +9,10 @@
 .arrowiconleft {
   stroke: var(--color-main-text);
   stroke-width: 55px;
-  width: 2.4em;
-  transform: translateX(-2.8em);
-  scale: -1 1;
+  width: 1.8vw;
+  transform: translateX(-1.8em);
+  scale: -1;
+  padding: 1px;
 }
 .arrowContainer {
   align-self: center;
@@ -26,9 +27,9 @@
 .arrowiconright {
   stroke: var(--color-main-text);
   stroke-width: 55px;
-  width: 2.4em;
-  transform: translateX(-5em);
-  scale: 1 -1;
+  width: 1.8em;
+  transform: translateX(-3.6em);
+  padding: 1px;
 }
 
 .customslider {
@@ -69,7 +70,7 @@
 
   :global(.rs-carousel-content) {
     border: 2px solid var(--color-main-text) !important;
-    border-radius: 24px !important;
+    border-radius: 14px !important;
     min-width: 474px !important;
   }
 

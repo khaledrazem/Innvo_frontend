@@ -1,7 +1,7 @@
 .container {
   display: flex;
   height: 80vh;
-  width: 19vw;
+  width: 18.5vw;
   border-right: 2px solid var(--color-main-text);
   flex-direction: column;
   position: fixed;
@@ -12,14 +12,14 @@
 }
 
 .navigation {
-  margin-top: 48%;
+  margin-top: 40%;
   width: 100%;
   height: 100%;
 
   ul {
     padding-left: 29%;
     display: flex;
-    gap: 7.5%;
+    gap: 8.5%;
     height: 100%;
     flex-direction: column;
   }
