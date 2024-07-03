@@ -10,7 +10,7 @@ function ProductInfo({ productData }) {
     <div className={classes.container}>
           <div className={classes.title}>
 
-      <a>{productData.title}</a>
+      <h4>{productData.title}</h4>
       <div>
         {productData.subscription === "elite" ? (
           <div className={classes.subscriptionelite}><EliteIcon  /> <label>Elite plan</label></div>
@@ -48,7 +48,7 @@ function ProductInfo({ productData }) {
       </div>
       </>
       ):null}
-      <button>Explore</button>
+      <button className={classes.explorebutton}>Explore</button>
     </div>
   ) : null;
 }

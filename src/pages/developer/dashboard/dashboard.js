@@ -17,17 +17,16 @@ function DashboardPage() {
 
   const [goalEdit, setGoalEdit] = useState(false);
 
-
   function handleGoalSubmit(data) {
-    console.log(data)
+    console.log(data);
     analyticsData.goal = {
-      "type": data.goalCategory,
-      "startingValue": analyticsData.overview[goalCategory],
-      "goalValue": data.goalValue,
-      "startingDate": data.goalStartDate,
-      "deadline": data.goalDeadline
-    }
-    console.log(analyticsData)
+      type: data.goalCategory,
+      startingValue: analyticsData.overview[goalCategory],
+      goalValue: data.goalValue,
+      startingDate: data.goalStartDate,
+      deadline: data.goalDeadline,
+    };
+    console.log(analyticsData);
     setGoalEdit(!goalEdit);
   }
   return (
@@ -62,17 +61,20 @@ function DashboardPage() {
 
         <div className={classes.yearanalytics}>
           <div className={classes.dropdown}>
-            <Dropdown
-              options={[
-                { id: 1, displayName: "users" },
-                { id: 2, displayName: "slots" },
-                { id: 3, displayName: "visits" },
-                { id: 4, displayName: "revenue" },
-              ]}
-              returnedKey="displayName"
-              selectedOption={yearCategory}
-              setSelectedOption={setYearCategory}
-            />
+            <div className={classes.dropdowncomponent}>
+              <Dropdown
+                options={[
+                  { id: 1, displayName: "users" },
+                  { id: 2, displayName: "slots" },
+                  { id: 3, displayName: "visits" },
+                  { id: 4, displayName: "revenue" },
+                ]}
+                returnedKey="displayName"
+                selectedOption={yearCategory}
+                setSelectedOption={setYearCategory}
+              />
+            </div>
+
             <div className={classes.dropdownstat}>
               <UserIcon />
               <h1>
@@ -83,18 +85,21 @@ function DashboardPage() {
               </h1>
             </div>
           </div>
-          <DateBarChart data={analyticsData.yearlyStats[yearCategory]}/>
+          <DateBarChart data={analyticsData.yearlyStats[yearCategory]} />
         </div>
         <div className={classes.divider}></div>
-        {analyticsData.goal ? 
-        <GoalProgress analyticsData={analyticsData}/>
-        : goalEdit ? (
-          <EditGoal analyticsData={analyticsData} onOutputSubmit={handleGoalSubmit}/>
+        {analyticsData.goal ? (
+          <GoalProgress analyticsData={analyticsData} />
+        ) : goalEdit ? (
+          <EditGoal
+            analyticsData={analyticsData}
+            onOutputSubmit={handleGoalSubmit}
+          />
         ) : (
-         <AddGoal setEdit={setGoalEdit} />
+          <AddGoal setEdit={setGoalEdit} />
         )}
       </div>
-      <br/> <br/>
+      <br /> <br />
     </div>
   );
 }

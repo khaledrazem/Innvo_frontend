@@ -71,8 +71,8 @@ function ProductPage() {
     <div className={classes.container}>
       <div className={classes.info}>
         <ProductCarousel
-          height={435}
-          width={665}
+          height={432}
+          width={768}
           images={[
             "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
             "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",

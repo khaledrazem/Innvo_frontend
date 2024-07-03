@@ -1,152 +1,101 @@
-.divider{
+.divider {
   height: 2px;
   background-color: var(--color-main-text);
   flex-grow: 1;
 }
 
-
-
 .dropdown {
   display: flex;
-  align-items: center;
-  width: 175px;
-  height: 90px;
-  flex-direction: column;
-  box-sizing: border-box;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  border-radius: 20px;
-  border-bottom: 1px solid var(--color-main-text);
-  border-right: 1px solid var(--color-main-text);
-  border-left: 1px solid var(--color-main-text);
-
-}
-
-.dropdownstat {
-  display: flex;
-  align-items: center;
-  margin: 5px 10px 15px 10px;
-  color: var(--color-secondary);
-  svg{
-    width: 20px;
-    margin-right: 5px;
-  }
+  cursor: pointer;
+  width: 20%;
+  height: 5vh;
 }
 
 .container {
   display: flex;
-  padding: 16px 4%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   box-sizing: border-box;
+  height: 18vh;
 }
 
 .value {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  
-  width: 30%;
+  gap: 3vh;
+
+  width: 35%;
 }
 
 .valuecurrent {
-  font-size: 14px;
+  padding: 0 0.5vw;
+  font-size: 1vw;
   display: flex;
   align-items: center;
-  border: 1px solid var(--color-main-text);
-  border-radius: 20px;
-  height: 24px;
+  border: 2px solid var(--color-main-text);
+  border-radius: 18px;
+  height: 5vh;
   box-sizing: border-box;
   width: 100%;
-  
-  h5{
+
+  h5 {
     margin: 0;
     width: 100%;
   }
 }
 
 .dividervertical {
-  width: 1px;
+  width: 2px;
   height: 100%;
   background-color: var(--color-main-text);
-  margin: 0 8px;
+  margin: 0 0.5vw;
 }
 
-.titlecontainer{
-  width: 35px;
+.titleheader {
+  width: 50%;
   height: 100%;
-  }
+  align-items: center;
+  display: flex;
+}
 
-  .titleheader{
-    width: 50%;
-    height: 100%;
-    align-items: center;
-    display: flex;
-  }
 .date {
   display: flex;
-  gap: 16px;
+  gap: 3vh;
   flex-direction: column;
-  
-  width: 30%;
+  width: 35%;
 }
 
-.labelledTextbox,
-.labelledDatePicker {
-  display: flex;
-  flex-direction: column;
-}
-
-.labelledTextbox input,
-.labelledDatePicker input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-top: 4px;
-}
-
-.labelledTextbox span,
-.labelledDatePicker span {
-  font-weight: bold;
-}
-
-.dropdown{
-  display: flex;
-
-  width: 30%;
-    height: 30px;
-}
-.input{
+.input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 70%;
 }
-.submit{
+.submit {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border: 1px solid var(--color-main-text);
+  border: 2px solid var(--color-main-text);
   border-radius: 50px;
-  padding: 10px;
+  padding: 1%;
   padding-right: 0;
   position: relative;
 
-  h5{
+  h5 {
     margin: 0;
     width: 50%;
     text-align: left;
   }
-  svg{
-         width: 40px;
-        background: var(--color-secondary);
-        border-radius: 50%;
-        color: var(--color-background);
-        margin-right: 10px;
+  svg {
+    width: 3vw;
+    background: var(--color-secondary);
+    border-radius: 50%;
+    color: var(--color-background);
+    margin-right: 10px;
   }
 
-  button{
+  button {
     opacity: 0;
     position: absolute;
     width: 100%;
@@ -154,11 +103,11 @@
   }
 }
 
-.error{
+.error {
   color: red;
   font-size: 10px;
 }
 
-.userlabel{
+.userlabel {
   width: 100%;
 }

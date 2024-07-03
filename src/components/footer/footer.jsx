@@ -10,6 +10,7 @@ import { ReactComponent as FacebookIcon } from "src/public/svg/Social- Facebook.
 import { ReactComponent as TwitterIcon } from "src/public/svg/Social- X.svg";
 import { ReactComponent as InstagramIcon } from "src/public/svg/Social- Insta.svg";
 import { ReactComponent as LinkedinIcon } from "src/public/svg/Social- Linkedin.svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -20,26 +21,24 @@ function Footer() {
         <label>All rights reserved.</label>
       </div>
 
-      <div className={classes.subscriptions}>
-      <div>
-        <h5>Subscriptions</h5>
-        <ul>
-        <div className={classes.essential}>
+      <Link className={classes.subscriptions} to={"subscriptions"}>
+        <div>
+          <h5>Subscriptions</h5>
+          <ul>
+            <div className={classes.essential}>
+              <li>Essential</li>
+            </div>
 
-          <li>Essential</li>
-          </div>
+            <div className={classes.professional}>
+              <li>Professional</li>
+            </div>
 
-          <div className={classes.professional}>
-
-          <li >Professional</li>
-          </div>
-
-          <div className={classes.elite}>
-          <li >Elite</li>
-          </div>
-        </ul>
-      </div>
-      </div>
+            <div className={classes.elite}>
+              <li>Elite</li>
+            </div>
+          </ul>
+        </div>
+      </Link>
 
       <div className={classes.company}>
         <h5>Company</h5>

@@ -2,16 +2,94 @@
   width: 100%;
   align-self: start;
   text-align: left;
-  margin-bottom: 2.2em;
+ 
 }
+
+.filters {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  height: 4.5vh;
+  gap: 1vw;
+  margin-bottom: 4vh;
+
+}
+
+.filters h4 {
+  font-size: 1vw;
+}
+
+.filters label {
+  font-size: 0.8vw;
+  font-weight: 600;
+  height: 100%;
+  min-width: 8.2vw;
+  gap: 0.4vw;
+  border: 2px solid var(--color-main-text);
+  border-radius: 24.5px;
+  padding: 0.5% 1.4%;
+  box-sizing: border-box;
+  display: flex;
+  cursor: pointer;
+}
+
+.paginationcontent {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  padding-bottom: 5vh;
+}
+
+.reviewlist {
+  width: 100%;
+  display: grid;
+  gap: 5vh;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.reviewnumbers {
+  padding-bottom: 2vh;
+  font-size: 0.8vw;
+}
+
+.filterbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circleCheckbox {
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 50px;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid var(--color-main-text);
+  margin-left: auto;
+  position: relative;
+}
+
+.circleCheckbox:checked::before {
+  content: "";
+  width: 0.8vw;
+  height: 0.8vw;
+  background-color: var(--color-main-text);
+  border-radius: 50px;
+  position: absolute;
+  left: -2px !important;
+  top: -2px !important;
+}
+
 
 :global(.rs-pagination-group) {
   place-content: center;
 }
-
 :global(.rs-pagination-btn) {
-  height: 3em;
-  width: 3em;
+
   border-radius: 50px !important;
   background-color: var(--color-background) !important;
   color: var(--color-main-text) !important;
@@ -27,82 +105,4 @@
   border-radius: 50px !important;
   background-color: var(--color-main-text) !important;
   color: var(--color-background) !important;
-}
-
-.filters {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  white-space: nowrap;
-  height: 2.9em;
-  gap: 1.3em;
-}
-
-.filters h4 {
-  padding-right: 1em;
-}
-
-.filters label {
-  height: 100%;
-  min-width: 14.5%;
-  gap: 0.3em;
-  border: 2px solid var(--color-main-text);
-  border-radius: 20px;
-  padding: 0.5% 1.4%;
-  box-sizing: border-box;
-  display: flex;
-  cursor: pointer;
-}
-
-.paginationcontent {
-  display: flex;
-  justify-content: start;
-  width: 100%;
-  padding-bottom: 4em;
-}
-
-.reviewlist {
-  width: 100%;
-  display: grid;
-  gap: 2.5em;
-  justify-items: center;
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.reviewnumbers {
-  padding-bottom: 1em;
-  font-size: 1em;
-  color: #a5a5a5;
-}
-
-.filterbox {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: 600;
-}
-
-.circleCheckbox {
-  width: 1.1em;
-  height: 1.1em;
-  border-radius: 50px;
-  appearance: none;
-  -webkit-appearance: none;
-  outline: none;
-  cursor: pointer;
-  border: 2px solid var(--color-main-text);
-  margin-left: auto;
-  position: relative;
-}
-
-.circleCheckbox:checked::before {
-  content: "";
-  width: 1.1em;
-  height: 1.1em;
-  background-color: var(--color-main-text);
-  border-radius: 50px;
-  position: absolute;
-  left: -2px !important;
-  top: -2px !important;
 }

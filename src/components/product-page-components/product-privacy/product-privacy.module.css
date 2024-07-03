@@ -8,67 +8,55 @@
   margin-bottom: 10px;
 }
 
-.privacyTitle h5 {
-  font-size: 18px;
-  margin: 0;
-}
-
-.description {
-  margin-bottom: 20px;
-}
-
 .description label {
-  font-size: 14px;
-  color: #666;
+  font-size: 0.8vw;
 }
 
 .privacybubble {
   display: flex;
+  width: 75%;
   align-items: center;
-  padding: 40px 20px 40px 20px;
-  border: 1px solid var(--color-main-text);
-  border-radius: 25px;
+  padding: 2vw 4.5vw;
+  padding-top: 4.5vw;
+  border: 2px solid var(--color-main-text);
+  border-radius: 13px;
   flex-direction: column;
-  margin-bottom: 20px;
-  margin-top: 30px;
 }
 
 .privacybubble h3 {
-  font-size: 20px;
+  font-size: 1.1vw;
   color: var(--color-main-text);
-  margin: 0 0 5px 0;}
+  line-height: 1.8vw;
+}
 
 .privacybubble label {
-  font-size: 14px;
-  color: #666;
+  font-size: 0.8vw;
 }
 
 .privacybubble svg {
-  width: 60px;
+  width: 5vw;
   color: var(--color-secondary);
-  padding-bottom: 10px;
+  padding-bottom: 2vh;
 }
 
-.settingsrow{
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  padding-top: 30px;
-  justify-content: space-around;
+.settingsrow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding-top: 4.5vh;
+  row-gap: 4vh;
 }
 .settings {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-    align-items: center;
-  margin-top: 10px;
+  align-items: center;
 }
 
 .settings img {
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
+  width: 2.2vw;
 }
 
 .settings label {
-  font-size: 14px;
+  font-size: 0.8vw;
 }

@@ -14,7 +14,7 @@ function ProductFaq({
   };
 
   return productQuestions!=null? (
-    <div className={classes.faqcontainer}>
+    <div className={classes.container}>
       <h3>FAQ</h3>
       {productQuestions.map((item, index) => (
         <div key={index} className={classes.faqitem} onClick={() => handleToggle(index)}>

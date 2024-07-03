@@ -19,4 +19,6 @@
     --color-subscription-elite: #FDB813;
 
 
+    --rs-carousel-indicator-active: var(--color-main-text) !important
+
 }

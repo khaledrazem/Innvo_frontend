@@ -23,8 +23,6 @@ function ReviewPage({ productId, itemsPerPage = 10 }) {
 
   return (
     <div className={classes.reviewpagination}>
-      <div className={classes.reviewpagination}>
-        <div className={classes.reviewpagination}>
           <div className={classes.filters}>
             <h4>Filters</h4>
             <label className={classes.filterbox}>
@@ -57,8 +55,6 @@ function ReviewPage({ productId, itemsPerPage = 10 }) {
               />
             </label>
           </div>
-        </div>
-      </div>
 
       <div className={classes.reviewnumbers}>
         <label>
@@ -76,6 +72,7 @@ function ReviewPage({ productId, itemsPerPage = 10 }) {
         </div>
       </div>
       <Pagination
+      className={classes.paginationcomponent}
         prev={true}
         next={true}
         total={currentReviews.length / itemsPerPage}
