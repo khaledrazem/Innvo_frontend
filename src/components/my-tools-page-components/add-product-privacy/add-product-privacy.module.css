@@ -4,19 +4,15 @@
   text-align: left;
 }
 
-.privacyTitle {
-  margin-bottom: 10px;
-}
-
 .privacyTitle h5 {
-  font-size: 18px;
+  font-size: 1.2vw;
   margin: 0;
 }
 
 .description {
   textarea {
     width: 100%;
-    height: 50px;
+    height: 8vh;
     resize: none;
     border: none;
   }
@@ -29,23 +25,35 @@
 .topbubble {
   width: 100%;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   display: flex;
-  padding: 15px;
+  padding: 1% 5%;
   box-sizing: border-box;
+  height: 55vh;
+
+  ::placeholder {
+    color: var(--color-main-text);
+  }
+  input {
+    border: none;
+    font-weight: 700;
+    font-size: 1vw;
+    color: var(--color-main-text);
+    text-align: center;
+  }
 }
 
 .privacybubble {
   display: flex;
   align-items: center;
-  padding: 40px 0 40px 0;
-  border: 1px solid var(--color-main-text);
-  border-radius: 25px;
+  border: 2px solid var(--color-main-text);
+  border-radius: 13px;
   flex-direction: column;
-  margin-bottom: 20px;
+
   textarea {
     width: 100%;
-    height: 50px;
+    height: 8vh;
     resize: none;
     border: none;
     text-align: center;
@@ -53,48 +61,43 @@
 }
 
 .privacybubble h3 {
-  font-size: 20px;
-  color: var(--color-main-text);
-  margin: 0 0 5px 0;
+  font-size: 1vw;
+  line-height: 1.4vw;
 }
 
 .privacybubble label {
-  font-size: 14px;
-  color: #666;
+  font-size: 0.85vw;
+  text-align: center;
 }
 
 .privacybubble svg {
-  width: 60px;
+  width: 5vw;
   color: var(--color-secondary);
-  padding-bottom: 10px;
 }
 
 .settingsrow {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  height: 80px;
-  justify-content: space-around;
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(5, 1fr);
 }
 .settings {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
   text-align: center;
   justify-self: center;
-  width: 60%;
+  width: 80%;
   cursor: pointer;
 }
 
 .settings img {
-  width: 30px;
-  height: 30px;
+  width: 2.5vw;
+  height: 2.5vw;
 }
 
 .settings label {
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 0.8vw;
+  font-weight: 400;
 }
 
 .settingoptions {
@@ -102,7 +105,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 30px;
+  padding: 1% 5%;
+  height: 43vh;
 }
 
 .divider {
@@ -115,6 +119,6 @@
 .settingsgrid {
   display: grid;
   width: 100%;
-  row-gap: 15px;
+  row-gap: 3vh;
   grid-template-columns: repeat(5, 1fr);
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as DeveloperIcon } from "src/public/svg/Dev Icon.svg";
-import { ReactComponent as UserIcon } from "src/public/svg/User Inputs.svg";
+import { ReactComponent as UserIcon } from "src/public/svg/User Icon.svg";
 import classes from "./landing.module.css";
 
 function LandingPage() {
@@ -12,8 +12,6 @@ function LandingPage() {
       <h1>INNVO</h1>
 
       <div className={classes.loginchoices}>
-  
-
         <div
           className={
             selectedUser == "user"

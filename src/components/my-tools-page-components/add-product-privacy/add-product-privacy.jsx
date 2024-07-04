@@ -4,43 +4,41 @@ import privacySettingDatajson from "src/data/privacysettings.json";
 import { ReactComponent as SafeIcon } from "src/public/svg/Safe.svg";
 import { useEffect, useState } from "react";
 
-function AddProductPrivacy({ formSettings=null, register, setValue, name }) {
+function AddProductPrivacy({ formSettings = null, register, setValue, name }) {
   const [selectedSettings, setSelectedSettings] = useState([]);
 
   let privacyData = privacySettingDatajson.settings;
 
   useEffect(() => {
-    console.log(formSettings)
+    console.log(formSettings);
     if (formSettings != null) {
-      setSelectedSettings(formSettings)
+      setSelectedSettings(formSettings);
     }
-
-  },[formSettings])
+  }, [formSettings]);
 
   useEffect(() => {
     register(name + ".selectedSettings", {
-      validate: value => value.length <5, message: "error plz chjeck"
+      validate: (value) => value.length > 0,
+      message: "error plz chjeck",
     });
   }, [register, name]);
 
   useEffect(() => {
     console.log(selectedSettings);
-    console.log("ASDQWE")
+    console.log("ASDQWE");
 
-    setValue(name + ".selectedSettings",  selectedSettings  )
-    
-
+    setValue(name + ".selectedSettings", selectedSettings);
   }, [selectedSettings, setValue, name]);
 
   function handleSettingAdd(setting) {
-    const isAlreadySelected = selectedSettings.some(item => item === setting);
-    if (selectedSettings.length < 4 && !isAlreadySelected) {
+    const isAlreadySelected = selectedSettings.some((item) => item === setting);
+    if (!isAlreadySelected) {
       setSelectedSettings((prev) => [...prev, setting]);
     }
   }
 
   function handleSettingRemove(setting) {
-    const updatedSettings = selectedSettings.filter(item => item !== setting);
+    const updatedSettings = selectedSettings.filter((item) => item !== setting);
     setSelectedSettings(updatedSettings);
   }
   return (
@@ -50,7 +48,7 @@ function AddProductPrivacy({ formSettings=null, register, setValue, name }) {
       </div>
       <div className={classes.description}>
         <textarea
-        required
+          required
           {...register(name + ".description")}
           placeholder="Add Privacy Description"
         />
@@ -59,16 +57,27 @@ function AddProductPrivacy({ formSettings=null, register, setValue, name }) {
       <div className={classes.privacybubble}>
         <div className={classes.topbubble}>
           <SafeIcon />
-          <h3>Your Data Privacy</h3>
-          <textarea
-          required
+          <br />
+          <input
+            type="text"
+            required
             {...register(name + ".details")}
-            placeholder="Add Privacy Details"
+            placeholder="Add Privacy Title Here"
           />
+          <textarea
+            required
+            {...register(name + ".details")}
+            placeholder="Privacy Details Here"
+          />
+          <br />
+
           <div className={classes.settingsrow}>
             {selectedSettings.map((setting) => {
               return setting != null ? (
-                <div className={classes.settings}   onClick={() => handleSettingRemove(setting)}>
+                <div
+                  className={classes.settings}
+                  onClick={() => handleSettingRemove(setting)}
+                >
                   <SvgLoader svg={setting.svg} />
                   <label>{setting.label}</label>
                 </div>
@@ -79,24 +88,27 @@ function AddProductPrivacy({ formSettings=null, register, setValue, name }) {
 
         <div className={classes.divider}></div>
         <div className={classes.settingoptions}>
-        <h3>Select privacy settings</h3>
-        <label>
-          Choose icons that accurately reflect your tool’s data privacy and
-          security measures.
-        </label>
-        <br/>
-        <div className={classes.settingsgrid}>
-          {Array.isArray(privacyData) && privacyData.length > 0
-            ? privacyData.map((setting) => {
-                return setting != null ? (
-                  <div className={classes.settings} onClick={() => handleSettingAdd(setting)}>
-                    <SvgLoader svg={setting.svg} />
-                    <label>{setting.label}</label>
-                  </div>
-                ) : null;
-              })
-            : null}
-        </div>
+          <h3>Select privacy settings</h3>
+          <label>
+            Choose icons that accurately reflect your tool’s data privacy and
+            security measures.
+          </label>
+          <br /> <br />
+          <div className={classes.settingsgrid}>
+            {Array.isArray(privacyData) && privacyData.length > 0
+              ? privacyData.map((setting) => {
+                  return setting != null ? (
+                    <div
+                      className={classes.settings}
+                      onClick={() => handleSettingAdd(setting)}
+                    >
+                      <SvgLoader svg={setting.svg} />
+                      <label>{setting.label}</label>
+                    </div>
+                  ) : null;
+                })
+              : null}
+          </div>
         </div>
       </div>
     </div>

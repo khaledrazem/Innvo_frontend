@@ -9,7 +9,7 @@ function InvoHeader() {
   return (
     <header className={classes.header}>
       <Logo></Logo>
-      <HeaderSearchBar></HeaderSearchBar>
+      {/* <HeaderSearchBar></HeaderSearchBar> */}
       <ProfileBadge userData={userDatajson}></ProfileBadge>
     </header>
   );

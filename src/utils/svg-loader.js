@@ -1,15 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-function SvgLoader({ svg }) { // svg is now received as a prop
+function SvgLoader({ svg }) {
+  // svg is now received as a prop
   const [svgUrl, setSvgUrl] = useState(null);
 
   useEffect(() => {
     const importSvg = async () => {
       try {
+        console.log(`src/public/svg/${svg}.svg`);
         const svgModule = await import(`src/public/svg/${svg}.svg`);
         setSvgUrl(svgModule.default);
       } catch (error) {
-        console.error('Error importing SVG:', error);
+        console.error("Error importing SVG:", error);
       }
     };
 

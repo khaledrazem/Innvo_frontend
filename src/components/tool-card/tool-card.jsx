@@ -11,13 +11,13 @@ function ToolCard({ toolData }) {
       <div className={classes.summary}>
         <h2 className={classes.header}>{toolData.title}</h2>
         <div className={classes.status}>
-        <label >Active Status </label>
-        <div
-          className={
-            toolData.active ? classes.activeball : classes.inactiveball
-          }
-        />
-      </div>
+          <label>Status: {toolData.active ? "Active" : "Inactive"} </label>
+          <div
+            className={
+              toolData.active ? classes.activeball : classes.inactiveball
+            }
+          />
+        </div>
       </div>
       <button>
         <Link

@@ -46,13 +46,15 @@ function SideNavBar() {
         </ul>
       </nav>
 
-      <Link className={classes.subscriptionmessage} to={"subscriptions"}>
-        <label
-          dangerouslySetInnerHTML={{
-            __html: subscriptionMessage[subscription],
-          }}
-        />
-      </Link>
+      <div className={classes.subscriptionmessage}>
+        <Link to={"subscriptions"}>
+          <label
+            dangerouslySetInnerHTML={{
+              __html: subscriptionMessage[subscription],
+            }}
+          />
+        </Link>
+      </div>
     </div>
   );
 }

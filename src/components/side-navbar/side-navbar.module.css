@@ -23,12 +23,6 @@
     height: 100%;
     flex-direction: column;
   }
-  a:active,
-  a:focus,
-  a:hover {
-    outline: 0;
-    text-decoration: none;
-  }
 }
 
 .subscriptionmessage {
@@ -36,13 +30,24 @@
   margin-bottom: 15%;
   margin-left: 29%;
   padding: 5.2% 13.8%;
-  font-size: 1em;
+  font-size: 0.95vw;
   border-radius: 10px;
   width: fit-content;
   background: var(--color-main-text);
-  color: var(--color-background);
-  white-space: pre-line;
-  text-decoration: none;
+
+  a {
+    color: var(--color-background);
+    white-space: pre-line;
+    text-decoration: none;
+  }
+
+  a:active,
+  a:focus,
+  a:hover {
+    outline: 0;
+    text-decoration: none;
+    color: var(--color-background);
+  }
 
   label {
     cursor: pointer;

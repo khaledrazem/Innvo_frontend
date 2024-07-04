@@ -1,15 +1,23 @@
 {
   "settings": [
-    { "svg": "User Activity", "label": "User Activity" },
-    { "svg": "Device IDs", "label": "Device Ids" },
-    { "svg": "User Inputs", "label": "User Inputs" },
-    { "svg": "Location Data", "label": "Location Data" },
-    { "svg": "Data Sharing", "label": "Data Sharing & Disclosure" },
-    { "svg": "Location Data", "label": "Cookies & Tracking" },
-    { "svg": "User Inputs", "label": "Data Storage & Security" },
-    { "svg": "Location Data", "label": "Third-Party Services" },
-    { "svg": "User Inputs", "label": "User Rights & Control" },
-    { "svg": "Location Data", "label": "Data Retention & Deletion" }
-    
+    { "svg": "Privacy Icons/User Activity", "label": "User Activity" },
+    { "svg": "Privacy Icons/Device IDs", "label": "Device Ids" },
+    { "svg": "Privacy Icons/User Inputs", "label": "User Inputs" },
+    { "svg": "Privacy Icons/Location Data", "label": "Location Data" },
+    {
+      "svg": "Privacy Icons/Data Sharing",
+      "label": "Data Sharing & Disclosure"
+    },
+    {
+      "svg": "Privacy Icons/Cookies & Tracking",
+      "label": "Cookies & Tracking"
+    },
+    { "svg": "Privacy Icons/User Inputs", "label": "Data Storage & Security" },
+    { "svg": "Privacy Icons/Location Data", "label": "Third-Party Services" },
+    { "svg": "Privacy Icons/User Inputs", "label": "User Rights & Control" },
+    {
+      "svg": "Privacy Icons/Location Data",
+      "label": "Data Retention & Deletion"
+    }
   ]
 }

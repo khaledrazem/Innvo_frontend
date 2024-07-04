@@ -8,6 +8,13 @@
   box-sizing: border-box;
 }
 
+.carouselcotainer {
+  display: flex;
+  box-sizing: border-box;
+  width: 40vw;
+  margin-right: 2vw;
+}
+
 .info {
   display: flex;
   box-sizing: border-box;

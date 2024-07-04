@@ -57,7 +57,6 @@ function SubscriptionsPage() {
             })}
         </div>
       </div>
-      <br /> <br />
     </div>
   );
 }

@@ -70,15 +70,18 @@ function ProductPage() {
   return (
     <div className={classes.container}>
       <div className={classes.info}>
-        <ProductCarousel
-          height={432}
-          width={768}
-          images={[
-            "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
-            "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
-            "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
-          ]}
-        />
+        <div className={classes.carouselcotainer}>
+          <ProductCarousel
+            height={432}
+            width={768}
+            images={[
+              "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
+              "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
+              "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
+            ]}
+          />
+        </div>
+
         <ProductInfo productData={productData}></ProductInfo>
       </div>
       <br /> <br />
