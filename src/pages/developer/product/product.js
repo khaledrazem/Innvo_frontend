@@ -19,23 +19,26 @@ function ProductPage() {
   let { state } = useLocation();
 
   function transformData(data) {
+    console.log("VVVVV");
+    console.log(data);
     const product = {
       id: 1,
       logo: { url: data.productImages.images.filter((image) => image)[0] },
       title: data.productInfo.title,
       summary: data.productDescription.bio,
-      features: JSON.stringify(data.productInfo.features.split("\n")),
+      features: JSON.stringify(data.productInfo.features),
       rating: 2,
-      downloads: 1234, // Example value
+      downloads: 1234,
       ratingscount: 6435,
       reviewscount: 6435,
       subscription: data.productInfo.subscription,
       description: {
         bio: data.productDescription.bio,
-        images: data.productDescription.largeImages.map((url) => ({ url })),
+        images: data.productDescription.largeImages,
         labelledImages: data.productDescription.labelledImages.map((item) => ({
-          url: item.image,
+          url: item.url,
           label: item.labels,
+          type: item.type,
         })),
       },
       faq: data.productFaq.reduce((acc, item) => {
@@ -54,6 +57,9 @@ function ProductPage() {
         ratings: [],
       },
     };
+
+    console.log("CCCC");
+    console.log(product);
 
     return product;
   }

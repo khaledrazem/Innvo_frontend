@@ -112,7 +112,7 @@ function AddProductInfo({
           return (
             <input
               type="text"
-              {...register(name + ".features.i")}
+              {...register(name + ".features." + i)}
               placeholder="• Add Text"
             />
           );

@@ -73,6 +73,10 @@
   border: 2px solid var(--color-main-text);
   border-radius: 24px;
   overflow: hidden;
+
+  video {
+    width: 100%;
+  }
 }
 .emptyimage {
   display: flex;

@@ -4,17 +4,17 @@ import classes from "./product-description.module.css";
 const imageStyle = (width, height) => ({
   maxWidth: width,
   maxHeight: height,
-  aspectRatio: width/height
+  aspectRatio: width / height,
 });
 
 function ProductDescription({
-   productDescription=null,
+  productDescription = null,
   imageWidth = 768,
   imageHeight = 432,
   labelledImageWidth = 256,
   labelledImageHeight = 144,
 }) {
-  return productDescription!=null? (
+  return productDescription != null ? (
     <div className={classes.container}>
       <div className={classes.descriptiontitle}>
         <h3>From the developer</h3>
@@ -60,7 +60,7 @@ function ProductDescription({
         </div>
       </div>
     </div>
-  ): null;
+  ) : null;
 }
 
 export default ProductDescription;

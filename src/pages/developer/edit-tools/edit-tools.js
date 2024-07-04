@@ -24,10 +24,6 @@ function EditToolsPage() {
     formState: { errors },
   } = useForm();
 
-  const [selectedCategories, setSelectedCategories] = useState("");
-  const [selectedIndustries, setSelectedIndustries] = useState("");
-  const [selectedTags, setSelectedTags] = useState("");
-
   let toolData = toolDetailsDatajson;
   let { toolId } = useParams();
 

@@ -74,6 +74,7 @@
 }
 
 .imagelist > div > img,
+.imagelist > div > video,
 .imagelist > div > h3 {
   margin: 0;
   align-content: center;

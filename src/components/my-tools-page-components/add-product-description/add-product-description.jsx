@@ -3,7 +3,7 @@ import classes from "./add-product-description.module.css";
 import React, { useState, useEffect } from "react";
 import { ReactComponent as ImageUploadIcon } from "src/public/svg/Image-Video_Upload.svg";
 
-const imageStyle = (width, height) => ({
+const mediaStyle = (width, height) => ({
   maxWidth: width,
   maxHeight: height,
 });
@@ -20,31 +20,34 @@ function AddProductDescription({
   const [images, setImages] = useState(new Array(2).fill(null));
   const [labelledImages, setLabelledImages] = useState(new Array(3).fill(null));
 
-  function handleImageUpload(setFunction, event, index) {
-    const files = Array.from(event.target.files);
-    const newImages = files.map((file) => URL.createObjectURL(file));
+  function handleMediaUpload(setFunction, event, index) {
+    const file = event.target.files[0];
+    if (!file) return;
 
-    setFunction((prevImages) => {
-      const updatedImages = [...prevImages];
-      updatedImages[index] = newImages[0];
-      return updatedImages.slice(0, prevImages.length);
+    const fileType = file.type.split("/")[0];
+    const newMedia = { url: URL.createObjectURL(file), type: fileType };
+
+    setFunction((prevMedia) => {
+      const updatedMedia = [...prevMedia];
+      updatedMedia[index] = newMedia;
+      return updatedMedia.slice(0, prevMedia.length);
     });
   }
 
   useEffect(() => {
+    console.log("{{{{{{}}}}}}");
+    console.log(formImages);
     if (formImages?.largeImages != null) {
       setImages(formImages.largeImages);
     }
 
     if (formImages?.labelledImages != null) {
-      console.log(
-        formImages.labelledImages.map((imageLabel) => imageLabel.image)
-      );
       setLabelledImages(
         formImages.labelledImages.map((imageLabel) => imageLabel.image)
       );
     }
-  }, formImages);
+  }, [formImages]);
+
   return (
     <div className={classes.container}>
       <div className={classes.descriptiontitle}>
@@ -67,27 +70,35 @@ function AddProductDescription({
         <br />
 
         <div className={classes.descriptionimages}>
-          {images.map((image, index) => (
+          {images.map((media, index) => (
             <div
+              key={index}
               className={classes.imagecontainer}
               style={{
                 aspectRatio: imageWidth / imageHeight,
                 maxWidth: imageWidth,
               }}
             >
-              {image == null ? (
+              {media == null ? (
                 <div className={classes.emptyimage}>
                   <input
-                    key={index}
                     type="file"
+                    accept="image/*,video/*"
                     {...register(name + ".largeImages." + index, {
-                      onChange: (e) => handleImageUpload(setImages, e, index),
+                      onChange: (e) => handleMediaUpload(setImages, e, index),
                     })}
                   />
                   <ImageUploadIcon />
                 </div>
+              ) : media.type === "image" ? (
+                <img
+                  src={media.url}
+                  style={mediaStyle(imageWidth, imageHeight)}
+                />
               ) : (
-                <img src={image} style={imageStyle(imageWidth, imageHeight)} />
+                <video controls style={mediaStyle(imageWidth, imageHeight)}>
+                  <source src={media.url} />
+                </video>
               )}
             </div>
           ))}
@@ -95,7 +106,7 @@ function AddProductDescription({
         <br />
 
         <div className={classes.labelledimages}>
-          {labelledImages.map((image, index) => (
+          {labelledImages.map((media, index) => (
             <div key={index} className={classes.labelledImage}>
               <div
                 className={classes.imagecontainer}
@@ -104,25 +115,30 @@ function AddProductDescription({
                   maxWidth: labelledImageWidth,
                 }}
               >
-                {image == null ? (
+                {media == null ? (
                   <div className={classes.emptyimage}>
                     <input
                       type="file"
-                      {...register(
-                        name + ".labelledImages." + index + ".image",
-                        {
-                          onChange: (e) =>
-                            handleImageUpload(setLabelledImages, e, index),
-                        }
-                      )}
+                      accept="image/*,video/*"
+                      {...register(name + ".labelledImages." + index, {
+                        onChange: (e) =>
+                          handleMediaUpload(setLabelledImages, e, index),
+                      })}
                     />
                     <ImageUploadIcon />
                   </div>
-                ) : (
+                ) : media.type === "image" ? (
                   <img
-                    src={image}
-                    style={imageStyle(labelledImageWidth, labelledImageHeight)}
+                    src={media.url}
+                    style={mediaStyle(labelledImageWidth, labelledImageHeight)}
                   />
+                ) : (
+                  <video
+                    controls
+                    style={mediaStyle(labelledImageWidth, labelledImageHeight)}
+                  >
+                    <source src={media.url} />
+                  </video>
                 )}
               </div>
               <input
