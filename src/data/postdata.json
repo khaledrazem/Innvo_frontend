@@ -5,9 +5,7 @@
     "description": "This is the body of the first post.",
     "media": {
       "videos": [],
-      "images": [
-        "https://via.placeholder.com/150"
-      ]
+      "images": ["https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png"]
     },
     "likes": 10,
     "comments": 5
@@ -18,9 +16,7 @@
     "description": "This is the body of the second post.",
     "media": {
       "videos": ["http://media.w3.org/2010/05/sintel/trailer.mp4"],
-      "images": [
-        "https://via.placeholder.com/150"
-      ]
+      "images": ["https://i.ibb.co/kBYsM6C/testprofd.png"]
     },
     "likes": 20,
     "comments": 10
@@ -32,7 +28,8 @@
     "media": {
       "videos": [],
       "images": [
-        "https://via.placeholder.com/150"
+        "https://i.ibb.co/kBYsM6C/testprofd.png",
+        "https://i.ibb.co/kBYsM6C/testprofd.png"
       ]
     },
     "likes": 5,
@@ -55,9 +52,7 @@
     "description": "This is the body of the fifth post.",
     "media": {
       "videos": [],
-      "images": [
-        "https://via.placeholder.com/150"
-      ]
+      "images": ["https://i.ibb.co/CJHd0zb/0011ff.png"]
     },
     "likes": 25,
     "comments": 12

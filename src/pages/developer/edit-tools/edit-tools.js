@@ -14,15 +14,7 @@ import industriesData from "src/data/industries.json";
 import tagsData from "src/data/tags.json";
 
 function EditToolsPage() {
-  const {
-    register,
-    getValues,
-    handleSubmit,
-    setValue,
-    watch,
-    reset,
-    formState: { errors },
-  } = useForm();
+  const { register, getValues, handleSubmit, setValue, reset } = useForm();
 
   let toolData = toolDetailsDatajson;
   let { toolId } = useParams();

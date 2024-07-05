@@ -1,7 +1,7 @@
 .container {
   display: flex;
   align-items: center;
-  gap: 2.4em;
+  gap: 1.5vw;
   height: 100%;
   width: 90%;
   overflow-x: auto;
@@ -12,8 +12,7 @@
 .toolcard,
 .activetoolcard {
   display: flex;
-  font-size: 1.45em;
-  gap: 0.7em;
+  gap: 1vw;
   border: 2px solid var(--color-main-text);
   border-radius: 14px;
   box-sizing: border-box;
@@ -25,6 +24,8 @@
 
   h5 {
     font-weight: 600;
+    font-size: 1.1vw;
+    line-height: 1.1vw;
     user-select: none;
     cursor: pointer;
   }

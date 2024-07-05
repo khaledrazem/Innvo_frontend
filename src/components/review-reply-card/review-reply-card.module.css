@@ -1,6 +1,6 @@
 .container {
   box-sizing: border-box;
-  padding: 0 2.1% calc(23.1vh * 0.08) 4.1%;
+  padding: 0 2.1% calc(23.1vh * 0.15) 4.1%;
   width: 100%;
 }
 
@@ -17,6 +17,9 @@
   gap: 0.8vw;
 }
 
+.reviewerimage {
+  align-self: start;
+}
 .reviewerimage img,
 .reviewerimage svg {
   max-width: 47px;

@@ -2,7 +2,7 @@
   width: 100%;
   align-self: start;
   text-align: left;
-  margin-bottom: 2.2em;
+  margin-bottom: 4vh;
 }
 
 :global(.rs-pagination-group) {
@@ -33,13 +33,13 @@
   display: flex;
   justify-content: start;
   width: 100%;
-  padding-bottom: 4em;
+  padding-bottom: 5vh;
 }
 
 .list {
   width: 100%;
   display: grid;
-  gap: 1.6em;
+  gap: 3vh;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
 }

@@ -34,22 +34,16 @@
 .info {
   display: flex;
   flex-direction: column;
-
-  svg {
-    width: 1.2em;
-    height: 1.2em;
-  }
 }
 
 .info label {
   font-weight: 700;
-  font-size: 1.1em;
-  gap: 0.8em;
+  font-size: 0.8vw;
   display: flex;
 }
 
 .info p {
-  font-size: 0.9em;
+  font-size: 0.7vw;
   font-weight: 500;
   color: var(--color-main-text);
 }
@@ -58,4 +52,5 @@
   margin-left: auto;
   text-wrap: nowrap;
   font-weight: 600;
+  font-size: 0.7vw;
 }

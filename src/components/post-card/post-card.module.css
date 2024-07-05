@@ -74,12 +74,18 @@
 }
 
 .mediaframe {
-  max-height: 100%;
+  align-self: center;
+  max-height: 16vh;
+  max-width: 15vw;
   width: fit-content;
   overflow: hidden;
   border: 2px solid var(--color-main-text);
   border-radius: 24px;
   margin-left: auto;
+  height: fit-content;
+  img {
+    width: 100%;
+  }
 }
 
 .dotsmenu {

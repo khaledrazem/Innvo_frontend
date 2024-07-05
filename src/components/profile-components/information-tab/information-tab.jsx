@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import classes from "./information-tab.module.css";
 import { ReactComponent as EditIcon } from "src/public/svg/Edit.svg";
-import { ReactComponent as InstagramIcon } from "src/public/svg/Social- Insta.svg";
 import { ReactComponent as AddIcon } from "src/public/svg/Add.svg";
+
+import { ReactComponent as InstagramIcon } from "src/public/svg/Profile Socials/Profile- Insta.svg";
+import { ReactComponent as EmailIcon } from "src/public/svg/Profile Socials/Profile- Email.svg";
+import { ReactComponent as WebIcon } from "src/public/svg/Profile Socials/Profile- Web.svg";
 
 function InformationTab({ data, register, errors }) {
   const [profileImg, setProfileImg] = useState(null);
@@ -47,6 +50,7 @@ function InformationTab({ data, register, errors }) {
             <label>{data.devName}</label>
           </div>
         </div>
+        <div className={classes.dividervertical} />
 
         <div className={classes.banner}>
           <img src={bannerImg || data.banner.src}></img>
@@ -64,7 +68,6 @@ function InformationTab({ data, register, errors }) {
           />
         </div>
       </div>
-      <br />
 
       <div className={classes.formFields}>
         <div className={classes.formRow}>
@@ -93,13 +96,13 @@ function InformationTab({ data, register, errors }) {
           <label>Links</label>
           <div className={classes.websiteform}>
             <input type="text" {...register("links.website")} />
-            <InstagramIcon />
+            <WebIcon />
           </div>
 
           {errors.links?.website && <p>{errors.links.website.message}</p>}
           <div className={classes.websiteform}>
             <input type="text" {...register("links.email")} />
-            <InstagramIcon />
+            <EmailIcon />
           </div>
 
           {errors.links?.email && <p>{errors.links.email.message}</p>}
@@ -113,7 +116,7 @@ function InformationTab({ data, register, errors }) {
           {Array.from({ length: extraWebsites }).map((_, index) => (
             <div key={index} className={classes.websiteform}>
               <input type="text" {...register(`links.extralink.${index}`)} />
-              <InstagramIcon
+              <WebIcon
                 onClick={() =>
                   setExtraWebsites((prev) => Math.max(0, prev - 1))
                 }

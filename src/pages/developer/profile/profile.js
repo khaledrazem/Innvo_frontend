@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Nav } from "rsuite";
 import classes from "./profile.module.css";
 import InformationTab from "src/components/profile-components/information-tab/information-tab";
 import profileJsonData from "src/data/profiledata.json";

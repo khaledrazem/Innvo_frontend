@@ -14,7 +14,7 @@ function LandingPage() {
       <div className={classes.loginchoices}>
         <div
           className={
-            selectedUser == "user"
+            selectedUser === "user"
               ? classes.userchoiceselected
               : classes.userchoice
           }
@@ -26,7 +26,7 @@ function LandingPage() {
 
         <div
           className={
-            selectedUser == "dev"
+            selectedUser === "dev"
               ? classes.userchoiceselected
               : classes.userchoice
           }

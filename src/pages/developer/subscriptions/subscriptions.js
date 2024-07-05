@@ -31,9 +31,9 @@ function SubscriptionsPage() {
               return (
                 <div
                   className={`${classes.subscriptionbubble} ${
-                    subscriptionData.title.toLowerCase() == "professional"
+                    subscriptionData.title.toLowerCase() === "professional"
                       ? classes.subscriptionbubbleprofessional
-                      : subscriptionData.title.toLowerCase() == "elite"
+                      : subscriptionData.title.toLowerCase() === "elite"
                       ? classes.subscriptionbubbleelite
                       : null
                   }
