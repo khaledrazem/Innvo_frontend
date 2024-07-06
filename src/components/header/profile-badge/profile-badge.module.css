@@ -8,6 +8,7 @@
 }
 
 .profile {
+  cursor: pointer;
   position: relative;
   display: flex;
   place-items: center;
@@ -38,6 +39,7 @@
 }
 
 .notification {
+  cursor: pointer;
   height: 100%;
   svg {
     height: 60%;

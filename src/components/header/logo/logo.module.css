@@ -4,6 +4,7 @@
   font-weight: 700;
   position: relative;
   width: 9%;
+  cursor: pointer;
 
   svg {
     width: auto;

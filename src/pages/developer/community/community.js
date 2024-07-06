@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import classes from "./community.module.css";
 import toolcommunityDatajson from "src/data/tools.json";
 import { Nav } from "rsuite";
@@ -8,11 +8,14 @@ import ReviewPage from "src/components/review-pages/review-pages";
 import CreatePost from "src/components/community-components/create-post/create-post";
 import PostsPage from "src/components/posts-pages/posts-pages";
 import ViewPost from "src/components/community-components/view-post/view-post";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
 
 function CommunityPage() {
   const [selectedTool, setSelectedTool] = useState(null);
   const [selectedTab, setSelectedTab] = useState("Feed");
   const [selectedPost, setSelectedPost] = useState(null);
+
+  const { userType } = useContext(UserSessionContext);
 
   let communityData = toolcommunityDatajson.toolsData;
   let reviewData = ratingDatajson[0];
@@ -31,31 +34,52 @@ function CommunityPage() {
 
       <br />
 
-      <Nav
-        appearance="tabs"
-        activeKey={selectedTab}
-        onSelect={setSelectedTab}
-        className={classes.navstyles}
-      >
-        <Nav.Item eventKey="Feed">Feed</Nav.Item>
-        <Nav.Item eventKey="Reviews">Reviews</Nav.Item>
-      </Nav>
-
-      <div className={classes.navcontainer}>
-        {selectedTab == "Reviews" ? (
-          <ReviewPage reviewData={reviewData} />
-        ) : selectedPost ? (
-          <ViewPost
-            postID={selectedPost}
-            clearSelectedPost={() => setSelectedPost(null)}
-          />
-        ) : (
-          <div className={classes.postscontainer}>
-            <CreatePost></CreatePost>
-            <PostsPage setSelectedPost={setSelectedPost}></PostsPage>
+      {userType == "user" && (
+        <>
+          <div className={classes.nocontainer}>
+            {selectedPost ? (
+              <ViewPost
+                postID={selectedPost}
+                clearSelectedPost={() => setSelectedPost(null)}
+              />
+            ) : (
+              <div className={classes.postscontainer}>
+                <PostsPage setSelectedPost={setSelectedPost}></PostsPage>
+              </div>
+            )}
           </div>
-        )}
-      </div>
+        </>
+      )}
+
+      {userType == "dev" && (
+        <>
+          {" "}
+          <Nav
+            appearance="tabs"
+            activeKey={selectedTab}
+            onSelect={setSelectedTab}
+            className={classes.navstyles}
+          >
+            <Nav.Item eventKey="Feed">Feed</Nav.Item>
+            <Nav.Item eventKey="Reviews">Reviews</Nav.Item>
+          </Nav>
+          <div className={classes.navcontainer}>
+            {selectedTab == "Reviews" ? (
+              <ReviewPage reviewData={reviewData} />
+            ) : selectedPost ? (
+              <ViewPost
+                postID={selectedPost}
+                clearSelectedPost={() => setSelectedPost(null)}
+              />
+            ) : (
+              <div className={classes.postscontainer}>
+                <CreatePost></CreatePost>
+                <PostsPage setSelectedPost={setSelectedPost}></PostsPage>
+              </div>
+            )}
+          </div>
+        </>
+      )}
     </div>
   );
 }

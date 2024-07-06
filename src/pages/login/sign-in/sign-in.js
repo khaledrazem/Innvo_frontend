@@ -1,10 +1,11 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ReactComponent as AppleLogo } from "src/public/svg/Apple Logo.svg";
 import { ReactComponent as GoogleLogo } from "src/public/svg/Google Logo.svg";
 import classes from "./sign-in.module.css";
 
 function SignInPage() {
+  const navigate = useNavigate();
   const {
     register,
     getValues,
@@ -14,7 +15,7 @@ function SignInPage() {
 
   const onSubmit = (data, e) => {
     console.log(data, e);
-    window.location.href = "/dev";
+    navigate("/dev");
   };
   const onError = (errors, e) => {
     console.log(getValues());
@@ -81,7 +82,7 @@ function SignInPage() {
       </div>
       <div className={classes.signup}>
         <label>Don't have an account?</label>{" "}
-        <Link to={"/login/sign-up/dev"}>Sign up</Link>
+        <Link to={"/login/sign-up"}>Sign up</Link>
       </div>
       <button type="submit">Continue</button>
     </form>

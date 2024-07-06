@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import classes from "./side-navbar.module.css";
 import NavButton from "./nav-button/nav-button";
+import subscribedToolsData from "src/data/userSelectedTools.json";
 
 import subscriptionMessage from "src/public/text/upgrade-subscription.json";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
@@ -12,7 +13,9 @@ import { ReactComponent as CommunityIcon } from "src/public/svg/Community.svg";
 import { Link } from "react-router-dom";
 
 function SideNavBar() {
-  const { subscription } = useContext(UserSessionContext);
+  const { subscription, userType } = useContext(UserSessionContext);
+
+  let subscribedTools = subscribedToolsData.subscribedTools;
 
   return (
     <div className={classes.container}>
@@ -23,16 +26,27 @@ function SideNavBar() {
             text="Discover"
             icon={<DiscoverIcon />}
           ></NavButton>
-          <NavButton
-            href="dashboard"
-            text="Dashboard"
-            icon={<DashboardIcon />}
-          ></NavButton>
-          <NavButton
-            href="my-tools"
-            text="My Tools"
-            icon={<ToolsIcon />}
-          ></NavButton>
+          {userType == "dev" && (
+            <NavButton
+              href="dashboard"
+              text="Dashboard"
+              icon={<DashboardIcon />}
+            ></NavButton>
+          )}
+          {userType == "dev" && (
+            <NavButton
+              href="my-tools"
+              text="My Tools"
+              icon={<ToolsIcon />}
+            ></NavButton>
+          )}
+          {userType == "user" && (
+            <NavButton
+              href="workspace"
+              text="Workspace"
+              icon={<ToolsIcon />}
+            ></NavButton>
+          )}
           <NavButton
             href="community"
             text="Community"
@@ -43,6 +57,26 @@ function SideNavBar() {
             text="Support"
             icon={<IoChatbubbleEllipsesOutline />}
           ></NavButton> */}
+
+          {userType == "user" &&
+          Array.isArray(subscribedTools) &&
+          subscribedTools.length > 0 ? (
+            <div className={classes.divider} />
+          ) : null}
+          {userType == "user" &&
+          Array.isArray(subscribedTools) &&
+          subscribedTools.length > 0 ? (
+            <div className={classes.toollist}>
+              {subscribedTools.map((tool) => {
+                return (
+                  <div className={classes.tooloption}>
+                    <img src={tool.img.url} />
+                    <label>{tool.name}</label>
+                  </div>
+                );
+              })}
+            </div>
+          ) : null}
         </ul>
       </nav>
 

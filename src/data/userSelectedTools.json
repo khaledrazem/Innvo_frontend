@@ -1,0 +1,22 @@
+{
+  "subscribedTools": [
+    {
+      "img": {
+        "url": "https://placehold.co/400x400/65FF35/FFFF"
+      },
+      "name": "Tool 1"
+    },
+    {
+      "img": {
+        "url": "https://placehold.co/400x400/112233/FF44"
+      },
+      "name": "Tool 2"
+    },
+    {
+      "img": {
+        "url": "https://placehold.co/400x400/000000/F32"
+      },
+      "name": "Tool 3"
+    }
+  ]
+}

@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as AppleLogo } from "src/public/svg/Apple Logo.svg";
 import { ReactComponent as GoogleLogo } from "src/public/svg/Google Logo.svg";
 import classes from "./sign-up-form.module.css";
 import { useForm } from "react-hook-form";
 import UploadImage from "src/components/data-input/upload-image/upload-image";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
 
 function SignUpForm({ register, errors, getValues }) {
+  const { userType } = useContext(UserSessionContext);
+
   return (
     <div className={classes.container}>
       <div className={classes.head}>
@@ -32,33 +35,70 @@ function SignUpForm({ register, errors, getValues }) {
         <div className={classes.imageupload}>
           <label>Logo/Image</label>
           <div className={classes.imageuploadcont}>
-
-          <UploadImage
-            register={register}
-            name={"profileicon"}
-            height={237}
-            width={245}
-          ></UploadImage>
-        </div>
+            <UploadImage
+              register={register}
+              name={"profileicon"}
+              height={237}
+              width={245}
+            ></UploadImage>
+          </div>
         </div>
 
         <div className={classes.forminputs}>
-          <div className={classes.inputfield}>
-            <label>
-              Username
-              {errors.username && (
-                <label className={classes.error}>
-                  {errors.username.message}
-                </label>
-              )}
-            </label>
-            <input
-              type="text"
-              {...register("username", {
-                required: "is required",
-              })}
-            />
-          </div>
+          {userType == "dev" && (
+            <div className={classes.inputfield}>
+              <label>
+                Username
+                {errors.username && (
+                  <label className={classes.error}>
+                    {errors.username.message}
+                  </label>
+                )}
+              </label>
+              <input
+                type="text"
+                {...register("username", {
+                  required: "is required",
+                })}
+              />
+            </div>
+          )}
+          {userType == "user" && (
+            <div className={classes.inputfield}>
+              <label>
+                First Name
+                {errors.firstname && (
+                  <label className={classes.error}>
+                    {errors.firstname.message}
+                  </label>
+                )}
+              </label>
+              <input
+                type="text"
+                {...register("firstname", {
+                  required: "is required",
+                })}
+              />
+            </div>
+          )}
+          {userType == "user" && (
+            <div className={classes.inputfield}>
+              <label>
+                Last Name
+                {errors.lastname && (
+                  <label className={classes.error}>
+                    {errors.lastname.message}
+                  </label>
+                )}
+              </label>
+              <input
+                type="text"
+                {...register("lastname", {
+                  required: "is required",
+                })}
+              />
+            </div>
+          )}
           <div className={classes.inputfield}>
             <label>
               Email Address
@@ -135,25 +175,27 @@ function SignUpForm({ register, errors, getValues }) {
               })}
             />
           </div>
+          {userType == "dev" && (
+            <div className={classes.inputfield}>
+              <label>
+                Company/Developer Name
+                {errors.companyName && (
+                  <label className={classes.error}>
+                    {errors.companyName.message}
+                  </label>
+                )}
+              </label>
+              <input
+                type="text"
+                {...register("companyName", {
+                  required: "is required",
+                })}
+              />
+            </div>
+          )}
           <div className={classes.inputfield}>
             <label>
-              Company/Developer Name
-              {errors.companyName && (
-                <label className={classes.error}>
-                  {errors.companyName.message}
-                </label>
-              )}
-            </label>
-            <input
-              type="text"
-              {...register("companyName", {
-                required: "is required",
-              })}
-            />
-          </div>
-          <div className={classes.inputfield}>
-            <label>
-              Role/Title
+              Occupation
               {errors.role && (
                 <label className={classes.error}>{errors.role.message}</label>
               )}
@@ -165,26 +207,46 @@ function SignUpForm({ register, errors, getValues }) {
               })}
             />
           </div>
-          <div className={classes.inputfield}>
-            <label>
-              Website URL
-              {errors.websiteUrl && (
-                <label className={classes.error}>
-                  {errors.websiteUrl.message}
-                </label>
-              )}
-            </label>
-            <input
-              type="text"
-              {...register("websiteUrl", {
-                pattern: {
-                  value:
-                    /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/,
-                  message: "Invalid URL",
-                },
-              })}
-            />
-          </div>
+          {userType == "dev" && (
+            <div className={classes.inputfield}>
+              <label>
+                Website URL
+                {errors.websiteUrl && (
+                  <label className={classes.error}>
+                    {errors.websiteUrl.message}
+                  </label>
+                )}
+              </label>
+              <input
+                type="text"
+                {...register("websiteUrl", {
+                  pattern: {
+                    value:
+                      /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/,
+                    message: "Invalid URL",
+                  },
+                })}
+              />
+            </div>
+          )}
+          {userType == "user" && (
+            <div className={classes.inputfield}>
+              <label>
+                Region/Location
+                {errors.region && (
+                  <label className={classes.error}>
+                    {errors.region.message}
+                  </label>
+                )}
+              </label>
+              <input
+                type="text"
+                {...register("region", {
+                  required: "is required",
+                })}
+              />
+            </div>
+          )}
           <div className={classes.inputfield}>
             <label>
               Social Media Links
@@ -210,7 +272,7 @@ function SignUpForm({ register, errors, getValues }) {
 
       <div className={classes.signup}>
         <label>Already have an account?</label>{" "}
-        <Link to={"/login/sign-in/dev"}>Login</Link>
+        <Link to={"/login/sign-in"}>Login</Link>
       </div>
     </div>
   );
