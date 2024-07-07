@@ -11,8 +11,7 @@ export const UserSessionProvider = ({ children }) => {
   const [userEmail, setUserEmail] = React.useState(false);
   const [subscription, setSubscription] = React.useState("elite");
   const [notifications, setNotifications] = React.useState(3);
-  const userTypeRef = useRef(null);
-  userTypeRef.current = userType;
+
   return (
     <div>
       <UserSessionContext.Provider

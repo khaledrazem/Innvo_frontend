@@ -28,12 +28,23 @@ function CreatePost({}) {
     ]);
   };
 
+  const onSubmit = (data, e) => {
+    console.log(data, e);
+  };
+  const onError = (errors, e) => {
+    console.log(getValues());
+    console.log(errors, e);
+  };
+
   return (
     <div className={classes.container}>
       <h3>Create a Post</h3>
 
       {expanded ? (
-        <form className={classes.createpostform}>
+        <form
+          className={classes.createpostform}
+          onSubmit={handleSubmit(onSubmit, onError)}
+        >
           <div className={classes.forms}>
             <div className={classes.inputform}>
               <label>Title</label>

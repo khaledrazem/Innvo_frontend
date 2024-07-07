@@ -20,19 +20,22 @@ function CreateComment({}) {
     formState: { errors },
   } = useForm();
 
-  const handleImageChange = (event) => {
-    const files = Array.from(event.target.files);
-    setMediaNames((prevNames) => [
-      ...prevNames,
-      files.map((file) => file.name),
-    ]);
+  const onSubmit = (data, e) => {
+    console.log(data, e);
+  };
+  const onError = (errors, e) => {
+    console.log(getValues());
+    console.log(errors, e);
   };
 
   return (
     <div className={classes.container}>
       <h3>Add a Comment</h3>
 
-      <form className={classes.createpostform}>
+      <form
+        className={classes.createpostform}
+        onSubmit={handleSubmit(onSubmit, onError)}
+      >
         <div className={classes.forms}>
           <div className={classes.inputform}>
             <label>Title:</label>

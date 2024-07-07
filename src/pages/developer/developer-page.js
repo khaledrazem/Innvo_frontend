@@ -1,4 +1,10 @@
-import { Navigate, Route, Routes, useResolvedPath } from "react-router-dom";
+import {
+  Navigate,
+  Route,
+  Routes,
+  useNavigate,
+  useResolvedPath,
+} from "react-router-dom";
 import Footer from "src/components/footer/footer";
 import SideNavBar from "src/components/side-navbar/side-navbar";
 import "src/variables.css";
@@ -16,9 +22,22 @@ import SubscriptionsPage from "./subscriptions/subscriptions";
 import NotificationsCenterPage from "./notifications/notifications-center";
 import PinsCenterPage from "./pins/pins-center";
 import WorkspacePage from "./workspace/workspace";
+import { useContext, useEffect, useState } from "react";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
 
 function DeveloperPage() {
   const url = useResolvedPath("").pathname;
+  const navigate = useNavigate();
+  const { userType } = useContext(UserSessionContext);
+
+  useEffect(() => {
+    console.log(userType);
+    if (userType === null) {
+      console.log("111111111");
+      navigate("/");
+      console.log(77777777);
+    }
+  }, [userType]);
 
   return (
     <div className="App">
