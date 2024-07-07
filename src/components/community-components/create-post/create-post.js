@@ -52,9 +52,7 @@ function CreatePost({}) {
               ></input>
             </div>
             <div className={classes.inputform}>
-              <label onClick={() => console.log(getValues("image"))}>
-                Body
-              </label>
+              <label>Body</label>
               <textarea
                 placeholder="We’ll post official announcements and detailed information about new features, bug fixes,  
                 and improvements. Feel free to discuss and provide feedback on these updates."

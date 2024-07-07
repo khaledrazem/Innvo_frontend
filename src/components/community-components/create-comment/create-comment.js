@@ -35,7 +35,7 @@ function CreateComment({}) {
       <form className={classes.createpostform}>
         <div className={classes.forms}>
           <div className={classes.inputform}>
-            <label>Title</label>
+            <label>Title:</label>
             <input
               type="text"
               placeholder="Upcoming Updates and Changes"
@@ -44,7 +44,7 @@ function CreateComment({}) {
           </div>
 
           <div className={classes.inputform}>
-            <label onClick={() => console.log(getValues("image"))}>Body</label>
+            <label>Body:</label>
             <textarea
               placeholder="We’ll post official announcements and detailed information about new features, bug fixes,  
                 and improvements. Feel free to discuss and provide feedback on these updates."
