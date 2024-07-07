@@ -45,8 +45,8 @@ function SideNavBar() {
           {userType == "user" && (
             <NavButton
               href="workspace"
-              text="Workspace"
-              icon={<WorkspaceIcon />}
+              text="My tools"
+              icon={<ToolsIcon />}
             ></NavButton>
           )}
           <NavButton
