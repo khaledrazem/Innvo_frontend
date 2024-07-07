@@ -14,6 +14,8 @@ import InvoHeader from "src/components/header/invo-header";
 import CommunityPage from "./community/community";
 import SubscriptionsPage from "./subscriptions/subscriptions";
 import NotificationsCenterPage from "./notifications/notifications-center";
+import PinsCenterPage from "./pins/pins-center";
+import WorkspacePage from "./workspace/workspace";
 
 function DeveloperPage() {
   const url = useResolvedPath("").pathname;
@@ -30,6 +32,8 @@ function DeveloperPage() {
           <Route path="discover" element={<DiscoverPage />} />
           <Route path="discover/product/:productId" element={<ProductPage />} />
           <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="workspace" element={<WorkspacePage />} />
+
           <Route path="my-tools" element={<MyToolsPage />} />
           <Route path="my-tools/new" element={<EditToolsPage />} />
           <Route path="my-tools/edit/:toolId" element={<EditToolsPage />} />
@@ -37,12 +41,14 @@ function DeveloperPage() {
           <Route path="community" element={<CommunityPage />} />
           <Route path="subscriptions" element={<SubscriptionsPage />} />
           <Route path="notifications" element={<NotificationsCenterPage />} />
+          <Route path="pins" element={<PinsCenterPage />} />
 
           <Route path="profile" element={<ProfilePage />} />
 
           <Route path="test" element={<TestPage />} />
         </Routes>
-
+        <br />
+        <br />
         <Footer></Footer>
       </div>
     </div>

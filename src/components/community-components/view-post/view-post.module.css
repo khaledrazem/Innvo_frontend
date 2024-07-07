@@ -76,3 +76,7 @@
   background-color: var(--color-main-text);
   margin: 0 8px;
 }
+
+.addcomment {
+  width: 88.5%;
+}

@@ -53,7 +53,6 @@ function CommunityPage() {
 
       {userType == "dev" && (
         <>
-          {" "}
           <Nav
             appearance="tabs"
             activeKey={selectedTab}

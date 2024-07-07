@@ -7,6 +7,7 @@ import { ReactComponent as LikeIcon } from "src/public/svg/Like.svg";
 import classes from "./view-post.module.css";
 import { ReactComponent as UpDownArrow } from "src/public/svg/UP-Down_Arrow.svg";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
+import CreateComment from "../create-comment/create-comment";
 
 function ViewPost({ postID, formData, clearSelectedPost }) {
   const [postData, setPostData] = useState(null);
@@ -53,6 +54,16 @@ function ViewPost({ postID, formData, clearSelectedPost }) {
         </div>
       </div>
       <br />
+
+      {userType === "user" && (
+        <>
+          <br />
+          <div className={classes.addcomment}>
+            <CreateComment></CreateComment>
+          </div>
+          <br /> <br />
+        </>
+      )}
 
       <ReviewPage></ReviewPage>
     </div>

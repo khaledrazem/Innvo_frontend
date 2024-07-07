@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import classes from "./tool-card.module.css";
+import { useContext } from "react";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
 
-function ToolCard({ toolData }) {
+function ToolCard({ toolData, userEdit = false }) {
+  const { userType } = useContext(UserSessionContext);
+
   return toolData != null ? (
     <div className={classes.container}>
       <div className={classes.logo}>
@@ -19,13 +23,36 @@ function ToolCard({ toolData }) {
           />
         </div>
       </div>
-      <button>
-        <Link
-          className={classes.toollink}
-          to={"/dev/my-tools/edit/" + toolData.id}
-        />
-        Edit Page
-      </button>
+      {userType == "dev" && (
+        <button>
+          <Link
+            className={classes.toollink}
+            to={"/dev/my-tools/edit/" + toolData.id}
+          />
+          Edit Page
+        </button>
+      )}
+
+      {userType == "user" && (
+        <div className={classes.buttons}>
+          <button>
+            <Link
+              className={classes.toollink}
+              to={"/dev/my-tools/edit/" + toolData.id}
+            />
+            Access
+          </button>
+          {userEdit && (
+            <button className={classes.redbutton}>
+              <Link
+                className={classes.toollink}
+                to={"/dev/my-tools/edit/" + toolData.id}
+              />
+              Remove
+            </button>
+          )}
+        </div>
+      )}
     </div>
   ) : null;
 }

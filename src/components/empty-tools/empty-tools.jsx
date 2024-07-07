@@ -12,7 +12,7 @@ function EmptyTools() {
         <AddIcon />
 
         <h5>Create Your Tool Page</h5>
-        <label> Begin Showcasing Your Innovation</label>
+        <label>Begin Showcasing Your Innovation</label>
         <p>
           Start building your presence on the platform by creating a dedicated
           page for your tool. <br />

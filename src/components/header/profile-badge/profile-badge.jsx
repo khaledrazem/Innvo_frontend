@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import classes from "./profile-badge.module.css";
 import { UserData } from "src/interfaces/UserData";
 import PropTypes from "prop-types";
-import { ReactComponent as PinIcon } from "src/public/svg/Sub_Spark.svg";
+import { ReactComponent as PinIcon } from "src/public/svg/Pin-Black.svg";
 
 import { ReactComponent as NotificationOffIcon } from "src/public/svg/Notification Off.svg";
 import { ReactComponent as NotificationOnIcon } from "src/public/svg/Notification On.svg";

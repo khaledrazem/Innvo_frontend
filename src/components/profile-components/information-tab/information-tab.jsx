@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import classes from "./information-tab.module.css";
 import { ReactComponent as EditIcon } from "src/public/svg/Edit.svg";
 import { ReactComponent as AddIcon } from "src/public/svg/Add.svg";
@@ -6,8 +6,11 @@ import { ReactComponent as AddIcon } from "src/public/svg/Add.svg";
 import { ReactComponent as InstagramIcon } from "src/public/svg/Profile Socials/Profile- Insta.svg";
 import { ReactComponent as EmailIcon } from "src/public/svg/Profile Socials/Profile- Email.svg";
 import { ReactComponent as WebIcon } from "src/public/svg/Profile Socials/Profile- Web.svg";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
 
 function InformationTab({ data, register, errors }) {
+  const { userType } = useContext(UserSessionContext);
+
   const [profileImg, setProfileImg] = useState(null);
   const [bannerImg, setBannerImg] = useState(null);
   const [extraWebsites, setExtraWebsites] = useState(0);
@@ -46,7 +49,7 @@ function InformationTab({ data, register, errors }) {
           </div>
           <div className={classes.summaryinfo}>
             <h4>{data.companyName}</h4>
-            <label>{data.secondaryCompanyName}</label>
+            {userType === "dev" && <label>{data.secondaryCompanyName}</label>}
             <label>{data.devName}</label>
           </div>
         </div>
@@ -70,27 +73,65 @@ function InformationTab({ data, register, errors }) {
       </div>
 
       <div className={classes.formFields}>
-        <div className={classes.formRow}>
-          <div className={classes.formInput}>
-            <label>Display Name</label>
-            <input type="text" {...register("displayName")} />
-            {errors.displayName && <p>{errors.displayName.message}</p>}
-          </div>
+        {userType === "dev" && (
+          <div className={classes.formRow}>
+            <div className={classes.formInput}>
+              <label>Display Name</label>
+              <input type="text" {...register("displayName")} />
+              {errors.displayName && <p>{errors.displayName.message}</p>}
+            </div>
 
-          <div className={classes.formInput}>
-            <label>Contact Information</label>
-            <input type="text" {...register("contactInformation")} />
-            {errors.contactInformation && (
-              <p>{errors.contactInformation.message}</p>
-            )}
+            <div className={classes.formInput}>
+              <label>Contact Information</label>
+              <input type="text" {...register("contactInformation")} />
+              {errors.contactInformation && (
+                <p>{errors.contactInformation.message}</p>
+              )}
+            </div>
           </div>
-        </div>
+        )}
+
+        {userType === "user" && (
+          <>
+            <div className={classes.formRow}>
+              <div className={classes.formInput}>
+                <label>First Name</label>
+                <input type="text" {...register("firstname")} />
+                {errors.firstname && <p>{errors.firstname.message}</p>}
+              </div>
+
+              <div className={classes.formInput}>
+                <label>Last Name</label>
+                <input type="text" {...register("lastname")} />
+                {errors.lastname && <p>{errors.lastname.message}</p>}
+              </div>
+            </div>
+          </>
+        )}
 
         <div className={classes.formInput}>
           <label>Bio Description</label>
           <textarea {...register("bioDescription")} />
           {errors.bioDescription && <p>{errors.bioDescription.message}</p>}
         </div>
+
+        {userType === "user" && (
+          <>
+            <div className={classes.formRow}>
+              <div className={classes.formInput}>
+                <label>Region</label>
+                <input type="text" {...register("region")} />
+                {errors.region && <p>{errors.region.message}</p>}
+              </div>
+
+              <div className={classes.formInput}>
+                <label>Contact Information</label>
+                <input type="text" {...register("contact")} />
+                {errors.contact && <p>{errors.contact.message}</p>}
+              </div>
+            </div>
+          </>
+        )}
 
         <div className={classes.websitesformInput}>
           <label>Links</label>

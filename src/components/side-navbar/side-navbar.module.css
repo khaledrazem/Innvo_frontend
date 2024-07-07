@@ -1,7 +1,7 @@
 .container {
   display: flex;
   height: 80vh;
-  width: 18.5vw;
+  width: 18.5%;
   border-right: 2px solid var(--color-main-text);
   flex-direction: column;
   position: fixed;

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1295.84 1295.84">
+  <defs>
+    <style>
+      .workspace-1 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path  fill="currentColor" stroke="currentColor"  class="workspace-1" d="m1189.74,106.75v1083.25H106.49V106.75h1083.25M1222.76.92H73.47C33.24.92.66,33.53.66,73.73v1149.29c0,40.23,32.58,72.81,72.81,72.81h1149.29c40.2,0,72.81-32.58,72.81-72.81V73.73c0-40.2-32.61-72.81-72.81-72.81h0Z"/>
+  <rect  fill="currentColor" stroke="currentColor"  class="workspace-1" x="20.02" y="403.76" width="1256" height="105.86"/>
+  <rect  fill="currentColor" stroke="currentColor"  class="workspace-1" x="430.89" y="456.69" width="105.86" height="831.69"/>
+</svg>

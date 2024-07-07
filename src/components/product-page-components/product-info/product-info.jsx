@@ -4,12 +4,14 @@ import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.
 import { ReactComponent as StarEmptyIcon } from "src/public/svg/Review_star empty.svg";
 import { ReactComponent as EliteIcon } from "src/public/svg/Sub_Crown.svg";
 import { ReactComponent as ProfessionalIcon } from "src/public/svg/Sub_Spark.svg";
-import { ReactComponent as PinIcon } from "src/public/svg/Sub_Spark.svg";
+import { ReactComponent as PinIcon } from "src/public/svg/Pin-Black.svg";
+import { ReactComponent as BluePinIcon } from "src/public/svg/Pin-Blue.svg";
 
 import { UserSessionContext } from "src/contexts/UserSessionContext";
 
 function ProductInfo({ productData }) {
   const { userType } = useContext(UserSessionContext);
+  const [pinned, setPinned] = useState(false);
 
   return productData != null ? (
     <div className={classes.container}>
@@ -62,7 +64,13 @@ function ProductInfo({ productData }) {
       {userType == "user" && (
         <div className={classes.pinicon}>
           <button className={classes.explorebutton}>Subscribe</button>
-          <PinIcon />
+          {userType === "user" ? (
+            pinned === true ? (
+              <BluePinIcon onClick={() => setPinned(!pinned)} />
+            ) : (
+              <PinIcon onClick={() => setPinned(!pinned)} />
+            )
+          ) : null}
         </div>
       )}
     </div>

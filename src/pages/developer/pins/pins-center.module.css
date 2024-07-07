@@ -1,0 +1,12 @@
+.container {
+  width: 88%;
+  padding-left: 2.5%;
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-user-select: none;
+  user-select: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 4vh;
+  column-gap: 2vw;
+}

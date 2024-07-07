@@ -10,6 +10,8 @@ import { ReactComponent as DashboardIcon } from "src/public/svg/Dashboard.svg";
 import { ReactComponent as DiscoverIcon } from "src/public/svg/Discover.svg";
 import { ReactComponent as ToolsIcon } from "src/public/svg/My Tools.svg";
 import { ReactComponent as CommunityIcon } from "src/public/svg/Community.svg";
+import { ReactComponent as WorkspaceIcon } from "src/public/svg/Workspace.svg";
+
 import { Link } from "react-router-dom";
 
 function SideNavBar() {
@@ -44,7 +46,7 @@ function SideNavBar() {
             <NavButton
               href="workspace"
               text="Workspace"
-              icon={<ToolsIcon />}
+              icon={<WorkspaceIcon />}
             ></NavButton>
           )}
           <NavButton

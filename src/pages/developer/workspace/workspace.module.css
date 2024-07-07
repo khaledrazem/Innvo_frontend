@@ -77,3 +77,21 @@
   justify-content: space-between;
   flex-grow: 1;
 }
+
+.toolslist {
+  height: 70%;
+  width: 76.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.editicon,
+.selectedediticon {
+  width: 2vw;
+  margin-left: auto;
+  cursor: pointer;
+}
+.selectedediticon {
+  color: var(--color-secondary);
+}

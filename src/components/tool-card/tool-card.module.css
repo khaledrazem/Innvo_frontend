@@ -27,6 +27,17 @@
   }
 }
 
+.buttons {
+  display: flex;
+  margin-left: auto;
+  gap: 1vw;
+
+  .redbutton {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+}
+
 .logo {
   flex: 0 0 65px;
   height: -moz-fit-content;
