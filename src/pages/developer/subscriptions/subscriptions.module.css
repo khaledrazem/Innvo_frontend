@@ -1,8 +1,16 @@
 .container {
-  padding-left: 4%;
   box-sizing: border-box;
   height: 100%;
   display: flex;
+  flex-direction: column;
+  width: 85.5%;
+  align-self: center;
+  margin-top: 6vh;
+
+  label {
+    font-size: 1vw;
+    font-weight: 500;
+  }
 }
 
 .overviewbubble {
@@ -27,6 +35,7 @@
   display: flex;
   justify-content: center;
   white-space: break-spaces;
+  margin-bottom: 0.8vh;
 }
 
 .header h4 {
@@ -41,10 +50,11 @@
 
 .subscriptionrow {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: nowrap;
   width: 100%;
-  gap: 3em;
+  gap: 2.2vw;
+  margin-top: 4.8vh;
 }
 
 .subscriptionbubble {
@@ -52,8 +62,9 @@
   background-color: var(--color-background);
   border-radius: 24px;
   padding: 4vh 1vw;
+  padding-bottom: 3vh;
   text-align: center;
-  width: 30.5%;
+  width: 26%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -61,24 +72,31 @@
 
   h4 {
     font-size: 1.6vw;
+    line-height: 1.6vw;
     font-weight: 700;
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
   }
 
   label {
     font-size: 1vw;
+    line-height: 0.5vw;
   }
 
   ul {
     list-style-position: inside;
     padding: 0;
     line-height: 2em;
-    text-align: left;
-    margin: 6vh 0;
+    margin-top: 4.5vh;
+    margin-bottom: 5.2vh;
+    text-align-last: start;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
   }
 
   li {
     font-size: 0.75vw;
+    line-height: 0.75vw;
     font-weight: 500;
     text-align: center;
   }
@@ -93,8 +111,8 @@
     border-radius: 6px;
     padding: 2%;
     cursor: pointer;
-    width: 78%;
-    height: 6vh;
+    width: 75%;
+    height: 4.3vh;
     box-sizing: border-box;
     align-self: center;
     margin-top: auto;

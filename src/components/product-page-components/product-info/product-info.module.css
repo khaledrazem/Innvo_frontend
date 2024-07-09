@@ -3,6 +3,11 @@
   flex-direction: column;
   display: flex;
   height: 100%;
+
+  h4 {
+    font-size: 1vw;
+    line-height: 1vw;
+  }
 }
 
 .title {
@@ -42,7 +47,7 @@
   flex-direction: column;
   gap: 0.4vh;
   margin-top: 0.5vh;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
   width: fit-content;
   font-size: 12px;
 
@@ -86,12 +91,14 @@
 }
 
 .features {
-  margin: 1vh 0;
+  margin-top: 1vh;
+  margin-bottom: 5vh;
   ul {
     padding: 0;
     list-style-position: inside;
-    line-height: 2.4vh;
+    line-height: 1.9vh;
     font-size: 0.8vw;
+    margin: 0;
   }
 }
 
@@ -103,7 +110,7 @@
 .explorebutton {
   box-sizing: border-box;
   width: 10.5vw;
-  padding: 1.2vh 0;
+  padding: 0.8vh 0;
   border-radius: 8px;
   border: 2px solid var(--color-main-text);
   background-color: var(--color-primary);

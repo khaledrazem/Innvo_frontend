@@ -76,19 +76,20 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  padding-top: 0.8%;
 }
 
 .toolslist {
   height: 70%;
-  width: 76.5%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 3vh;
+  gap: 5vh;
 }
 
 .editicon,
 .selectedediticon {
-  width: 2vw;
+  height: 3vh;
   margin-left: auto;
   cursor: pointer;
 }

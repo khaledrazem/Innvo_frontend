@@ -29,7 +29,7 @@ function SignUpForm({ register, errors, getValues }) {
         </div>
       </div>
 
-      <div className={classes.divider}></div>
+      <hr className={classes.divider} />
 
       <div className={classes.formcontainer}>
         <div className={classes.imageupload}>
@@ -117,26 +117,7 @@ function SignUpForm({ register, errors, getValues }) {
               })}
             />
           </div>
-          <div className={classes.inputfield}>
-            <label>
-              Phone Number
-              {errors.phoneNumber && (
-                <label className={classes.error}>
-                  {errors.phoneNumber.message}
-                </label>
-              )}
-            </label>
-            <input
-              type="text"
-              {...register("phoneNumber", {
-                required: "is required",
-                pattern: {
-                  value: /^\d{8,}$/,
-                  message: "is invalid",
-                },
-              })}
-            />
-          </div>
+
           <div className={classes.inputfield}>
             <label>
               Password
@@ -172,6 +153,26 @@ function SignUpForm({ register, errors, getValues }) {
                 required: "is required",
                 validate: (value) =>
                   value === getValues("password") || " do not match",
+              })}
+            />
+          </div>
+          <div className={classes.inputfield}>
+            <label>
+              Phone Number
+              {errors.phoneNumber && (
+                <label className={classes.error}>
+                  {errors.phoneNumber.message}
+                </label>
+              )}
+            </label>
+            <input
+              type="text"
+              {...register("phoneNumber", {
+                required: "is required",
+                pattern: {
+                  value: /^\d{8,}$/,
+                  message: "is invalid",
+                },
               })}
             />
           </div>
@@ -271,8 +272,8 @@ function SignUpForm({ register, errors, getValues }) {
       </div>
 
       <div className={classes.signup}>
-        <label>Already have an account?</label>{" "}
-        <Link to={"/login/sign-in"}>Login</Link>
+        <label>Already have an account? </label>
+        <Link to={"/login/sign-in"}> Login</Link>
       </div>
     </div>
   );

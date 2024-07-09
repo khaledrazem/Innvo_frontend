@@ -8,7 +8,9 @@ function PinsCenterPage() {
   return (
     <div className={classes.container}>
       {productData.map((product, index) => (
-        <ProductCard key={index} productData={product} />
+        <div className={classes.productcardcont}>
+          <ProductCard key={index} productData={product} />
+        </div>
       ))}
     </div>
   );

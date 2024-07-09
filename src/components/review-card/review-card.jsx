@@ -65,16 +65,12 @@ function ReviewCard({
           <label>{reviewData.likes} Likes</label>
         </div>
 
-        <button onClick={() => setExpanded(!expanded)}>
-          {reviewData.replies} Replies{" "}
-          <UpDownArrow className={expanded ? classes.expandedarrow : null} />
-        </button>
-
         {reviewData.likedByOwner && (
           <div className={classes.ownerlike}>
             <AvatarGroup>
               <Badge content={<TickIcon />}>
                 <Avatar
+                  size="sm"
                   circle
                   src={reviewData.reviewer.profileimg.url || ""}
                   alt={<UserIcon />}
@@ -83,6 +79,11 @@ function ReviewCard({
             </AvatarGroup>
           </div>
         )}
+
+        <button onClick={() => setExpanded(!expanded)}>
+          {reviewData.replies} Replies{" "}
+          <UpDownArrow className={expanded ? classes.expandedarrow : null} />
+        </button>
       </div>
 
       {expanded ? (

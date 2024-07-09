@@ -5,22 +5,21 @@
   height: 100%;
   padding-left: 4%;
   box-sizing: border-box;
-  
 }
 
-.carouselcontainer{
-  width: 85.5%;
+.carouselcontainer {
+  width: 86%;
   align-self: start;
 }
 
-.explorebutton{
+.explorebutton {
   padding: 10px 0;
   display: flex;
-    align-self: flex-end;
-    position: relative;
-    right: 14.5%;
+  align-self: flex-end;
+  position: relative;
+  right: 14.5%;
 
-  button{
+  button {
     box-sizing: border-box;
     width: 8vw;
     background: var(--color-background);

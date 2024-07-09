@@ -1,14 +1,16 @@
 .container {
   display: flex;
-  height: 90%;
+  height: -webkit-fill-available;
   width: 100%;
   flex-direction: column;
   place-content: flex-start;
   align-items: center;
   box-sizing: border-box;
   h1 {
-    font-size: 3vw;
+    font-size: 5.6vh;
+    line-height: 4.5vh;
     margin: 0;
+    margin-bottom: 2.6%;
   }
 }
 
@@ -16,31 +18,30 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1vh;
 }
 
 .signinbuttons {
-  gap: 2%;
+  gap: 2.5%;
   display: flex;
   width: 100%;
   justify-content: center;
-
+  margin-top: 2.2%;
   button {
-    padding: 0;
-    padding-left: 1%;
-    width: 19.5%;
-    height: 6vh;
-    display: flex;
-    border-radius: 12px;
-    font-size: 0.7vw;
-    font-weight: 600;
-    align-items: center;
-    gap: 7%;
-    text-wrap: nowrap;
     border-width: 2px;
     background: var(--color-background);
     color: var(--color-main-text);
     box-sizing: border-box;
+    height: 4.8vh;
+    width: 11vw;
+    padding: 0;
+    display: flex;
+    border-radius: 1vh;
+    font-size: 0.68vw;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+    text-wrap: nowrap;
   }
 
   button:hover {
@@ -52,37 +53,39 @@
       fill: var(--color-background);
     }
   }
-  button:disabled {
-    cursor: not-allowed;
-  }
 
   label {
     cursor: pointer;
   }
 
   svg {
-    height: 2em;
+    height: 50%;
   }
 }
 
 .welcometext {
   font-size: 1.9vw;
+  line-height: 1.9vw;
   font-weight: 500;
 }
 
 .divider {
-  height: 2px;
-  background-color: var(--color-main-text);
-  width: 100%;
-  margin: 2.6% 0 2.5% 0;
+  border-top: 0.2vh solid var(--color-main-text);
+  width: 97%;
+  margin-top: 2.3%;
+  margin-bottom: 2.5%;
 }
 
 .signup {
-  font-size: 1.1vw;
+  font-size: 1.05vw;
+  line-height: 1.05vw;
   font-weight: 500;
   margin-top: auto;
+  margin-bottom: 0.5vh;
   a {
     text-decoration: none;
+    font-weight: 600;
+    color: var(--color-secondary);
   }
 }
 
@@ -93,33 +96,33 @@
   flex-direction: column;
   font-size: 0.85vw;
   font-weight: 500;
-  margin-right: 2.2em;
   height: 100%;
 }
 
-.imageuploadcont{
-  width: 13vw;
+.imageuploadcont {
+  width: 12.8vw;
 }
 .formcontainer {
   display: flex;
   width: 100%;
   height: 45%;
+  gap: 3.5%;
 }
 .forminputs {
   display: flex;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 12.5%;
-  column-gap: 5%;
+  row-gap: 9%;
+  column-gap: 4.7%;
 }
 
 .inputfield {
   display: flex;
-  width: 29.7%;
+  width: 29.6%;
   text-align: left;
   flex-direction: column;
-  gap: 0.15em;
+  gap: 0.3vh;
 
   label {
     font-size: 0.85vw;
@@ -130,6 +133,7 @@
 
   input {
     padding: 2%;
+    height: 3.8vh;
     font-size: 0.85vw;
     border-radius: 25px;
     box-sizing: border-box;

@@ -1,71 +1,65 @@
 .productpagination {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 
-    margin-right: auto;
-    flex-direction: column;
-    align-items: center;
-  }
-  .paginationcontent{
-    display: flex;
-    justify-content: start;
-    align-self: start;
-    flex-direction: column;
-  }
-  
-  .productlist {
-    display: grid;
-    position: relative;
-    row-gap: 1.5vw;
-    column-gap: 3vw;
-    justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .productbadge {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-  }
-  
-  .paginationcontrols {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    align-self: center;
-  }
-  
-  .pagedots {
-    display: flex;
-    gap: 5px;
-    margin: 0 10px;
-  }
-  
-  
-  
-  button {
-    padding: 5px 10px;
-  }
-  
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+}
+.paginationcontent {
+  display: flex;
+  justify-content: start;
+  align-self: start;
+  flex-direction: column;
+}
+
+.productcardcont {
+  min-width: 305px;
+  width: 20.3vw;
+  min-height: 132px;
+  height: 15.5vh;
+}
+
+.productlist {
+  display: grid;
+  position: relative;
+  row-gap: 2.7vh;
+  column-gap: 2.8vw;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.paginationcontrols {
+  display: flex;
+  align-items: center;
+  margin-top: 2.8vh;
+  align-self: center;
+}
+
+.pagedots {
+  display: flex;
+  gap: 0.5vw;
+  margin: 0 10px;
+}
+
+button {
+  padding: 5px 10px;
+}
 
 .dot {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    border: 1px solid var(--color-main-text);
-  }
-  
-  .dotactive {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--color-main-text);
-  }
-.leftarrow{
+  width: 1vh;
+  height: 1vh;
+  border-radius: 50%;
+  border: 1px solid var(--color-main-text);
+}
+
+.dotactive {
+  width: 1vh;
+  height: 1vh;
+  border-radius: 50%;
+  background-color: var(--color-main-text);
+}
+.leftarrow {
   position: absolute;
   width: 30px;
   left: -40px;
@@ -75,19 +69,19 @@
   cursor: pointer;
   align-self: center;
 }
-.rightarrow{
+.rightarrow {
   position: absolute;
   width: 30px;
   right: -40px;
-      height: fit-content;
-    cursor: pointer;
-    align-self: center;
+  height: fit-content;
+  cursor: pointer;
+  align-self: center;
 }
-.header{
-    padding-bottom: 8px;
-    position: relative;
-    align-self: start;
-    text-align: center;
-    font-size: 1.1vw;
-    font-weight: 600;
+.header {
+  padding-bottom: 1.2vh;
+  position: relative;
+  align-self: start;
+  text-align: center;
+  font-size: 1.1vw;
+  font-weight: 600;
 }

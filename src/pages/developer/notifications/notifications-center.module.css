@@ -1,5 +1,5 @@
 .container {
-  padding-left: 4%;
+  padding-left: 7.3%;
   box-sizing: border-box;
   height: 100%;
   user-select: none;
@@ -36,4 +36,9 @@
     font-weight: 600;
     color: var(--color-background);
   }
+}
+
+.pagescontainer {
+  width: 81.8%;
+  margin-top: 2.8vh;
 }

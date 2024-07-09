@@ -43,7 +43,6 @@
   :global(.rs-carousel-toolbar) {
     position: absolute;
     width: 100%;
-    bottom: 0;
     -webkit-user-select: none;
     user-select: none;
   }

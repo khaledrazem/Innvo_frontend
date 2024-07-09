@@ -10,8 +10,8 @@
 }
 
 :global(.rs-pagination-btn) {
-  height: 3em;
-  width: 3em;
+  height: 3.5vh;
+  width: 3.5vh;
   border-radius: 50px !important;
   background-color: var(--color-background) !important;
   color: var(--color-main-text) !important;
@@ -39,7 +39,7 @@
 .list {
   width: 100%;
   display: grid;
-  gap: 3vh;
+  gap: 2.2vh;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
 }

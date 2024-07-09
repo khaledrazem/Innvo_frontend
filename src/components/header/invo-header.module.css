@@ -1,11 +1,11 @@
 .header {
   background-color: var(--color-background);
   padding-bottom: 0;
-  padding-left: 6.6%;
-  padding-right: 1.5%;
-  padding-top: calc(22.2vh * 0.6);
+  padding-left: 7%;
+  padding-right: 1%;
+  padding-top: calc(17.2vh * 0.62);
   display: flex;
-  height: 21vh;
+  height: 17.2vh;
   position: sticky;
   top: 0;
   z-index: 999;

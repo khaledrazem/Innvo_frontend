@@ -37,3 +37,8 @@
   text-decoration: none;
   color: var(--color-main-text);
 }
+
+.navlink:hover,
+.navlink:focus {
+  text-decoration: none;
+}

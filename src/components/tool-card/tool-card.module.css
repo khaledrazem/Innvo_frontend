@@ -3,14 +3,14 @@
   border-radius: 20px;
   flex-direction: row;
   display: flex;
-  height: 22vh;
+  height: 19.5vh;
   width: 100%;
   box-sizing: border-box;
   padding: 1% 4% 1% 5%;
   align-items: center;
 
   button {
-    padding: 0.4vh 1vw;
+    padding: 0.4vh 1.8vw;
     color: var(--color-main-text);
     background-color: var(--color-background);
     border: 2px solid var(--color-main-text);

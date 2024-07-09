@@ -9,9 +9,9 @@
 .devbody {
   display: flex;
   flex-direction: column;
-  width: 81.5%;
+  width: 81.3%;
   height: 100%;
-  min-height: 79vh;
+  min-height: 82.8vh;
   margin-left: auto;
   box-sizing: border-box;
 }

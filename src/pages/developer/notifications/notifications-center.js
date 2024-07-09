@@ -22,15 +22,17 @@ function NotificationsCenterPage() {
         setSelectedTool={setSelectedTool}
         toolsData={communityData}
       />
-      <br />
 
-      <div className={classes.bubblecontainer}>
+      {/* <div className={classes.bubblecontainer}>
         <h4 className={classes.header}>
           Notification Center <label>{notifications}</label>
         </h4>
-        <br />
+        <br /> */}
+      <div className={classes.pagescontainer}>
         <NotificationsPage></NotificationsPage>
       </div>
+
+      {/* </div> */}
 
       <br />
     </div>

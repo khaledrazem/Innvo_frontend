@@ -43,43 +43,46 @@ function SignInPage() {
           </button>
         </div>
       </div>
-      <div className={classes.divider}></div>
-      <div className={classes.inputfields}>
-        <label>
-          Email
-          {errors.email && (
-            <label className={classes.error}>{errors.email.message}</label>
-          )}
-        </label>
-        <input
-          type="text"
-          {...register("email", {
-            required: "is required",
-            pattern: {
-              value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-              message: "is invalid",
-            },
-          })}
-        />
+      <hr className={classes.divider} />
+      <div className={classes.fields}>
+        <div className={classes.inputfields}>
+          <label>
+            Email
+            {errors.email && (
+              <label className={classes.error}>{errors.email.message}</label>
+            )}
+          </label>
+          <input
+            type="text"
+            {...register("email", {
+              required: "is required",
+              pattern: {
+                value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                message: "is invalid",
+              },
+            })}
+          />
+        </div>
+        <div className={classes.inputfields}>
+          <label>
+            Password
+            {errors.password && (
+              <label className={classes.error}>{errors.password.message}</label>
+            )}
+          </label>
+          <input
+            type="password"
+            {...register("password", {
+              required: "is required",
+              minLength: {
+                value: 6,
+                message: "must be at least 6 characters long",
+              },
+            })}
+          />
+        </div>
       </div>
-      <div className={classes.inputfields}>
-        <label>
-          Password
-          {errors.password && (
-            <label className={classes.error}>{errors.password.message}</label>
-          )}
-        </label>
-        <input
-          type="password"
-          {...register("password", {
-            required: "is required",
-            minLength: {
-              value: 6,
-              message: "must be at least 6 characters long",
-            },
-          })}
-        />
-      </div>
+
       <div className={classes.signup}>
         <label>Don't have an account?</label>{" "}
         <Link to={"/login/sign-up"}>Sign up</Link>

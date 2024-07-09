@@ -10,21 +10,21 @@ input:focus {
 }
 
 .icon {
-  height: 100%;
-  width: 1.2rem;
+  height: 50%;
+  top: 25%;
   position: absolute;
   box-sizing: border-box;
-  left: 3.4%;
+  left: 3.5%;
 }
 
 .input {
   color: var(--color-main-text);
   width: 100%;
-  font-size: 1em;
+  font-size: 0.8vw;
   border-width: 2px;
   font-weight: 600;
   border-radius: 25px;
-  padding-left: 3rem;
+  padding-left: 7.5vh;
   height: 100%;
   box-sizing: border-box;
 }

@@ -1,56 +1,30 @@
-.wrapper {
-  position: relative;
-  width: 45%;
-  min-width: 220px;
-  height: 100%;
-}
-
 .filters {
   display: flex;
-  width: 50.6%;
-  gap: 2%;
+  width: 52%;
+  gap: 2.5%;
 }
 
 .filter {
   width: inherit;
   height: 100%;
 }
-.icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  background-color: red;
-  padding: 4px;
-  position: absolute;
-  box-sizing: border-box;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-}
-
-.input {
-  width: 100%;
-  border-width: 1px;
-  border-radius: 100px;
-  padding-left: 3rem;
-  height: 100%;
-}
 
 .headersearch {
-  width: 66.1%;
+  width: 65%;
   height: 60%;
   display: flex;
   gap: 2%;
-  margin-left: 8%;
+  margin-left: 7%;
 }
 
 .reseticon {
   align-self: center;
   cursor: pointer;
-  height: 65%;
+  height: 2.1vh;
 }
 
 .search {
   position: relative;
-  width: 41%;
+  width: 42%;
   height: 100%;
 }

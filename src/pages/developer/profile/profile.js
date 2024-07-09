@@ -27,8 +27,9 @@ function ProfilePage() {
   return (
     <div className={classes.container}>
       <h3>My Profile</h3>
-      <br />
-      <div className={classes.bubblecontainer}>
+      {/* <br />
+      <div className={classes.bubblecontainer}> */}
+      <div className={classes.pagecontainer}>
         <div className={classes.navtab}>
           <button
             className={
@@ -52,8 +53,6 @@ function ProfilePage() {
           </button>
         </div>
 
-        <br />
-
         <form className={classes.formcontainer}>
           {activeTab === "information" && (
             <InformationTab
@@ -73,8 +72,9 @@ function ProfilePage() {
             Save
           </button>
         </form>
+        {/* </div>
+      <br /> */}
       </div>
-      <br />
     </div>
   );
 }

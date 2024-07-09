@@ -5,20 +5,20 @@
 }
 select {
   background-image: url("/src/public/svg/UP-Down Arrow.svg");
-  background-size: 15px;
+  background-size: 0.9vw;
   background-repeat: no-repeat;
   background-position: calc(90%) center;
 }
 
 .input {
   width: 100%;
-  font-size: 1em;
+  font-size: 0.8vw;
   font-weight: 600;
   border-width: 2px;
   border-radius: 25px;
   border-color: var(--color-main-text);
   height: 100%;
-  padding-left: 12%;
+  padding-left: 10%;
   font-family: var(--main-font);
 }
 

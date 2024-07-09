@@ -8,11 +8,12 @@
   -webkit-user-select: none;
   user-select: none;
   box-sizing: border-box;
-  padding: 9% 4% 6.2% 4%;
-  justify-content: space-between;
+  padding-top: calc(74.4vh * 0.2);
+  justify-content: start;
 
   h1 {
-    font-size: 3vw;
+    font-size: 5.6vh;
+    line-height: 3.5vh;
     margin: 0;
   }
 
@@ -21,10 +22,12 @@
     border-width: 2px;
     background: var(--color-background);
     color: var(--color-main-text);
-    padding: 0.8vh 3vw;
+    padding: 0;
     box-sizing: border-box;
     font-weight: 500;
-    font-size: 1.7em;
+    font-size: 2.3vh;
+    width: 12vw;
+    height: 4.8vh;
   }
 
   button:hover {
@@ -41,26 +44,30 @@
   display: flex;
   flex-direction: column;
   border: 2px solid var(--color-main-text);
-  border-radius: 22px;
+  border-radius: 30px;
   box-sizing: border-box;
-  padding: 4% 3% 3.5% 3%;
-  width: 35.5vh;
-  height: 35.5vh;
+  padding-top: calc(31vh * 0.13);
+  padding-bottom: calc(31vh * 0.15);
+  width: 31vh;
+  height: 31vh;
   cursor: pointer;
   align-items: center;
-  font-weight: 700;
-  font-size: 2.2em;
-  gap: 25px;
+  font-weight: 600;
+  font-size: 1.8vw;
+  line-height: 1.8vw;
+  gap: 2.2vh;
 }
 
 .userchoiceselected {
-  border-color: var(--color-secondary); 
+  border-color: var(--color-secondary);
   border-width: 3px;
 }
 
 .loginchoices {
   width: 100%;
   justify-content: center;
-  gap: 11vw;
+  gap: 10.6vw;
   display: flex;
+  margin-top: 6.7vh;
+  margin-bottom: 5.4vh;
 }

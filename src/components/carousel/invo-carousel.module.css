@@ -1,7 +1,6 @@
 .container {
   display: flex;
   width: 100%;
-  margin-top: 2.8%;
   margin-right: auto;
   user-select: none;
 }
@@ -47,15 +46,11 @@
     width: 1.4em !important;
     margin: 0 !important;
     left: 0 !important;
-    
   }
 
   :global(.rs-carousel-label-wrapper) > input:checked ~ label {
-
-
     background-color: var(--color-main-text) !important;
     transition: background-color 0.3s;
-
   }
 
   :global(.rs-carousel-label) {
@@ -82,7 +77,6 @@
     position: absolute !important;
     width: 100% !important;
     text-align: center !important;
-    bottom: 0.25em !important;
   }
 
   :global(.rs-carousel-label-wrapper) {
@@ -100,5 +94,5 @@
 :global(.rs-carousel) {
   height: auto !important;
   background-color: inherit !important;
-  padding-bottom: 2.5em !important;
+  padding-bottom: 2.5% !important;
 }
