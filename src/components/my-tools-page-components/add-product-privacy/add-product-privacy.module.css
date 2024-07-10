@@ -41,6 +41,7 @@
     font-size: 1vw;
     color: var(--color-main-text);
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -78,7 +79,7 @@
 .settingsrow {
   display: grid;
   width: 90%;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
 }
 .settings {
   display: flex;

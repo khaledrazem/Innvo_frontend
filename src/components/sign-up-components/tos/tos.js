@@ -12,7 +12,7 @@ function TermsOfService({}) {
         <label className={classes.welcometext}>Terms of Service</label>
       </div>
 
-      <div className={classes.divider}></div>
+      <hr className={classes.divider}></hr>
       <div className={classes.toslist}>
         {tos.map((term, index) => {
           return (

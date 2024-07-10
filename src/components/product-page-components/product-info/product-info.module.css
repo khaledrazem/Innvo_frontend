@@ -3,7 +3,7 @@
   flex-direction: column;
   display: flex;
   height: 100%;
-
+  min-height: 40vh;
   h4 {
     font-size: 1vw;
     line-height: 1vw;
@@ -13,10 +13,11 @@
 .title {
   align-items: center;
   display: flex;
-
+  min-height: 2.8vw;
   h4 {
     font-weight: 700;
     font-size: 1.8vw;
+    line-height: 1.8vw;
     margin-block-end: 0;
     margin-right: 2.4vw;
   }
@@ -102,11 +103,6 @@
   }
 }
 
-.features label {
-  font-size: 14px;
-  color: #777;
-}
-
 .explorebutton {
   box-sizing: border-box;
   width: 10.5vw;
@@ -129,6 +125,7 @@
 .pinicon {
   display: flex;
   gap: 1vw;
+  margin-top: auto;
 
   svg {
     height: 5vh;

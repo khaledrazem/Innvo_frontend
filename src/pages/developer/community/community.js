@@ -32,8 +32,6 @@ function CommunityPage() {
         toolsData={communityData}
       />
 
-      <br />
-
       {userType == "user" && (
         <>
           <div className={classes.nocontainer}>

@@ -24,7 +24,7 @@ input:focus {
   border-width: 2px;
   font-weight: 600;
   border-radius: 25px;
-  padding-left: 7.5vh;
+  padding-left: 14%;
   height: 100%;
   box-sizing: border-box;
 }

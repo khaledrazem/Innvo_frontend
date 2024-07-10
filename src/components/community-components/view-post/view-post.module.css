@@ -11,9 +11,9 @@
 
 .backarrow {
   position: absolute;
-  left: -6em;
+  left: -5.6vw;
   scale: -1;
-  width: 3em;
+  width: 2.2vw;
   aspect-ratio: 1;
   cursor: pointer;
 }
@@ -44,7 +44,7 @@
   height: 10%;
   gap: 0.9vw;
   user-select: none;
-  margin-top: auto;
+  margin-top: 7.5vh;
 }
 
 .interactions .like,
@@ -56,27 +56,31 @@
 
 .interactions .like svg,
 .interactions .comment svg {
-  width: 1.4em;
-  height: 1.4em;
+  height: 2.5vh;
 }
 
 .interactions label {
-  font-size: 1.1em;
+  font-size: 1.05vw;
+  line-height: 1.05vw;
+  font-weight: 500;
 }
 
 .comment {
   display: flex;
   align-items: center;
   gap: 0.6vw;
+  border: 0.2vh solid var(--color-secondary);
+  padding: 1%;
+  border-radius: 1vh;
 }
 
 .dividervertical {
-  width: 1px;
-  height: 24px;
-  background-color: var(--color-main-text);
+  height: 100%;
+  border-right: 0.1vh solid var(--color-main-text);
   margin: 0 8px;
 }
 
 .addcomment {
-  width: 88.5%;
+  width: 100%;
+  margin: 3.6vh 0;
 }

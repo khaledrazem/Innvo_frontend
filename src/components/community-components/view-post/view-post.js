@@ -40,7 +40,6 @@ function ViewPost({ postID, formData, clearSelectedPost }) {
           />
         </div>
       </div>
-      <br />
 
       <div className={classes.interactions}>
         <div className={classes.like}>
@@ -53,19 +52,16 @@ function ViewPost({ postID, formData, clearSelectedPost }) {
           <label>{postData.comments} Comments</label>
         </div>
       </div>
-      <br />
 
       {userType === "user" && (
         <>
-          <br />
           <div className={classes.addcomment}>
             <CreateComment></CreateComment>
           </div>
-          <br /> <br />
         </>
       )}
 
-      <ReviewPage></ReviewPage>
+      <ReviewPage header={false} count={false} searchbar={true}></ReviewPage>
     </div>
   ) : null;
 }

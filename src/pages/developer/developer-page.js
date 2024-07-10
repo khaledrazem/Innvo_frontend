@@ -66,9 +66,6 @@ function DeveloperPage() {
 
           <Route path="test" element={<TestPage />} />
         </Routes>
-        <br />
-        <br />
-        <Footer></Footer>
       </div>
     </div>
   );

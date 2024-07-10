@@ -2,6 +2,7 @@
   display: flex;
   height: -webkit-fill-available;
   width: 100%;
+  flex-grow: 1;
   flex-direction: column;
   place-content: flex-start;
   align-items: center;
@@ -81,7 +82,7 @@
   line-height: 1.05vw;
   font-weight: 500;
   margin-top: auto;
-  margin-bottom: 0.5vh;
+  margin-bottom: 1.5vh;
   a {
     text-decoration: none;
     font-weight: 600;

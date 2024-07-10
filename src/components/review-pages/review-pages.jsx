@@ -3,8 +3,15 @@ import classes from "./review-pages.module.css";
 import ratingDatajson from "src/data/ratings.json";
 import { Pagination } from "rsuite";
 import ReviewCard from "src/components/review-card/review-card";
+import SearchBar from "src/components/data-input/search-bar/search-bar";
 
-function ReviewPage({ productId, itemsPerPage = 10 }) {
+function ReviewPage({
+  productId,
+  itemsPerPage = 10,
+  header = true,
+  searchbar = false,
+  count = true,
+}) {
   let reviewData = ratingDatajson;
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -23,46 +30,53 @@ function ReviewPage({ productId, itemsPerPage = 10 }) {
 
   return (
     <div className={classes.reviewpagination}>
-          <div className={classes.filters}>
-            <h4>Filters</h4>
-            <label className={classes.filterbox}>
-              Most Helpful
-              <input
-                type="radio"
-                name="checkbox"
-                value="Most Helpful"
-                className={classes.circleCheckbox}
-              />
-            </label>
-
-            <label className={classes.filterbox}>
-              Highest Rating
-              <input
-                type="radio"
-                name="checkbox"
-                value="Highest Rating"
-                className={classes.circleCheckbox}
-              />
-            </label>
-
-            <label className={classes.filterbox}>
-              Most Recent
-              <input
-                type="radio"
-                name="checkbox"
-                value="Most Recent"
-                className={classes.circleCheckbox}
-              />
-            </label>
+      <div className={classes.filters}>
+        {header && <h4>Filters</h4>}
+        {searchbar && (
+          <div className={classes.filtersearch}>
+            <SearchBar></SearchBar>
           </div>
+        )}
+        <label className={classes.filterbox}>
+          Most Helpful
+          <input
+            type="radio"
+            name="checkbox"
+            value="Most Helpful"
+            className={classes.circleCheckbox}
+          />
+        </label>
 
-      <div className={classes.reviewnumbers}>
-        <label>
-          Displaying {(currentPage - 1) * itemsPerPage + 1} -{" "}
-          {Math.min(reviewData.length, currentPage * itemsPerPage)} out of{" "}
-          {reviewData.length} reviews
+        <label className={classes.filterbox}>
+          Highest Rating
+          <input
+            type="radio"
+            name="checkbox"
+            value="Highest Rating"
+            className={classes.circleCheckbox}
+          />
+        </label>
+
+        <label className={classes.filterbox}>
+          Most Recent
+          <input
+            type="radio"
+            name="checkbox"
+            value="Most Recent"
+            className={classes.circleCheckbox}
+          />
         </label>
       </div>
+
+      {count && (
+        <div className={classes.reviewnumbers}>
+          <label>
+            Displaying {(currentPage - 1) * itemsPerPage + 1} -{" "}
+            {Math.min(reviewData.length, currentPage * itemsPerPage)} out of{" "}
+            {reviewData.length} reviews
+          </label>
+        </div>
+      )}
 
       <div className={classes.paginationcontent}>
         <div className={classes.reviewlist}>
@@ -72,7 +86,7 @@ function ReviewPage({ productId, itemsPerPage = 10 }) {
         </div>
       </div>
       <Pagination
-      className={classes.paginationcomponent}
+        className={classes.paginationcomponent}
         prev={true}
         next={true}
         total={currentReviews.length / itemsPerPage}

@@ -2,7 +2,7 @@
   width: 100%;
   align-self: start;
   text-align: left;
-  margin-bottom: 2.2em;
+  margin-bottom: 3.5vh;
 }
 
 :global(.rs-pagination-group) {
@@ -34,8 +34,8 @@
   align-items: center;
   width: 100%;
   white-space: nowrap;
-  height: 2.9em;
-  gap: 1.3em;
+  height: 4vh;
+  gap: 0.9vw;
 }
 
 .filters label {
@@ -47,6 +47,8 @@
   box-sizing: border-box;
   display: flex;
   cursor: pointer;
+  font-size: 0.7vw;
+  line-height: 0.7vw;
 }
 
 .paginationcontent {

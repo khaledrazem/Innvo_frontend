@@ -46,8 +46,8 @@
 .nocontainer {
   display: flex;
   box-sizing: border-box;
-  padding: 1% 0;
-  width: 85.5%;
+  padding: 3.3% 0;
+  width: 76%;
 }
 
 .postscontainer {
