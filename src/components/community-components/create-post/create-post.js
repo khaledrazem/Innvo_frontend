@@ -83,7 +83,7 @@ function CreatePost({}) {
                 />
                 <ImageIcon /> Images
               </label>
-              <div className={classes.dividervertical} />
+              <hr className={classes.dividervertical} />
               <label>
                 <input
                   type="file"

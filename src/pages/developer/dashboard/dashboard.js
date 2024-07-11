@@ -57,7 +57,7 @@ function DashboardPage() {
             subLabel={"99% Decrease from last month"}
           />
         </div>
-        <div className={classes.divider}></div>
+        <hr className={classes.divider}></hr>
 
         <div className={classes.yearanalytics}>
           <div className={classes.dropdown}>

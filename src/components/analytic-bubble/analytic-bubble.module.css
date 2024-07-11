@@ -7,15 +7,16 @@
   border-radius: 21px;
   text-align: center;
   align-items: center;
-  width: 13.8vw;
-  height: 15.5vh;
+  width: 14vw;
+  height: 13.2vh;
   box-sizing: border-box;
   position: relative;
   justify-content: center;
 
   h3 {
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 1.7vw;
+    line-height: 1.7vw;
+    font-weight: 700;
     margin: 0;
   }
 

@@ -16,6 +16,8 @@
   font-weight: bold;
   margin: 0;
   width: 100%;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
 }
 
 .titlecontainer {

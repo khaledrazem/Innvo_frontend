@@ -1,7 +1,7 @@
 .container {
   display: flex;
   height: 82.8vh;
-  width: 18.7%;
+  width: 18.7vw;
   flex-direction: column;
   position: fixed;
   left: 0px;

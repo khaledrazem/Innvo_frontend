@@ -1,10 +1,10 @@
 .container {
-  position: relative;
+  position: absolute;
   display: flex;
   height: 100%;
   align-items: start;
-  margin-left: auto;
-  gap: 0.8vw;
+  left: 82.5%;
+  gap: 0.4vw;
 }
 
 .profile {
@@ -19,7 +19,7 @@
   max-width: 36px;
   max-height: 36px;
   aspect-ratio: 1;
-  width: 2.3vw;
+  width: 2vw;
 
   border-radius: 50px;
   overflow: hidden;
@@ -46,6 +46,7 @@
   height: 100%;
   position: relative;
   svg {
-    height: 3.7vh;
+    height: 1.8vw;
+    aspect-ratio: 1;
   }
 }

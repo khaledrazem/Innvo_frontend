@@ -41,6 +41,8 @@
   h5 {
     margin: 0;
     width: 100%;
+    font-size: 0.8vw;
+    line-height: 0.8vw;
   }
 }
 
@@ -86,6 +88,8 @@
     margin: 0;
     width: 50%;
     text-align: left;
+    font-size: 1vw;
+    line-height: 1vw;
   }
   svg {
     width: 3vw;

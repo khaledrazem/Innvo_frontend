@@ -1,6 +1,7 @@
 .container {
-  height: 18vh;
+  height: 15.5vh;
   align-content: center;
+  padding-right: 9.4%;
 }
 
 .empty {
@@ -19,14 +20,17 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 1.18vw;
+  gap: 0.5vh;
   h5 {
     margin: 0;
-    font-size: 1.2vw;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
     font-weight: 600;
   }
 
   label {
-    font-size: 1.2vw;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
   }
 }

@@ -1,8 +1,8 @@
 .divider {
-  height: 2px;
-  background-color: var(--color-main-text);
-  flex-grow: 1;
-  margin-left: -5%;
+  margin: 0;
+  margin-left: -5.2%;
+  border-bottom: 0.2vh solid var(--color-main-text);
+  width: 105.2%;
 }
 
 .container {
@@ -17,23 +17,24 @@
   display: flex;
   border: 2px solid var(--color-main-text);
   width: 81%;
-  padding: 7vh 0 0 4%;
+  padding: 3.9% 0 0 4.2%;
 }
 
 .overviewbubble h4 {
-  margin-bottom: 20px;
+  margin-bottom: 2.65vh;
   align-self: self-start;
-  font-size: 1.6vw;
+  font-size: 1.68vw;
+  line-height: 1.68vw;
   font-weight: 600;
 }
 
 /* Styling for the row of base analytics */
 .baseanalyticsrow {
-  gap: 1vw;
+  gap: 1.22vw;
   display: grid;
   width: 95%;
   grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 5vh;
+  margin-bottom: 4.6vh;
 }
 
 /* Year analytics section styling */
@@ -42,7 +43,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 31vh;
+  height: 27.2vh;
 }
 
 .dropdown {

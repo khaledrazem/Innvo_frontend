@@ -2,6 +2,7 @@ import {
   Navigate,
   Route,
   Routes,
+  useLocation,
   useNavigate,
   useResolvedPath,
 } from "react-router-dom";
@@ -26,7 +27,7 @@ import { useContext, useEffect, useState } from "react";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
 
 function DeveloperPage() {
-  const url = useResolvedPath("").pathname;
+  const url = useLocation();
   const navigate = useNavigate();
   const { userType } = useContext(UserSessionContext);
 
@@ -39,9 +40,14 @@ function DeveloperPage() {
     }
   }, [userType]);
 
+  useEffect(() => {
+    console.log("?????????????");
+    console.log(url.pathname);
+  }, [url]);
+
   return (
     <div className="App">
-      <InvoHeader />
+      <InvoHeader searchbar={url.pathname.includes("discover")} />
 
       <SideNavBar />
 

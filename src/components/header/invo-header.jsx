@@ -5,11 +5,11 @@ import ProfileBadge from "./profile-badge/profile-badge";
 import userDatajson from "src/data/profiledata.json";
 import Logo from "./logo/logo";
 
-function InvoHeader() {
+function InvoHeader({ searchbar = true }) {
   return (
     <header className={classes.header}>
       <Logo></Logo>
-      <HeaderSearchBar></HeaderSearchBar>
+      {searchbar && <HeaderSearchBar></HeaderSearchBar>}
       <ProfileBadge userData={userDatajson}></ProfileBadge>
     </header>
   );

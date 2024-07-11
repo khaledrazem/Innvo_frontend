@@ -132,6 +132,7 @@ function InformationTab({ data, register, errors }) {
             </div>
           </>
         )}
+        {userType === "dev" && <div></div>}
 
         <div className={classes.websitesformInput}>
           <label>Links</label>
