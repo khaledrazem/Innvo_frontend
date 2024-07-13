@@ -14,9 +14,9 @@
 }
 
 .productcardcont {
-  /* min-width: 305px; */
+  min-width: 244px;
+  min-height: 120px;
   width: 20.3vw;
-  /* min-height: 132px; */
   height: 15.5vh;
 }
 
