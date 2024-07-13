@@ -1,9 +1,9 @@
 .container {
   position: absolute;
   display: flex;
-  height: 100%;
+  height: fit-content;
   align-items: start;
-  left: 84.5%;
+  left: 82.5%;
   gap: 0.4vw;
 }
 
