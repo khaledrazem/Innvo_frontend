@@ -87,8 +87,8 @@
 
 .banner img {
   width: 100%;
-  max-height: 200px;
-  height: 21.2vh;
+  height: 26vh;
+  max-height: 234px;
 }
 
 .banner img:before {
