@@ -7,9 +7,10 @@
 
 .arrowiconleft {
   stroke: var(--color-main-text);
-  stroke-width: 55px;
+  stroke-width: 5vh;
   width: 1.8vw;
-  transform: translateX(-1.8em);
+  padding: 1px;
+  transform: translateX(-1.9vw);
   scale: -1;
   padding: 1px;
 }
@@ -20,14 +21,14 @@
   position: relative;
   z-index: 100;
   cursor: pointer;
-  top: -2em;
+  top: -4vh;
 }
 
 .arrowiconright {
   stroke: var(--color-main-text);
-  stroke-width: 55px;
-  width: 1.8em;
-  transform: translateX(-3.6em);
+  stroke-width: 5vh;
+  width: 1.8vw;
+  transform: translateX(-3.8vw);
   padding: 1px;
 }
 
@@ -95,5 +96,5 @@
 :global(.rs-carousel) {
   height: auto !important;
   background-color: inherit !important;
-  padding-bottom: 3.2vh !important;
+  padding-bottom: 3.8vh !important;
 }

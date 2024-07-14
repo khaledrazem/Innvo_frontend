@@ -1,10 +1,10 @@
 .container {
   border: 2px solid var(--color-main-text);
-  border-radius: 13px;
+  border-radius: 2vh;
   box-sizing: border-box;
-  padding: calc(30.5vh * 0.15) 6.5% calc(30.5vh * 0.15) 4.1%;
+  padding: calc(35.2vh * 0.17) 6.8% calc(35.2vh * 0.18) 4.4%;
   width: 100%;
-  min-height: 30.5vh;
+  min-height: 35.2vh;
   display: flex;
   position: relative;
   cursor: pointer;
@@ -37,7 +37,7 @@
   align-items: center;
   width: 100%;
   height: 10%;
-  gap: 1.1vw;
+  gap: 1.6vw;
   user-select: none;
   margin-top: auto;
 }
@@ -46,10 +46,10 @@
 .interactions .likeactive {
   display: flex;
   align-items: center;
-  gap: 0.3vw;
+  gap: 0.4vw;
 
   svg {
-    height: 1.5vh;
+    height: 2.2vh;
   }
 }
 
@@ -62,17 +62,17 @@
 .comment {
   display: flex;
   align-items: center;
-  gap: 0.3vw;
+  gap: 0.4vw;
 
   svg {
-    height: 1.5vh;
+    height: 2.2vh;
   }
 }
 
 .dividervertical {
-  height: 100%;
+  height: 80%;
   border-right: 0.1vh solid var(--color-main-text);
-  margin: 0 8px;
+  margin: 0;
 }
 
 .mediaframe {

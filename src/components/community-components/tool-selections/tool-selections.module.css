@@ -1,7 +1,7 @@
 .container {
   display: flex;
   align-items: center;
-  gap: 1.7vw;
+  gap: 1.8vw;
   height: 100%;
   width: 90%;
   overflow-x: auto;
@@ -12,12 +12,12 @@
 .toolcard,
 .activetoolcard {
   display: flex;
-  gap: 1vw;
+  gap: 1.4vw;
   border: 2px solid var(--color-main-text);
   border-radius: 1vh;
   box-sizing: border-box;
   width: 14.6vw;
-  height: 9.1vh;
+  height: 10.5vh;
   align-items: center;
   padding-left: 1.6vw;
 
@@ -33,7 +33,7 @@
     user-select: none;
     cursor: pointer;
     font-size: 1.06vw;
-    line-height: 1.06vw;
+    line-height: 1.1vw;
   }
 }
 

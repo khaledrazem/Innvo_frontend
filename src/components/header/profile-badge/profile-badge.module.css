@@ -16,12 +16,11 @@
 }
 
 .profileimg {
-  max-width: 36px;
-  max-height: 36px;
+  max-width: 55px;
+  max-height: 55px;
   aspect-ratio: 1;
-  width: 2vw;
-
-  border-radius: 50px;
+  width: 2.1vw;
+  border-radius: 2vh;
   overflow: hidden;
   border: 2px solid var(--color-main-text);
   box-sizing: border-box;
@@ -46,7 +45,7 @@
   height: 100%;
   position: relative;
   svg {
-    height: 1.8vw;
+    height: 1.9vw;
     aspect-ratio: 1;
   }
 }

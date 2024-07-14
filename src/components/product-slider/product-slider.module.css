@@ -14,16 +14,14 @@
 }
 
 .productcardcont {
-  min-width: 244px;
-  min-height: 120px;
   width: 20.3vw;
-  height: 15.5vh;
+  height: 17.8vh;
 }
 
 .productlist {
   display: grid;
   position: relative;
-  row-gap: 2.7vh;
+  row-gap: 3.6vh;
   column-gap: 2.8vw;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
@@ -78,7 +76,7 @@ button {
   align-self: center;
 }
 .header {
-  padding-bottom: 1.2vh;
+  margin-bottom: 1.6vh;
   position: relative;
   align-self: start;
   text-align: center;

@@ -5,8 +5,8 @@
   flex-direction: column;
   width: 85.5%;
   align-self: center;
-  margin-top: 6vh;
-
+  margin-top: 7.5vh;
+  margin-right: 7.7vw;
   label {
     font-size: 1vw;
     font-weight: 500;
@@ -39,8 +39,8 @@
 }
 
 .header h4 {
-  font-size: 1.8vw;
-  line-height: 1.8vw;
+  font-size: 1.9vw;
+  line-height: 1.9vw;
   font-weight: 700;
 }
 
@@ -54,14 +54,14 @@
   flex-wrap: nowrap;
   width: 100%;
   gap: 2.2vw;
-  margin-top: 4.8vh;
+  margin-top: 5.8vh;
 }
 
 .subscriptionbubble {
   border: 2px solid var(--color-main-text);
   background-color: var(--color-background);
-  border-radius: 24px;
-  padding: 4vh 1vw;
+  border-radius: 3vh;
+  padding: 5.5vh 1vw;
   padding-bottom: 3vh;
   text-align: center;
   width: 26%;
@@ -87,11 +87,11 @@
     padding: 0;
     line-height: 2em;
     margin-top: 4.5vh;
-    margin-bottom: 5.2vh;
+    margin-bottom: 6vh;
     text-align-last: start;
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    gap: 1.5vh;
   }
 
   li {
@@ -107,12 +107,12 @@
 
   button {
     background-color: transparent;
-    border: 2px solid var(--color-main-text);
-    border-radius: 6px;
+    border: 0.4vh solid var(--color-main-text);
+    border-radius: 1vh;
     padding: 2%;
     cursor: pointer;
     width: 75%;
-    height: 4.3vh;
+    height: 5vh;
     box-sizing: border-box;
     align-self: center;
     margin-top: auto;
@@ -130,7 +130,7 @@
   button {
     background-color: transparent;
     color: var(--color-background);
-    border: 2px solid var(--color-background);
+    border: 0.4vh solid var(--color-background);
   }
 }
 .subscriptionbubbleelite {
@@ -139,6 +139,6 @@
   button {
     background-color: transparent;
     color: var(--color-background);
-    border: 2px solid var(--color-background);
+    border: 0.4vh solid var(--color-background);
   }
 }

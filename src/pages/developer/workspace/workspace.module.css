@@ -5,69 +5,12 @@
   padding-left: 4%;
   box-sizing: border-box;
   text-align: left;
-  h3 {
-    margin: 0;
-    font-size: 1.2vw;
-    font-weight: 600;
-  }
 }
 
-.bubblecontainer {
-  border: 2px solid var(--color-main-text);
-  border-radius: 25px;
-  box-sizing: border-box;
-  padding: 2%;
-  width: 85.5%;
-  min-height: 72vh;
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-}
-
-.navtab {
-  gap: 0.8vw;
-  display: flex;
-}
-
-.navbutton,
-.navbuttonselected {
-  border-radius: 20px;
-  border-width: 2px;
-  width: 8.5vw;
-  font-size: 0.8vw;
+.container h3 {
+  margin: 0;
+  font-size: 1.2vw;
   font-weight: 600;
-  box-sizing: border-box;
-  padding: 0.7vh 0;
-  background: var(--color-background);
-  color: var(--color-main-text);
-}
-.navbuttonselected {
-  background-color: var(--color-secondary);
-  color: var(--color-background);
-}
-
-.navbutton:hover,
-.navbuttonselected:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-background);
-}
-
-.submitbutton {
-  padding: 0.4vh 1vw;
-  width: 7vw;
-  background: var(--color-background);
-  color: var(--color-main-text);
-  border-radius: 16px;
-  border: 2px solid var(--color-main-text);
-  margin-left: auto;
-  margin-right: 1.5%;
-  font-size: 1vw;
-  font-weight: 600;
-}
-
-.submitbutton:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-background);
 }
 
 .formcontainer {
@@ -84,7 +27,7 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 5vh;
+  gap: 3vh;
 }
 
 .editicon,
@@ -93,6 +36,7 @@
   margin-left: auto;
   cursor: pointer;
 }
+
 .selectedediticon {
   color: var(--color-secondary);
 }

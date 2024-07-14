@@ -5,6 +5,7 @@
   height: 100%;
   padding-left: 4%;
   box-sizing: border-box;
+  gap: 2.6vh;
 }
 
 .carouselcontainer {
@@ -12,19 +13,26 @@
   align-self: start;
 }
 
+.productsliderlist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 14.2vh;
+}
 .explorebutton {
-  padding: 10px 0;
   display: flex;
   align-self: flex-end;
   position: relative;
-  right: 14.5%;
+  justify-content: right;
+  right: 14%;
 
   button {
     box-sizing: border-box;
     width: 8vw;
+    height: 4.5vh;
     background: var(--color-background);
-    border-radius: 25px;
-    font-size: 0.8vw;
+    border-radius: 4vh;
+    font-size: 0.85vw;
     font-weight: 500;
     border-width: 2px;
     color: var(--color-main-text);

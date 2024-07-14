@@ -20,40 +20,35 @@ function DiscoverPage() {
             ]}
           />
         </div>
-        <br />
-        <ProductSlider
-          titleText={"Top Rated"}
-          productData={prodDatajson.products}
-        />
-        <br /> <br />
-        <br /> <br /> <br />
-        <ProductSlider
-          titleText={"Most Used"}
-          productData={prodDatajson.products}
-        />
-        <br /> <br />
-        <br /> <br /> <br />
-        <ProductSlider
-          titleText={"Rising Stars"}
-          productData={prodDatajson.products}
-        />
-        <br /> <br />
-        <br /> <br /> <br />
-        <ProductSlider
-          titleText={"New and Noteworthy"}
-          productData={prodDatajson.products}
-        />
-        <br /> <br />
-        <br /> <br /> <br />
-        <ProductSlider
-          titleText={"Explore"}
-          productData={prodDatajson.products}
-          pagination={false}
-          itemsPerPage={18}
-        />
-        <div className={classes.explorebutton}>
-          {" "}
-          <button>View more</button>
+        <div className={classes.productsliderlist}>
+          <ProductSlider
+            titleText={"Top Rated"}
+            productData={prodDatajson.products}
+          />
+          <ProductSlider
+            titleText={"Most Used"}
+            productData={prodDatajson.products}
+          />
+          <ProductSlider
+            titleText={"Rising Stars"}
+            productData={prodDatajson.products}
+          />
+          <ProductSlider
+            titleText={"New and Noteworthy"}
+            productData={prodDatajson.products}
+          />
+          <div>
+            <ProductSlider
+              titleText={"Explore"}
+              productData={prodDatajson.products}
+              pagination={false}
+              itemsPerPage={18}
+            />
+            <div className={classes.explorebutton}>
+              {" "}
+              <button>View more</button>
+            </div>
+          </div>
         </div>
         <br />
         <br />
