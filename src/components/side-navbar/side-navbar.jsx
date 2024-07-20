@@ -28,13 +28,13 @@ function SideNavBar() {
             text="Discover"
             icon={<DiscoverIcon />}
           ></NavButton>
-          {userType == "dev" && (
+          {/* {userType == "dev" && (
             <NavButton
               href="dashboard"
               text="Dashboard"
               icon={<DashboardIcon />}
             ></NavButton>
-          )}
+          )} */}
           {userType == "dev" && (
             <NavButton
               href="my-tools"
@@ -49,11 +49,11 @@ function SideNavBar() {
               icon={<ToolsIcon />}
             ></NavButton>
           )}
-          <NavButton
+          {/* <NavButton
             href="community"
             text="Community"
             icon={<CommunityIcon />}
-          ></NavButton>
+          ></NavButton> */}
           {/* <NavButton
             href="support"
             text="Support"

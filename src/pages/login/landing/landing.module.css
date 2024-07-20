@@ -12,22 +12,22 @@
   justify-content: start;
 
   h1 {
-    font-size: 5.6vh;
-    line-height: 3.5vh;
+    font-size: 5.1vh;
+    line-height: 4.1vh;
     margin: 0;
   }
 
   button {
     border-radius: 50px;
-    border-width: 2px;
+    border-width: 0.2vh;
     background: var(--color-background);
     color: var(--color-main-text);
     padding: 0;
     box-sizing: border-box;
     font-weight: 500;
-    font-size: 2.3vh;
-    width: 12vw;
-    height: 4.8vh;
+    font-size: 2.2vh;
+    width: 11.5vw;
+    height: 4.4vh;
   }
 
   button:hover {
@@ -43,19 +43,38 @@
 .userchoiceselected {
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--color-main-text);
-  border-radius: 30px;
+  border: 0 solid var(--color-main-text);
+  border-radius: 12%;
   box-sizing: border-box;
-  padding-top: calc(31vh * 0.13);
-  padding-bottom: calc(31vh * 0.15);
+  padding-top: calc(30.8vh * 0.13);
+  padding-bottom: calc(30.8vh * 0.15);
   width: 31vh;
-  height: 31vh;
+  height: 30.8vh;
   cursor: pointer;
   align-items: center;
-  font-weight: 600;
-  font-size: 1.8vw;
-  line-height: 1.8vw;
-  gap: 2.2vh;
+  gap: 2.6vh;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+
+  label {
+    font-weight: 400;
+    font-size: 1.3vw;
+    line-height: 1.3vw;
+  }
+
+  h4 {
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+    font-weight: 600;
+  }
+}
+.userchoice:hover,
+.userchoiceselected:hover {
+  border: 0.4vh solid var(--color-secondary);
 }
 
 .userchoiceselected {
@@ -66,8 +85,8 @@
 .loginchoices {
   width: 100%;
   justify-content: center;
-  gap: 10.6vw;
+  gap: 11.4vw;
   display: flex;
-  margin-top: 6.7vh;
-  margin-bottom: 5.4vh;
+  margin-top: 6.2vh;
+  margin-bottom: 5.7vh;
 }

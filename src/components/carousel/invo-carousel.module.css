@@ -8,11 +8,10 @@
 .arrowiconleft {
   stroke: var(--color-main-text);
   stroke-width: 5vh;
-  width: 1.8vw;
-  padding: 1px;
-  transform: translateX(-1.9vw);
-  scale: -1;
-  padding: 1px;
+  height: 3vh;
+  padding: 1vh;
+  box-sizing: border-box;
+  transform: translateX(1.9vw) rotate(90deg);
 }
 .arrowContainer {
   align-self: center;
@@ -27,9 +26,10 @@
 .arrowiconright {
   stroke: var(--color-main-text);
   stroke-width: 5vh;
-  width: 1.8vw;
-  transform: translateX(-3.8vw);
-  padding: 1px;
+  height: 3vh;
+  padding: 1vh;
+  box-sizing: border-box;
+  transform: translateX(-3.5vw) rotate(-90deg);
 }
 
 .customslider {
@@ -50,16 +50,17 @@
   }
 
   :global(.rs-carousel-label-wrapper) > input:checked ~ label {
-    background-color: var(--color-main-text) !important;
+    background-color: var(--color-secondary) !important;
     transition: background-color 0.3s;
   }
 
   :global(.rs-carousel-label) {
     position: absolute !important;
+    background-color: var(--color-grey);
 
     cursor: pointer !important;
-    height: 1.2vh !important;
-    width: 1.2vh !important;
+    height: 1.5vh !important;
+    width: 1.5vh !important;
     margin: 0 !important;
     left: 0 !important;
   }
@@ -84,10 +85,9 @@
   :global(.rs-carousel-label-wrapper) {
     cursor: pointer !important;
     position: relative !important;
-    height: 1.2vh !important;
-    width: 1.2vh !important;
+    height: 1.5vh !important;
+    width: 1.5vh !important;
     box-sizing: content-box;
-    border: 2px solid var(--color-main-text) !important;
     border-radius: 50% !important;
     margin: 0 5px !important;
   }

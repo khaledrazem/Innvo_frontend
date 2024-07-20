@@ -32,8 +32,9 @@
 .navbutton,
 .navbuttonselected {
   border-radius: 20px;
-  border-width: 2px;
+  border-width: 0.3vh;
   width: 8.5vw;
+  height: 4.5vh;
   font-size: 0.8vw;
   font-weight: 600;
   box-sizing: border-box;
@@ -42,6 +43,7 @@
   color: var(--color-main-text);
 }
 .navbuttonselected {
+  border-width: 0;
   background-color: var(--color-secondary);
   color: var(--color-background);
 }
@@ -83,6 +85,6 @@
   min-height: 72vh;
   display: flex;
   flex-direction: column;
-  margin-top: 1.2vh;
-  gap: 3.5vh;
+  margin-top: 1.7vh;
+  gap: 3.9vh;
 }

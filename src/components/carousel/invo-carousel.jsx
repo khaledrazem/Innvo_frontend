@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import classes from "./invo-carousel.module.css";
 import { Carousel } from "rsuite";
 
-import { ReactComponent as UpDownArrow } from "src/public/svg/UP-Down_Arrow.svg";
+import { ReactComponent as UpDownArrow } from "src/public/svg/UP-Down Arrow.svg";
 
 const imageStyle = (width, height) => ({
   maxWidth: width,

@@ -1,69 +1,12 @@
 .container {
-  border: 2px solid var(--color-main-text);
-  border-radius: 25px;
-  display: flex;
-  width: 85%;
-  position: relative;
-  box-sizing: border-box;
-  padding: 2% 4%;
-  flex-direction: column;
-}
-
-.newbutton {
-  padding: 1vh 1vw;
-  color: var(--color-main-text);
-  background-color: var(--color-background);
-  border: 2px solid var(--color-main-text);
-  border-radius: 6px;
-  width: -moz-fit-content;
   width: fit-content;
-  font-size: 1.2vw;
-  font-weight: 500;
-  align-items: center;
-  position: relative;
-  display: inline-flex;
-  align-self: center;
-  svg {
-    width: 1.5vw;
-    margin-right: 0.8vw;
-  }
-}
-
-.newbutton:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-background);
-}
-
-.productlink {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  height: 100%;
-  z-index: 1000;
-}
-.headrow {
-  display: flex;
-  margin: 1vh 0 3vh 0;
+  padding-left: 3%;
   box-sizing: border-box;
-  justify-content: space-between;
-  align-items: center;
-
-  h2 {
-    font-weight: 600;
-    margin: 0;
-    font-size: 1.6vw;
-  }
-
-  svg {
-    width: 2.4vw;
-    cursor: pointer;
-  }
-}
-
-.toolslist {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  gap: 3vh;
+  height: 100%;
+  -webkit-user-select: none;
+  user-select: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3.5vh;
+  column-gap: 2.85vw;
 }

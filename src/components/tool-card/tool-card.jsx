@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import classes from "./tool-card.module.css";
 import { useContext } from "react";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
+import { Dropdown } from "rsuite";
+
+import { ReactComponent as SandwichIcon } from "src/public/svg/Dots Option.svg";
 
 function ToolCard({ toolData, userEdit = false }) {
   const { userType } = useContext(UserSessionContext);
@@ -29,7 +32,7 @@ function ToolCard({ toolData, userEdit = false }) {
             className={classes.toollink}
             to={"/dev/my-tools/edit/" + toolData.id}
           />
-          Edit Page
+          Access
         </button>
       )}
 
@@ -53,6 +56,19 @@ function ToolCard({ toolData, userEdit = false }) {
           )}
         </div>
       )}
+
+      <Dropdown
+        renderToggle={(props, ref) => (
+          <SandwichIcon {...props} ref={ref} className={classes.dotsicon} />
+        )}
+      >
+        <Dropdown.Item className={classes.option}>
+          Remove from Toolbar
+        </Dropdown.Item>
+        <Dropdown.Item>Reorder</Dropdown.Item>
+        <Dropdown.Item>Report Tool</Dropdown.Item>
+        <Dropdown.Item>Unslot</Dropdown.Item>
+      </Dropdown>
     </div>
   ) : null;
 }

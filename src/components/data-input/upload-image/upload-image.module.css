@@ -38,11 +38,11 @@
   }
 
   svg {
-    width: 35.5%;
-    border: 2px solid var(--color-main-text);
+    width: 31%;
+    border: 0.2vh solid var(--color-main-text);
     aspect-ratio: 1;
     border-radius: 50px;
     box-sizing: border-box;
-    padding: 11.5%;
+    padding: 9%;
   }
 }

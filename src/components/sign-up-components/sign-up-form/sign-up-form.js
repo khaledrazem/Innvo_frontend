@@ -29,8 +29,6 @@ function SignUpForm({ register, errors, getValues }) {
         </div>
       </div>
 
-      <hr className={classes.divider} />
-
       <div className={classes.formcontainer}>
         <div className={classes.imageupload}>
           <label>Logo/Image</label>
@@ -269,11 +267,6 @@ function SignUpForm({ register, errors, getValues }) {
             />
           </div>
         </div>
-      </div>
-
-      <div className={classes.signup}>
-        <label>Already have an account? </label>
-        <Link to={"/login/sign-in"}> Login</Link>
       </div>
     </div>
   );

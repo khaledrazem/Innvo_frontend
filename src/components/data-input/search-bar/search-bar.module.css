@@ -4,9 +4,13 @@
   height: 100%;
 }
 
+.wrapper:hover {
+  color: var(--color-secondary);
+}
 textarea:focus,
 input:focus {
   outline: none;
+  color: var(--color-secondary);
 }
 
 .icon {

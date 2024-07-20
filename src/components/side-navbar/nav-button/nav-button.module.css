@@ -1,7 +1,8 @@
 .container,
 .selectedcontainer {
   min-width: 10vw;
-  padding: 2.5% 0 2% 5%;
+  height: 4.8vh;
+  padding: 2.5% 0 2% 8.5%;
   font-size: 1vw;
   font-weight: 500;
   display: flex;
@@ -24,9 +25,8 @@
 
 .selectedcontainer {
   background-color: var(--color-secondary);
-  border: 2px solid var(--color-main-text);
   color: var(--color-background);
-  border-radius: 6px;
+  border-radius: 3vh;
 }
 
 .selectedcontainer svg {

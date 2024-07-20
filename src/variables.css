@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
-    font-family: "Montserrat";
-    color: #31353D;
+  font-family: "Montserrat";
+  color: #31353d;
 }
 
 :root {
-    --main-font: "Montserrat";
+  --main-font: "Montserrat";
 
-    --color-main-text: #31353D;
-    --color-primary: #FF6B6B;
-    --color-secondary: #4B57DB;
-    --color-background: #FFFFFF;
+  --color-main-text: #31353d;
+  --color-primary: #ff6b6b;
+  --color-secondary: #4b57db;
+  --color-background: #ffffff;
+  --color-grey: #d9d9d9;
 
-    --color-subscription-essential: #31353D;
-    --color-subscription-professional: #B57EDC;
-    --color-subscription-elite: #FDB813;
+  --color-subscription-essential: #31353d;
+  --color-subscription-professional: #b57edc;
+  --color-subscription-elite: #fdb813;
 
-
-    --rs-carousel-indicator-active: var(--color-main-text) !important
-
+  --rs-carousel-indicator-active: var(--color-main-text) !important;
 }

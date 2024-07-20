@@ -1,5 +1,12 @@
 .container {
-  padding-left: 4%;
+  padding-left: 4.7%;
   box-sizing: border-box;
   height: 100%;
+  margin-top: 2.8vh;
+  width: 86.2%;
+  user-select: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3.5vh;
+  column-gap: 3.6vw;
 }

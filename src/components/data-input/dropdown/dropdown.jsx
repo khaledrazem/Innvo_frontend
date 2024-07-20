@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./dropdown.module.css";
+import { ReactComponent as ArrowIcon } from "src/public/svg/UP-Down Arrow.svg";
 
 function Dropdown({
   name = "dropdown",
@@ -19,9 +20,9 @@ function Dropdown({
 
   return (
     <div className={classes.dropdowncontainer}>
+      <ArrowIcon className={classes.svgicon} />
       <select
-              onChange={handleChange? handleChange: {}}
-
+        onChange={handleChange ? handleChange : {}}
         {...(register ? register(name, rules) : {})}
         value={selectedOption}
         defaultValue=""

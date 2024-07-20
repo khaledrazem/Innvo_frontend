@@ -42,3 +42,24 @@
     transform: rotate(360deg);
   }
 }
+
+button:hover {
+  background: var(--color-secondary);
+  border: none;
+  color: var(--color-background);
+}
+
+input:hover,
+input:focus,
+select:hover,
+textarea:hover {
+  border-color: var(--color-secondary) !important;
+  color: var(--color-secondary) !important;
+  fill: var(--color-secondary);
+}
+input:hover::placeholder,
+input:focus::placeholder,
+select:hover::placeholder,
+textarea:hover::placeholder {
+  color: var(--color-secondary) !important;
+}

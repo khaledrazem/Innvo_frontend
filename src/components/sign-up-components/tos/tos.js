@@ -9,7 +9,7 @@ function TermsOfService({}) {
       <div className={classes.head}>
         <h1>INNVO</h1>
 
-        <label className={classes.welcometext}>Terms of Service</label>
+        <label className={classes.welcometext}>Terms of service</label>
       </div>
 
       <hr className={classes.divider}></hr>

@@ -28,7 +28,10 @@ function LandingPage() {
           onClick={() => setUser("user")}
         >
           <UserIcon />
-          <label>User</label>
+
+          <div className={classes.texts}>
+            <h4>Users</h4> <label>I Use Products</label>
+          </div>
         </div>
 
         <div
@@ -40,7 +43,10 @@ function LandingPage() {
           onClick={() => setUser("dev")}
         >
           <DeveloperIcon />
-          <label>Developer</label>
+
+          <div className={classes.texts}>
+            <h4>Innovators</h4> <label>I Build Products</label>
+          </div>
         </div>
       </div>
       {selectedUser == null && userType == null ? (

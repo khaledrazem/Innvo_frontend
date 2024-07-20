@@ -3,27 +3,37 @@
   border-radius: 2vh;
   flex-direction: row;
   display: flex;
-  height: 22.4vh;
+  height: 19.8vh;
   width: 100%;
   box-sizing: border-box;
-  padding: 1% 4% 1% 5%;
+  padding: 1% 4% 1% 7%;
   align-items: center;
-
+  position: relative;
   button {
-    padding: 0.4vh 1.8vw;
     color: var(--color-main-text);
     background-color: var(--color-background);
-    border: 2px solid var(--color-main-text);
-    border-radius: 4px;
+    border: 0.3vh solid var(--color-main-text);
+    border-radius: 2vh;
     margin-left: auto;
     font-size: 1vw;
     font-weight: 600;
+    box-sizing: border-box;
+    height: 3.5vh;
+    width: 6.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
   }
 
   button:hover {
     background-color: var(--color-secondary);
     color: var(--color-background);
+    border-width: 0;
+  }
+
+  a {
+    z-index: 100;
   }
 }
 
@@ -48,7 +58,7 @@
   border-radius: 50%;
   border: 2px solid var(--color-main-text);
   box-sizing: border-box;
-  margin-right: 1.3vw;
+  margin-right: 1vw;
   overflow: hidden;
 }
 
@@ -60,17 +70,21 @@
 
 .summary {
   text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
 }
 
 .header {
-  font-size: 1.25vw;
-  line-height: 1.25vw;
+  font-size: 1.6vw;
+  line-height: 1.6vw;
   font-weight: 700;
   margin: 0;
 }
 
 .status {
-  font-size: 1.25vw;
+  font-size: 1vw;
+  line-height: 1vw;
   display: flex;
   font-weight: 500;
   align-items: center;
@@ -90,7 +104,7 @@
 }
 
 .inactiveball {
-  background-color: red;
+  background-color: var(--color-primary);
 }
 
 .toollink {
@@ -100,4 +114,25 @@
   top: 0;
   height: 100%;
   z-index: 1000;
+}
+
+.dotsicon {
+  width: 1.2vw;
+  aspect-ratio: 1;
+  rotate: 90deg;
+  margin-left: 1vw;
+  z-index: 200;
+  cursor: pointer;
+}
+
+:global(.rs-dropdown-menu) {
+  background-color: var(--color-main-text);
+  min-width: 10.5vw;
+  border-radius: 2vh;
+}
+:global(.rs-text) {
+  color: var(--color-background);
+  padding-left: 10%;
+  font-weight: 600;
+  font-family: var(--main-font);
 }

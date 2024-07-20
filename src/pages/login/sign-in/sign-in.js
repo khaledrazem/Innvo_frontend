@@ -43,7 +43,6 @@ function SignInPage() {
           </button>
         </div>
       </div>
-      <hr className={classes.divider} />
       <div className={classes.fields}>
         <div className={classes.inputfields}>
           <label>
@@ -83,11 +82,13 @@ function SignInPage() {
         </div>
       </div>
 
+      <button type="submit" className={classes.continuebutton}>
+        Continue
+      </button>
       <div className={classes.signup}>
         <label>Don't have an account?</label>{" "}
         <Link to={"/login/sign-up"}>Sign up</Link>
       </div>
-      <button type="submit">Continue</button>
     </form>
   );
 }

@@ -21,6 +21,10 @@
   align-self: center;
   cursor: pointer;
   height: 2.1vh;
+  stroke-width: 10vh;
+}
+.reseticon:hover {
+  color: var(--color-secondary);
 }
 
 .search {
