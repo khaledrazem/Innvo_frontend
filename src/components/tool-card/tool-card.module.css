@@ -104,7 +104,7 @@
 }
 
 .inactiveball {
-  background-color: var(--color-primary);
+  background-color: var(--color-main-text);
 }
 
 .toollink {
@@ -129,10 +129,19 @@
   background-color: var(--color-main-text);
   min-width: 10.5vw;
   border-radius: 2vh;
+  z-index: 900 !important;
 }
 :global(.rs-text) {
   color: var(--color-background);
   padding-left: 10%;
   font-weight: 600;
   font-family: var(--main-font);
+  z-index: 900 !important;
+  position: relative;
+}
+
+.dragicon {
+  position: absolute;
+  width: 1vw;
+  left: 0.5vw;
 }

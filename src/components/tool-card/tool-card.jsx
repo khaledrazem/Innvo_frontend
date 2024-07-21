@@ -6,11 +6,17 @@ import { Dropdown } from "rsuite";
 
 import { ReactComponent as SandwichIcon } from "src/public/svg/Dots Option.svg";
 
-function ToolCard({ toolData, userEdit = false }) {
+function ToolCard({ toolData, setDraggable, draggable }) {
   const { userType } = useContext(UserSessionContext);
 
   return toolData != null ? (
-    <div className={classes.container}>
+    <div
+      className={classes.container}
+      style={{
+        pointerEvents: draggable == "true" ? "none" : "auto",
+      }}
+    >
+      {draggable == "true" && <SandwichIcon className={classes.dragicon} />}
       <div className={classes.logo}>
         <img src={toolData.logo.url}></img>
       </div>
@@ -45,15 +51,6 @@ function ToolCard({ toolData, userEdit = false }) {
             />
             Access
           </button>
-          {userEdit && (
-            <button className={classes.redbutton}>
-              <Link
-                className={classes.toollink}
-                to={"/dev/my-tools/edit/" + toolData.id}
-              />
-              Remove
-            </button>
-          )}
         </div>
       )}
 
@@ -65,8 +62,13 @@ function ToolCard({ toolData, userEdit = false }) {
         <Dropdown.Item className={classes.option}>
           Remove from Toolbar
         </Dropdown.Item>
-        <Dropdown.Item>Reorder</Dropdown.Item>
-        <Dropdown.Item>Report Tool</Dropdown.Item>
+        <Dropdown.Item onClick={() => setDraggable("true")}>
+          Reorder
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <Link className={classes.toollink} to={"/dev/report"} />
+          Report Tool
+        </Dropdown.Item>
         <Dropdown.Item>Unslot</Dropdown.Item>
       </Dropdown>
     </div>

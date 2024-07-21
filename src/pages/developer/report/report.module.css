@@ -1,0 +1,106 @@
+.container {
+  padding-left: 9%;
+  box-sizing: border-box;
+  height: 100%;
+  width: 74%;
+  user-select: none;
+  text-align: left;
+
+  textarea {
+    width: 43.6vw;
+    height: 10vh;
+    padding: 1%;
+    box-sizing: border-box;
+    font-size: 0.8vw;
+    border: 0.3vh solid var(--color-main-text);
+    border-radius: 1vh;
+    margin-top: -1.5vh;
+    resize: none;
+  }
+}
+
+.header {
+  font-size: 1.8vw;
+  margin-bottom: 2.4vh;
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.header label {
+  border: 0.4vh solid var(--color-main-text);
+  padding: 0% 1.2%;
+  border-radius: 1vh;
+}
+
+.description {
+  text-align: left;
+  font-size: 0.85vw;
+  line-height: 0.7vw;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 4.8vh 0;
+  gap: 3.8vh;
+}
+
+.entry {
+  display: inline-flex;
+}
+
+.text {
+  flex-direction: column;
+  display: flex;
+  gap: 0.8vh;
+  h5 {
+    font-size: 0.84vw;
+    line-height: 0.84vw;
+  }
+
+  label {
+    font-size: 0.85vw;
+    line-height: 0.85vw;
+  }
+}
+.form input[type="radio"] {
+  margin-right: 0.5vw;
+  width: 1.2vw;
+  height: 1.2vw;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0.2vw solid var(--color-main-text);
+  border-radius: 50%;
+}
+
+.form input[type="radio"]:checked {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.form label {
+  font-size: 0.85vw;
+  display: block;
+}
+
+.submitbutton {
+  background-color: var(--color-secondary);
+  color: var(--color-background);
+  border: none;
+  font-size: 1.3vw;
+  border-radius: 1vh;
+  cursor: pointer;
+  width: 12.2vw;
+  height: 5.7vh;
+}
+
+span {
+  color: red;
+  font-size: 12px;
+}

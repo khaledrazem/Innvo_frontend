@@ -25,6 +25,7 @@ import PinsCenterPage from "./pins/pins-center";
 import WorkspacePage from "./workspace/workspace";
 import { useContext, useEffect, useState } from "react";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
+import ReportPage from "./report/report";
 
 function DeveloperPage() {
   const url = useLocation();
@@ -67,6 +68,7 @@ function DeveloperPage() {
           <Route path="subscriptions" element={<SubscriptionsPage />} />
           <Route path="notifications" element={<NotificationsCenterPage />} />
           <Route path="pins" element={<PinsCenterPage />} />
+          <Route path="report" element={<ReportPage />} />
 
           <Route path="profile" element={<ProfilePage />} />
 

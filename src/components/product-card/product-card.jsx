@@ -62,6 +62,30 @@ function ProductCard({ productData }) {
             {truncateDescription(productData.summary)}
           </label>
         </div>
+        <div className={classes.subscriptions}>
+          {productData.free === true ? (
+            <>
+              <label className={classes.subscriptionbox}>Free</label>
+            </>
+          ) : null}
+          {productData.subscription === "elite" ? (
+            <>
+              <label className={classes.subscriptionboxelite}>
+                Subscription
+              </label>
+
+              <EliteIcon className={classes.subscriptionelite} />
+            </>
+          ) : productData.subscription === "professional" ? (
+            <>
+              <label className={classes.subscriptionboxprof}>
+                Subscription
+              </label>
+              <ProfessionalIcon className={classes.subscriptionprof} />
+            </>
+          ) : null}
+        </div>
+
         <div className={classes.metrics}>
           <div className={classes.ratings}>
             {[...Array(productData.rating)].map((e, i) => (
@@ -76,11 +100,6 @@ function ProductCard({ productData }) {
             <UserIcon />
             <label>{productData.downloads}</label>
           </div>
-          {productData.subscription === "elite" ? (
-            <EliteIcon className={classes.subscriptionelite} />
-          ) : productData.subscription === "professional" ? (
-            <ProfessionalIcon className={classes.subscriptionprof} />
-          ) : null}
         </div>
       </div>
     </div>

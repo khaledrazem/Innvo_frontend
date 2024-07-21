@@ -13,6 +13,7 @@
       "ratingscount": 431,
       "reviewscount": 13,
       "subscription": "professional",
+      "free": true,
       "description": {
         "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
         "images": [
@@ -86,6 +87,7 @@
       "ratingscount": 431,
       "reviewscount": 13,
       "subscription": "elite",
+      "free": false,
       "description": {
         "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
         "images": [
@@ -159,6 +161,7 @@
       "ratingscount": 431,
       "reviewscount": 13,
       "subscription": "essential",
+      "free": true,
       "description": {
         "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
         "images": [
@@ -232,6 +235,7 @@
       "ratingscount": 431,
       "reviewscount": 13,
       "subscription": "trial",
+      "free": true,
       "description": {
         "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
         "images": [

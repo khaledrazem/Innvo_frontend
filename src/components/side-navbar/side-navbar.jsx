@@ -35,20 +35,13 @@ function SideNavBar() {
               icon={<DashboardIcon />}
             ></NavButton>
           )} */}
-          {userType == "dev" && (
-            <NavButton
-              href="my-tools"
-              text="My Tools"
-              icon={<ToolsIcon />}
-            ></NavButton>
-          )}
-          {userType == "user" && (
-            <NavButton
-              href="workspace"
-              text="My tools"
-              icon={<ToolsIcon />}
-            ></NavButton>
-          )}
+
+          <NavButton
+            href="my-tools"
+            text="My Tools"
+            icon={<ToolsIcon />}
+          ></NavButton>
+
           {/* <NavButton
             href="community"
             text="Community"

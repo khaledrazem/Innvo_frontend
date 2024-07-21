@@ -1,0 +1,87 @@
+/* product-card.module.css */
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: var(--color-background);
+  border: 0.2vh solid var(--color-main-text);
+  border-radius: 2vh;
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  left: 50%;
+  top: 59.4%;
+  transform: translate(-50%, -50%);
+}
+
+.container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 0.3vh solid var(--color-secondary);
+}
+
+.contentconfirm,
+.contentsubmitted {
+  width: 45.8vw;
+  height: 39.8vh;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 5%;
+  padding-bottom: 4%;
+
+  h4 {
+    font-size: 1.05vw;
+    line-height: 1.05vw;
+  }
+}
+
+.labelmessage {
+  display: inline-flex;
+  width: 74%;
+  text-align: center;
+  font-size: 1.05vw;
+  line-height: 1.05vw;
+  font-weight: 500;
+}
+.contentsubmitted {
+  width: 53.8vw;
+  height: 52.8vh;
+}
+.buttons {
+  display: flex;
+  gap: 1.85vw;
+  button {
+    height: 6vh;
+    width: 12.2vw;
+    border-radius: 0.5vw;
+    font-size: 1.35vw;
+    position: relative;
+  }
+
+  button:first-child {
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+  }
+
+  button:nth-child(2) {
+    background-color: var(--color-main-text);
+    color: var(--color-background);
+  }
+}
+
+.tickicon {
+  width: 9.2vw;
+}
+
+.productlink {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+}

@@ -51,7 +51,6 @@
   text-align: left;
   font-size: 0.8vw;
   font-weight: 600;
-  margin-bottom: 1.5%;
 }
 
 .body {
@@ -125,8 +124,7 @@
 
 .subscriptionprof,
 .subscriptionelite {
-  width: 1.1vw;
-  margin-left: 0.7vw;
+  width: 1vw;
 }
 
 .subscriptionprof {
@@ -143,4 +141,32 @@
   top: 0;
   height: 100%;
   z-index: 700;
+}
+
+.subscriptions {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  gap: 0.3vw;
+  margin: 2.5% 0;
+}
+
+.subscriptionbox,
+.subscriptionboxelite,
+.subscriptionboxprof {
+  border: 0.2vh solid var(--color-secondary);
+  color: var(--color-secondary);
+  font-size: 0.55vw;
+  font-weight: 600;
+  padding: 0.4% 2.5%;
+  border-radius: 0.3vh;
+}
+
+.subscriptionboxelite {
+  color: var(--color-subscription-elite);
+  border-color: var(--color-subscription-elite);
+}
+.subscriptionboxprof {
+  color: var(--color-subscription-professional);
+  border-color: var(--color-subscription-professional);
 }

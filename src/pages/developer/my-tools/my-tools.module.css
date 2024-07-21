@@ -10,3 +10,7 @@
   row-gap: 3.5vh;
   column-gap: 3.6vw;
 }
+
+.listcontainer {
+  list-style-type: none;
+}
