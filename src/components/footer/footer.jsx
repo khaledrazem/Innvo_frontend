@@ -1,16 +1,9 @@
-import React, { useState, useEffect } from "react";
-import classes from "./footer.module.css";
-import {
-  TiSocialFacebookCircular,
-  TiSocialTwitterCircular,
-  TiSocialInstagramCircular,
-  TiSocialLinkedinCircular,
-} from "react-icons/ti";
+import { Link } from "react-router-dom";
 import { ReactComponent as FacebookIcon } from "src/public/svg/Social- Facebook.svg";
-import { ReactComponent as TwitterIcon } from "src/public/svg/Social- X.svg";
 import { ReactComponent as InstagramIcon } from "src/public/svg/Social- Insta.svg";
 import { ReactComponent as LinkedinIcon } from "src/public/svg/Social- Linkedin.svg";
-import { Link } from "react-router-dom";
+import { ReactComponent as TwitterIcon } from "src/public/svg/Social- X.svg";
+import classes from "./footer.module.css";
 
 function Footer() {
   return (
@@ -21,7 +14,7 @@ function Footer() {
         <label>All rights reserved.</label>
       </div>
 
-      <Link className={classes.subscriptions} to={"subscriptions"}>
+      <Link className={classes.subscriptions} to={"/marketplace/subscriptions"}>
         <div>
           <h5>Subscriptions</h5>
           <ul>

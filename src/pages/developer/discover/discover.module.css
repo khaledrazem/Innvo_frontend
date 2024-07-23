@@ -5,11 +5,11 @@
   height: 100%;
   padding-left: 4%;
   box-sizing: border-box;
-  gap: 2.6vh;
+  gap: 2.9vh;
 }
 
 .carouselcontainer {
-  width: 86%;
+  width: 90%;
   align-self: start;
 }
 

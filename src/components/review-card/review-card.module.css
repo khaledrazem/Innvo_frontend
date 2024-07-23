@@ -1,19 +1,22 @@
 .container {
-  border: 2px solid var(--color-main-text);
-  border-radius: 1.5vh;
   box-sizing: border-box;
-  padding: calc(20vh * 0.12) 2.1% calc(20vh * 0.08) 4.1%;
+  padding: calc(23vh * 0.12) 2.1% calc(23vh * 0.08) 3.6%;
   width: 100%;
-  min-height: 20vh;
+  min-height: 23vh;
   display: flex;
   flex-direction: column;
+}
+
+.container:hover {
+  border: 2px solid var(--color-secondary);
+  border-radius: 1.5vh;
 }
 
 .header {
   display: flex;
   align-items: center;
-  gap: 1.4em;
-  margin-bottom: 1vh;
+  gap: 1vw;
+  margin-bottom: 2vh;
 }
 
 .reviewer {
@@ -26,8 +29,8 @@
 .reviewerimage svg {
   max-width: 58px;
   max-height: 58px;
-  height: 5.2vh;
-  width: 5.2vh;
+  width: 6vh;
+  aspect-ratio: 1;
   box-sizing: border-box;
   border-radius: 2vw;
   overflow: hidden;
@@ -64,7 +67,7 @@
   border-radius: 6px;
   display: flex;
   align-items: center;
-  gap: 0.16em;
+  gap: 0.14vw;
 }
 
 .ratings label {
@@ -75,7 +78,7 @@
 
 .ratingsblank,
 .ratingsfill {
-  height: 1.8vh;
+  height: 2vh;
 }
 .ratingsblank {
   color: var(--color-main-text);
@@ -86,6 +89,9 @@
 }
 
 .review {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7vh;
 }
 
 .review h6 {

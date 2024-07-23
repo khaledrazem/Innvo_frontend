@@ -11,3 +11,25 @@
   z-index: 999;
   box-sizing: border-box;
 }
+
+.signinbutton {
+  background-color: var(--color-background);
+  border-radius: 2vh;
+  color: var(--color-secondary);
+  border: 0.3vh solid var(--color-secondary);
+  height: 4vh;
+  font-weight: 600;
+  font-size: 0.8vw;
+  width: 5.5vw;
+  position: absolute;
+  left: 84.5vw;
+}
+
+.productlink {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+}

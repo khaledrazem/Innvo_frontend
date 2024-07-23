@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import classes from "./tool-card.module.css";
 import { useContext } from "react";
-import { UserSessionContext } from "src/contexts/UserSessionContext";
+import { Link } from "react-router-dom";
 import { Dropdown } from "rsuite";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
+import classes from "./tool-card.module.css";
 
 import { ReactComponent as SandwichIcon } from "src/public/svg/Dots Option.svg";
 
@@ -24,19 +24,48 @@ function ToolCard({ toolData, setDraggable, draggable }) {
       <div className={classes.summary}>
         <h2 className={classes.header}>{toolData.title}</h2>
         <div className={classes.status}>
-          <label>Status: {toolData.active ? "Active" : "Inactive"} </label>
+          <label>
+            Status:{" "}
+            <label
+              className={
+                toolData.active ? classes.activetext : classes.inactivetext
+              }
+            >
+              {toolData.active ? "Active" : "Inactive"}
+            </label>{" "}
+          </label>
           <div
             className={
               toolData.active ? classes.activeball : classes.inactiveball
             }
           />
         </div>
+        <div className={classes.subscriptions}>
+          {toolData.free === true ? (
+            <>
+              <label className={classes.subscriptionbox}>Free</label>
+            </>
+          ) : null}
+          {toolData.subscription === "elite" ? (
+            <>
+              <label className={classes.subscriptionboxelite}>
+                Subscription
+              </label>
+            </>
+          ) : toolData.subscription === "professional" ? (
+            <>
+              <label className={classes.subscriptionboxprof}>
+                Subscription
+              </label>
+            </>
+          ) : null}
+        </div>
       </div>
       {userType == "dev" && (
         <button>
           <Link
             className={classes.toollink}
-            to={"/dev/my-tools/edit/" + toolData.id}
+            to={"/marketplace/my-tools/edit/" + toolData.id}
           />
           Access
         </button>
@@ -47,7 +76,7 @@ function ToolCard({ toolData, setDraggable, draggable }) {
           <button>
             <Link
               className={classes.toollink}
-              to={"/dev/my-tools/edit/" + toolData.id}
+              to={"/marketplace/my-tools/edit/" + toolData.id}
             />
             Access
           </button>
@@ -66,7 +95,7 @@ function ToolCard({ toolData, setDraggable, draggable }) {
           Reorder
         </Dropdown.Item>
         <Dropdown.Item>
-          <Link className={classes.toollink} to={"/dev/report"} />
+          <Link className={classes.toollink} to={"/marketplace/report"} />
           Report Tool
         </Dropdown.Item>
         <Dropdown.Item>Unslot</Dropdown.Item>

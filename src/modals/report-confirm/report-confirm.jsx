@@ -26,7 +26,10 @@ function ReportConfirmModal({ modalIsOpen, closeModal }) {
           </label>
           <div className={classes.buttons}>
             <button>
-              <Link className={classes.productlink} to={"/dev/discover"} />
+              <Link
+                className={classes.productlink}
+                to={"/marketplace/discover"}
+              />
               Go to Discover
             </button>
           </div>

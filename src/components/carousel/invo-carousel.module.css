@@ -9,9 +9,14 @@
   stroke: var(--color-main-text);
   stroke-width: 5vh;
   height: 3vh;
+  height: 3.5vh;
+
   padding: 1vh;
   box-sizing: border-box;
   transform: translateX(1.9vw) rotate(90deg);
+  background: var(--color-background);
+  border-radius: 50px;
+  aspect-ratio: 1;
 }
 .arrowContainer {
   align-self: center;
@@ -26,10 +31,13 @@
 .arrowiconright {
   stroke: var(--color-main-text);
   stroke-width: 5vh;
-  height: 3vh;
+  height: 4vh;
   padding: 1vh;
   box-sizing: border-box;
   transform: translateX(-3.5vw) rotate(-90deg);
+  background: var(--color-background);
+  border-radius: 50px;
+  aspect-ratio: 1;
 }
 
 .customslider {
@@ -70,7 +78,6 @@
   }
 
   :global(.rs-carousel-content) {
-    border: 2px solid var(--color-main-text) !important;
     border-radius: 14px !important;
     min-width: 474px !important;
   }
@@ -96,5 +103,5 @@
 :global(.rs-carousel) {
   height: auto !important;
   background-color: inherit !important;
-  padding-bottom: 3.8vh !important;
+  padding-bottom: 4.2vh !important;
 }

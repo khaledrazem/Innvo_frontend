@@ -1,7 +1,7 @@
-import SvgLoader from "src/utils/svg-loader";
-import classes from "./product-privacy.module.css";
 import privacyDatajson from "src/data/privacy.json";
 import { ReactComponent as SafeIcon } from "src/public/svg/Safe.svg";
+import SvgLoader from "src/utils/svg-loader";
+import classes from "./product-privacy.module.css";
 
 function ProductPrivacy({ productId = null }) {
   let privacyData = privacyDatajson.privacy;
@@ -14,6 +14,7 @@ function ProductPrivacy({ productId = null }) {
         <label>{privacyData.description}</label>
       </div>
       <br /> <br />
+      <br />
       <div className={classes.privacybubble}>
         <SafeIcon />
         <h3>Your Data Privacy</h3>

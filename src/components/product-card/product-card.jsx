@@ -1,10 +1,7 @@
-import React, { useState, useEffect, useContext } from "react";
-import classes from "./product-card.module.css";
-import { ReactComponent as UserIcon } from "src/public/svg/User Inputs.svg";
-import { ReactComponent as EliteIcon } from "src/public/svg/Sub_Crown.svg";
-import { ReactComponent as ProfessionalIcon } from "src/public/svg/Sub_Spark.svg";
-import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.svg";
+import { useContext, useEffect, useState } from "react";
 import { ReactComponent as StarEmptyIcon } from "src/public/svg/Review_star empty.svg";
+import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.svg";
+import classes from "./product-card.module.css";
 
 import { ReactComponent as PinIcon } from "src/public/svg/Pin-Black.svg";
 import { ReactComponent as BluePinIcon } from "src/public/svg/Pin-Blue.svg";
@@ -34,7 +31,7 @@ function ProductCard({ productData }) {
     <div className={classes.container}>
       <Link
         className={classes.productlink}
-        to={"/dev/discover/product/" + productData.id}
+        to={"/marketplace/discover/product/" + productData.id}
       />
 
       {userType === "user" ? (
@@ -62,6 +59,20 @@ function ProductCard({ productData }) {
             {truncateDescription(productData.summary)}
           </label>
         </div>
+        <div className={classes.metrics}>
+          <div className={classes.ratings}>
+            {[...Array(productData.rating)].map((e, i) => (
+              <StarFillIcon className={classes.ratingsfill} key={i} />
+            ))}
+            {[...Array(5 - productData.rating)].map((e, i) => (
+              <StarEmptyIcon className={classes.ratingsblank} key={i} />
+            ))}
+          </div>
+          <div className={classes.circledivider}></div>
+          <div className={classes.downloads}>
+            <label>{productData.downloads} Ratings</label>
+          </div>
+        </div>
         <div className={classes.subscriptions}>
           {productData.free === true ? (
             <>
@@ -73,33 +84,14 @@ function ProductCard({ productData }) {
               <label className={classes.subscriptionboxelite}>
                 Subscription
               </label>
-
-              <EliteIcon className={classes.subscriptionelite} />
             </>
           ) : productData.subscription === "professional" ? (
             <>
               <label className={classes.subscriptionboxprof}>
                 Subscription
               </label>
-              <ProfessionalIcon className={classes.subscriptionprof} />
             </>
           ) : null}
-        </div>
-
-        <div className={classes.metrics}>
-          <div className={classes.ratings}>
-            {[...Array(productData.rating)].map((e, i) => (
-              <StarFillIcon className={classes.ratingsfill} key={i} />
-            ))}
-            {[...Array(5 - productData.rating)].map((e, i) => (
-              <StarEmptyIcon className={classes.ratingsblank} key={i} />
-            ))}
-            <label>{productData.rating}</label>
-          </div>
-          <div className={classes.downloads}>
-            <UserIcon />
-            <label>{productData.downloads}</label>
-          </div>
         </div>
       </div>
     </div>

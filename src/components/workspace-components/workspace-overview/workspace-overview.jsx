@@ -23,7 +23,10 @@ function WorkspaceOverview({ toolsData }) {
       </div>
       <br />
       <button className={classes.newbutton}>
-        <Link className={classes.productlink} to={"/dev/my-tools/new"} />
+        <Link
+          className={classes.productlink}
+          to={"/marketplace/my-tools/new"}
+        />
         <AddIcon /> Add New Tool
       </button>
     </div>

@@ -16,7 +16,6 @@
   bottom: 10%;
   height: 100%;
   right: 0;
-  border-right: 2px solid var(--color-main-text);
 }
 
 .navigation {

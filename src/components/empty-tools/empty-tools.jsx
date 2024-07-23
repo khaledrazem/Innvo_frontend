@@ -6,7 +6,7 @@ import { ReactComponent as AddIcon } from "src/public/svg/Add.svg";
 function EmptyTools() {
   return (
     <div className={classes.container}>
-      <Link className={classes.productlink} to={"/dev/my-tools/new"} />
+      <Link className={classes.productlink} to={"/my-tools/new"} />
 
       <div className={classes.placeholder}>
         <AddIcon />

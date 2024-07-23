@@ -1,11 +1,9 @@
-import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import UploadImage from "src/components/data-input/upload-image/upload-image";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
 import { ReactComponent as AppleLogo } from "src/public/svg/Apple Logo.svg";
 import { ReactComponent as GoogleLogo } from "src/public/svg/Google Logo.svg";
 import classes from "./sign-up-form.module.css";
-import { useForm } from "react-hook-form";
-import UploadImage from "src/components/data-input/upload-image/upload-image";
-import { UserSessionContext } from "src/contexts/UserSessionContext";
 
 function SignUpForm({ register, errors, getValues }) {
   const { userType } = useContext(UserSessionContext);
@@ -61,7 +59,7 @@ function SignUpForm({ register, errors, getValues }) {
               />
             </div>
           )}
-          {userType == "user" && (
+          {userType != "dev" && (
             <div className={classes.inputfield}>
               <label>
                 First Name
@@ -79,7 +77,7 @@ function SignUpForm({ register, errors, getValues }) {
               />
             </div>
           )}
-          {userType == "user" && (
+          {userType != "dev" && (
             <div className={classes.inputfield}>
               <label>
                 Last Name
@@ -228,7 +226,7 @@ function SignUpForm({ register, errors, getValues }) {
               />
             </div>
           )}
-          {userType == "user" && (
+          {userType != "dev" && (
             <div className={classes.inputfield}>
               <label>
                 Region/Location

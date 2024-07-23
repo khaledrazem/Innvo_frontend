@@ -30,16 +30,6 @@ import ReportPage from "./report/report";
 function DeveloperPage() {
   const url = useLocation();
   const navigate = useNavigate();
-  const { userType } = useContext(UserSessionContext);
-
-  useEffect(() => {
-    console.log(userType);
-    if (userType === null) {
-      console.log("111111111");
-      navigate("/");
-      console.log(77777777);
-    }
-  }, [userType]);
 
   useEffect(() => {
     console.log("?????????????");

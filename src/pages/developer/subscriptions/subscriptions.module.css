@@ -5,7 +5,6 @@
   flex-direction: column;
   width: 85.5%;
   align-self: center;
-  margin-top: 7.5vh;
   margin-right: 7.7vw;
   label {
     font-size: 1vw;
@@ -59,9 +58,9 @@
 
 .subscriptionbubble {
   border: 2px solid var(--color-main-text);
-  background-color: var(--color-background);
   border-radius: 3vh;
-  padding: 5.5vh 1vw;
+  background-color: var(--color-background);
+  padding: 4.5vh 1vw;
   padding-bottom: 3vh;
   text-align: center;
   width: 26%;
@@ -69,25 +68,33 @@
   display: flex;
   flex-direction: column;
   height: auto;
+  border-radius: 3vh;
+  cursor: pointer;
 
+  svg {
+    height: 8vh;
+    align-self: center;
+    margin-bottom: 4vh;
+  }
   h4 {
     font-size: 1.6vw;
     line-height: 1.6vw;
     font-weight: 700;
-    margin-bottom: 3vh;
+    margin-bottom: 2.4vh;
   }
 
   label {
     font-size: 1vw;
     line-height: 0.5vw;
+    cursor: pointer;
   }
 
   ul {
     list-style-position: inside;
     padding: 0;
     line-height: 2em;
-    margin-top: 4.5vh;
-    margin-bottom: 6vh;
+    margin-top: 5vh;
+    margin-bottom: 2.2vh;
     text-align-last: start;
     display: flex;
     flex-direction: column;
@@ -106,39 +113,58 @@
   }
 
   button {
-    background-color: transparent;
-    border: 0.4vh solid var(--color-main-text);
+    background-color: var(--color-main-text);
+    color: var(--color-background);
     border-radius: 1vh;
     padding: 2%;
     cursor: pointer;
-    width: 75%;
-    height: 5vh;
+    width: 76%;
+    height: 9.5vh;
     box-sizing: border-box;
     align-self: center;
     margin-top: auto;
     font-size: 1vw;
+    line-height: 1vw;
+    gap: 2vh;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
+.subscriptionbubble:hover {
+  border: 2px solid var(--color-secondary);
+  border-radius: 3vh;
+}
+.subscriptionbubbleprofessional:hover {
+  border: 2px solid var(--color-main-text);
+  border-radius: 3vh;
+}
+.subscriptionbubbleelite:hover {
+  border: 2px solid var(--color-main-text);
+  border-radius: 3vh;
+}
 .subscriptionbubbleEssential {
 }
 .subscriptionbubbleprofessional {
   color: var(--color-background);
   background-color: var(--color-subscription-professional);
+  border: 2px solid transparent;
 
   button {
-    background-color: transparent;
-    color: var(--color-background);
-    border: 0.4vh solid var(--color-background);
+    background-color: var(--color-background);
+    color: var(--color-main-text);
   }
 }
 .subscriptionbubbleelite {
   color: var(--color-background);
   background-color: var(--color-subscription-elite);
+  border: 2px solid transparent;
+
   button {
-    background-color: transparent;
-    color: var(--color-background);
-    border: 0.4vh solid var(--color-background);
+    background-color: var(--color-background);
+    color: var(--color-main-text);
   }
 }

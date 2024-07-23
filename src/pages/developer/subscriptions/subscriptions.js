@@ -1,6 +1,9 @@
 import { useEffect } from "react";
-import classes from "./subscriptions.module.css";
 import subscriptionsjson from "src/public/text/subscriptions.json";
+import classes from "./subscriptions.module.css";
+
+import { ReactComponent as EliteIcon } from "src/public/svg/Sub_Crown.svg";
+import { ReactComponent as ProfessionalIcon } from "src/public/svg/Sub_Spark.svg";
 
 function SubscriptionsPage() {
   let subscriptions = subscriptionsjson.subscriptions;
@@ -38,6 +41,13 @@ function SubscriptionsPage() {
                 }
                 `}
               >
+                {subscriptionData.title.toLowerCase() === "professional" ? (
+                  <ProfessionalIcon />
+                ) : subscriptionData.title.toLowerCase() === "elite" ? (
+                  <EliteIcon />
+                ) : (
+                  <EliteIcon />
+                )}
                 <h4>{subscriptionData.title}</h4>
                 <div className={classes.labels}>
                   <label>{subscriptionData.target1}</label>
@@ -50,7 +60,10 @@ function SubscriptionsPage() {
                     return <li>{feature}</li>;
                   })}
                 </ul>
-                <button>Price: ${subscriptionData.price}/month</button>
+                <button>
+                  <label> ${subscriptionData.price}</label>{" "}
+                  <label>per month</label>
+                </button>
               </div>
             );
           })}

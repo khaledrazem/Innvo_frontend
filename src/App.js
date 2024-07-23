@@ -11,8 +11,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route index element={<Navigate to="/login" replace />} />
-            <Route path="/dev/*" element={<DeveloperPage />} />
+            <Route index element={<Navigate to="/marketplace" replace />} />
+            <Route path="/marketplace/*" element={<DeveloperPage />} />
             <Route path="/login/*" element={<LoginPage />} />
           </Route>
         </Routes>

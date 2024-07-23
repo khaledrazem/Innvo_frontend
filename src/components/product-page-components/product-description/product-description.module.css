@@ -16,8 +16,10 @@
   width: 100%;
   text-wrap: nowrap;
 
-  h3{
+  h3 {
     font-size: 1.1vw;
+    font-weight: 700;
+    margin: 0;
   }
 }
 
@@ -31,7 +33,7 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  gap: 3vh;
+  gap: 5vh;
 
   img {
     width: 100%;

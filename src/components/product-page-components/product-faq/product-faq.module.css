@@ -4,10 +4,10 @@
   text-align: left;
 
   h3 {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     border-bottom: 2px solid var(--color-main-text);
     margin-block-end: 0;
-    padding-block-end: 0.75em;
+    padding-bottom: 1vh;
   }
 }
 
@@ -23,7 +23,8 @@
   font-size: 0.85vw;
 }
 
-.faqtoggle, .faqtoggleActive {
+.faqtoggle,
+.faqtoggleActive {
   width: 0.8vw;
   padding-right: 0.5vw;
 }

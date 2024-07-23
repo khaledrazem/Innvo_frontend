@@ -4,7 +4,7 @@
   align-items: center;
   box-sizing: border-box;
   padding: 0 3.5%;
-  height: 30vh;
+  height: 23vh;
   display: flex;
   background: var(--color-main-text);
   color: var(--color-background);
@@ -33,39 +33,34 @@
   }
 
   h2 {
-    margin: 0;
-    font-size: 2vw;
-    line-height: 1.2em;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
   }
 }
 
 .subscriptions {
   background: var(--color-background);
   color: var(--color-main-text);
-  width: 12.5vw;
-  height: 22vh;
-  padding: 1.3vw 0;
-  padding-left: 1vw;
+  width: 9.3vw;
+  height: 16vh;
+  padding: 1.5% 0;
+  padding-left: 1.1%;
   align-items: center;
   box-sizing: border-box;
-  border-radius: 14px;
+  border-radius: 1.5vh;
   display: flex;
   flex-direction: column;
-  font-size: 1.1vw;
+  font-size: 0.85vw;
   font-weight: 500;
   margin-right: 5vw;
 
   h5 {
     margin: 0;
-    font-size: 1vw;
+    font-size: 0.8vw;
   }
   ul {
     padding-inline-start: 0;
     margin-block-start: 0;
-  }
-  label {
-    line-height: 25px;
-    font-size: 14px;
   }
 }
 
@@ -126,9 +121,9 @@
 .elite li::before {
   content: "";
   display: inline-block;
-  width: 0.7vw;
-  height: 0.7vw;
-  margin-right: 0.5vw;
+  width: 0.5vw;
+  height: 0.5vw;
+  margin-right: 0.4vw;
   vertical-align: middle;
   border: 2px solid var(--color-main-text);
 }

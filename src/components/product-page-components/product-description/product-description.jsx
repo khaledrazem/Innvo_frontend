@@ -17,8 +17,7 @@ function ProductDescription({
   return productDescription != null ? (
     <div className={classes.container}>
       <div className={classes.descriptiontitle}>
-        <h3>From the developer</h3>
-        <div className={classes.divider}></div>
+        <h3>From The Innovator</h3>
       </div>
       <div className={classes.descriptioncontainer}>
         <div className={classes.bio}>

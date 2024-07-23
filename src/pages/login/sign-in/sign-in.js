@@ -15,7 +15,7 @@ function SignInPage() {
 
   const onSubmit = (data, e) => {
     console.log(data, e);
-    navigate("/dev");
+    navigate("/marketplace");
   };
   const onError = (errors, e) => {
     console.log(getValues());

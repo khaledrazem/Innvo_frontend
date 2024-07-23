@@ -10,6 +10,8 @@ export const UserSessionProvider = ({ children }) => {
   const [userName, setUserName] = React.useState(false);
   const [userEmail, setUserEmail] = React.useState(false);
   const [subscription, setSubscription] = React.useState("elite");
+  const [subscriptionDays, setSubscriptionDays] = React.useState(54);
+
   const [notifications, setNotifications] = React.useState(3);
 
   return (
@@ -28,6 +30,8 @@ export const UserSessionProvider = ({ children }) => {
           setNotifications,
           userType,
           setUserType,
+          subscriptionDays,
+          setSubscriptionDays,
         }}
       >
         {children}

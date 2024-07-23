@@ -1,6 +1,4 @@
 .container {
-  border: 2px solid var(--color-main-text);
-  border-radius: 2vh;
   flex-direction: row;
   display: flex;
   height: 19.8vh;
@@ -9,6 +7,7 @@
   padding: 1% 4% 1% 7%;
   align-items: center;
   position: relative;
+  cursor: pointer;
   button {
     color: var(--color-main-text);
     background-color: var(--color-background);
@@ -35,6 +34,15 @@
   a {
     z-index: 100;
   }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+.container:hover {
+  border: 2px solid var(--color-secondary);
+  border-radius: 2vh;
 }
 
 .buttons {
@@ -60,6 +68,8 @@
   box-sizing: border-box;
   margin-right: 1vw;
   overflow: hidden;
+  align-self: start;
+  margin-top: 3.5vh;
 }
 
 .logo img {
@@ -73,11 +83,12 @@
   display: flex;
   flex-direction: column;
   gap: 1vh;
+  padding-top: 3vh;
 }
 
 .header {
-  font-size: 1.6vw;
-  line-height: 1.6vw;
+  font-size: 1.2vw;
+  line-height: 1.2vw;
   font-weight: 700;
   margin: 0;
 }
@@ -107,6 +118,14 @@
   background-color: var(--color-main-text);
 }
 
+.activetext {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+.inactivetext {
+  color: var(--color-main-text);
+  font-weight: 600;
+}
 .toollink {
   position: absolute;
   width: 100%;
@@ -120,9 +139,12 @@
   width: 1.2vw;
   aspect-ratio: 1;
   rotate: 90deg;
-  margin-left: 1vw;
   z-index: 200;
   cursor: pointer;
+}
+
+:global(.rs-dropdown) {
+  margin-left: auto;
 }
 
 :global(.rs-dropdown-menu) {
@@ -144,4 +166,31 @@
   position: absolute;
   width: 1vw;
   left: 0.5vw;
+}
+
+.subscriptions {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  gap: 0.3vw;
+  margin: 2.5% 0;
+}
+
+.subscriptionbox,
+.subscriptionboxelite,
+.subscriptionboxprof {
+  color: var(--color-background);
+  background-color: var(--color-secondary);
+  box-sizing: border-box;
+  font-size: 0.65vw;
+  font-weight: 600;
+  padding: 1% 5%;
+  border-radius: 2vh;
+}
+
+.subscriptionboxelite {
+  background-color: var(--color-subscription-elite);
+}
+.subscriptionboxprof {
+  background-color: var(--color-subscription-professional);
 }

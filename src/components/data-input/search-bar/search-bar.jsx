@@ -17,7 +17,7 @@ function SearchBar({ searchData, setSearchData, form = null }) {
         value={searchData}
         form={form != null ? form : null}
         type="text"
-        placeholder="Search"
+        placeholder="Search / Ask"
         id="name"
         name="name"
         required

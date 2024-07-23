@@ -17,6 +17,11 @@
     margin-top: -1.5vh;
     resize: none;
   }
+
+  span {
+    color: red;
+    font-size: 12px;
+  }
 }
 
 .header {
@@ -98,9 +103,4 @@
   cursor: pointer;
   width: 12.2vw;
   height: 5.7vh;
-}
-
-span {
-  color: red;
-  font-size: 12px;
 }

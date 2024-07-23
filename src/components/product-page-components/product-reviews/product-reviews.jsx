@@ -1,20 +1,15 @@
-import { useState } from "react";
-import classes from "./product-reviews.module.css";
-import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.svg";
 import { ReactComponent as StarEmptyIcon } from "src/public/svg/Review_star empty.svg";
+import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.svg";
+import classes from "./product-reviews.module.css";
 
-function ProductReviews({
-  productReviews=null
-}) {
-
-
-  return productReviews!=null? (
+function ProductReviews({ productReviews = null }) {
+  return productReviews != null ? (
     <div className={classes.container}>
-            <div className={classes.header}>
-<h3>Community reviews</h3>
-</div>
-
       <div className={classes.header}>
+        <h3>Community Reviews</h3>
+      </div>
+
+      <div className={classes.ratingsrow}>
         <div className={classes.ratings}>
           {[...Array(productReviews.averageRating)].map((e, i) => (
             <StarFillIcon className={classes.ratingsfill} key={i} />
@@ -24,11 +19,15 @@ function ProductReviews({
           ))}
           <label>{productReviews.averageRating}</label>
         </div>
-      
+
         <div className={classes.meta}>
-          <span className={classes.ranking}>#{productReviews.ranking} rating</span>
-          <div className={classes.divider}></div>
-          <span className={classes.totalreviews}>{productReviews.totalReviews} reviews</span>
+          <span className={classes.ranking}>
+            #{productReviews.ranking} rating
+          </span>
+          <hr className={classes.divider}></hr>
+          <span className={classes.totalreviews}>
+            {productReviews.totalReviews} reviews
+          </span>
         </div>
       </div>
       <div className={classes.ratingsbreakdown}>
@@ -48,7 +47,7 @@ function ProductReviews({
         ))}
       </div>
     </div>
-  ): null;
-};
+  ) : null;
+}
 
 export default ProductReviews;

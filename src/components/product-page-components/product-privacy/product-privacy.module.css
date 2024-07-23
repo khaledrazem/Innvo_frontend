@@ -2,10 +2,14 @@
   width: 55%;
   align-self: start;
   text-align: left;
+
+  h5 {
+    font-size: 1.25vw;
+  }
 }
 
 .privacyTitle {
-  margin-bottom: 10px;
+  margin-bottom: 2vh;
 }
 
 .description label {
@@ -14,9 +18,11 @@
 
 .privacybubble {
   display: flex;
-  width: 75%;
+  width: 97%;
+  height: 51vh;
+  box-sizing: border-box;
   align-items: center;
-  padding: 2vw 4.5vw;
+  padding: 2.6vw 4.5vw;
   padding-top: 4.5vw;
   border: 2px solid var(--color-main-text);
   border-radius: 13px;
@@ -27,6 +33,7 @@
   font-size: 1.1vw;
   color: var(--color-main-text);
   line-height: 1.8vw;
+  margin: 0;
 }
 
 .privacybubble label {
@@ -36,14 +43,14 @@
 .privacybubble svg {
   width: 5vw;
   color: var(--color-secondary);
-  padding-bottom: 2vh;
+  padding-bottom: 3.6vh;
 }
 
 .settingsrow {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-  padding-top: 4.5vh;
+  margin-top: auto;
   row-gap: 4vh;
 }
 .settings {

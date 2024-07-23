@@ -1,12 +1,12 @@
-import EmptyTools from "src/components/empty-tools/empty-tools";
-import classes from "./my-tools.module.css";
-import toolsDatajson from "src/data/tools.json";
-import ToolsOverview from "src/components/tools-overview/tools-overview";
+import { useContext, useState } from "react";
 import ToolCard from "src/components/tool-card/tool-card";
-import { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
+import toolsDatajson from "src/data/tools.json";
+import classes from "./my-tools.module.css";
 
 function MyToolsPage() {
+  const { subscription, subscriptionDays } = useContext(UserSessionContext);
+
   let toolsData = toolsDatajson.toolsData;
   const [dragAndDrop, setDragAndDrop] = useState(initialDnDState);
   const [list, setList] = useState(toolsData);
@@ -102,30 +102,54 @@ function MyToolsPage() {
     });
   };
 
+  function Capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
   return (
     <div className={classes.container}>
-      {Array.isArray(list) && list.length > 0
-        ? list.map((tool, index) => {
-            return (
-              <li
-                key={index}
-                data-position={index}
-                draggable={dragAndDrop.draggable}
-                onDragStart={onDragStart}
-                onDragOver={onDragOver}
-                onDrop={onDrop}
-                onDragLeave={onDragLeave}
-                className={classes.listcontainer}
-              >
-                <ToolCard
+      <label className={classes.subscriptioncounter}>
+        Your{" "}
+        <label
+          className={
+            subscription == "elite"
+              ? classes.elitetext
+              : subscription == "professional"
+              ? classes.proftext
+              : null
+          }
+        >
+          {Capitalize(subscription)}
+        </label>{" "}
+        Subscription Expires in{" "}
+        <label className={classes.subscriptionDays}>
+          {subscriptionDays} Days
+        </label>
+      </label>
+      <div className={classes.containergrid}>
+        {Array.isArray(list) && list.length > 0
+          ? list.map((tool, index) => {
+              return (
+                <li
+                  key={index}
+                  data-position={index}
                   draggable={dragAndDrop.draggable}
-                  toolData={tool}
-                  setDraggable={setDraggable}
-                />
-              </li>
-            );
-          })
-        : null}
+                  onDragStart={onDragStart}
+                  onDragOver={onDragOver}
+                  onDrop={onDrop}
+                  onDragLeave={onDragLeave}
+                  className={classes.listcontainer}
+                >
+                  <ToolCard
+                    draggable={dragAndDrop.draggable}
+                    toolData={tool}
+                    setDraggable={setDraggable}
+                  />
+                </li>
+              );
+            })
+          : null}
+      </div>
     </div>
   );
 }

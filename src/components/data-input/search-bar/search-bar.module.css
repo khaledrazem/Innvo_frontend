@@ -18,7 +18,7 @@ input:focus {
   top: 25%;
   position: absolute;
   box-sizing: border-box;
-  left: 3.5%;
+  right: 4.5%;
 }
 
 .input {
@@ -28,7 +28,7 @@ input:focus {
   border-width: 2px;
   font-weight: 600;
   border-radius: 25px;
-  padding-left: 14%;
+  padding-left: 5%;
   height: 100%;
   box-sizing: border-box;
 }

@@ -9,9 +9,9 @@
   align-items: center;
   width: 100%;
   white-space: nowrap;
-  height: 4vh;
+  height: 4.5vh;
   gap: 1vw;
-  margin-bottom: 2vh;
+  margin-bottom: 3vh;
 }
 
 .filters h4 {
@@ -42,14 +42,14 @@
 .reviewlist {
   width: 100%;
   display: grid;
-  gap: 0.8vh;
+  gap: 4.3vh;
 
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
 }
 
 .reviewnumbers {
-  padding-bottom: 2vh;
+  padding-bottom: 3.6vh;
   font-size: 0.8vw;
 }
 
@@ -87,11 +87,16 @@
   place-content: center;
 }
 :global(.rs-pagination-btn) {
+  height: 4vh;
+  width: 4vh;
+  font-size: 1.6vh !important;
+  font-weight: 800 !important;
+
   border-radius: 50px !important;
   background-color: var(--color-background) !important;
   color: var(--color-main-text) !important;
   border-color: var(--color-main-text) !important;
-  margin: 0 4px !important;
+  margin: 0 0.2vw !important;
 
   svg {
     scale: 2;
@@ -100,8 +105,9 @@
 
 :global(.rs-pagination-btn-active) {
   border-radius: 50px !important;
-  background-color: var(--color-main-text) !important;
-  color: var(--color-background) !important;
+  border-color: var(--color-main-text) !important;
+  color: var(--color-main-text) !important;
+  border-width: 0.3vh !important;
 }
 
 .filtersearch {

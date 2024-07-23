@@ -1,17 +1,17 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { Link, useParams } from "react-router-dom";
+import Dropdown from "src/components/data-input/dropdown/dropdown";
 import AddProductDescription from "src/components/my-tools-page-components/add-product-description/add-product-description";
 import AddProductFaq from "src/components/my-tools-page-components/add-product-faq/add-product-faq";
 import AddProductInfo from "src/components/my-tools-page-components/add-product-info/add-product-info";
 import AddProductPrivacy from "src/components/my-tools-page-components/add-product-privacy/add-product-privacy";
 import UploadProductCarousel from "src/components/my-tools-page-components/upload-product-carousel/upload-product-carousel";
-import classes from "./edit-tools.module.css";
-import toolDetailsDatajson from "src/data/tooldetails.json";
-import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import Dropdown from "src/components/data-input/dropdown/dropdown";
 import categoriesData from "src/data/categories.json";
 import industriesData from "src/data/industries.json";
 import tagsData from "src/data/tags.json";
+import toolDetailsDatajson from "src/data/tooldetails.json";
+import classes from "./edit-tools.module.css";
 
 function EditToolsPage() {
   const { register, getValues, handleSubmit, setValue, reset } = useForm();
@@ -86,7 +86,7 @@ function EditToolsPage() {
           <button className={classes.previewbutton}>
             <Link
               className={classes.productlink}
-              to={"/dev/my-tools/edit/preview"}
+              to={"/marketplace/my-tools/edit/preview"}
               state={getValues()}
             />
             Preview Tool Page
@@ -95,7 +95,7 @@ function EditToolsPage() {
           <button className={classes.createbutton}>
             <Link
               className={classes.productlink}
-              to={"/dev/my-tools/edit/preview"}
+              to={"/marketplace/my-tools/edit/preview"}
               state={getValues()}
             />
             Create Tool Page

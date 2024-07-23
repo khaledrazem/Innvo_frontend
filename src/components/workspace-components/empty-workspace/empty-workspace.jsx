@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import classes from "./empty-workspace.module.css";
 
 import { ReactComponent as AddIcon } from "src/public/svg/Add.svg";
@@ -6,7 +5,7 @@ import { ReactComponent as AddIcon } from "src/public/svg/Add.svg";
 function EmptyWorkspace() {
   return (
     <div className={classes.container}>
-      {/* <Link className={classes.productlink} to={"/dev/my-tools/new"} /> */}
+      {/* <Link className={classes.productlink} to={"/marketplace/my-tools/new"} /> */}
 
       <div className={classes.placeholder}>
         <AddIcon />
