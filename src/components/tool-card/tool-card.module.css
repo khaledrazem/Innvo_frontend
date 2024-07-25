@@ -67,7 +67,6 @@
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
-  border: 2px solid var(--color-main-text);
   box-sizing: border-box;
   margin-right: 1vw;
   overflow: hidden;
