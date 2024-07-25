@@ -45,8 +45,10 @@
 
 button:hover {
   background: var(--color-secondary);
-  border: none;
+  border-color: transparent;
   color: var(--color-background);
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
 }
 
 input:hover,
@@ -56,6 +58,8 @@ textarea:hover {
   border-color: var(--color-secondary) !important;
   color: var(--color-secondary) !important;
   fill: var(--color-secondary);
+  transition: color 0.3s ease-in-out, fill 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
 }
 input:hover::placeholder,
 input:focus::placeholder,

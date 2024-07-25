@@ -7,7 +7,6 @@ import {
   ReactComponent as EliteIcon,
   ReactComponent as VisitIcon,
 } from "src/public/svg/Sub_Crown.svg";
-import { ReactComponent as UserIcon } from "src/public/svg/User Icon.svg";
 
 import {
   ReactComponent as EssentialIcon,
@@ -62,10 +61,19 @@ function ProductInfo({ productData }) {
           <VisitIcon />
           <label>{productData.visits} Visits</label>
         </div>
-        <div className={classes.stat}>
-          <UserIcon />
-          <label>{productData.subscribers} Subscribers</label>
-        </div>
+        {userType === "user" ? (
+          pinned === true ? (
+            <BluePinIcon
+              className={classes.pinicon}
+              onClick={() => setPinned(!pinned)}
+            />
+          ) : (
+            <PinIcon
+              className={classes.pinicon}
+              onClick={() => setPinned(!pinned)}
+            />
+          )
+        ) : null}
       </div>
 
       {productData.features != null ? (
@@ -81,19 +89,10 @@ function ProductInfo({ productData }) {
         </>
       ) : null}
       {userType == "dev" && (
-        <button className={classes.explorebutton}>Explore</button>
+        <button className={classes.explorebutton}>Access</button>
       )}
       {userType == "user" && (
-        <div className={classes.pinicon}>
-          <button className={classes.explorebutton}>Subscribe</button>
-          {userType === "user" ? (
-            pinned === true ? (
-              <BluePinIcon onClick={() => setPinned(!pinned)} />
-            ) : (
-              <PinIcon onClick={() => setPinned(!pinned)} />
-            )
-          ) : null}
-        </div>
+        <button className={classes.explorebutton}>Subscribe</button>
       )}
     </div>
   ) : null;

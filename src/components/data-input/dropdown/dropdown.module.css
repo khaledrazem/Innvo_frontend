@@ -3,11 +3,41 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+  color: var(--color-background);
+
+  .dropdownclass {
+    width: 100%;
+    font-size: 0.79vw;
+    font-weight: 600;
+    border-width: 2px;
+    border-radius: 25px;
+    border: none;
+    height: 100%;
+    padding-left: 10%;
+    font-family: var(--main-font);
+    background: var(--color-main-text);
+  }
+
+  select:focus,
+  input:focus {
+    outline: none;
+  }
+
+  select {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
 }
 
 .dropdowncontainer:hover,
 .dropdowncontainer:focus {
   color: var(--color-secondary);
+
+  .dropdownclass {
+    background: var(--color-background) !important;
+    border: 0.3vh solid var(--color-secondary);
+  }
 }
 .svgicon {
   position: absolute;
@@ -16,31 +46,4 @@
   transform: translate(-50%, -50%);
   width: 0.9vw;
   pointer-events: none;
-}
-
-.input {
-  width: 100%;
-  font-size: 0.79vw;
-  font-weight: 600;
-  border-width: 2px;
-  border-radius: 25px;
-  border: none;
-  height: 100%;
-  padding-left: 10%;
-  font-family: var(--main-font);
-}
-
-.input:hover {
-  border: 0.3vh solid var(--color-secondary);
-}
-
-select:focus,
-input:focus {
-  outline: none;
-}
-
-select {
-  -webkit-appearance: none;
-  appearance: none;
-  cursor: pointer;
 }

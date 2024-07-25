@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { useContext } from "react";
 import { UserData } from "src/interfaces/UserData";
-import { ReactComponent as PinIcon } from "src/public/svg/Pin-Black.svg";
 import classes from "./profile-badge.module.css";
 
 import { useNavigate } from "react-router-dom";
@@ -19,7 +18,7 @@ function ProfileBadge({ userData }) {
 
   return (
     <div className={classes.container}>
-      {userType == "user" && (
+      {/* {userType == "user" && (
         <div className={classes.notification}>
           <a
             className={classes.productlink}
@@ -27,11 +26,11 @@ function ProfileBadge({ userData }) {
           />
           <PinIcon />
         </div>
-      )}
+      )} */}
       <div className={classes.notification}>
         <a
           className={classes.productlink}
-          onClick={() => navigate("/notifications")}
+          onClick={() => navigate("/marketplace/notifications")}
         />
         {notifications > 0 ? <NotificationOnIcon /> : <NotificationOffIcon />}
       </div>
@@ -39,7 +38,7 @@ function ProfileBadge({ userData }) {
       <div className={classes.profile}>
         <a
           className={classes.productlink}
-          onClick={() => navigate("/profile")}
+          onClick={() => navigate("/marketplace/profile")}
         />
         <img src={userData.profileImg.src} className={classes.profileimg}></img>
         <label className={classes.username}>{userData.devName}</label>

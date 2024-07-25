@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
-import classes from "./product-slider.module.css";
+import { useEffect, useState } from "react";
+import { Pagination } from "rsuite";
 import ProductCard from "src/components/product-card/product-card";
 import { ReactComponent as UpDownArrow } from "src/public/svg/UP-Down_Arrow.svg";
+import classes from "./product-slider.module.css";
 
 function ProductSlider({
   titleText = null,
   productData,
   itemsPerPage = 6,
   pagination = true,
+  bottomnav = false,
 }) {
   const totalPages = Math.min(3, Math.ceil(productData.length / itemsPerPage));
   const [currentPage, setCurrentPage] = useState(1);
@@ -44,46 +46,62 @@ function ProductSlider({
       </div>
       <div className={classes.paginationcontent}>
         <div className={classes.productlist}>
-          <UpDownArrow
-            style={{
-              visibility: currentPage === 1 || !pagination ? "hidden" : null,
-            }}
-            className={classes.leftarrow}
-            onClick={handlePreviousPage}
-          >
-            &lt;
-          </UpDownArrow>
+          {pagination && !bottomnav && (
+            <UpDownArrow
+              style={{
+                visibility: currentPage === 1 || !pagination ? "hidden" : null,
+              }}
+              className={classes.leftarrow}
+              onClick={handlePreviousPage}
+            >
+              &lt;
+            </UpDownArrow>
+          )}
           {currentProducts.map((product, index) => (
             <div className={classes.productcardcont}>
               <ProductCard key={index} productData={product} />
             </div>
           ))}
-          <UpDownArrow
-            style={{
-              visibility:
-                currentPage === totalPages || !pagination ? "hidden" : null,
-            }}
-            className={classes.rightarrow}
-            onClick={handleNextPage}
-          >
-            &gt;
-          </UpDownArrow>
+          {pagination && !bottomnav && (
+            <UpDownArrow
+              style={{
+                visibility:
+                  currentPage === totalPages || !pagination ? "hidden" : null,
+              }}
+              className={classes.rightarrow}
+              onClick={handleNextPage}
+            >
+              &gt;
+            </UpDownArrow>
+          )}
         </div>
-        <div
-          className={classes.paginationcontrols}
-          style={{ visibility: !pagination ? "hidden" : null }}
-        >
-          <div className={classes.pagedots}>
-            {Array.from({ length: totalPages }, (_, index) => (
-              <span
-                key={index}
-                className={
-                  currentPage === index + 1 ? classes.dotactive : classes.dot
-                }
-              ></span>
-            ))}
+        {pagination && !bottomnav && (
+          <div className={classes.paginationcontrols}>
+            <div className={classes.pagedots}>
+              {Array.from({ length: totalPages }, (_, index) => (
+                <span
+                  key={index}
+                  className={
+                    currentPage === index + 1 ? classes.dotactive : classes.dot
+                  }
+                ></span>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
+        {pagination && bottomnav && (
+          <Pagination
+            prev={true}
+            next={true}
+            total={currentProducts.length / itemsPerPage}
+            maxButtons={5}
+            ellipsis={true}
+            boundaryLinks={true}
+            limit={itemsPerPage}
+            activePage={currentPage}
+            onChangePage={setCurrentPage}
+          />
+        )}
       </div>
     </div>
   );

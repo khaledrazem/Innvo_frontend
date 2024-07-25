@@ -67,8 +67,8 @@
     background-color: var(--color-grey);
 
     cursor: pointer !important;
-    height: 1.5vh !important;
-    width: 1.5vh !important;
+    height: 1.2vh !important;
+    width: 1.2vh !important;
     margin: 0 !important;
     left: 0 !important;
   }
@@ -92,8 +92,8 @@
   :global(.rs-carousel-label-wrapper) {
     cursor: pointer !important;
     position: relative !important;
-    height: 1.5vh !important;
-    width: 1.5vh !important;
+    height: 1.2vh !important;
+    width: 1.2vh !important;
     box-sizing: content-box;
     border-radius: 50% !important;
     margin: 0 5px !important;
@@ -103,5 +103,5 @@
 :global(.rs-carousel) {
   height: auto !important;
   background-color: inherit !important;
-  padding-bottom: 4.2vh !important;
+  padding-bottom: 3.8vh !important;
 }

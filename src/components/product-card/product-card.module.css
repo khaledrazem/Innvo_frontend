@@ -11,16 +11,19 @@
   align-items: flex-start;
   padding: 7% 6% 4% 9%;
   border-radius: 8px;
+  border: 0.3vh solid transparent;
   background-color: var(--color-background);
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .container:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 0.3vh solid var(--color-secondary);
+  border-color: var(--color-secondary);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
   svg {
     opacity: 100%;
+    transition: opacity 0.3s ease-in-out;
   }
 }
 

@@ -1,11 +1,13 @@
+import { useState } from "react";
 import InvoCarousel from "src/components/carousel/invo-carousel";
+import Footer from "src/components/footer/footer";
 import ProductSlider from "src/components/product-slider/product-slider";
 import prodDatajson from "src/data/products.json";
 import "src/variables.css";
 import classes from "./discover.module.css";
-import Footer from "src/components/footer/footer";
 
 function DiscoverPage() {
+  const [expanded, setExpanded] = useState(false);
   return (
     <>
       <div className={classes.container}>
@@ -41,13 +43,15 @@ function DiscoverPage() {
             <ProductSlider
               titleText={"Explore"}
               productData={prodDatajson.products}
-              pagination={false}
-              itemsPerPage={18}
+              pagination={expanded}
+              bottomnav={true}
+              itemsPerPage={expanded ? 40 : 18}
             />
-            <div className={classes.explorebutton}>
-              {" "}
-              <button>View more</button>
-            </div>
+          </div>
+          <div className={classes.explorebutton}>
+            {!expanded && (
+              <button onClick={() => setExpanded(true)}>View more</button>
+            )}
           </div>
         </div>
         <br />

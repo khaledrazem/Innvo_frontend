@@ -8,7 +8,7 @@ import AddProductInfo from "src/components/my-tools-page-components/add-product-
 import AddProductPrivacy from "src/components/my-tools-page-components/add-product-privacy/add-product-privacy";
 import UploadProductCarousel from "src/components/my-tools-page-components/upload-product-carousel/upload-product-carousel";
 import categoriesData from "src/data/categories.json";
-import industriesData from "src/data/industries.json";
+import pricingsData from "src/data/pricings.json";
 import tagsData from "src/data/tags.json";
 import toolDetailsDatajson from "src/data/tooldetails.json";
 import classes from "./edit-tools.module.css";
@@ -46,10 +46,10 @@ function EditToolsPage() {
           </div>
           <div className={classes.filter}>
             <Dropdown
-              options={industriesData}
+              options={pricingsData}
               register={register}
-              placeholder="Industries"
-              name="Industries"
+              placeholder="Pricing"
+              name="Pricing"
             />
           </div>{" "}
           <div className={classes.filter}>

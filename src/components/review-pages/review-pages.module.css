@@ -42,7 +42,7 @@
 .reviewlist {
   width: 100%;
   display: grid;
-  gap: 4.3vh;
+  gap: 5vh;
 
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);

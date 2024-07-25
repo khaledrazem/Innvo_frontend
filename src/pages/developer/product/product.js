@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import CreateReview from "src/components/create-review/create-review";
 import ProductCarousel from "src/components/product-page-components/product-carousel/product-carousel";
 import ProductDescription from "src/components/product-page-components/product-description/product-description";
 import ProductFaq from "src/components/product-page-components/product-faq/product-faq";
 import ProductInfo from "src/components/product-page-components/product-info/product-info";
-import ProductPrivacy from "src/components/product-page-components/product-privacy/product-privacy";
 import ProductReviews from "src/components/product-page-components/product-reviews/product-reviews";
 import ProductSlider from "src/components/product-slider/product-slider";
 import ReviewPage from "src/components/review-pages/review-pages";
@@ -96,15 +96,17 @@ function ProductPage() {
         <br /> <br /> <br /> <br />
         <ProductFaq productQuestions={productData.faq} />
         <br /> <br /> <br /> <br />
+        <CreateReview />
+        <br /> <br /> <br /> <br /> <br /> <br /> <br />
         <ProductReviews productReviews={productData.reviews} />
         <br /> <br /> <br /> <br />
         <ReviewPage reviewData={reviewData} />
         <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
       </div>
-      <ProductPrivacy></ProductPrivacy>
-      <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      {/* <ProductPrivacy></ProductPrivacy> 
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> */}
       <ProductSlider
-        titleText={"More From Developer"}
+        titleText={"More From Innovator"}
         productData={prodDatajson.products}
         itemsPerPage={3}
       />

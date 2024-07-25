@@ -8,6 +8,9 @@
   align-items: center;
   position: relative;
   cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 2vh;
+
   button {
     color: var(--color-main-text);
     background-color: var(--color-background);
@@ -41,8 +44,8 @@
 }
 
 .container:hover {
-  border: 2px solid var(--color-secondary);
-  border-radius: 2vh;
+  border-color: var(--color-secondary);
+  transition: border-color 0.3s ease-in-out;
 }
 
 .buttons {
