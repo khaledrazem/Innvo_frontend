@@ -18,7 +18,7 @@ function InvoHeader({ searchbar = true }) {
         <button className={classes.signinbutton}>
           {" "}
           <Link className={classes.productlink} to={"/login"} />
-          Sign In
+          <label> Sign In</label>
         </button>
       ) : (
         <ProfileBadge userData={userDatajson}></ProfileBadge>

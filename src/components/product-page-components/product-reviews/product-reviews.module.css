@@ -112,7 +112,9 @@
 }
 
 .ratingbar .count {
-  width: 5vw;
-  font-size: 0.8em;
+  font-size: 1vw;
   text-align: right;
+  width: 5vw;
+  text-wrap: nowrap;
+  padding-left: 0.5vw;
 }

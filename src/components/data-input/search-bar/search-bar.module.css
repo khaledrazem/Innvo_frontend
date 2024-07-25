@@ -31,4 +31,5 @@ input:focus {
   padding-left: 5%;
   height: 100%;
   box-sizing: border-box;
+  vertical-align: top;
 }

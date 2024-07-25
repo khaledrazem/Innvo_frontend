@@ -17,6 +17,10 @@
   align-items: center;
   gap: 1vw;
   margin-bottom: 1vh;
+
+  label {
+    font-size: 0.75vw;
+  }
 }
 
 .reviewer {

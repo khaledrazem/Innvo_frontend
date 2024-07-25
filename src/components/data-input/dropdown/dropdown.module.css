@@ -16,6 +16,7 @@
     padding-left: 10%;
     font-family: var(--main-font);
     background: var(--color-main-text);
+    vertical-align: top;
   }
 
   select:focus,

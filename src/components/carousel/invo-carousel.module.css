@@ -60,6 +60,8 @@
   :global(.rs-carousel-label-wrapper) > input:checked ~ label {
     background-color: var(--color-secondary) !important;
     transition: background-color 0.3s;
+    height: 1.2vh !important;
+    width: 1.2vh !important;
   }
 
   :global(.rs-carousel-label) {
