@@ -17,7 +17,7 @@ function Logo() {
       ) : subscription == "professional" ? (
         <ProfessionalLogo />
       ) : (
-        <label>INNVO</label>
+        <label>INVVO</label>
       )}
     </div>
   );

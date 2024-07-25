@@ -9,8 +9,8 @@ function Footer() {
   return (
     <div className={classes.container}>
       <div className={classes.signature}>
-        <h2>INNVO</h2>
-        <label>© 2024 INNVO.</label>
+        <h2>INVVO</h2>
+        <label>© 2024 INVVO.</label>
         <label>All rights reserved.</label>
       </div>
 

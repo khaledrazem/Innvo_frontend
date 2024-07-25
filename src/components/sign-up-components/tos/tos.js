@@ -7,7 +7,7 @@ function TermsOfService({}) {
   return (
     <div className={classes.container}>
       <div className={classes.head}>
-        <h1>INNVO</h1>
+        <h1>INVVO</h1>
 
         <label className={classes.welcometext}>Terms of service</label>
       </div>

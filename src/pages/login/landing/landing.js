@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
 import { ReactComponent as DeveloperIcon } from "src/public/svg/Dev Icon.svg";
 import { ReactComponent as UserIcon } from "src/public/svg/User Icon.svg";
 import classes from "./landing.module.css";
-import { UserSessionContext } from "src/contexts/UserSessionContext";
 
 function LandingPage() {
   const [selectedUser, setSelectedUser] = useState(null);
@@ -16,7 +16,7 @@ function LandingPage() {
 
   return (
     <div className={classes.container}>
-      <h1>INNVO</h1>
+      <h1>INVVO</h1>
 
       <div className={classes.loginchoices}>
         <div

@@ -19,7 +19,7 @@ function SubscriptionsPage() {
       {/* <div className={classes.overviewbubble}> */}
       <div className={classes.header}>
         <h4>Select your </h4>
-        <h4>INNVO Subscription</h4>
+        <h4>INVVO Subscription</h4>
       </div>
       <label>
         Find the subscription to elevate your development journey and unlock
