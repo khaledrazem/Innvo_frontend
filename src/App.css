@@ -43,6 +43,12 @@
   }
 }
 
+button {
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
 button:hover {
   background: var(--color-secondary);
   border-color: transparent;

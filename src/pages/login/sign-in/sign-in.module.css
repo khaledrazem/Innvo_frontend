@@ -13,10 +13,10 @@
   justify-content: start;
 
   h1 {
-    font-size: 5.6vh;
-    line-height: 4.5vh;
+    font-size: 6.6vh;
+    line-height: 6.6vh;
     margin: 0;
-    margin-bottom: 3.5vh;
+    margin-bottom: 3.2vh;
   }
 
   button:hover {
@@ -45,13 +45,13 @@
   width: 100%;
   justify-content: center;
   margin-top: 3.9%;
-  margin-bottom: 5vh;
+  margin-bottom: 5.8vh;
   button {
-    border-width: 0.2vh;
+    border-width: 0.25vh;
     background: var(--color-background);
     color: var(--color-main-text);
     box-sizing: border-box;
-    height: 4.6vh;
+    height: 5.6vh;
     width: 10.9vw;
     padding: 0;
     display: flex;
@@ -87,7 +87,7 @@
 .fields {
   display: flex;
   flex-direction: column;
-  gap: 5vh;
+  gap: 6vh;
   width: 100%;
 }
 .welcometext {
@@ -109,7 +109,7 @@
   font-size: 1.05vw;
   width: 100%;
   text-align: start;
-  gap: 0.5vh;
+  gap: 1.1vh;
   label {
     font-weight: 500;
   }
@@ -129,9 +129,10 @@
   font-size: 1.05vw;
   line-height: 1.05vw;
   font-weight: 500;
-  margin-top: auto;
+  margin-top: 4.5vh;
 
   a {
+    font-weight: 600;
     text-decoration: none;
   }
 }
@@ -153,5 +154,5 @@
   font-size: 2.2vh;
   height: 4.8vh;
   width: 12vw;
-  margin-top: 5vh;
+  margin-top: 7.2vh;
 }

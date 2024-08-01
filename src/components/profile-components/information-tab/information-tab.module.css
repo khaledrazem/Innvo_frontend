@@ -178,7 +178,7 @@
   flex-direction: column;
   flex-grow: 1;
   width: 95%;
-  justify-self: flex-end;
+  justify-self: flex-start;
 
   input {
     border: none;

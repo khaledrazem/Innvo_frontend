@@ -54,10 +54,10 @@ function SignInPage() {
           <input
             type="text"
             {...register("email", {
-              required: "is required",
+              required: " is required",
               pattern: {
                 value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-                message: "is invalid",
+                message: " is invalid",
               },
             })}
           />
@@ -72,10 +72,10 @@ function SignInPage() {
           <input
             type="password"
             {...register("password", {
-              required: "is required",
+              required: " is required",
               minLength: {
                 value: 6,
-                message: "must be at least 6 characters long",
+                message: " must be at least 6 characters long",
               },
             })}
           />

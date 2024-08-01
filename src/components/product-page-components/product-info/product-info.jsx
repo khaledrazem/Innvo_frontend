@@ -3,10 +3,8 @@ import { ReactComponent as PinIcon } from "src/public/svg/Pin-Black.svg";
 import { ReactComponent as BluePinIcon } from "src/public/svg/Pin-Blue.svg";
 import { ReactComponent as StarEmptyIcon } from "src/public/svg/Review_star empty.svg";
 import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.svg";
-import {
-  ReactComponent as EliteIcon,
-  ReactComponent as VisitIcon,
-} from "src/public/svg/Sub_Crown.svg";
+import { ReactComponent as EliteIcon } from "src/public/svg/Sub_Crown.svg";
+import { ReactComponent as VisitIcon } from "src/public/svg/Visits.svg";
 
 import {
   ReactComponent as EssentialIcon,
@@ -88,9 +86,8 @@ function ProductInfo({ productData }) {
           </div>
         </>
       ) : null}
-      {userType == "dev" && (
-        <button className={classes.explorebutton}>Access</button>
-      )}
+
+      <button className={classes.explorebutton}>Access</button>
       {userType == "user" && (
         <button className={classes.explorebutton}>Subscribe</button>
       )}

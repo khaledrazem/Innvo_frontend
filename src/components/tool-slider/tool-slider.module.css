@@ -13,19 +13,13 @@
   flex-direction: column;
 }
 
-.productcardcont {
-  width: 20.65vw;
-  height: 18.2vh;
-}
-
-.productlist {
+.toollist {
   display: grid;
   position: relative;
-  row-gap: 2.3vh;
-  column-gap: 2.5vw;
-
+  row-gap: 2.2vh;
+  column-gap: 1.311vw;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(9, 1fr);
 }
 
 .paginationcontrols {
@@ -45,7 +39,8 @@ button {
   padding: 5px 10px;
 }
 
-.dot {
+.dot,
+.dotactive {
   width: 1vh;
   height: 1vh;
   border-radius: 50%;
@@ -53,28 +48,25 @@ button {
 }
 
 .dotactive {
-  width: 1vh;
-  height: 1vh;
-  border-radius: 50%;
   background-color: var(--color-main-text);
 }
 .leftarrow {
   position: absolute;
-  width: 1.55vw;
-  left: -40px;
-  scale: -1 1;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 1vh;
+  left: -4.3vw;
+  rotate: 90deg;
   cursor: pointer;
   align-self: center;
+  stroke-width: 64px;
 }
 .rightarrow {
   position: absolute;
-  width: 1.55vw;
-  right: -40px;
-  height: fit-content;
+  height: 1vh;
+  right: -4.3vw;
   cursor: pointer;
   align-self: center;
+  rotate: -90deg;
+  stroke-width: 64px;
 }
 .header {
   margin-bottom: 1vh;
@@ -83,4 +75,10 @@ button {
   text-align: center;
   font-size: 1.1vw;
   font-weight: 600;
+}
+
+.iconcontainer {
+  width: 4.92vw;
+  height: 12.2vh;
+  list-style-type: none;
 }

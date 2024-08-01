@@ -5,7 +5,6 @@ import Dropdown from "src/components/data-input/dropdown/dropdown";
 import AddProductDescription from "src/components/my-tools-page-components/add-product-description/add-product-description";
 import AddProductFaq from "src/components/my-tools-page-components/add-product-faq/add-product-faq";
 import AddProductInfo from "src/components/my-tools-page-components/add-product-info/add-product-info";
-import AddProductPrivacy from "src/components/my-tools-page-components/add-product-privacy/add-product-privacy";
 import UploadProductCarousel from "src/components/my-tools-page-components/upload-product-carousel/upload-product-carousel";
 import categoriesData from "src/data/categories.json";
 import pricingsData from "src/data/pricings.json";
@@ -111,12 +110,12 @@ function EditToolsPage() {
         <AddProductFaq register={register} name={"productFaq"} />
         <br /> <br />
         <br /> <br />
-        <AddProductPrivacy
+        {/* <AddProductPrivacy
           formSettings={getValues("productPrivacy")?.selectedSettings}
           setValue={setValue}
           register={register}
           name={"productPrivacy"}
-        />
+        /> */}
         <br /> <br />
         <br /> <br />
       </form>

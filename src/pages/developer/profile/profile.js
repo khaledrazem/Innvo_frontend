@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import classes from "./profile.module.css";
-import InformationTab from "src/components/profile-components/information-tab/information-tab";
-import profileJsonData from "src/data/profiledata.json";
 import { useForm } from "react-hook-form";
+import InformationTab from "src/components/profile-components/information-tab/information-tab";
 import PaymentTab from "src/components/profile-components/payment-tab/payment-tab";
+import profileJsonData from "src/data/profiledata.json";
+import classes from "./profile.module.css";
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = useState("information");
@@ -30,7 +30,7 @@ function ProfilePage() {
       {/* <br />
       <div className={classes.bubblecontainer}> */}
       <div className={classes.pagecontainer}>
-        <div className={classes.navtab}>
+        {/* <div className={classes.navtab}>
           <button
             className={
               activeTab == "information"
@@ -51,7 +51,7 @@ function ProfilePage() {
           >
             Payment
           </button>
-        </div>
+        </div> */}
 
         <form className={classes.formcontainer}>
           {activeTab === "information" && (

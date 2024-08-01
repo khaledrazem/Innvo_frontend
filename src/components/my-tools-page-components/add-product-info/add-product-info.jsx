@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
-import classes from "./add-product-info.module.css";
+import { useEffect, useState } from "react";
 import { ReactComponent as AddIcon } from "src/public/svg/Add.svg";
 import { ReactComponent as UpArrowIcon } from "src/public/svg/Up Arrow_Black.svg";
-import { Link } from "react-router-dom";
+import classes from "./add-product-info.module.css";
 
 function AddProductInfo({
   setValue,
@@ -87,7 +86,7 @@ function AddProductInfo({
         <label> Provide the official name of your tool.</label>
         <input type="text" {...register(name + ".title")} required />
       </div>
-      <div>
+      {/* <div>
         <select
           required
           {...register(name + ".subscription")}
@@ -100,7 +99,7 @@ function AddProductInfo({
           <option value="elite">Elite plan</option>
           <option value="professional">Pro plan</option>
         </select>
-      </div>
+      </div> */}
 
       <br />
       <div className={classes.features}>

@@ -8,7 +8,8 @@
       "logo": {
         "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
       },
-      "active": true
+      "active": true,
+      "externalUrl": "https://example.com/tool-one"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "logo": {
         "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
       },
-      "active": false
+      "active": false,
+      "externalUrl": "https://example.com/tool-two"
     },
     {
       "id": 3,
@@ -28,7 +30,250 @@
       "logo": {
         "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
       },
-      "active": true
+      "active": true,
+      "externalUrl": "https://example.com/tool-three"
+    },
+    {
+      "id": 1,
+      "title": "Tool One",
+      "subscription": "essential",
+      "free": true,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-one"
+    },
+    {
+      "id": 2,
+      "title": "Tool Two",
+      "subscription": "professional",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": false,
+      "externalUrl": "https://example.com/tool-two"
+    },
+    {
+      "id": 3,
+      "title": "Tool Three",
+      "subscription": "elite",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-three"
+    },
+    {
+      "id": 1,
+      "title": "Tool One",
+      "subscription": "essential",
+      "free": true,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-one"
+    },
+    {
+      "id": 2,
+      "title": "Tool Two",
+      "subscription": "professional",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": false,
+      "externalUrl": "https://example.com/tool-two"
+    },
+    {
+      "id": 3,
+      "title": "Tool Three",
+      "subscription": "elite",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-three"
+    },
+    {
+      "id": 1,
+      "title": "Tool One",
+      "subscription": "essential",
+      "free": true,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-one"
+    },
+    {
+      "id": 2,
+      "title": "Tool Two",
+      "subscription": "professional",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": false,
+      "externalUrl": "https://example.com/tool-two"
+    },
+    {
+      "id": 3,
+      "title": "Tool Three",
+      "subscription": "elite",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-three"
+    },
+    {
+      "id": 1,
+      "title": "Tool One",
+      "subscription": "essential",
+      "free": true,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-one"
+    },
+    {
+      "id": 2,
+      "title": "Tool Two",
+      "subscription": "professional",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": false,
+      "externalUrl": "https://example.com/tool-two"
+    },
+    {
+      "id": 3,
+      "title": "Tool Three",
+      "subscription": "elite",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-three"
+    },
+    {
+      "id": 1,
+      "title": "Tool One",
+      "subscription": "essential",
+      "free": true,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-one"
+    },
+    {
+      "id": 2,
+      "title": "Tool Two",
+      "subscription": "professional",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": false,
+      "externalUrl": "https://example.com/tool-two"
+    },
+    {
+      "id": 3,
+      "title": "Tool Three",
+      "subscription": "elite",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-three"
+    },
+    {
+      "id": 1,
+      "title": "Tool One",
+      "subscription": "essential",
+      "free": true,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-one"
+    },
+    {
+      "id": 2,
+      "title": "Tool Two",
+      "subscription": "professional",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": false,
+      "externalUrl": "https://example.com/tool-two"
+    },
+    {
+      "id": 3,
+      "title": "Tool Three",
+      "subscription": "elite",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-three"
+    },
+    {
+      "id": 1,
+      "title": "Tool One",
+      "subscription": "essential",
+      "free": true,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-one"
+    },
+    {
+      "id": 2,
+      "title": "Tool Two",
+      "subscription": "professional",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": false,
+      "externalUrl": "https://example.com/tool-two"
+    },
+    {
+      "id": 3,
+      "title": "Tool Three",
+      "subscription": "elite",
+      "free": false,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-three"
+    },
+    {
+      "id": 1,
+      "title": "Tool One",
+      "subscription": "essential",
+      "free": true,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "active": true,
+      "externalUrl": "https://example.com/tool-one"
     }
   ]
 }

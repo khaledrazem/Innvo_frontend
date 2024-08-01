@@ -1,12 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
-import classes from "./information-tab.module.css";
-import { ReactComponent as EditIcon } from "src/public/svg/Edit.svg";
+import { useContext, useEffect, useState } from "react";
 import { ReactComponent as AddIcon } from "src/public/svg/Add.svg";
+import { ReactComponent as EditIcon } from "src/public/svg/Edit.svg";
+import classes from "./information-tab.module.css";
 
-import { ReactComponent as InstagramIcon } from "src/public/svg/Profile Socials/Profile- Insta.svg";
-import { ReactComponent as EmailIcon } from "src/public/svg/Profile Socials/Profile- Email.svg";
-import { ReactComponent as WebIcon } from "src/public/svg/Profile Socials/Profile- Web.svg";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
+import { ReactComponent as EmailIcon } from "src/public/svg/Profile Socials/Profile- Email.svg";
+import { ReactComponent as InstagramIcon } from "src/public/svg/Profile Socials/Profile- Insta.svg";
+import { ReactComponent as WebIcon } from "src/public/svg/Profile Socials/Profile- Web.svg";
 
 function InformationTab({ data, register, errors }) {
   const { userType } = useContext(UserSessionContext);
@@ -95,15 +95,15 @@ function InformationTab({ data, register, errors }) {
           <>
             <div className={classes.formRow}>
               <div className={classes.formInput}>
-                <label>First Name</label>
-                <input type="text" {...register("firstname")} />
-                {errors.firstname && <p>{errors.firstname.message}</p>}
+                <label>Full Name</label>
+                <input type="text" {...register("fullname")} />
+                {errors.fullname && <p>{errors.fullname.message}</p>}
               </div>
 
               <div className={classes.formInput}>
-                <label>Last Name</label>
-                <input type="text" {...register("lastname")} />
-                {errors.lastname && <p>{errors.lastname.message}</p>}
+                <label>Region</label>
+                <input type="text" {...register("region")} />
+                {errors.region && <p>{errors.region.message}</p>}
               </div>
             </div>
           </>
@@ -119,16 +119,11 @@ function InformationTab({ data, register, errors }) {
           <>
             <div className={classes.formRow}>
               <div className={classes.formInput}>
-                <label>Region</label>
-                <input type="text" {...register("region")} />
-                {errors.region && <p>{errors.region.message}</p>}
+                <label>Email</label>
+                <input type="text" {...register("email")} />
+                {errors.email && <p>{errors.email.message}</p>}
               </div>
-
-              <div className={classes.formInput}>
-                <label>Contact Information</label>
-                <input type="text" {...register("contact")} />
-                {errors.contact && <p>{errors.contact.message}</p>}
-              </div>
+              <div className={classes.formInput}></div>
             </div>
           </>
         )}

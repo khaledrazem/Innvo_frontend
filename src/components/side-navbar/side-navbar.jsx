@@ -8,7 +8,7 @@ import { UserSessionContext } from "src/contexts/UserSessionContext";
 
 import { ReactComponent as DiscoverIcon } from "src/public/svg/Discover.svg";
 import { ReactComponent as SandwichIcon } from "src/public/svg/Dots Option.svg";
-import { ReactComponent as ToolsIcon } from "src/public/svg/My Tools.svg";
+import { ReactComponent as PinIcon } from "src/public/svg/Pin_Fill.svg";
 
 function SideNavBar() {
   const { subscription, userType } = useContext(UserSessionContext);
@@ -32,11 +32,7 @@ function SideNavBar() {
             ></NavButton>
           )} */}
 
-          <NavButton
-            href="my-tools"
-            text="My Tools"
-            icon={<ToolsIcon />}
-          ></NavButton>
+          <NavButton href="pins" text="Pins" icon={<PinIcon />}></NavButton>
 
           {/* <NavButton
             href="community"

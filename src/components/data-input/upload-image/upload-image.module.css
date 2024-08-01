@@ -5,7 +5,7 @@
   -webkit-user-select: none;
   user-select: none;
   border: 2px solid var(--color-main-text);
-  border-radius: 20px;
+  border-radius: 4vh;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -29,7 +29,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  gap: 2.1vh;
+  gap: 3vh;
 
   label {
     font-weight: 500;
@@ -38,11 +38,11 @@
   }
 
   svg {
-    width: 31%;
+    width: 38%;
     border: 0.2vh solid var(--color-main-text);
     aspect-ratio: 1;
     border-radius: 50px;
     box-sizing: border-box;
-    padding: 9%;
+    padding: 12%;
   }
 }

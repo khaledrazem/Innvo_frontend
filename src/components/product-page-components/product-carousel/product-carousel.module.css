@@ -41,10 +41,16 @@
     display: none;
   }
   :global(.rs-carousel-toolbar) {
+    display: none;
     position: absolute;
     width: 100%;
     -webkit-user-select: none;
     user-select: none;
+  }
+
+  :global(.rs-carousel-label) {
+    width: 100% !important;
+    height: 100% !important;
   }
 
   :global(.rs-carousel-label-wrapper) {

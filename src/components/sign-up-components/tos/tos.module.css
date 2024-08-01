@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  height: 58vh;
+  height: 66vh;
   margin-bottom: 3vh;
   width: 100%;
   flex-direction: column;
@@ -29,7 +29,7 @@
   flex-direction: column;
   height: fit-content;
   overflow-y: scroll;
-  gap: 2.2vh;
+  gap: 2.6vh;
 }
 
 .termitem {
@@ -39,7 +39,7 @@
   font-size: 0.83vw;
   font-weight: 500;
   line-height: 0.83vw;
-  gap: 0.3vh;
+  gap: 0.5vh;
 }
 .welcometext {
   font-size: 1.9vw;

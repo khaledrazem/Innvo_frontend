@@ -1,154 +1,147 @@
 import { useContext, useState } from "react";
-import ToolCard from "src/components/tool-card/tool-card";
+import SearchBar from "src/components/data-input/search-bar/search-bar";
+import ToolSlider from "src/components/tool-slider/tool-slider";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
 import toolsDatajson from "src/data/tools.json";
-import classes from "./my-tools.module.css";
+import toolsFolderjson from "src/data/toolsfolders.json";
 
+import ToolFolderSlider from "src/components/tool-folder-slider/tool-folder-slider";
+import { ReactComponent as EditIcon } from "src/public/svg/Edit.svg";
+import classes from "./my-tools.module.css";
 function MyToolsPage() {
   const { subscription, subscriptionDays } = useContext(UserSessionContext);
 
   let toolsData = toolsDatajson.toolsData;
-  const [dragAndDrop, setDragAndDrop] = useState(initialDnDState);
-  const [list, setList] = useState(toolsData);
+  const [edit, setEdit] = useState(false);
+  const [toolsFolderData, setToolsFolderData] = useState(
+    toolsFolderjson.toolsFolders
+  );
 
-  const setDraggable = (bool) => {
-    setDragAndDrop((prevDnD) => ({
-      ...prevDnD,
-      draggable: bool,
-    }));
+  const handleDragStart = (e, item) => {
+    if (!edit) {
+      return false;
+    }
+    e.dataTransfer.setData("text/plain", JSON.stringify({ tool: item }));
   };
-  const onDragStart = (event) => {
-    const initialPosition = Number(event.currentTarget.dataset.position);
 
-    setDragAndDrop({
-      // we spread the previous content
-      // of the hook variable
-      // so we don't override the properties
-      // not being updated
-      ...dragAndDrop,
-
-      draggedFrom: initialPosition, // set the draggedFrom position
-      isDragging: true,
-      originalOrder: list, // store the current state of "list"
-    });
-
-    // Note: this is only for Firefox.
-    // Without it, the DnD won't work.
-    // But we are not using it.
-    event.dataTransfer.setData("text/html", "");
+  const handleFolderDragStart = (e, tool, folder) => {
+    if (!edit) {
+      return false;
+    }
+    e.dataTransfer.setData(
+      "text/plain",
+      JSON.stringify({ tool: tool, folder: folder })
+    );
   };
-  const onDragOver = (event) => {
-    event.preventDefault();
 
-    // Store the content of the original list
-    // in this variable that we'll update
-    let newList = dragAndDrop.originalOrder;
+  const handleDragOver = (e) => {
+    if (!edit) {
+      return false;
+    }
+    e.preventDefault();
+  };
 
-    // index of the item being dragged
-    const draggedFrom = dragAndDrop.draggedFrom;
+  const removeToolFromFolder = (parsedData, listToEdit) => {
+    if (!edit) {
+      return false;
+    }
+    const draggedTool = parsedData.tool;
+    const draggedFolder = parsedData.folder;
 
-    // index of the drop area being hovered
-    const draggedTo = Number(event.currentTarget.dataset.position);
-
-    // get the element that's at the position of "draggedFrom"
-    const itemDragged = newList[draggedFrom];
-
-    // filter out the item being dragged
-    const remainingItems = newList.filter(
-      (item, index) => index !== draggedFrom
+    const existingFolderIndex = listToEdit.findIndex(
+      (folder) => folder.id === draggedFolder.id
     );
 
-    // update the list
-    newList = [
-      ...remainingItems.slice(0, draggedTo),
-      itemDragged,
-      ...remainingItems.slice(draggedTo),
-    ];
+    const existingToolIndex = listToEdit[existingFolderIndex].tools.findIndex(
+      (tool) => tool.id === draggedTool.id
+    );
 
-    // since this event fires many times
-    // we check if the targets are actually
-    // different:
-    if (draggedTo !== dragAndDrop.draggedTo) {
-      setDragAndDrop({
-        ...dragAndDrop,
+    if (existingToolIndex !== -1) {
+      const updatedTools = listToEdit[existingFolderIndex].tools.filter(
+        (tool, idx) => idx !== existingToolIndex
+      );
 
-        // save the updated list state
-        // we will render this onDrop
-        updatedOrder: newList,
-        draggedTo: draggedTo,
-      });
+      const updatedTargetFolder = {
+        ...listToEdit[existingFolderIndex],
+        tools: updatedTools,
+      };
+
+      const updatedFolders = listToEdit.map((folder, idx) =>
+        idx === existingFolderIndex ? updatedTargetFolder : folder
+      );
+
+      return updatedFolders;
     }
   };
 
-  const onDrop = () => {
-    // we use the updater function
-    // for the "list" hook
-    setList(dragAndDrop.updatedOrder);
+  const handleDrop = (e, target, index) => {
+    if (!edit) {
+      return false;
+    }
+    e.preventDefault();
 
-    // and reset the state of
-    // the DnD
-    setDragAndDrop({
-      ...dragAndDrop,
-      draggedFrom: null,
-      draggedTo: null,
-      isDragging: false,
-    });
+    const targetFolder = toolsFolderData[index];
+    console.log(target);
+    console.log(targetFolder);
+    if (!targetFolder) {
+      return;
+    }
+
+    let parsedData = JSON.parse(e.dataTransfer.getData("text/plain"));
+    const droppedTool = parsedData.tool;
+
+    const existingTool = toolsFolderData[index].tools.find(
+      (tool) => tool.id === droppedTool.id
+    );
+
+    if (!existingTool) {
+      const updatedTools = [...targetFolder.tools, droppedTool];
+
+      const updatedTargetFolder = { ...targetFolder, tools: updatedTools };
+
+      const updatedFolders = toolsFolderData.map((folder, idx) =>
+        idx === index ? updatedTargetFolder : folder
+      );
+
+      setToolsFolderData(updatedFolders);
+      console.log(updatedFolders);
+
+      // if (parsedData.folder) {
+      //   const removedItems = removeToolFromFolder(parsedData, updatedFolders);
+      //   setToolsFolderData(removedItems);
+      // }
+    }
   };
-
-  const onDragLeave = () => {
-    setDragAndDrop({
-      ...dragAndDrop,
-      draggedTo: null,
-    });
-  };
-
-  function Capitalize(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  }
 
   return (
     <div className={classes.container}>
-      <label className={classes.subscriptioncounter}>
-        Your{" "}
-        <label
-          className={
-            subscription == "elite"
-              ? classes.elitetext
-              : subscription == "professional"
-              ? classes.proftext
-              : null
-          }
-        >
-          {Capitalize(subscription)}
-        </label>{" "}
-        Subscription Expires in{" "}
-        <label className={classes.subscriptionDays}>
-          {subscriptionDays} Days
-        </label>
-      </label>
-      <div className={classes.containergrid}>
-        {Array.isArray(list) && list.length > 0
-          ? list.map((tool, index) => {
-              return (
-                <li
-                  key={index}
-                  data-position={index}
-                  draggable={dragAndDrop.draggable}
-                  onDragStart={onDragStart}
-                  onDragOver={onDragOver}
-                  onDrop={onDrop}
-                  onDragLeave={onDragLeave}
-                  className={classes.listcontainer}
-                >
-                  <ToolCard
-                    draggable={dragAndDrop.draggable}
-                    toolData={tool}
-                    setDraggable={setDraggable}
-                  />
-                </li>
-              );
-            })
-          : null}
+      <div className={classes.header}>
+        <div className={classes.search}>
+          <SearchBar placeholder="Search" />
+        </div>
+        <EditIcon
+          onClick={() => setEdit(!edit)}
+          className={edit ? classes.editiconblue : classes.editicon}
+        />
+      </div>
+      <div className={classes.folderscontainer}>
+        <ToolFolderSlider
+          toolFolderData={toolsFolderData}
+          setToolFolderData={setToolsFolderData}
+          handleDragStart={handleFolderDragStart}
+          handleDrop={handleDrop}
+          handleDragOver={handleDragOver}
+          dottednav={false}
+          edit={edit}
+        />
+      </div>
+      <div className={classes.toolscontainer}>
+        <ToolSlider
+          toolData={toolsData}
+          onDragStart={handleDragStart}
+          dottednav={false}
+          edit={edit}
+        />
       </div>
     </div>
   );
@@ -157,7 +150,7 @@ function MyToolsPage() {
 export default MyToolsPage;
 
 const initialDnDState = {
-  draggable: "false",
+  draggable: false,
   draggedFrom: null,
   draggedTo: null,
   isDragging: false,

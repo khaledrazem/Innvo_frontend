@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ReactComponent as FacebookIcon } from "src/public/svg/Social- Facebook.svg";
 import { ReactComponent as InstagramIcon } from "src/public/svg/Social- Insta.svg";
 import { ReactComponent as LinkedinIcon } from "src/public/svg/Social- Linkedin.svg";
@@ -14,7 +13,7 @@ function Footer() {
         <label>All rights reserved.</label>
       </div>
 
-      <Link className={classes.subscriptions} to={"/marketplace/subscriptions"}>
+      {/* <Link className={classes.subscriptions} to={"/marketplace/subscriptions"}>
         <div>
           <h5>Subscriptions</h5>
           <ul>
@@ -31,7 +30,7 @@ function Footer() {
             </div>
           </ul>
         </div>
-      </Link>
+      </Link> */}
 
       <div className={classes.company}>
         <h5>Company</h5>

@@ -50,7 +50,7 @@ function DeveloperPage() {
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="workspace" element={<WorkspacePage />} />
 
-          <Route path="my-tools" element={<MyToolsPage />} />
+          <Route path="pins" element={<MyToolsPage />} />
           <Route path="my-tools/new" element={<EditToolsPage />} />
           <Route path="my-tools/edit/:toolId" element={<EditToolsPage />} />
           <Route path="my-tools/edit/preview" element={<ProductPage />} />
