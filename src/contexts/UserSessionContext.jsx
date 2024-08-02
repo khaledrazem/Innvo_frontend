@@ -9,7 +9,7 @@ export const UserSessionProvider = ({ children }) => {
   const [loggedIn, setLoggedIn] = React.useState(false);
   const [userName, setUserName] = React.useState(false);
   const [userEmail, setUserEmail] = React.useState(false);
-  const [subscription, setSubscription] = React.useState("elite");
+  const [subscription, setSubscription] = React.useState("essential");
   const [subscriptionDays, setSubscriptionDays] = React.useState(54);
 
   const [notifications, setNotifications] = React.useState(3);

@@ -5,11 +5,14 @@
   min-height: 27.2vh;
   display: flex;
   flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 1.5vh;
 }
 
 .container:hover {
   border: 2px solid var(--color-secondary);
   border-radius: 1.5vh;
+  transition: all 0.3s ease-out;
 }
 
 .header {
@@ -95,7 +98,7 @@
 .review {
   display: flex;
   flex-direction: column;
-  gap: 0.7vh;
+  gap: 1.3vh;
   margin-top: 1.6vh;
 }
 
@@ -255,4 +258,10 @@
 
 .expandedarrow {
   scale: -1;
+}
+
+.reviewdate {
+  font-size: 0.65vw;
+  font-weight: 500;
+  line-height: 0.65vw;
 }

@@ -12,7 +12,7 @@
     padding: 1%;
     box-sizing: border-box;
     font-size: 0.8vw;
-    border: 0.3vh solid var(--color-main-text);
+    border: 2px solid var(--color-main-text);
     border-radius: 1vh;
     margin-top: -1.5vh;
     resize: none;
@@ -33,7 +33,7 @@
 }
 
 .header label {
-  border: 0.4vh solid var(--color-main-text);
+  border: 2px solid var(--color-main-text);
   padding: 0% 1.2%;
   border-radius: 1vh;
 }
@@ -80,7 +80,7 @@
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
-  border: 0.2vw solid var(--color-main-text);
+  border: 2px solid var(--color-main-text);
   border-radius: 50%;
 }
 

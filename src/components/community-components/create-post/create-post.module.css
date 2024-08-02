@@ -27,7 +27,7 @@
   border: 2px solid var(--color-background);
   border-radius: 15px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease-out;
   box-sizing: border-box;
   height: 70%;
   padding: 2.5%;
@@ -118,7 +118,7 @@
   align-items: center;
   gap: 0.4vw;
   cursor: pointer;
-  transition: color 0.3s, fill 0.3s;
+  transition: all 0.3s ease-out;
   font-size: 1vw;
   font-weight: 500;
   position: relative;
@@ -162,7 +162,7 @@
   border: none;
   border-radius: 3vh;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease-out;
   justify-content: center;
   font-size: 0.8vw;
   font-weight: 600;

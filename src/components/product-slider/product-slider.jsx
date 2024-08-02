@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Pagination } from "rsuite";
 import ProductCard from "src/components/product-card/product-card";
-import { ReactComponent as UpDownArrow } from "src/public/svg/UP-Down_Arrow.svg";
+import { ReactComponent as UpDownArrow } from "src/public/svg/UP-Down Arrow.svg";
 import classes from "./product-slider.module.css";
 
 function ProductSlider({

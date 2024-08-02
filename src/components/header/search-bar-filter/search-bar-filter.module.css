@@ -20,11 +20,15 @@
 .reseticon {
   align-self: center;
   cursor: pointer;
-  height: 2.1vh;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1%;
   stroke-width: 10vh;
 }
 .reseticon:hover {
-  color: var(--color-secondary);
+  color: var(--color-background);
+  background-color: var(--color-main-text);
+  border-radius: 50px;
 }
 
 .search {

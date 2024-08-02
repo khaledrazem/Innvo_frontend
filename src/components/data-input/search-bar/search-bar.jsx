@@ -1,12 +1,11 @@
-import React from "react";
-import classes from "./search-bar.module.css";
 import { ReactComponent as SearchIcon } from "src/public/svg/Search.svg";
+import classes from "./search-bar.module.css";
 
 function SearchBar({
   searchData,
   setSearchData,
   form = null,
-  placeholder = "Search / Ask",
+  placeholder = "Search",
 }) {
   const handleChange = (event) => {
     if (setSearchData && typeof setSearchData === "function") {

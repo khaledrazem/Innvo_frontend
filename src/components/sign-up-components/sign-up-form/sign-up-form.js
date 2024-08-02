@@ -188,18 +188,6 @@ function SignUpForm({ register, errors, getValues }) {
 
           <div className={classes.inputfield}>
             <label>
-              Language Preferences
-              {errors.role && (
-                <label className={classes.error}>
-                  {errors.language.message}
-                </label>
-              )}
-            </label>
-            <input type="text" {...register("language")} />
-          </div>
-
-          <div className={classes.inputfield}>
-            <label>
               Industry*
               {errors.industry && (
                 <label className={classes.error}>

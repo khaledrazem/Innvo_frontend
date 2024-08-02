@@ -21,6 +21,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.85vw;
+  font-weight: 600;
 }
 
 .faqtoggle,
@@ -36,4 +37,5 @@
 .faqanswer {
   padding: 2vh 0;
   font-size: 0.85vw;
+  font-style: italic;
 }

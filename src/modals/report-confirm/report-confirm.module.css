@@ -5,7 +5,7 @@
   position: relative;
   flex-direction: column;
   background: var(--color-background);
-  border: 0.2vh solid var(--color-main-text);
+  border: 2px solid var(--color-main-text);
   border-radius: 2vh;
   width: fit-content;
   height: fit-content;
@@ -17,7 +17,7 @@
 
 .container:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 0.3vh solid var(--color-secondary);
+  border: 2px solid var(--color-secondary);
 }
 
 .contentconfirm,

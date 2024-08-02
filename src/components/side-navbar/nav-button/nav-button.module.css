@@ -18,7 +18,7 @@
   }
 
   svg {
-    height: 1.5vw;
+    height: 1.2vw;
     aspect-ratio: 1;
   }
 }
@@ -41,4 +41,5 @@
 .navlink:hover,
 .navlink:focus {
   text-decoration: none;
+  color: var(--color-secondary);
 }

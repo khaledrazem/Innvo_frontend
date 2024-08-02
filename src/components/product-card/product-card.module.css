@@ -6,24 +6,22 @@
   flex-direction: row;
   width: 100%;
   height: 100%;
+  background-color: var(--color-off-background);
 
   box-sizing: border-box;
   align-items: flex-start;
   padding: 8.5% 6% 4% 9%;
   border-radius: 8px;
-  border: 0.3vh solid transparent;
-  background-color: var(--color-background);
-  transition: box-shadow 0.3s ease-in-out;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-out;
 }
 
 .container:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-color: var(--color-secondary);
-  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
+  border-color: var(--color-main-text);
+  transition: all 0.3s ease-out;
   svg {
     opacity: 100%;
-    transition: opacity 0.3s ease-in-out;
+    transition: all 0.3s ease-out;
   }
 }
 
@@ -31,8 +29,7 @@
   flex: 0 0 3.8vw;
   align-self: top;
   display: flex;
-  margin-right: 1.2vh;
-  margin-top: 3%;
+  margin-right: 1.5vw;
 }
 
 .logo::before {
@@ -51,7 +48,7 @@
   display: inline-flex;
   flex-direction: column;
   height: 100%;
-  width: 85%;
+  width: 12vw;
 }
 
 .header {
@@ -62,10 +59,12 @@
 }
 
 .body {
-  font-size: 1.2vh;
+  font-size: 1.35vh;
   font-weight: 500;
   text-align: justify;
-  line-height: 1.2vh;
+  line-height: 1.35vh;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
 }
 
 .metrics {
@@ -73,7 +72,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: auto;
+  margin-top: 1.05vh;
   margin-bottom: 4%;
 }
 
@@ -131,6 +130,12 @@
   right: 1.4vh;
   z-index: 750;
   cursor: pointer;
+
+  transition: all 0.3s ease-out;
+}
+
+.pinicon:hover {
+  color: var(--color-secondary);
 }
 
 .subscriptionprof,
@@ -159,27 +164,36 @@
   text-align: start;
   display: flex;
   gap: 0.3vw;
+  margin-top: auto;
+  margin-bottom: 0.5vh;
 }
 
-.subscriptionbox,
-.subscriptionboxelite,
-.subscriptionboxprof {
+.subscriptionboxfree,
+.subscriptionboxpaid,
+.subscriptionboxcategory {
   color: var(--color-background);
   background-color: var(--color-secondary);
   box-sizing: border-box;
-  font-size: 0.65vw;
+  font-size: 0.55vw;
+  line-height: 0.55vw;
   font-weight: 600;
-  padding: 1% 5%;
+  padding: 2% 4%;
   border-radius: 2vh;
 }
 
-.subscriptionboxelite {
-  background-color: var(--color-subscription-elite);
+.subscriptionboxfree {
+  background-color: var(--color-main-text);
+  color: var(--color-background);
 }
-.subscriptionboxprof {
-  background-color: var(--color-subscription-professional);
+.subscriptionboxpaid {
+  background-color: var(--color-primary);
+  color: var(--color-background);
 }
-
+.subscriptionboxcategory {
+  background-color: var(--color-background);
+  color: var(--color-main-text);
+  border: 1px solid var(--color-main-text);
+}
 .circledivider {
   height: 0.4vh;
   aspect-ratio: 1;

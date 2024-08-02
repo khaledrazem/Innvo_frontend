@@ -5,11 +5,11 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  transition: all 0.3s;
+  transition: all 0.3s ease-out;
 }
 
 .expandablecontainer {
-  transition: all 0.3s;
+  transition: all 0.3s ease-out;
   position: absolute;
   z-index: 920;
   background: var(--color-background);
@@ -31,7 +31,7 @@
   grid-auto-flow: column;
   row-gap: 1.2vh;
   column-gap: 1vw;
-  border: 0.3vh solid var(--color-main-text);
+  border: 2px solid var(--color-main-text);
   border-radius: 2.5vh;
   box-sizing: border-box;
   width: 15.6vw;
@@ -40,20 +40,21 @@
   padding: 19%;
   padding-bottom: 13%;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-out;
 }
 
 .bubblecontainer:hover,
 .expandedbubblecontainer:hover {
   border-color: var(--color-secondary);
-  transition: border-color 0.3s ease-in-out;
+  transition: all 0.3s ease-out;
 }
 
 .bubblecontainer > div:nth-child(2n + 5) {
   margin-right: 2.5vw;
 }
 .expandedbubblecontainer {
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-out;
+
   width: 38.8vw;
   padding: 3.6% 3.85%;
   padding-bottom: 2.5%;

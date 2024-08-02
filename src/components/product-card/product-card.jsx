@@ -4,7 +4,7 @@ import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.
 import classes from "./product-card.module.css";
 
 import { ReactComponent as PinIcon } from "src/public/svg/Pin-Black.svg";
-import { ReactComponent as BluePinIcon } from "src/public/svg/Pin-Blue.svg";
+import { ReactComponent as BluePinIcon } from "src/public/svg/Pin_Fill.svg";
 
 import { Link } from "react-router-dom";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
@@ -34,19 +34,17 @@ function ProductCard({ productData }) {
         to={"/marketplace/discover/product/" + productData.id}
       />
 
-      {userType === "user" ? (
-        pinned === true ? (
-          <BluePinIcon
-            className={classes.pinicon}
-            onClick={() => setPinned(!pinned)}
-          />
-        ) : (
-          <PinIcon
-            className={classes.pinicon}
-            onClick={() => setPinned(!pinned)}
-          />
-        )
-      ) : null}
+      {pinned === true ? (
+        <BluePinIcon
+          className={classes.pinicon}
+          onClick={() => setPinned(!pinned)}
+        />
+      ) : (
+        <PinIcon
+          className={classes.pinicon}
+          onClick={() => setPinned(!pinned)}
+        />
+      )}
 
       <div className={classes.logo}>
         <img src={productData.logo.url}></img>
@@ -76,19 +74,18 @@ function ProductCard({ productData }) {
         <div className={classes.subscriptions}>
           {productData.free === true ? (
             <>
-              <label className={classes.subscriptionbox}>Free</label>
+              <label className={classes.subscriptionboxfree}>Free</label>
             </>
           ) : null}
-          {productData.subscription === "elite" ? (
+          {productData.paid === true ? (
             <>
-              <label className={classes.subscriptionboxelite}>
-                Subscription
-              </label>
+              <label className={classes.subscriptionboxpaid}>Paid</label>
             </>
-          ) : productData.subscription === "professional" ? (
+          ) : null}
+          {productData.category ? (
             <>
-              <label className={classes.subscriptionboxprof}>
-                Subscription
+              <label className={classes.subscriptionboxcategory}>
+                {productData.category}
               </label>
             </>
           ) : null}

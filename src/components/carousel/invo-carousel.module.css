@@ -5,19 +5,6 @@
   user-select: none;
 }
 
-.arrowiconleft {
-  stroke: var(--color-main-text);
-  stroke-width: 5vh;
-  height: 3vh;
-  height: 3.5vh;
-
-  padding: 1vh;
-  box-sizing: border-box;
-  transform: translateX(1.9vw) rotate(90deg);
-  background: var(--color-background);
-  border-radius: 50px;
-  aspect-ratio: 1;
-}
 .arrowContainer {
   align-self: center;
   height: 0;
@@ -25,19 +12,35 @@
   position: relative;
   z-index: 100;
   cursor: pointer;
-  top: -4vh;
+  top: -3.5vh;
 }
 
+.arrowiconleft,
 .arrowiconright {
   stroke: var(--color-main-text);
   stroke-width: 5vh;
   height: 4vh;
+
   padding: 1vh;
   box-sizing: border-box;
-  transform: translateX(-3.5vw) rotate(-90deg);
   background: var(--color-background);
   border-radius: 50px;
   aspect-ratio: 1;
+}
+
+.arrowiconleft:hover,
+.arrowiconright:hover {
+  color: var(--color-background);
+  background-color: var(--color-main-text);
+  transition: all 0.3s ease-out;
+}
+
+.arrowiconleft {
+  transform: translateX(1.7vw) rotate(90deg);
+}
+
+.arrowiconright {
+  transform: translateX(-3.5vw) rotate(-90deg);
 }
 
 .customslider {
@@ -59,7 +62,7 @@
 
   :global(.rs-carousel-label-wrapper) > input:checked ~ label {
     background-color: var(--color-secondary) !important;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease-out;
     height: 1.2vh !important;
     width: 1.2vh !important;
   }

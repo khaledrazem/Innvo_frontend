@@ -56,7 +56,9 @@ function ReviewCard({
           <label>{reviewData.rating}</label>
         </div>
       </div>
-      <label>Reviewed on {formatDate(reviewData.dateCreated)}</label>
+      <label className={classes.reviewdate}>
+        Reviewed on {formatDate(reviewData.dateCreated)}
+      </label>
       <div className={classes.review}>
         <h6>{reviewData.title}</h6>
         <label>{reviewData.body}</label>

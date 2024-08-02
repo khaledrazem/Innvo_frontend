@@ -25,6 +25,8 @@
   position: relative;
   align-self: center;
   margin-right: 10vw;
+  margin-top: 2.5vh;
+  justify-content: center;
 
   button {
     box-sizing: border-box;

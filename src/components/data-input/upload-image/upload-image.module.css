@@ -39,7 +39,7 @@
 
   svg {
     width: 38%;
-    border: 0.2vh solid var(--color-main-text);
+    border: 2px solid var(--color-main-text);
     aspect-ratio: 1;
     border-radius: 50px;
     box-sizing: border-box;

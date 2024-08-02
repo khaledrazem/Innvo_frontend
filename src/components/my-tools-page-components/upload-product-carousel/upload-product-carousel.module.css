@@ -31,7 +31,7 @@
 
   :global(.rs-carousel-label-wrapper:has(> input:checked)) {
     background-color: var(--color-main-text) !important;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease-out;
   }
 
   :global(.rs-carousel-slider) {

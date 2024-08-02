@@ -45,14 +45,10 @@ function SideNavBar() {
             icon={<IoChatbubbleEllipsesOutline />}
           ></NavButton> */}
 
-          {userType == "user" &&
-          Array.isArray(subscribedTools) &&
-          subscribedTools.length > 0 ? (
+          {Array.isArray(subscribedTools) && subscribedTools.length > 0 ? (
             <div className={classes.divider} />
           ) : null}
-          {userType == "user" &&
-          Array.isArray(subscribedTools) &&
-          subscribedTools.length > 0 ? (
+          {Array.isArray(subscribedTools) && subscribedTools.length > 0 ? (
             <div className={classes.toollist}>
               {subscribedTools.map((tool) => {
                 return (

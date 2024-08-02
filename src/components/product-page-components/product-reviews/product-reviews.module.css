@@ -79,7 +79,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2.85vh;
+  gap: 2.8vh;
 }
 
 .ratingbar {
@@ -99,22 +99,22 @@
 
 .ratingbar .bar {
   flex-grow: 1;
-  height: 0.3vh;
+  height: 2px;
   background-color: var(--color-main-text);
   position: relative;
 }
 
 .ratingbar .bar .fill {
-  height: 150%;
+  height: 175%;
   background-color: var(--color-secondary);
   position: absolute;
   top: -25%;
 }
 
 .ratingbar .count {
-  font-size: 1vw;
+  font-size: 0.7vw;
   text-align: right;
-  width: 5vw;
+  width: 4vw;
   text-wrap: nowrap;
-  padding-left: 0.5vw;
+  padding-left: 0.2vw;
 }

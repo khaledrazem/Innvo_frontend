@@ -15,6 +15,7 @@
       "visits": 530,
       "subscription": "professional",
       "free": true,
+      "paid": true,
       "description": {
         "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
         "images": [
@@ -89,6 +90,7 @@
       "reviewscount": 13,
       "subscription": "elite",
       "free": false,
+      "category": "Analytics",
       "description": {
         "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
         "images": [

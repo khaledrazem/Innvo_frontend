@@ -58,7 +58,41 @@ button {
   border-radius: 50%;
   background-color: var(--color-main-text);
 }
+
+.leftarrow,
+.rightarrow {
+  position: absolute;
+  stroke: var(--color-main-text);
+  stroke-width: 5vh;
+  height: 4vh;
+  cursor: pointer;
+  align-self: center;
+  padding: 1vh;
+  box-sizing: border-box;
+  background: var(--color-background);
+  border-radius: 50px;
+  aspect-ratio: 1;
+}
+
+.leftarrow:hover,
+.rightarrow:hover {
+  color: var(--color-background);
+  background-color: var(--color-main-text);
+  transition: all 0.3s ease-out;
+}
+
 .leftarrow {
+  left: -40px;
+  scale: -1 1;
+  rotate: 90deg;
+}
+
+.rightarrow {
+  right: -40px;
+  rotate: -90deg;
+}
+
+/* .leftarrow {
   position: absolute;
   width: 1.55vw;
   left: -40px;
@@ -75,7 +109,7 @@ button {
   height: fit-content;
   cursor: pointer;
   align-self: center;
-}
+} */
 .header {
   margin-bottom: 1vh;
   position: relative;

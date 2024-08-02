@@ -16,7 +16,7 @@
   background-color: var(--color-background);
   border-radius: 2vh;
   color: var(--color-secondary);
-  border: 0.3vh solid var(--color-secondary);
+  border: 2px solid var(--color-secondary);
   height: 4vh;
   font-weight: 600;
   font-size: 0.8vw;

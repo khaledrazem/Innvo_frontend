@@ -47,11 +47,11 @@ function DiscoverPage() {
               bottomnav={true}
               itemsPerPage={expanded ? 40 : 18}
             />
-          </div>
-          <div className={classes.explorebutton}>
-            {!expanded && (
-              <button onClick={() => setExpanded(true)}>View more</button>
-            )}
+            <div className={classes.explorebutton}>
+              {!expanded && (
+                <button onClick={() => setExpanded(true)}>View more</button>
+              )}
+            </div>
           </div>
         </div>
         <br />

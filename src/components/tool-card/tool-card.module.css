@@ -14,7 +14,7 @@
   button {
     color: var(--color-main-text);
     background-color: var(--color-background);
-    border: 0.3vh solid var(--color-main-text);
+    border: 2px solid var(--color-main-text);
     border-radius: 2vh;
     margin-left: auto;
     font-size: 1vw;
@@ -45,7 +45,7 @@
 
 .container:hover {
   border-color: var(--color-secondary);
-  transition: border-color 0.3s ease-in-out;
+  transition: all 0.3s ease-out;
 }
 
 .buttons {
@@ -147,6 +147,7 @@
 
 :global(.rs-dropdown) {
   margin-left: auto;
+  width: 100%;
 }
 
 :global(.rs-dropdown-menu) {

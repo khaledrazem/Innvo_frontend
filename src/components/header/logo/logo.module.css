@@ -13,6 +13,11 @@
   }
 }
 
+.logo:hover {
+  color: var(--color-secondary);
+  transition: all 0.3s ease-out;
+}
+
 .link {
   position: absolute;
   width: 100%;
