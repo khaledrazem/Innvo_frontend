@@ -12,6 +12,7 @@ const DiscoverPage = React.memo(() => {
   const [risingStars, setRisingStars] = React.useState([]);
   const [noteworthy, setNoteworthy] = React.useState([]);
   const [explore, setExplore] = React.useState([]);
+  const [expanded, setExpanded] = useState(false);
 
   React.useEffect(() => {
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/top-rated`)
@@ -88,74 +89,76 @@ const DiscoverPage = React.memo(() => {
 
   return (
     <div className={classes.container}>
-      <InvoCarousel
-        height={225}
-        width={1265}
-        images={[
-          "https://i.ibb.co/cQ1rkPT/000000-text-Dummy-header-test.png",
-          "https://i.ibb.co/cQ1rkPT/000000-text-Dummy-header-test.png",
-          "https://i.ibb.co/cQ1rkPT/000000-text-Dummy-header-test.png",
-        ]}
-      />
-
-      {topRated && topRated.length > 0 ? (
-        <ProductSlider
-          titleText={"Top Rated"}
-          productData={topRated.length > 0 ? topRated : []}
+      <div className={classes.carouselcontainer}>
+        <InvoCarousel
+          height={268}
+          width={1309}
+          images={[
+            "https://i.ibb.co/cQ1rkPT/000000-text-Dummy-header-test.png",
+            "https://i.ibb.co/cQ1rkPT/000000-text-Dummy-header-test.png",
+            "https://i.ibb.co/cQ1rkPT/000000-text-Dummy-header-test.png",
+          ]}
         />
-      ) : (
-        <p>No top rated products available</p>
-      )}
-
-      <br /> <br />
+      </div>  
+      <div className={classes.productsliderlist}>
+        {topRated && topRated.length > 0 ? (
+          <ProductSlider
+            titleText={"Top Rated"}
+            productData={topRated.length > 0 ? topRated : []}
+          />
+        ) : (
+          <p>No top rated products available</p>
+        )}
       
-      {mostUsed && mostUsed.length > 0 ? (
-        <ProductSlider
-          titleText={"Most Used"}
-          productData={mostUsed.length > 0 ? mostUsed : []}
-        />
-      ) : (
-        <p>No most used products available</p>
-      )}
+        {mostUsed && mostUsed.length > 0 ? (
+          <ProductSlider
+            titleText={"Most Used"}
+            productData={mostUsed.length > 0 ? mostUsed : []}
+          />
+        ) : (
+          <p>No most used products available</p>
+        )}
 
-      <br /> <br />
+        {risingStars && risingStars.length > 0 ? (
+          <ProductSlider
+            titleText={"Rising Stars"}
+            productData={risingStars.length > 0 ? risingStars : []}
+          />
+        ) : (
+          <p>No rising stars products available</p>
+        )}
 
-      {risingStars && risingStars.length > 0 ? (
-        <ProductSlider
-          titleText={"Rising Stars"}
-          productData={risingStars.length > 0 ? risingStars : []}
-        />
-      ) : (
-        <p>No rising stars products available</p>
-      )}
+        {noteworthy && noteworthy.length > 0 ? (
+          <ProductSlider
+            titleText={"New and Noteworthy"}
+            productData={noteworthy.length > 0 ? noteworthy : []}
+          />
+        ) : (
+          <p>No noteworthy products available</p>
+        )}
 
-      <br /> <br />
+        <div>
+          {explore && explore.length > 0 ? (
+            <ProductSlider
+              titleText={"Explore"}
+              productData={explore.length > 0 ? explore : []}
+              pagination={expanded}
+              bottomnav={true}
+              itemsPerPage={expanded ? 40 : 18}
+            />
+          ) : (
+            <p>No explore products available</p>
+          )}
 
-      {noteworthy && noteworthy.length > 0 ? (
-        <ProductSlider
-          titleText={"Noteworthy"}
-          productData={noteworthy.length > 0 ? noteworthy : []}
-        />
-      ) : (
-        <p>No noteworthy products available</p>
-      )}
-
-      <br /> <br />
-
-      {explore && explore.length > 0 ? (
-        <ProductSlider
-          titleText={"Explore"}
-          productData={explore.length > 0 ? explore : []}
-          pagination={false}
-          itemsPerPage={18}
-        />
-      ) : (
-        <p>No explore products available</p>
-      )}
-
-      <div className={classes.explorebutton}>
-        <button>View more</button>
+        <div className={classes.explorebutton}>
+          {!expanded && (
+            <button onClick={() => setExpanded(true)}>View more</button>
+          )}
+        </div>
       </div>
+      <br />
+      <br />
+    </div>
       <Footer></Footer>
     </div>
   );
