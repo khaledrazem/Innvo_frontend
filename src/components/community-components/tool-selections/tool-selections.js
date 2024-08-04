@@ -17,7 +17,16 @@ function ToolSelections({ selectedTool, setSelectedTool, toolsData }) {
             <img className={classes.toolimg} src={tool.logo.url}></img>
             <div className={classes.titles}>
               <h5>{tool.title}</h5>
-              <label>{tool.active ? "Active" : "Inactive"} Status</label>
+              <div className={classes.status}>
+                <label>
+                  <div
+                    className={
+                      tool.active ? classes.activeball : classes.inactiveball
+                    }
+                  />
+                  {tool.active ? "Active" : "Inactive"} Status
+                </label>
+              </div>
             </div>
           </div>
         );

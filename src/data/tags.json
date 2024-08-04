@@ -1,18 +1,18 @@
 [
-    {
-        "id": 1,
-        "displayName": "Tech"
-    },
-    {
-        "id": 2,
-        "displayName": "Fashion"
-    },
-    {
-        "id": 3,
-        "displayName": "Literature"
-    },
-    {
-        "id": 4,
-        "displayName": "Play"
-    }
+  {
+    "id": 1,
+    "displayName": "Speech-to-Text"
+  },
+  {
+    "id": 2,
+    "displayName": "Text-to-Speech"
+  },
+  {
+    "id": 3,
+    "displayName": "Voice Recognition"
+  },
+  {
+    "id": 4,
+    "displayName": "Chatbots"
+  }
 ]

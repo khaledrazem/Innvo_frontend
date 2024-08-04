@@ -2,29 +2,46 @@
   position: relative;
   width: 100%;
   height: 100%;
+
+  .input {
+    color: var(--color-background);
+    width: 100%;
+    font-size: 0.8vw;
+    border-width: 2px;
+    font-weight: 600;
+    border-radius: 25px;
+    padding-left: 5%;
+    height: 100%;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
 }
 
+.wrapper:hover {
+  input {
+    color: var(--color-background) !important;
+    background-color: var(--color-main-text) !important;
+    border-color: var(--color-main-text) !important;
+  }
+
+  input::placeholder {
+    color: var(--color-background) !important;
+  }
+
+  .icon {
+    color: var(--color-background);
+  }
+}
 textarea:focus,
 input:focus {
   outline: none;
+  color: var(--color-secondary);
 }
 
 .icon {
-  height: 100%;
-  width: 1.2rem;
+  height: 50%;
+  top: 25%;
   position: absolute;
   box-sizing: border-box;
-  left: 3.4%;
-}
-
-.input {
-  color: var(--color-main-text);
-  width: 100%;
-  font-size: 1em;
-  border-width: 2px;
-  font-weight: 600;
-  border-radius: 25px;
-  padding-left: 3rem;
-  height: 100%;
-  box-sizing: border-box;
+  right: 4.5%;
 }

@@ -2,32 +2,53 @@
   position: relative;
   width: 100%;
   height: 100%;
-}
-select {
-  background-image: url("/src/public/svg/UP-Down Arrow.svg");
-  background-size: 15px;
-  background-repeat: no-repeat;
-  background-position: calc(90%) center;
+  cursor: pointer;
+  color: var(--color-main-text);
+
+  .dropdownclass {
+    width: 100%;
+    font-size: 0.79vw;
+    font-weight: 600;
+    border-width: 2px;
+    border-radius: 25px;
+    height: 100%;
+    padding-left: 10%;
+    font-family: var(--main-font);
+    background: var(--color-background);
+    vertical-align: top;
+  }
+
+  select:focus,
+  input:focus {
+    outline: none;
+  }
+
+  select {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
 }
 
-.input {
-  width: 100%;
-  font-size: 1em;
-  font-weight: 600;
-  border-width: 2px;
-  border-radius: 25px;
-  border-color: var(--color-main-text);
-  height: 100%;
-  padding-left: 12%;
-  font-family: var(--main-font);
+.dropdowncontainer:hover,
+.dropdowncontainer:focus {
+  color: var(--color-background);
+
+  .dropdownclass {
+    background: var(--color-main-text) !important;
+    border: 2px solid var(--color-main-text) !important;
+    color: var(--color-background) !important;
+  }
 }
 
-select:focus,
-input:focus {
-  outline: none;
+.dropdowncontainer:hover::placeholder {
+  color: var(--color-background) !important;
 }
-
-select {
-  -webkit-appearance: none;
-  appearance: none;
+.svgicon {
+  position: absolute;
+  left: 86%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.9vw;
+  pointer-events: none;
 }

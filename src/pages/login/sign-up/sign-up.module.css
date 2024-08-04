@@ -2,16 +2,16 @@
 .toscontainer {
   flex-direction: column;
   display: flex;
-  height: 100%;
-  width: 82.5%;
+  flex-grow: 1;
+  width: 83%;
   align-items: center;
   user-select: none;
   box-sizing: border-box;
-  padding: 5.4% 0 3% 0;
+  padding: calc(74.4vh * 0.1) 0 calc(74.4vh * 0.057) 0;
   gap: 1.5%;
 }
 .toscontainer {
-  padding: 4.2% 0 3% 0.5%;
+  padding: 3.8% 0 2% 0.5%;
   width: 82%;
   gap: 5%;
 }
@@ -20,24 +20,31 @@
 .backbutton,
 .acceptbutton {
   border-radius: 50px;
-  border-width: 2px;
+  border-width: 0.2vh;
   background: var(--color-background);
   color: var(--color-main-text);
-  width: 21.55%;
-  height: 2.2em;
-  padding: 0.65% 6.5%;
+  padding: 1%;
   box-sizing: border-box;
   font-weight: 500;
-  font-size: 1.7em;
+  font-size: 2.4vh;
+  height: 4.8vh;
+  width: 11vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createbutton {
+  margin-top: 6vh;
 }
 
 .acceptbutton {
-  background: var(--color-secondary);
+  background: var(--color-main-text);
   color: var(--color-background);
 }
 
 .createbutton:hover,
-.backbutton:hover {
+.acceptbutton:hover {
   background: var(--color-secondary);
   color: var(--color-background);
 
@@ -47,9 +54,10 @@
   }
 }
 
-.acceptbutton:hover {
-  background: var(--color-background);
-  color: var(--color-main-text);
+.backbutton:hover {
+  border: 0.2vh solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-background);
 }
 .createbutton:disabled {
   cursor: not-allowed;
@@ -60,4 +68,15 @@
   display: flex;
   align-self: start;
   gap: 1.6vw;
+}
+
+.signup {
+  font-size: 1.05vw;
+  line-height: 1.05vw;
+  font-weight: 500;
+  margin-top: 2.5vh;
+  a {
+    text-decoration: none;
+    font-weight: 600;
+  }
 }

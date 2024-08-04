@@ -3,25 +3,41 @@
   display: flex;
   align-items: center;
   height: 100%;
-  padding-left: 5%;
+  padding-left: 4%;
   box-sizing: border-box;
-  
+  gap: 2.9vh;
 }
 
-.explorebutton{
-  padding: 10px 0;
-  display: flex;
-    align-self: flex-end;
-    position: relative;
-    right: 24%;
+.carouselcontainer {
+  width: 90%;
+  align-self: start;
+}
 
-  button{
+.productsliderlist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 14.2vh;
+}
+.explorebutton {
+  display: flex;
+  align-self: flex-end;
+  position: relative;
+  align-self: center;
+  margin-right: 10vw;
+  margin-top: 2.5vh;
+  justify-content: center;
+
+  button {
+    box-sizing: border-box;
+    width: 8vw;
+    height: 4.5vh;
     background: var(--color-background);
-        border-radius: 15px;
-        font-size: 15px;
-        padding: 6px 16px;
-        border-width: 1px;
-        color: var(--color-main-text);
-        cursor: pointer;
+    border-radius: 4vh;
+    font-size: 0.85vw;
+    font-weight: 600;
+    border-width: 2px;
+    color: var(--color-main-text);
+    cursor: pointer;
   }
 }

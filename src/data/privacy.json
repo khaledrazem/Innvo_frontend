@@ -1,8 +1,12 @@
 {
-    "privacy": {
-      "description": "At ChatGPT, we understand that security isn’t just a feature; it’s a foundation. Our commitment to protecting your data and ensuring your privacy is unwavering. We employ a comprehensive array of security measures designed to safeguard your information at every level of interaction.",
-      "details": "While using ChatGPT, we collect, but do not link to your identity",
-      "settings": [{"svg": "User Activity", "label": "User Activity"}, {"svg": "Device IDs", "label": "Device Ids"}, {"svg": "User Inputs", "label": "User Inputs"},  {"svg": "Location Data", "label": "Location Data"}]
-    }
+  "privacy": {
+    "description": "At ChatGPT, we understand that security isn’t just a feature; it’s a foundation. Our commitment to protecting your data and ensuring your privacy is unwavering. We employ a comprehensive array of security measures designed to safeguard your information at every level of interaction.",
+    "details": "While using ChatGPT, we collect, but do not link to your identity",
+    "settings": [
+      { "svg": "User Activity", "label": "User Activity" },
+      { "svg": "Device IDs", "label": "Device Ids" },
+      { "svg": "User Inputs", "label": "User Inputs" },
+      { "svg": "Location Data", "label": "Location Data" }
+    ]
   }
-  
+}

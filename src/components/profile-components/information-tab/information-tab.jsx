@@ -1,10 +1,16 @@
-import React, { useEffect, useState } from "react";
-import classes from "./information-tab.module.css";
-import { ReactComponent as EditIcon } from "src/public/svg/Edit.svg";
-import { ReactComponent as InstagramIcon } from "src/public/svg/Social- Insta.svg";
+import { useContext, useEffect, useState } from "react";
 import { ReactComponent as AddIcon } from "src/public/svg/Add.svg";
+import { ReactComponent as EditIcon } from "src/public/svg/Edit.svg";
+import classes from "./information-tab.module.css";
+
+import { UserSessionContext } from "src/contexts/UserSessionContext";
+import { ReactComponent as EmailIcon } from "src/public/svg/Profile Socials/Profile- Email.svg";
+import { ReactComponent as InstagramIcon } from "src/public/svg/Profile Socials/Profile- Insta.svg";
+import { ReactComponent as WebIcon } from "src/public/svg/Profile Socials/Profile- Web.svg";
 
 function InformationTab({ data, register, errors }) {
+  const { userType } = useContext(UserSessionContext);
+
   const [profileImg, setProfileImg] = useState(null);
   const [bannerImg, setBannerImg] = useState(null);
   const [extraWebsites, setExtraWebsites] = useState(0);
@@ -43,10 +49,11 @@ function InformationTab({ data, register, errors }) {
           </div>
           <div className={classes.summaryinfo}>
             <h4>{data.companyName}</h4>
-            <label>{data.secondaryCompanyName}</label>
+            {userType === "dev" && <label>{data.secondaryCompanyName}</label>}
             <label>{data.devName}</label>
           </div>
         </div>
+        <div className={classes.dividervertical} />
 
         <div className={classes.banner}>
           <img src={bannerImg || data.banner.src}></img>
@@ -64,24 +71,43 @@ function InformationTab({ data, register, errors }) {
           />
         </div>
       </div>
-      <br />
 
       <div className={classes.formFields}>
-        <div className={classes.formRow}>
-          <div className={classes.formInput}>
-            <label>Display Name</label>
-            <input type="text" {...register("displayName")} />
-            {errors.displayName && <p>{errors.displayName.message}</p>}
-          </div>
+        {userType === "dev" && (
+          <div className={classes.formRow}>
+            <div className={classes.formInput}>
+              <label>Display Name</label>
+              <input type="text" {...register("displayName")} />
+              {errors.displayName && <p>{errors.displayName.message}</p>}
+            </div>
 
-          <div className={classes.formInput}>
-            <label>Contact Information</label>
-            <input type="text" {...register("contactInformation")} />
-            {errors.contactInformation && (
-              <p>{errors.contactInformation.message}</p>
-            )}
+            <div className={classes.formInput}>
+              <label>Contact Information</label>
+              <input type="text" {...register("contactInformation")} />
+              {errors.contactInformation && (
+                <p>{errors.contactInformation.message}</p>
+              )}
+            </div>
           </div>
-        </div>
+        )}
+
+        {userType === "user" && (
+          <>
+            <div className={classes.formRow}>
+              <div className={classes.formInput}>
+                <label>Full Name</label>
+                <input type="text" {...register("fullname")} />
+                {errors.fullname && <p>{errors.fullname.message}</p>}
+              </div>
+
+              <div className={classes.formInput}>
+                <label>Region</label>
+                <input type="text" {...register("region")} />
+                {errors.region && <p>{errors.region.message}</p>}
+              </div>
+            </div>
+          </>
+        )}
 
         <div className={classes.formInput}>
           <label>Bio Description</label>
@@ -89,17 +115,31 @@ function InformationTab({ data, register, errors }) {
           {errors.bioDescription && <p>{errors.bioDescription.message}</p>}
         </div>
 
+        {userType === "user" && (
+          <>
+            <div className={classes.formRow}>
+              <div className={classes.formInput}>
+                <label>Email</label>
+                <input type="text" {...register("email")} />
+                {errors.email && <p>{errors.email.message}</p>}
+              </div>
+              <div className={classes.formInput}></div>
+            </div>
+          </>
+        )}
+        {userType === "dev" && <div></div>}
+
         <div className={classes.websitesformInput}>
           <label>Links</label>
           <div className={classes.websiteform}>
             <input type="text" {...register("links.website")} />
-            <InstagramIcon />
+            <WebIcon />
           </div>
 
           {errors.links?.website && <p>{errors.links.website.message}</p>}
           <div className={classes.websiteform}>
             <input type="text" {...register("links.email")} />
-            <InstagramIcon />
+            <EmailIcon />
           </div>
 
           {errors.links?.email && <p>{errors.links.email.message}</p>}
@@ -113,7 +153,7 @@ function InformationTab({ data, register, errors }) {
           {Array.from({ length: extraWebsites }).map((_, index) => (
             <div key={index} className={classes.websiteform}>
               <input type="text" {...register(`links.extralink.${index}`)} />
-              <InstagramIcon
+              <WebIcon
                 onClick={() =>
                   setExtraWebsites((prev) => Math.max(0, prev - 1))
                 }

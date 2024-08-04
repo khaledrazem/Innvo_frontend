@@ -6,31 +6,38 @@
         "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
       },
       "title": "Product 1",
-      "summary": "This is a summary for Product 1 of a long message to test how long messages will look like in the bubble. again adn again and again and again ill look like in the bubble. again adn again and again and again",
+      "summary": "This is a summary for Product 1 of a long message to test how long messages will look like in the bubble. again and again and again and again it will look like in the bubble. again and again and again and again",
       "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
       "rating": 4,
       "downloads": 1234,
       "ratingscount": 431,
       "reviewscount": 13,
+      "visits": 530,
       "subscription": "professional",
+      "free": true,
+      "paid": true,
       "description": {
-        "bio": "a biuo about the program and the app and the developer hopefullyspanning a few sentensec so it can be tested",
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
         "images": [
           {
-            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png"
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
           },
           {
-            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png"
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
           }
         ],
         "labelledImages": [
           {
             "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
-            "label": "a text explainjing the image above"
+            "label": "a text explaining the image above",
+            "type": "image"
           },
           {
             "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
-            "label": "a text explainjing the image above"
+            "label": "a text explaining the image above",
+            "type": "image"
           }
         ]
       },
@@ -82,24 +89,30 @@
       "ratingscount": 431,
       "reviewscount": 13,
       "subscription": "elite",
+      "free": false,
+      "category": "Analytics",
       "description": {
-        "bio": "a biuo about the program and the app and the developer hopefullyspanning a few sentensec so it can be tested",
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
         "images": [
           {
-            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png"
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
           },
           {
-            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png"
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
           }
         ],
         "labelledImages": [
           {
             "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
-            "label": "a text explainjing the image above"
+            "label": "a text explaining the image above",
+            "type": "image"
           },
           {
             "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
-            "label": "a text explainjing the image above"
+            "label": "a text explaining the image above",
+            "type": "image"
           }
         ]
       },
@@ -151,24 +164,29 @@
       "ratingscount": 431,
       "reviewscount": 13,
       "subscription": "essential",
+      "free": true,
       "description": {
-        "bio": "a biuo about the program and the app and the developer hopefullyspanning a few sentensec so it can be tested",
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
         "images": [
           {
-            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png"
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
           },
           {
-            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png"
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
           }
         ],
         "labelledImages": [
           {
             "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
-            "label": "a text explainjing the image above"
+            "label": "a text explaining the image above",
+            "type": "image"
           },
           {
             "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
-            "label": "a text explainjing the image above"
+            "label": "a text explaining the image above",
+            "type": "image"
           }
         ]
       },
@@ -220,24 +238,1805 @@
       "ratingscount": 431,
       "reviewscount": 13,
       "subscription": "trial",
+      "free": true,
       "description": {
-        "bio": "a biuo about the program and the app and the developer hopefullyspanning a few sentensec so it can be tested",
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
         "images": [
           {
-            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png"
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
           },
           {
-            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png"
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
           }
         ],
         "labelledImages": [
           {
             "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
-            "label": "a text explainjing the image above"
+            "label": "a text explaining the image above",
+            "type": "image"
           },
           {
             "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
-            "label": "a text explainjing the image above"
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 1",
+      "summary": "This is a summary for Product 1 of a long message to test how long messages will look like in the bubble. again and again and again and again it will look like in the bubble. again and again and again and again",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 4,
+      "downloads": 1234,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "professional",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 2",
+      "summary": "This is a summary for Product 2.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 3,
+      "downloads": 5678,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "elite",
+      "free": false,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 3",
+      "summary": "This is a summary for Product 3.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 5,
+      "downloads": 91011,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "essential",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 4",
+      "summary": "This is a summary for Product 4.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 2,
+      "downloads": 121314,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "trial",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 1",
+      "summary": "This is a summary for Product 1 of a long message to test how long messages will look like in the bubble. again and again and again and again it will look like in the bubble. again and again and again and again",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 4,
+      "downloads": 1234,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "professional",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 2",
+      "summary": "This is a summary for Product 2.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 3,
+      "downloads": 5678,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "elite",
+      "free": false,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 3",
+      "summary": "This is a summary for Product 3.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 5,
+      "downloads": 91011,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "essential",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 4",
+      "summary": "This is a summary for Product 4.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 2,
+      "downloads": 121314,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "trial",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 1",
+      "summary": "This is a summary for Product 1 of a long message to test how long messages will look like in the bubble. again and again and again and again it will look like in the bubble. again and again and again and again",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 4,
+      "downloads": 1234,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "professional",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 2",
+      "summary": "This is a summary for Product 2.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 3,
+      "downloads": 5678,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "elite",
+      "free": false,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 3",
+      "summary": "This is a summary for Product 3.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 5,
+      "downloads": 91011,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "essential",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 4",
+      "summary": "This is a summary for Product 4.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 2,
+      "downloads": 121314,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "trial",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 1",
+      "summary": "This is a summary for Product 1 of a long message to test how long messages will look like in the bubble. again and again and again and again it will look like in the bubble. again and again and again and again",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 4,
+      "downloads": 1234,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "professional",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 2",
+      "summary": "This is a summary for Product 2.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 3,
+      "downloads": 5678,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "elite",
+      "free": false,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 3",
+      "summary": "This is a summary for Product 3.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 5,
+      "downloads": 91011,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "essential",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 4",
+      "summary": "This is a summary for Product 4.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 2,
+      "downloads": 121314,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "trial",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 1",
+      "summary": "This is a summary for Product 1 of a long message to test how long messages will look like in the bubble. again and again and again and again it will look like in the bubble. again and again and again and again",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 4,
+      "downloads": 1234,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "professional",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 2",
+      "summary": "This is a summary for Product 2.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 3,
+      "downloads": 5678,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "elite",
+      "free": false,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 3",
+      "summary": "This is a summary for Product 3.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 5,
+      "downloads": 91011,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "essential",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 4",
+      "summary": "This is a summary for Product 4.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 2,
+      "downloads": 121314,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "trial",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 1",
+      "summary": "This is a summary for Product 1 of a long message to test how long messages will look like in the bubble. again and again and again and again it will look like in the bubble. again and again and again and again",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 4,
+      "downloads": 1234,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "professional",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 2",
+      "summary": "This is a summary for Product 2.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 3,
+      "downloads": 5678,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "elite",
+      "free": false,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 3",
+      "summary": "This is a summary for Product 3.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 5,
+      "downloads": 91011,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "essential",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How much does it cost to use ChatGPT?",
+          "answer": "ChatGPT offers both free and subscription-based plans. The subscription plans provide enhanced features and usage limits."
+        },
+        {
+          "question": "How does ChatGPT work?",
+          "answer": "ChatGPT uses a deep learning model called GPT-4. It processes text input and generates human-like responses based on the input it receives."
+        },
+        {
+          "question": "Why does the AI seem so real and lifelike?",
+          "answer": "The AI seems real and lifelike due to the advanced natural language processing algorithms and the extensive training data it has been exposed to."
+        },
+        {
+          "question": "Can I trust that the AI is telling me the truth?",
+          "answer": "While the AI strives to provide accurate and helpful information, it may not always be correct. It's important to verify critical information from reliable sources."
+        },
+        {
+          "question": "Who can view my conversations?",
+          "answer": "Your conversations are confidential and can only be accessed by authorized personnel to improve the service or if required by law."
+        }
+      ],
+      "reviews": {
+        "totalReviews": 605,
+        "averageRating": 5,
+        "ranking": 10,
+        "ratings": [
+          { "stars": 5, "count": 2672, "percentage": 70 },
+          { "stars": 4, "count": 512, "percentage": 15 },
+          { "stars": 3, "count": 122, "percentage": 7 },
+          { "stars": 2, "count": 13, "percentage": 4 },
+          { "stars": 1, "count": 4, "percentage": 1 }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "logo": {
+        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+      },
+      "title": "Product 4",
+      "summary": "This is a summary for Product 4.",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "rating": 2,
+      "downloads": 121314,
+      "ratingscount": 431,
+      "reviewscount": 13,
+      "subscription": "trial",
+      "free": true,
+      "description": {
+        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "images": [
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+            "type": "image"
+          }
+        ],
+        "labelledImages": [
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
+          },
+          {
+            "url": "https://i.ibb.co/kBYsM6C/testprofd.png",
+            "label": "a text explaining the image above",
+            "type": "image"
           }
         ]
       },

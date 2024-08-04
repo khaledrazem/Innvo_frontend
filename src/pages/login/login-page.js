@@ -12,11 +12,10 @@ function LoginPage() {
       <div className={classes.container}>
         <div className={classes.bubblecontainer}>
           <Routes>
-            <Route path="/" element={<Navigate to="landing" replace />} />
-            <Route path="sign-in/dev" element={<SignInPage />} />
-            <Route path="sign-up/dev" element={<SignUpPage />} />
+            <Route path="/" element={<Navigate to="sign-in" replace />} />
+            <Route path="sign-in" element={<SignInPage />} />
+            <Route path="sign-up" element={<SignUpPage />} />
 
-            <Route path="sign-up/user" element={<LandingPage />} />
             <Route path="landing" element={<LandingPage />} />
           </Routes>
         </div>

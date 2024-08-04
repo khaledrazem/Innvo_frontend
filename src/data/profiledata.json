@@ -1,37 +1,33 @@
 {
-      "bankName": "Example Bank",
-      "accountHolderName": "John Doe",
-      "bankAccountNumber": "1234567890",
-      "bankRoutingNumber": "987654321",
-      "swiftCode": "EXAMPUS3XXX",
-      "paymentMethod": "Bank Transfer",
-      "currencyPreference": "USD",
-      "taxIdNumber": "ABCD1234",
-      "paymentSchedule": "Monthly",
-      "payoutThreshold": "1000",
-      "verificationDocuments": "verification_document.pdf",
-      "securityMeasures": null,
-      "profileImg": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/2109px-Kubernetes_logo_without_workmark.svg.png",
-        "alt": "Profile Picture"
-    },
-      "companyName": "OpenAI",
-      "secondaryCompanyName": "OpenAi",
-      "devName": "John Micheal",
-      "banner": {
-        "src": "https://i.ibb.co/Xt8ff8N/banner-background-by-anwarkurnain-dcl322r-fullview.jpg"
-      },
-      "displayName": "Example Display Name",
-      "contactInformation": "contact@example.com",
-      "bioDescription": "This is an example bio description.",
-      "links": {
-        "website": "https://example.com",
-        "email": "info@example.com",
-        "instagram": "https://instagram.com/example",
-        "extralink": [
-          "https://example.com/link1",
-          "https://example.com/link2"
-        ]
-      }
+  "bankName": "Example Bank",
+  "accountHolderName": "John Doe",
+  "bankAccountNumber": "1234567890",
+  "bankRoutingNumber": "987654321",
+  "swiftCode": "EXAMPUS3XXX",
+  "paymentMethod": "Bank Transfer",
+  "currencyPreference": "USD",
+  "taxIdNumber": "ABCD1234",
+  "paymentSchedule": "Monthly",
+  "payoutThreshold": "1000",
+  "verificationDocuments": "verification_document.pdf",
+  "securityMeasures": null,
+  "profileImg": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/2109px-Kubernetes_logo_without_workmark.svg.png",
+    "alt": "Profile Picture"
+  },
+  "companyName": "OpenAI",
+  "secondaryCompanyName": "OpenAi",
+  "devName": "John Micheal",
+  "banner": {
+    "src": "https://i.ibb.co/Xt8ff8N/banner-background-by-anwarkurnain-dcl322r-fullview.jpg"
+  },
+  "displayName": "Example Display Name",
+  "contactInformation": "contact@example.com",
+  "bioDescription": "This is an example bio description.",
+  "links": {
+    "website": "https://example.com",
+    "email": "info@example.com",
+    "instagram": "https://instagram.com/example",
+    "extralink": ["https://example.com/link1"]
   }
-  
+}

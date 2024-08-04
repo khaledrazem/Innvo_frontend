@@ -6,13 +6,13 @@ import { ReactComponent as AddIcon } from "src/public/svg/Add.svg";
 function EmptyTools() {
   return (
     <div className={classes.container}>
-      <Link className={classes.productlink} to={"/dev/my-tools/new"} />
+      <Link className={classes.productlink} to={"/my-tools/new"} />
 
       <div className={classes.placeholder}>
         <AddIcon />
 
         <h5>Create Your Tool Page</h5>
-        <label> Begin Showcasing Your Innovation</label>
+        <label>Begin Showcasing Your Innovation</label>
         <p>
           Start building your presence on the platform by creating a dedicated
           page for your tool. <br />

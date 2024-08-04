@@ -1,18 +1,46 @@
 [
-    {
-        "id": 1,
-        "displayName": "Electronics"
-    },
-    {
-        "id": 2,
-        "displayName": "Clothing"
-    },
-    {
-        "id": 3,
-        "displayName": "Books"
-    },
-    {
-        "id": 4,
-        "displayName": "Toys"
-    }
+  {
+    "id": 1,
+    "displayName": "Analytics"
+  },
+  {
+    "id": 2,
+    "displayName": "Social Media Management"
+  },
+  {
+    "id": 3,
+    "displayName": "Email Marketing"
+  },
+  {
+    "id": 4,
+    "displayName": "SEO"
+  },
+  {
+    "id": 5,
+    "displayName": "Content Creation"
+  },
+  {
+    "id": 6,
+    "displayName": "AI Agents"
+  },
+  {
+    "id": 7,
+    "displayName": "Advertising"
+  },
+  {
+    "id": 8,
+    "displayName": "Marketing Automation"
+  },
+  {
+    "id": 9,
+    "displayName": "Email Marketing"
+  },
+  {
+    "id": 10,
+    "displayName": "CRM"
+  },
+  {
+    "id": 11,
+    "displayName": "NLP"
+  }
 ]

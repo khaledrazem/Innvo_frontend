@@ -1,0 +1,57 @@
+
+.container {
+  border: 1px solid var(--color-main-text);
+  border-radius: 20px;
+  height: 78vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 75%;
+  position: relative;
+}
+
+
+
+
+.placeholder{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  padding: 20px 0;
+  cursor: pointer;
+  svg{
+    width: 120px;
+    margin-bottom: 15px;
+  }
+  h5 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+  p{
+    color: #9c9c9c;
+    font-size: 12px;
+  }
+}
+
+.productlink{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+}
+
+
+.containerbubble{
+position: relative;
+}

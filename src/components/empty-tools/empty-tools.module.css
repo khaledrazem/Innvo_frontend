@@ -1,7 +1,6 @@
-
 .container {
-  border: 1px solid var(--color-main-text);
-  border-radius: 20px;
+  border: 2px solid var(--color-main-text);
+  border-radius: 25px;
   height: 78vh;
   display: flex;
   justify-content: center;
@@ -10,39 +9,39 @@
   position: relative;
 }
 
-
-
-
-.placeholder{
+.placeholder {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 8vw;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 80%;
-  padding: 20px 0;
   cursor: pointer;
-  svg{
-    width: 120px;
-    margin-bottom: 15px;
+
+  svg {
+    width: 4.5vw;
+    margin-bottom: 2vh;
   }
   h5 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
+    font-weight: 600;
+    line-height: 1.4vw;
   }
 
   label {
-    font-size: 1rem;
+    font-size: 1.25vw;
+    margin-bottom: 3vh;
   }
-  p{
-    color: #9c9c9c;
-    font-size: 12px;
+  p {
+    font-size: 0.8vw;
+    font-weight: 500;
   }
 }
 
-.productlink{
+.productlink {
   position: absolute;
   width: 100%;
   left: 0;
@@ -51,7 +50,6 @@
   z-index: 1000;
 }
 
-
-.containerbubble{
-position: relative;
+.containerbubble {
+  position: relative;
 }

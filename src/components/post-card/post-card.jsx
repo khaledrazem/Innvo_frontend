@@ -21,7 +21,7 @@ function PostCard({ postData }) {
             <LikeIcon />
             <label>{postData.likes} Likes</label>
           </div>
-          <div className={classes.dividervertical} />
+          <hr className={classes.dividervertical} />
           <div className={classes.comment}>
             <CommentIcon />
             <label>{postData.comments} Comments</label>

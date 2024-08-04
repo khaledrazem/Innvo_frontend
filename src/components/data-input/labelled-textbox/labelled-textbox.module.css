@@ -1,47 +1,50 @@
 /* Container styling */
 .container {
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--color-main-text);
-    border-radius: 25px;
-    font-size: 14px;
-    box-sizing: border-box;
-    width: 100%;
-  }
-  
-  /* Styling for the status section */
-  .title {
-    font-weight: bold;
-    margin: 0;
-    width: 100%;
-  }
-  
-  .titlecontainer{
-    width: 50%;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    }
-  .dividervertical {
-    width: 1px;
-    height: 24px;
-    background-color: var(--color-main-text);
-    margin: 0 8px;
-  }
-  /* Styling for the input field */
-  .userinput {
-    border: none;
-    outline: none;
-    text-align: end;
-    width: 30%;
-  }
-  
-  /* Styling for the users text */
-  .postfix {
-    margin-left: 5px;
-    white-space: nowrap;
-  }
-  
-  .inputlabel{
-    width: 100%;
-  }
+  padding: 0 0.5vw;
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--color-main-text);
+  border-radius: 18px;
+  height: 5vh;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Styling for the status section */
+.title {
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+}
+
+.titlecontainer {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+.dividervertical {
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-main-text);
+  margin: 0 0.5vw;
+}
+
+.userinput {
+  border: none;
+  outline: none;
+  text-align: end;
+  width: 30%;
+}
+
+.postfix {
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+.inputlabel {
+  width: 100%;
+}

@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 32vw;
   -webkit-user-select: none;
   user-select: none;
   border: 2px solid var(--color-main-text);
-  border-radius: 25px;
+  border-radius: 4vh;
   overflow: hidden;
   position: relative;
+  width: 100%;
 
   input {
     position: absolute;
@@ -29,25 +29,20 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  gap: 0.5em;
+  gap: 3vh;
 
   label {
     font-weight: 500;
-    padding: 10px;
-    font-size: 1.3em;
+    font-size: 1vw;
+    line-height: 1vw;
   }
 
   svg {
-    width: 35.5%;
+    width: 38%;
     border: 2px solid var(--color-main-text);
     aspect-ratio: 1;
     border-radius: 50px;
     box-sizing: border-box;
-    padding: 11.5%;
-  }
-
-  a {
-    color: #9c9c9c;
-    width: 70%;
+    padding: 12%;
   }
 }

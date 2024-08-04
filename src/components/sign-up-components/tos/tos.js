@@ -7,12 +7,12 @@ function TermsOfService({}) {
   return (
     <div className={classes.container}>
       <div className={classes.head}>
-        <h1>INNVO</h1>
+        <h1>INVVO</h1>
 
-        <label className={classes.welcometext}>Terms of Service</label>
+        <label className={classes.welcometext}>Terms of service</label>
       </div>
 
-      <div className={classes.divider}></div>
+      <hr className={classes.divider}></hr>
       <div className={classes.toslist}>
         {tos.map((term, index) => {
           return (

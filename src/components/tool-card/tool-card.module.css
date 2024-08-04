@@ -1,45 +1,77 @@
-
 .container {
-  border: 2px solid var(--color-main-text);
-  border-radius: 12px;
   flex-direction: row;
   display: flex;
-  height: 155px;
+  height: 19.8vh;
   width: 100%;
   box-sizing: border-box;
-  padding: 1% 5%;
+  padding: 1% 4% 1% 7%;
   align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 2vh;
 
   button {
-    padding: 5px 15px;
     color: var(--color-main-text);
     background-color: var(--color-background);
     border: 2px solid var(--color-main-text);
-    border-radius: 4px;
+    border-radius: 2vh;
     margin-left: auto;
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: 600;
+    box-sizing: border-box;
+    height: 3.5vh;
+    width: 6.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-  
   }
-  
+
   button:hover {
     background-color: var(--color-secondary);
     color: var(--color-background);
+    border-width: 0;
+  }
+
+  a {
+    z-index: 100;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+.container:hover {
+  border-color: var(--color-secondary);
+  transition: all 0.3s ease-out;
+}
+
+.buttons {
+  display: flex;
+  margin-left: auto;
+  gap: 1vw;
+
+  .redbutton {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
   }
 }
 
 .logo {
-  flex: 0 0 90px;
-  align-self: top;
+  flex: 0 0 4.4vw;
+  height: -moz-fit-content;
   height: fit-content;
   display: flex;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
-  border: 1px solid var(--color-main-text);
   box-sizing: border-box;
-  margin-right: 30px;
+  margin-right: 1vw;
   overflow: hidden;
+  align-self: start;
+  margin-top: 3.5vh;
 }
 
 .logo img {
@@ -50,29 +82,34 @@
 
 .summary {
   text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding-top: 3vh;
 }
 
 .header {
-
-    margin: 0;
-  
+  font-size: 1.2vw;
+  line-height: 1.2vw;
+  font-weight: 700;
+  margin: 0;
 }
 
 .status {
-  font-size: 16px;
-  color: #898c90;
+  font-size: 1vw;
+  line-height: 1vw;
   display: flex;
-  font-weight: 600;
+  font-weight: 500;
   align-items: center;
 }
 
 .activeball,
 .inactiveball {
-  width: 12px;
-  height: 12px;
+  width: 0.9vw;
+  height: 0.9vw;
   border-radius: 50%;
   display: inline-block;
-  margin-left: 8px;
+  margin-left: 0.4vw;
 }
 
 .activeball {
@@ -80,11 +117,17 @@
 }
 
 .inactiveball {
-  background-color: red;
+  background-color: var(--color-main-text);
 }
 
-
-
+.activetext {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+.inactivetext {
+  color: var(--color-main-text);
+  font-weight: 600;
+}
 .toollink {
   position: absolute;
   width: 100%;
@@ -92,4 +135,65 @@
   top: 0;
   height: 100%;
   z-index: 1000;
+}
+
+.dotsicon {
+  width: 1.2vw;
+  aspect-ratio: 1;
+  rotate: 90deg;
+  z-index: 200;
+  cursor: pointer;
+}
+
+:global(.rs-dropdown) {
+  margin-left: auto;
+  width: 100%;
+}
+
+:global(.rs-dropdown-menu) {
+  background-color: var(--color-main-text);
+  min-width: 10.5vw;
+  border-radius: 2vh;
+  z-index: 900 !important;
+}
+:global(.rs-text) {
+  color: var(--color-background);
+  padding-left: 10%;
+  font-weight: 600;
+  font-family: var(--main-font);
+  z-index: 900 !important;
+  position: relative;
+}
+
+.dragicon {
+  position: absolute;
+  width: 1vw;
+  left: 0.5vw;
+}
+
+.subscriptions {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  gap: 0.3vw;
+  margin: 2.5% 0;
+}
+
+.subscriptionbox,
+.subscriptionboxelite,
+.subscriptionboxprof {
+  color: var(--color-background);
+  background-color: var(--color-secondary);
+  box-sizing: border-box;
+  font-size: 0.65vw;
+  font-weight: 600;
+  padding: 1% 5%;
+  border-radius: 2vh;
+}
+
+.subscriptionboxelite {
+  background-color: var(--color-subscription-elite);
+}
+.subscriptionboxprof {
+  background-color: var(--color-subscription-professional);
 }

@@ -1,32 +1,35 @@
 /* Base container styling */
-.container, .containeruptick {
+.container,
+.containeruptick {
   display: flex;
   flex-direction: column;
   border: 2px solid var(--color-main-text);
-  border-radius: 10px;
+  border-radius: 21px;
   text-align: center;
-  width: 175px;
-  height: 110px;
+  align-items: center;
+  width: 14vw;
+  height: 13.2vh;
   box-sizing: border-box;
   position: relative;
   justify-content: center;
 
   h3 {
-    font-size: 1.5rem;
-    margin-bottom: 4px;
-    margin-top: 0;
+    font-size: 1.7vw;
+    line-height: 1.7vw;
+    font-weight: 700;
+    margin: 0;
   }
 
   label {
-    font-size: 0.6rem;
-    font-weight: 700;
+    font-size: 0.85vw;
+    font-weight: 600;
   }
 
   a {
-    font-size: 0.6rem;
-    color: #ccc;
+    font-size: 0.7vw;
+    color: var(--color-main-text);
     margin-top: 5px;
-}
+  }
 }
 
 .containeruptick {

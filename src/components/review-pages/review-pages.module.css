@@ -2,31 +2,6 @@
   width: 100%;
   align-self: start;
   text-align: left;
-  margin-bottom: 2.2em;
-}
-
-:global(.rs-pagination-group) {
-  place-content: center;
-}
-
-:global(.rs-pagination-btn) {
-  height: 3em;
-  width: 3em;
-  border-radius: 50px !important;
-  background-color: var(--color-background) !important;
-  color: var(--color-main-text) !important;
-  border-color: var(--color-main-text) !important;
-  margin: 0 4px !important;
-
-  svg {
-    scale: 2;
-  }
-}
-
-:global(.rs-pagination-btn-active) {
-  border-radius: 50px !important;
-  background-color: var(--color-main-text) !important;
-  color: var(--color-background) !important;
 }
 
 .filters {
@@ -34,20 +9,23 @@
   align-items: center;
   width: 100%;
   white-space: nowrap;
-  height: 2.9em;
-  gap: 1.3em;
+  height: 4.5vh;
+  gap: 1vw;
+  margin-bottom: 3vh;
 }
 
 .filters h4 {
-  padding-right: 1em;
+  font-size: 1vw;
 }
 
 .filters label {
+  font-size: 0.8vw;
+  font-weight: 600;
   height: 100%;
-  min-width: 14.5%;
-  gap: 0.3em;
+  min-width: 8.2vw;
+  gap: 0.4vw;
   border: 2px solid var(--color-main-text);
-  border-radius: 20px;
+  border-radius: 24.5px;
   padding: 0.5% 1.4%;
   box-sizing: border-box;
   display: flex;
@@ -58,34 +36,32 @@
   display: flex;
   justify-content: start;
   width: 100%;
-  padding-bottom: 4em;
+  padding-bottom: 5vh;
 }
 
 .reviewlist {
   width: 100%;
   display: grid;
-  gap: 2.5em;
+  gap: 5vh;
+
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
 }
 
 .reviewnumbers {
-  padding-bottom: 1em;
-  font-size: 1em;
-  color: #a5a5a5;
+  padding-bottom: 3.6vh;
+  font-size: 0.8vw;
 }
 
 .filterbox {
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 1em;
-  font-weight: 600;
 }
 
 .circleCheckbox {
-  width: 1.1em;
-  height: 1.1em;
+  width: 0.8vw;
+  height: 0.8vw;
   border-radius: 50px;
   appearance: none;
   -webkit-appearance: none;
@@ -98,11 +74,43 @@
 
 .circleCheckbox:checked::before {
   content: "";
-  width: 1.1em;
-  height: 1.1em;
+  width: 0.8vw;
+  height: 0.8vw;
   background-color: var(--color-main-text);
   border-radius: 50px;
   position: absolute;
   left: -2px !important;
   top: -2px !important;
+}
+
+:global(.rs-pagination-group) {
+  place-content: center;
+}
+:global(.rs-pagination-btn) {
+  height: 4vh;
+  width: 4vh;
+  font-size: 1.6vh !important;
+  font-weight: 800 !important;
+
+  border-radius: 50px !important;
+  background-color: var(--color-background) !important;
+  color: var(--color-main-text) !important;
+  border-color: var(--color-main-text) !important;
+  margin: 0 0.2vw !important;
+
+  svg {
+    scale: 2;
+  }
+}
+
+:global(.rs-pagination-btn-active) {
+  border-radius: 50px !important;
+  border-color: var(--color-main-text) !important;
+  color: var(--color-main-text) !important;
+  border-width: 0.3vh !important;
+}
+
+.filtersearch {
+  height: 100%;
+  width: 29%;
 }

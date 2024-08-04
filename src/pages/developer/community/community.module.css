@@ -1,5 +1,5 @@
 .container {
-  padding-left: 5%;
+  padding-left: 4%;
   box-sizing: border-box;
   height: 100%;
   user-select: none;
@@ -8,20 +8,22 @@
 .navstyles {
   text-align: left;
   width: fit-content;
+  margin-top: 3vh;
 
   :global(.rs-nav-item-active),
   :global(.rs-nav-item) {
     color: var(--color-main-text) !important;
-    border: 2px solid #31353d !important;
-    border-radius: 10px !important;
+    border: 2px solid var(--color-main-text) !important;
+    border-radius: 1.5vh !important;
     border-bottom: none !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-    font-size: 1.4em !important;
+    font-size: 2vh !important;
     font-weight: 600 !important;
     opacity: 50% !important;
     bottom: -2px;
-    width: 7.5em;
+    width: 7.5vw;
+    height: 3.5vh;
     justify-content: center;
   }
 
@@ -35,12 +37,19 @@
 .navcontainer {
   display: flex;
   border: 2px solid var(--color-main-text);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-top-right-radius: 12px;
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+  border-top-right-radius: 2vh;
   box-sizing: border-box;
-  padding: 6.2% 4.8%;
-  width: 88%;
+  padding: 4.2% 4.6%;
+  width: 85.8%;
+}
+
+.nocontainer {
+  display: flex;
+  box-sizing: border-box;
+  padding: 3.2% 0;
+  width: 76%;
 }
 
 .postscontainer {

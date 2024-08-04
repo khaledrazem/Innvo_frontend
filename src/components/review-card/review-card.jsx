@@ -1,14 +1,11 @@
-import React, { useState, useEffect, useContext } from "react";
-import classes from "./review-card.module.css";
-import { ReactComponent as UserIcon } from "src/public/svg/User Inputs.svg";
-import { ReactComponent as LikeIcon } from "src/public/svg/Like.svg";
-import { ReactComponent as UpDownArrow } from "src/public/svg/UP-Down Arrow.svg";
-import { ReactComponent as TickIcon } from "src/public/svg/Tick.svg";
-import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.svg";
-import { ReactComponent as StarEmptyIcon } from "src/public/svg/Review_star empty.svg";
+import { useEffect, useState } from "react";
 import replyDatajson from "src/data/ratingreply.json";
+import { ReactComponent as LikeIcon } from "src/public/svg/Like.svg";
+import { ReactComponent as StarEmptyIcon } from "src/public/svg/Review_star empty.svg";
+import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.svg";
+import { ReactComponent as UserIcon } from "src/public/svg/User Inputs.svg";
+import classes from "./review-card.module.css";
 
-import { Avatar, AvatarGroup, Badge } from "rsuite";
 import ReviewReplyCard from "src/components/review-reply-card/review-reply-card";
 
 function ReviewCard({
@@ -19,11 +16,16 @@ function ReviewCard({
   let replyData = replyDatajson;
 
   const [expanded, setExpanded] = useState(false);
-  const [liked, setLiked] = useState(false);
+  const [liked, setLiked] = useState(0);
 
   useEffect(() => {
     console.log(reviewData);
   }, [reviewData]);
+
+  const formatDate = (timestamp) => {
+    const options = { day: "numeric", month: "long", year: "numeric" };
+    return new Date(timestamp).toLocaleDateString("en-GB", options);
+  };
 
   return reviewData != null ? (
     <div className={classes.container}>
@@ -41,7 +43,7 @@ function ReviewCard({
             <label>
               {reviewData.reviewer.firstname} {reviewData.reviewer.lastname}
             </label>
-            <p>{reviewData.reviewer.jobtitle}</p>
+            {/* <p>{reviewData.reviewer.jobtitle}</p> */}
           </div>
         </div>
         <div className={classes.ratings}>
@@ -54,27 +56,34 @@ function ReviewCard({
           <label>{reviewData.rating}</label>
         </div>
       </div>
-
+      <label className={classes.reviewdate}>
+        Reviewed on {formatDate(reviewData.dateCreated)}
+      </label>
       <div className={classes.review}>
         <h6>{reviewData.title}</h6>
         <label>{reviewData.body}</label>
       </div>
       <div className={classes.interactions}>
-        <div className={liked ? classes.likeactive : classes.like}>
-          <LikeIcon onClick={() => setLiked(true)} />
+        <div
+          onClick={() => setLiked(1)}
+          className={liked == 1 ? classes.likeactive : classes.like}
+        >
+          <LikeIcon />
           <label>{reviewData.likes} Likes</label>
         </div>
-
-        <button onClick={() => setExpanded(!expanded)}>
-          {reviewData.replies} Replies{" "}
-          <UpDownArrow className={expanded ? classes.expandedarrow : null} />
-        </button>
-
-        {reviewData.likedByOwner && (
+        <div
+          onClick={() => setLiked(-1)}
+          className={liked == -1 ? classes.dislikeactive : classes.dislike}
+        >
+          <LikeIcon />
+          <label>{reviewData.dislikes} Dislikes</label>
+        </div>
+        {/* {reviewData.likedByOwner && (
           <div className={classes.ownerlike}>
             <AvatarGroup>
               <Badge content={<TickIcon />}>
                 <Avatar
+                  size="sm"
                   circle
                   src={reviewData.reviewer.profileimg.url || ""}
                   alt={<UserIcon />}
@@ -82,7 +91,12 @@ function ReviewCard({
               </Badge>
             </AvatarGroup>
           </div>
-        )}
+        )} */}
+
+        {/* <button onClick={() => setExpanded(!expanded)}>
+          {reviewData.replies} Replies{" "}
+          <UpDownArrow className={expanded ? classes.expandedarrow : null} />
+        </button> */}
       </div>
 
       {expanded ? (

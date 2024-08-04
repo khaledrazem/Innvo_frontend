@@ -1,13 +1,15 @@
 .container {
   display: flex;
-  height: 88%;
+  height: 66vh;
+  margin-bottom: 3vh;
   width: 100%;
   flex-direction: column;
   place-content: flex-start;
   box-sizing: border-box;
-
+  padding-top: 1vh;
   h1 {
-    font-size: 2.6em;
+    font-size: 2.2vw;
+    line-height: 2.2vw;
     margin: 0;
   }
 }
@@ -17,8 +19,9 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.4vh;
+  line-height: 3vh;
   text-align: left;
+  gap: 1.5vh;
 }
 
 .toslist {
@@ -26,25 +29,26 @@
   flex-direction: column;
   height: fit-content;
   overflow-y: scroll;
-  gap: 2.2vh;
+  gap: 2.6vh;
 }
 
 .termitem {
   display: flex;
   flex-direction: column;
   text-align: left;
-  font-size: 1.15em;
+  font-size: 0.83vw;
   font-weight: 500;
-  line-height: 1.2em;
+  line-height: 0.83vw;
+  gap: 0.5vh;
 }
 .welcometext {
-  font-size: 2.25em;
+  font-size: 1.9vw;
   font-weight: 600;
 }
 
 .divider {
   height: 3px;
-  background-color: var(--color-main-text);
+  border-top: 0.2vh solid var(--color-main-text);
   width: 100%;
-  margin: 1% 0 1.8% 0;
+  margin: 1.5% 0 1.8% 0;
 }

@@ -2,8 +2,8 @@ import classes from "./date-bar-chart.module.css";
 import { ResponsiveBar } from "@nivo/bar";
 
 function DateBarChart({ data }) {
-  function zipListsToDictionary(values) {
-    let keys = [
+  const zipListsToDictionary = (values) => {
+    const keys = [
       "Jan",
       "Feb",
       "Mar",
@@ -17,20 +17,16 @@ function DateBarChart({ data }) {
       "Nov",
       "Dec",
     ];
+
     if (keys.length !== values.length) {
       throw new Error("Keys and values lists must have the same length");
     }
 
-    const mapped = [];
-    keys.forEach((key, index) => {
-      mapped.push({ Month: key, value: values[index] });
-    });
-
-    return mapped;
-  }
+    return keys.map((key, index) => ({ Month: key, value: values[index] }));
+  };
 
   const getColor = (bar) => {
-    return new Date().getMonth() == bar.index
+    return new Date().getMonth() === bar.index
       ? "var(--color-secondary)"
       : "var(--color-background)";
   };
@@ -39,22 +35,22 @@ function DateBarChart({ data }) {
     <div className={classes.container}>
       <ResponsiveBar
         data={zipListsToDictionary(data)}
-        indexBy={"Month"}
-        borderRadius={"8px"}
+        indexBy="Month"
+        borderRadius="7px"
         colors={getColor}
         borderColor="var(--color-main-text)"
-        borderWidth={"1px"}
+        borderWidth="2px"
         enableLabel={false}
         enableGridY={false}
         axisLeft={null}
-        margin={{ top: 60, right: 50, bottom: 55, left: 10 }}
-        padding={0.4}
+        margin={{ top: 60, right: 50, bottom: 55, left: 0 }}
+        padding={0.3}
         axisBottom={{ tickSize: 0, tickPadding: 12 }}
         theme={{
           axis: {
             ticks: {
               text: {
-                fontSize: 14,
+                fontSize: 16,
                 fill: "var(--color-main-text)",
                 fontFamily: "var(--main-font)",
                 fontWeight: 600,

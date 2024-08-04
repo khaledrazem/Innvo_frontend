@@ -1,15 +1,21 @@
 .logo {
   color: var(--color-main-text);
-  font-size: 2.6em;
+  font-size: 2vw;
   font-weight: 700;
   position: relative;
   width: 9%;
+  cursor: pointer;
 
   svg {
     width: auto;
     height: auto;
     transform: translateY(-40%);
   }
+}
+
+.logo:hover {
+  color: var(--color-secondary);
+  transition: all 0.3s ease-out;
 }
 
 .link {

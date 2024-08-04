@@ -4,7 +4,7 @@ import NotificationCard from "src/components/notification-card/notification-card
 import notificationDatajson from "src/data/notificationData.json";
 import classes from "./notification-pages.module.css";
 
-function NotificationsPage({ itemsPerPage = 5 }) {
+function NotificationsPage({ itemsPerPage = 4 }) {
   let notificationData = notificationDatajson.notifications;
 
   const [currentPage, setCurrentPage] = useState(1);

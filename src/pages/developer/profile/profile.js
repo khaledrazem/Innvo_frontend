@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { Nav } from "rsuite";
-import classes from "./profile.module.css";
-import InformationTab from "src/components/profile-components/information-tab/information-tab";
-import profileJsonData from "src/data/profiledata.json";
 import { useForm } from "react-hook-form";
+import InformationTab from "src/components/profile-components/information-tab/information-tab";
 import PaymentTab from "src/components/profile-components/payment-tab/payment-tab";
+import profileJsonData from "src/data/profiledata.json";
+import classes from "./profile.module.css";
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = useState("information");
@@ -28,9 +27,10 @@ function ProfilePage() {
   return (
     <div className={classes.container}>
       <h3>My Profile</h3>
-      <br />
-      <div className={classes.bubblecontainer}>
-        <div className={classes.navtab}>
+      {/* <br />
+      <div className={classes.bubblecontainer}> */}
+      <div className={classes.pagecontainer}>
+        {/* <div className={classes.navtab}>
           <button
             className={
               activeTab == "information"
@@ -51,9 +51,7 @@ function ProfilePage() {
           >
             Payment
           </button>
-        </div>
-
-        <br />
+        </div> */}
 
         <form className={classes.formcontainer}>
           {activeTab === "information" && (
@@ -74,8 +72,9 @@ function ProfilePage() {
             Save
           </button>
         </form>
+        {/* </div>
+      <br /> */}
       </div>
-      <br />
     </div>
   );
 }

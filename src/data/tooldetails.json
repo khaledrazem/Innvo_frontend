@@ -1,87 +1,83 @@
 {
-    "productImages": {
-        "images": [
-            
-                "https://i.ibb.co/kBYsM6C/testprofd.png"
-            ,
-            null,
-            null,
-             
-                "https://i.ibb.co/kBYsM6C/testprofd.png"
-            ,
-            null
-        ]
-    },
-    "productInfo": {
-        "logoimage": "https://i.ibb.co/CJHd0zb/0011ff.png",
-        "title": "a title for the porduct",
-        "subscription": "essential",
-        "features": "• featurenumber1\n• featurenumber2\n• featurenumber3",
-        "url": "www.www.www.com"
-    },
-    "productDescription": {
-        "bio": "a message from me who is the developer right now",
-        "largeImages": [
-            
-                "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png"
-            ,
-            
-                "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png"
-            
-        ],
-        "labelledImages": [
-            {
-                "image": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
-                "labels": ""
-            },
-            {
-                "image": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
-                "labels": "description"
-            },
-            {
-                "image": null,
-                "labels": ""
-            }
-        ]
-    },
-    "productFaq": [
-        {
-            "question": "a very good question",
-            "answer": "a very good answer"
-        },
-        {
-            "question": ""
-        },
-        {
-            "question": ""
-        },
-        {
-            "question": ""
-        },
-        {
-            "question": ""
-        }
+  "productImages": {
+    "images": [
+      { "url": "https://i.ibb.co/kBYsM6C/testprofd.png", "type": "image" },
+      null,
+      null,
+      { "url": "https://i.ibb.co/kBYsM6C/testprofd.png", "type": "image" },
+      null
+    ]
+  },
+  "productInfo": {
+    "logoimage": "https://i.ibb.co/CJHd0zb/0011ff.png",
+    "title": "a title for the product",
+    "subscription": "essential",
+    "features": ["• featurenumber1", "• featurenumber2", "• featurenumber3"],
+    "url": "www.www.www.com"
+  },
+  "productDescription": {
+    "bio": "a message from me who is the developer right now",
+    "largeImages": [
+      {
+        "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+        "type": "image"
+      },
+      {
+        "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+        "type": "image"
+      }
     ],
-    "productPrivacy": {
-        "description": "this app is private i prosmie its vvery private",
-        "details": "look how private this is right now i feel so private",
-        "selectedSettings": [
-            {
-                "svg": "Location Data",
-                "label": "Location Data"
-            },
-            {
-                "svg": "User Inputs",
-                "label": "User Rights & Control"
-            },
-            {
-                "svg": "Device IDs",
-                "label": "Device Ids"
-            },
-            {
-                "svg": "User Activity",
-                "label": "User Activity"
-            }
-        ]
+    "labelledImages": [
+      {
+        "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+        "type": "image",
+        "labels": ""
+      },
+      {
+        "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",
+        "type": "image",
+        "labels": "description"
+      }
+    ]
+  },
+  "productFaq": [
+    {
+      "question": "a very good question",
+      "answer": "a very good answer"
+    },
+    {
+      "question": ""
+    },
+    {
+      "question": ""
+    },
+    {
+      "question": ""
+    },
+    {
+      "question": ""
     }
+  ],
+  "productPrivacy": {
+    "description": "this app is private i promise it's very private",
+    "details": "look how private this is right now, I feel so private",
+    "selectedSettings": [
+      {
+        "svg": "Location Data",
+        "label": "Location Data"
+      },
+      {
+        "svg": "User Inputs",
+        "label": "User Rights & Control"
+      },
+      {
+        "svg": "Device IDs",
+        "label": "Device IDs"
+      },
+      {
+        "svg": "User Activity",
+        "label": "User Activity"
+      }
+    ]
+  }
 }

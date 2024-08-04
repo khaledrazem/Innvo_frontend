@@ -1,0 +1,141 @@
+.container,
+.expandablecontainer {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+.expandablecontainer {
+  transition: all 0.3s ease-out;
+  position: absolute;
+  z-index: 920;
+  background: var(--color-background);
+  width: 81.3vw;
+  align-items: center;
+  margin-left: -22vw;
+  left: 10vw;
+}
+
+.container::after {
+  background: var(--color-background);
+}
+.bubblecontainer,
+.expandedbubblecontainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  row-gap: 1.2vh;
+  column-gap: 1vw;
+  border: 2px solid var(--color-main-text);
+  border-radius: 2.5vh;
+  box-sizing: border-box;
+  width: 15.6vw;
+  height: 32.3vh;
+
+  padding: 19%;
+  padding-bottom: 13%;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.bubblecontainer:hover,
+.expandedbubblecontainer:hover {
+  border-color: var(--color-secondary);
+  transition: all 0.3s ease-out;
+}
+
+.bubblecontainer > div:nth-child(2n + 5) {
+  margin-right: 2.5vw;
+}
+.expandedbubblecontainer {
+  transition: all 0.3s ease-out;
+
+  width: 38.8vw;
+  padding: 3.6% 3.85%;
+  padding-bottom: 2.5%;
+}
+
+.containername {
+  margin-top: 2vh;
+  position: relative;
+  align-self: start;
+  text-align: center;
+  font-size: 0.8vw;
+  font-weight: 500;
+  align-self: center;
+  display: flex;
+  gap: 1vw;
+
+  input {
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid var(--color-main-text);
+  }
+}
+
+.iconcontainer {
+  width: 4vw;
+  height: 10.1vh;
+  list-style-type: none;
+}
+
+.expandicon,
+.expandiconhover {
+  width: 2.8vh;
+  position: absolute;
+  top: 1.4vh;
+  right: 1.4vh;
+  z-index: 750;
+  cursor: pointer;
+}
+
+.expandicon:hover {
+  opacity: 0;
+}
+
+.expandiconhover {
+  opacity: 0;
+}
+
+.expandiconhover:hover {
+  opacity: 1;
+}
+
+.arrowicon {
+  width: 9.4vh;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+  place-self: center;
+  position: absolute;
+}
+
+.buttoncollection {
+  position: relative;
+  cursor: pointer;
+  height: 1.4vw;
+  width: 1.4vw;
+
+  .foldericon,
+  .foldericonhover {
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+  }
+
+  .foldericon:hover {
+    opacity: 0;
+  }
+
+  .foldericonhover {
+    opacity: 0;
+  }
+
+  .foldericonhover:hover {
+    opacity: 1;
+  }
+}

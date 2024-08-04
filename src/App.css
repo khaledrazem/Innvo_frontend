@@ -42,3 +42,32 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+button:hover {
+  background: var(--color-secondary);
+  border-color: transparent;
+  color: var(--color-background);
+  transition: all 0.3s ease-out;
+}
+
+input:hover,
+input:focus,
+select:hover,
+textarea:hover {
+  border-color: var(--color-secondary) !important;
+  color: var(--color-secondary) !important;
+  fill: var(--color-secondary);
+  transition: all 0.3s ease-out;
+}
+input:hover::placeholder,
+input:focus::placeholder,
+select:hover::placeholder,
+textarea:hover::placeholder {
+  color: var(--color-secondary) !important;
+}

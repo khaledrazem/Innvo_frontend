@@ -1,0 +1,52 @@
+.container {
+  height: 78vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 75%;
+  position: relative;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 8vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  cursor: pointer;
+  svg {
+    width: 4.5vw;
+    margin-bottom: 2vh;
+  }
+  h5 {
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 600;
+    line-height: 1.4vw;
+  }
+
+  label {
+    font-size: 1.25vw;
+    margin-bottom: 3vh;
+  }
+  p {
+    font-size: 0.8vw;
+    font-weight: 500;
+  }
+}
+
+.productlink {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+}
+
+.containerbubble {
+  position: relative;
+}

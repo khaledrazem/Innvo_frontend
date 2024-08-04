@@ -1,5 +1,80 @@
 .container {
-  padding-left: 5%;
+  padding-left: 12%;
   box-sizing: border-box;
   height: 100%;
+  width: 100%;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.containergrid {
+  box-sizing: border-box;
+
+  margin-top: 5vh;
+  user-select: none;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  row-gap: 1.5vh;
+  column-gap: 3.6vw;
+}
+
+.header {
+  display: flex;
+  width: 50%;
+  height: 4vh;
+  gap: 1vw;
+  margin-top: -6.3vh;
+  margin-bottom: 6.3vh;
+  z-index: 900;
+
+  .editicon,
+  .editiconblue {
+    height: 85%;
+    stroke-width: 55px;
+    cursor: pointer;
+  }
+  .editiconblue {
+    color: var(--color-secondary);
+  }
+}
+
+.search {
+  width: 56.8%;
+}
+.listcontainer {
+  list-style-type: none;
+}
+
+.elitetext,
+.proftext {
+  font-weight: 600;
+}
+.elitetext {
+  color: var(--color-subscription-elite);
+}
+.proftext {
+  color: var(--color-subscription-professional);
+}
+
+.subscriptioncounter {
+  align-self: start;
+  margin-left: 4%;
+  font-size: 1.05vw;
+}
+
+.subscriptionDays {
+  font-weight: 500;
+  color: var(--color-background);
+  background-color: var(--color-secondary);
+  border-radius: 1vh;
+  padding: 1.1vh 0.7vw;
+}
+
+.folderscontainer {
+  margin-top: 2.3vh;
+}
+
+.toolscontainer {
+  margin-top: 5.6vh;
 }

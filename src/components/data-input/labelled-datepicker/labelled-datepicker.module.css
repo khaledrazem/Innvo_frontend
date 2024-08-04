@@ -1,23 +1,29 @@
 .container {
+  padding: 0 0.5vw;
+  font-size: 1vw;
   display: flex;
   align-items: center;
-  border: 1px solid var(--color-main-text);
-  border-radius: 25px;
-  padding: 0 15px;
-  font-size: 14px;
+  border: 2px solid var(--color-main-text);
+  border-radius: 18px;
+  height: 5vh;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .title {
   font-weight: bold;
   margin: 0;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
 }
-.titlecontainer{
-  width: 35px;
+.titlecontainer {
+  width: 22%;
+  align-content: center;
   height: 100%;
-  }
+}
 .userinput {
   flex-grow: 1;
-  padding: 4px;
+  padding: 1%;
   border: none;
 }
 
@@ -26,8 +32,8 @@
   font-weight: normal;
 }
 .dividervertical {
-  width: 1px;
-  height: 24px;
+  width: 2px;
+  height: 100%;
   background-color: var(--color-main-text);
-  margin: 0 8px;
+  margin: 0 0.5vw;
 }

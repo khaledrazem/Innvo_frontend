@@ -1,50 +1,49 @@
 .faqcontainer {
-  width: 60%;
+  width: 40%;
   align-self: start;
-    text-align: left;
+  text-align: left;
 
-  h3{
-    border-bottom: 1px solid var(--color-main-text);
+  h3 {
+    border-bottom: 2px solid var(--color-main-text);
     margin-block-end: 0;
     padding-block-end: 0.75em;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
   }
 }
 
 .faqitem {
-  border-bottom: 1px solid var(--color-main-text);
-  padding: 15px 0;
+  border-bottom: 2px solid var(--color-main-text);
+  padding: 2vh 0;
   cursor: pointer;
-
 }
 
 .faqquestion {
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 0.85vw;
 }
 
-.faqtoggle {
-  width: 16px;
-  padding-right: 10px;
+.faqtoggle,
+.faqtoggleActive {
+  width: 0.8vw;
+  padding-right: 0.5vw;
 }
 
 .faqtoggleActive {
-  width: 16px;
-  padding-right: 10px;
   scale: 1 -1;
 }
 
 .faqanswer {
-  padding: 25px 0 10px 0;
-  font-size: 14px;
-  color: #555;
+  padding: 2vh 0;
+  font-size: 0.85vw;
 }
 
-.questioninput, .answerinput{
+.questioninput,
+.answerinput {
   width: 100%;
   padding: 5px;
   padding-left: 10px;
   border: none;
-  font-size: 14px;
-  color: #555;
+  font-size: 0.8vw;
 }

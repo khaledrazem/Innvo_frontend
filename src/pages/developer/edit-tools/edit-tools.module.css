@@ -3,9 +3,16 @@
   margin-right: auto;
   width: 100%;
   display: flex;
-  padding-left: 5%;
+  padding-left: 4%;
   box-sizing: border-box;
   height: 100%;
+}
+
+.carouselcontainer {
+  display: flex;
+  box-sizing: border-box;
+  width: 40vw;
+  margin-right: 2vw;
 }
 
 .info {
@@ -15,80 +22,49 @@
   width: 100%;
 }
 
-.divider {
-  height: 2px;
-  background-color: var(--color-main-text);
-  margin-left: 25px;
-  flex-grow: 1;
-}
-
-.descriptiontitle {
-  align-items: center;
-  display: flex;
-  width: 100%;
-  text-wrap: nowrap;
-}
-.explorebutton {
-  padding: 10px 0;
-  display: flex;
-  align-self: flex-end;
-  position: relative;
-  right: 24%;
-
-  button {
-    background: var(--color-background);
-    border-radius: 15px;
-    font-size: 15px;
-    padding: 6px 16px;
-    border-width: 1px;
-    cursor: pointer;
-  }
-}
-
-.bio {
-  text-align: left;
-  width: 100%;
-  padding-bottom: 20px;
-}
-
-.descriptionimages {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-
-  img {
-    max-width: 90%;
-    align-self: center;
-    padding: 10px 0;
-  }
-}
-
-.labelledImage {
-  display: flex;
-  flex-direction: column;
-}
-.labelledimages {
-  padding: 0 30px;
-  display: grid;
-  gap: 20px;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  img {
-    max-width: 90%;
-    align-self: center;
-    padding: 10px 0;
-  }
-}
-
-.cont {
-  width: 70%;
-  margin-right: auto;
-}
-.descriptioncontainer {
-  display: flex;
-  flex-direction: column;
-}
-
 .submitbutton {
   padding: 5px 20px;
+}
+
+.productlink {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+}
+
+.previewbutton,
+.createbutton {
+  float: inline-start;
+  width: 15vw;
+  height: 6vh;
+  background: var(--color-secondary);
+  color: var(--color-background);
+  position: relative;
+  border: 2px solid var(--color-main-text);
+  border-radius: 8px;
+  font-size: 1.3vw;
+}
+
+.createbutton {
+  background: var(--color-primary);
+}
+
+.buttons {
+  display: flex;
+  gap: 0.4vw;
+}
+
+.filters {
+  display: flex;
+  width: 54%;
+  gap: 1%;
+  height: 5vh;
+}
+
+.filter {
+  width: inherit;
+  height: 100%;
 }

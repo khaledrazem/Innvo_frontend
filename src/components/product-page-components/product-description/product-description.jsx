@@ -1,30 +1,23 @@
-import logo from "src/logo.svg";
-import InvoHeader from "src/components/header/invo-header";
 import "src/variables.css";
-import SideNavBar from "src/components/side-navbar/side-navbar";
 import classes from "./product-description.module.css";
-import Footer from "src/components/footer/footer";
-import ProductCarousel from "src/components/product-page-components/product-carousel/product-carousel";
-import ProductInfo from "src/components/product-page-components/product-info/product-info";
-import prodDatajson from "src/data/products.json";
 
 const imageStyle = (width, height) => ({
   maxWidth: width,
   maxHeight: height,
+  aspectRatio: width / height,
 });
 
 function ProductDescription({
-   productDescription=null,
-  imageWidth = 1000,
-  imageHeight = 560,
-  labelledImageWidth = 313,
-  labelledImageHeight = 175,
+  productDescription = null,
+  imageWidth = 768,
+  imageHeight = 432,
+  labelledImageWidth = 256,
+  labelledImageHeight = 144,
 }) {
-  return productDescription!=null? (
+  return productDescription != null ? (
     <div className={classes.container}>
       <div className={classes.descriptiontitle}>
-        <h3>From the developer</h3>
-        <div className={classes.divider}></div>
+        <h3>From The Innovator</h3>
       </div>
       <div className={classes.descriptioncontainer}>
         <div className={classes.bio}>
@@ -66,7 +59,7 @@ function ProductDescription({
         </div>
       </div>
     </div>
-  ): null;
+  ) : null;
 }
 
 export default ProductDescription;

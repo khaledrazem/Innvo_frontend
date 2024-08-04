@@ -1,21 +1,28 @@
 .container {
-  position: relative;
-  display: flex;
-  height: 100%;
   align-items: start;
-  margin-left: auto;
-  gap: 1vw;
+  display: flex;
+  gap: 0.4vw;
+  min-width: 14vw;
+  height: fit-content;
+  left: 84%;
+  position: absolute;
+  justify-content: end;
+  margin-top: -0.4vh;
 }
 
 .profile {
+  cursor: pointer;
   position: relative;
   display: flex;
   place-items: center;
+  gap: 0.5vw;
 }
 
 .profileimg {
-  width: 44px;
-  height: 44px;
+  max-width: 55px;
+  max-height: 55px;
+  aspect-ratio: 1;
+  height: 4.4vh;
   border-radius: 50px;
   overflow: hidden;
   border: 2px solid var(--color-main-text);
@@ -23,9 +30,8 @@
 }
 
 .username {
-  padding-left: 8px;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1vw;
 }
 
 .productlink {
@@ -38,9 +44,11 @@
 }
 
 .notification {
+  cursor: pointer;
   height: 100%;
+  position: relative;
   svg {
-    height: 50%;
-    padding-top: 3%;
+    height: 3.8vh;
+    aspect-ratio: 1;
   }
 }

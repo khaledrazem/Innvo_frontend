@@ -1,16 +1,28 @@
-import React from "react";
-import classes from "./invo-header.module.css";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
 import HeaderSearchBar from "src/components/header/search-bar-filter/search-bar-filter";
-import ProfileBadge from "./profile-badge/profile-badge";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
 import userDatajson from "src/data/profiledata.json";
+import classes from "./invo-header.module.css";
 import Logo from "./logo/logo";
+import ProfileBadge from "./profile-badge/profile-badge";
 
-function InvoHeader() {
+function InvoHeader({ searchbar = true }) {
+  const { userType } = useContext(UserSessionContext);
+
   return (
     <header className={classes.header}>
       <Logo></Logo>
-      <HeaderSearchBar></HeaderSearchBar>
-      <ProfileBadge userData={userDatajson}></ProfileBadge>
+      {searchbar && <HeaderSearchBar></HeaderSearchBar>}
+      {userType === null ? (
+        <button className={classes.signinbutton}>
+          {" "}
+          <Link className={classes.productlink} to={"/login"} />
+          <label> Sign In</label>
+        </button>
+      ) : (
+        <ProfileBadge userData={userDatajson}></ProfileBadge>
+      )}
     </header>
   );
 }

@@ -1,7 +1,9 @@
 .container,
 .selectedcontainer {
-  padding: 1.5% 13.5% 1% 9%;
-  font-size: 1.3em;
+  min-width: 9.7vw;
+  height: 5.8vh;
+  padding: 2.5% 0 2% 8.5%;
+  font-size: 1vw;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -16,16 +18,15 @@
   }
 
   svg {
-    height: 1.8em;
+    height: 1.2vw;
     aspect-ratio: 1;
   }
 }
 
 .selectedcontainer {
-  background-color: var(--color-secondary);
-  border: 2px solid var(--color-main-text);
+  background-color: var(--color-main-text);
   color: var(--color-background);
-  border-radius: 10px;
+  border-radius: 3vh;
 }
 
 .selectedcontainer svg {
@@ -35,4 +36,10 @@
 .navlink {
   text-decoration: none;
   color: var(--color-main-text);
+}
+
+.navlink:hover,
+.navlink:focus {
+  text-decoration: none;
+  color: var(--color-secondary);
 }

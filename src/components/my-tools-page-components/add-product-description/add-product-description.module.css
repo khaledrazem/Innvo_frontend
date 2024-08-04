@@ -1,106 +1,96 @@
-.container{
-
-  width: 60%;
+.container {
+  width: 52%;
   align-self: start;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-
-.descriptiontitle{
+.descriptiontitle {
   display: flex;
   flex-direction: column;
   text-align: left;
   width: 100%;
-  h3{
+  h3 {
+    font-size: 1vw;
+    line-height: 1.2vw;
     margin: 0;
   }
-  label{
-    font-size: 12px;
+  label {
+    font-size: 0.8vw;
   }
 }
 
-
-.bio textarea{
+.bio textarea {
   resize: none;
   text-align: left;
   width: 100%;
-  padding-bottom: 20px;
-  border-radius: 12px;
+  height: 13vh;
+  border-radius: 17px;
+  border-width: 2px;
+  box-sizing: border-box;
+  padding: 2%;
 }
 
-.descriptionimages{
+.descriptionimages {
   display: flex;
   width: 100%;
   flex-direction: column;
-  gap: 30px;
-
+  gap: 2vh;
 }
 
-.labelledImage{
+.labelledImage {
   display: flex;
   flex-direction: column;
 }
-.labelledimages{
+.labelledimages {
   width: 100%;
-  padding: 0 30px 0 0;
   display: grid;
-  gap: 20px;
+  gap: 1vw;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
-  img{
+  img {
     width: 100%;
     height: 100%;
   }
 }
-.imagelabelinput{
-  border-radius: 8px;
-  border-width: 1px;
-  padding: 5px;
-  padding-left: 15px;
-  margin-top: 10px;
+.imagelabelinput {
+  border-radius: 14px;
+  border-width: 2px;
+  padding: 1%;
+  padding-left: 3%;
+  margin-top: 1.5vh;
+  height: 4vh;
 }
 
-.descriptioncontainer{
+.descriptioncontainer {
   display: flex;
   flex-direction: column;
 }
 
-.imagecontainer{
+.imagecontainer {
   display: flex;
-  border: 1px solid var(--color-main-text);
-  border-radius: 12px;
+  border: 2px solid var(--color-main-text);
+  border-radius: 24px;
   overflow: hidden;
+
+  video {
+    width: 100%;
+  }
 }
-.emptyimage{
+.emptyimage {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-  gap: 15px;
 
-
-  label{
-    font-weight: 600;
-    border: 1px solid var(--color-main-text);
-    border-radius: 12px;
-    padding: 10px;
-  
+  svg {
+    width: 20%;
   }
 
-  svg{
-    width: 30%;
-  }
-
-  a{
-    color: #9c9c9c;
-    width: 70%;
-  }
-
-  input{
+  input {
     position: absolute;
     width: 100%;
     height: 100%;

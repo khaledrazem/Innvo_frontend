@@ -3,8 +3,11 @@ import SignUpForm from "src/components/sign-up-components/sign-up-form/sign-up-f
 import classes from "./sign-up.module.css";
 import { useState } from "react";
 import TermsOfService from "src/components/sign-up-components/tos/tos";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignUpPage() {
+  const navigate = useNavigate();
+
   const [tos, setTos] = useState(false);
 
   const {
@@ -25,7 +28,7 @@ function SignUpPage() {
 
   const onSubmit = (data, e) => {
     console.log(data, e);
-    window.location.href = "/login/sign-in/dev";
+    navigate("/login/sign-in");
   };
   const onError = (errors, e) => {
     console.log(getValues());
@@ -65,6 +68,10 @@ function SignUpPage() {
           >
             Create
           </button>
+          <div className={classes.signup}>
+            <label>Already have an account? </label>
+            <Link to={"/login/sign-in"}> Login</Link>
+          </div>
         </>
       )}
     </form>

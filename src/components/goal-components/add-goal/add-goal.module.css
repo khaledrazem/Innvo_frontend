@@ -1,6 +1,7 @@
-
 .container {
-
+  height: 15.5vh;
+  align-content: center;
+  padding-right: 9.4%;
 }
 
 .empty {
@@ -8,30 +9,28 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 20px 0;
   cursor: pointer;
 
-  svg{
-    width: 60px;
-    margin-right: 5px;
+  svg {
+    width: 4vw;
   }
 }
 
-
-.placeholder{
+.placeholder {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 1.18vw;
+  gap: 0.5vh;
   h5 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+    font-weight: 600;
   }
 
   label {
-    font-size: 1rem;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
   }
 }
-
-
-

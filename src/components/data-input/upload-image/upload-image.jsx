@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import classes from "./upload-image.module.css";
 
 import { ReactComponent as UpArrowIcon } from "src/public/svg/Up Arrow_Black.svg";
@@ -32,8 +32,8 @@ function UploadImage({
           className={classes.emptyimage}
           style={{ aspectRatio: width / height, maxWidth: width }}
         >
-          <UpArrowIcon />
           <label>{text}</label>
+          <UpArrowIcon />
         </div>
       ) : (
         <img src={image} style={{ aspectRatio: width / height }} />

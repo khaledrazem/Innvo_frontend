@@ -1,4 +1,6 @@
+import { useState } from "react";
 import InvoCarousel from "src/components/carousel/invo-carousel";
+import Footer from "src/components/footer/footer";
 import ProductSlider from "src/components/product-slider/product-slider";
 import "src/variables.css";
 import classes from "./discover.module.css";
@@ -154,6 +156,7 @@ const DiscoverPage = React.memo(() => {
       <div className={classes.explorebutton}>
         <button>View more</button>
       </div>
+      <Footer></Footer>
     </div>
   );
 });

@@ -11,11 +11,9 @@
 }
 
 .bubblecontainer {
-  border: 2px solid var(--color-main-text);
-  border-radius: 40px;
   box-sizing: border-box;
   width: 70.3vw;
-  height: 86vh;
+  min-height: 74.4vh;
   justify-content: space-between;
   align-items: center;
   display: flex;

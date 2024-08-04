@@ -1,0 +1,42 @@
+.container {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  padding-left: 4%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.container h3 {
+  margin: 0;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+.formcontainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding-top: 0.8%;
+}
+
+.toolslist {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.editicon,
+.selectedediticon {
+  height: 3vh;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.selectedediticon {
+  color: var(--color-secondary);
+}
