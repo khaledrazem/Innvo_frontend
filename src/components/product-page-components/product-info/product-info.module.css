@@ -4,6 +4,7 @@
   display: flex;
   height: 100%;
   min-height: 40vh;
+  width: 38%;
   h4 {
     font-size: 1vw;
     line-height: 1vw;
@@ -23,6 +24,13 @@
   }
 }
 
+.summary {
+  font-size: 1.65vh;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.65vh;
+  margin-top: 0.8vh;
+}
 .subscriptionelite,
 .subscriptionprof,
 .subscriptionessential {
@@ -89,13 +97,20 @@
 
 .features {
   margin-top: 1vh;
-  margin-bottom: 5vh;
   ul {
     padding: 0;
     list-style-position: inside;
-    line-height: 1.9vh;
-    font-size: 0.8vw;
+    line-height: 0.9vw;
+    font-size: 0.83vw;
     margin: 0;
+    display: flex;
+    gap: 0.9vh;
+    flex-direction: column;
+  }
+  li::marker {
+    margin: 0;
+    padding: 0;
+    font-size: 1vh;
   }
 }
 
@@ -105,8 +120,8 @@
   height: 5.8vh;
   padding: 0.8vh 0;
   border-radius: 50px;
-  border: 2px solid var(--color-secondary);
-  background-color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary);
   color: var(--color-background);
   font-size: 1.2vw;
   font-weight: 500;
@@ -116,8 +131,8 @@
 
 .explorebutton:hover {
   background-color: var(--color-background);
-  color: var(--color-secondary);
-  border: 2px solid var(--color-secondary);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
 .pinicon {
@@ -149,4 +164,48 @@
   svg {
     height: 3vh;
   }
+}
+
+.subscriptions {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  gap: 0.3vw;
+  margin-top: 2.3vh;
+  margin-bottom: 0.5vh;
+}
+
+.subscriptionboxfree,
+.subscriptionboxpaid,
+.subscriptionboxcategory {
+  color: var(--color-background);
+  background-color: var(--color-secondary);
+  box-sizing: border-box;
+  font-size: 0.85vw;
+  line-height: 0.85vw;
+  font-weight: 600;
+  padding: 1.6% 3.5%;
+  border-radius: 8px;
+}
+
+.subscriptionboxfree {
+  background-color: var(--color-background);
+  color: var(--color-main-text);
+  border: 2px solid var(--color-main-text);
+}
+.subscriptionboxpaid {
+  background-color: var(--color-main-text);
+  color: var(--color-background);
+}
+.subscriptionboxcategory {
+  background-color: var(--color-background);
+  color: var(--color-main-text);
+  border: 1px solid var(--color-main-text);
+}
+
+.divider {
+  border-top: 1px solid var(--color-light-grey);
+  margin: 0;
+  margin-top: 2.4vh;
+  margin-bottom: 3.1vh;
 }

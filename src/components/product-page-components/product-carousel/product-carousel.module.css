@@ -11,7 +11,6 @@
 }
 
 .customslider {
-  border: 2px solid var(--color-main-text);
   border-radius: 24px;
   overflow: hidden;
   position: relative;
@@ -79,16 +78,23 @@
 .imagelist > div > h3 {
   margin: 0;
   align-content: center;
-  border: 2px solid var(--color-main-text);
   border-radius: 9px;
   cursor: pointer;
   flex-grow: 1;
   width: 100%;
+  transition: all 0.3s ease-out;
+  border: 2px solid transparent;
+}
+
+.imagelist > div > img:hover {
+  border-color: var(--color-primary);
+  transition: all 0.3s ease-out;
 }
 
 .activeimage {
   img {
     border-width: 3px !important;
-    border-color: var(--color-secondary) !important;
+    border-color: var(--color-main-text) !important;
+    transition: all 0.3s ease-out;
   }
 }

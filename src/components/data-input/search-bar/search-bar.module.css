@@ -4,20 +4,23 @@
   height: 100%;
 
   .input {
-    color: var(--color-background);
+    color: var(--color-main-text);
     width: 100%;
     font-size: 0.8vw;
     border-width: 2px;
+    border: none;
+    background: var(--color-light-grey);
     font-weight: 600;
     border-radius: 25px;
-    padding-left: 5%;
+    padding-left: 4.5%;
     height: 100%;
     box-sizing: border-box;
     vertical-align: top;
   }
 }
 
-.wrapper:hover {
+.wrapper:hover,
+.wrapper:focus {
   input {
     color: var(--color-background) !important;
     background-color: var(--color-main-text) !important;
@@ -32,16 +35,11 @@
     color: var(--color-background);
   }
 }
-textarea:focus,
-input:focus {
-  outline: none;
-  color: var(--color-secondary);
-}
 
 .icon {
   height: 50%;
   top: 25%;
   position: absolute;
   box-sizing: border-box;
-  right: 4.5%;
+  right: 5.5%;
 }

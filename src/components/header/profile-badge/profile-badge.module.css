@@ -3,11 +3,11 @@
   display: flex;
   gap: 0.4vw;
   min-width: 14vw;
+  height: -moz-fit-content;
   height: fit-content;
-  left: 84%;
+  left: 77.8%;
   position: absolute;
   justify-content: end;
-  margin-top: -0.4vh;
 }
 
 .profile {
@@ -18,14 +18,18 @@
   gap: 0.5vw;
 }
 
+.profile:hover .profileimg {
+  border-color: var(--color-primary);
+}
+
 .profileimg {
   max-width: 55px;
   max-height: 55px;
   aspect-ratio: 1;
-  height: 4.4vh;
+  height: 4.8vh;
   border-radius: 50px;
   overflow: hidden;
-  border: 2px solid var(--color-main-text);
+  border: 2px solid transparent;
   box-sizing: border-box;
 }
 

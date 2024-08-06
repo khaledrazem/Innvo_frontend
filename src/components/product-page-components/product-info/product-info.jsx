@@ -1,15 +1,4 @@
 import { useContext, useState } from "react";
-import { ReactComponent as PinIcon } from "src/public/svg/Pin-Black.svg";
-import { ReactComponent as BluePinIcon } from "src/public/svg/Pin-Blue.svg";
-import { ReactComponent as StarEmptyIcon } from "src/public/svg/Review_star empty.svg";
-import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.svg";
-import { ReactComponent as EliteIcon } from "src/public/svg/Sub_Crown.svg";
-import { ReactComponent as VisitIcon } from "src/public/svg/Visits.svg";
-
-import {
-  ReactComponent as EssentialIcon,
-  ReactComponent as ProfessionalIcon,
-} from "src/public/svg/Sub_Spark.svg";
 
 import classes from "./product-info.module.css";
 
@@ -23,7 +12,8 @@ function ProductInfo({ productData }) {
     <div className={classes.container}>
       <div className={classes.title}>
         <h4>{productData.title}</h4>
-        {productData.subscription === "elite" ? (
+
+        {/* {productData.subscription === "elite" ? (
           <div className={classes.subscriptionelite}>
             <EliteIcon />
           </div>
@@ -35,10 +25,23 @@ function ProductInfo({ productData }) {
           <div className={classes.subscriptionessential}>
             <EssentialIcon />
           </div>
+        ) : null} */}
+      </div>
+      <label className={classes.summary}>{productData.summary}</label>
+
+      <div className={classes.subscriptions}>
+        {productData.free === true ? (
+          <>
+            <label className={classes.subscriptionboxfree}>Free</label>
+          </>
+        ) : null}
+        {productData.paid === true ? (
+          <>
+            <label className={classes.subscriptionboxpaid}>Subscription</label>
+          </>
         ) : null}
       </div>
-
-      <div className={classes.metrics}>
+      {/* <div className={classes.metrics}>
         <div className={classes.ratings}>
           {[...Array(productData.rating)].map((e, i) => (
             <StarFillIcon className={classes.ratingsfill} key={i} />
@@ -72,8 +75,9 @@ function ProductInfo({ productData }) {
             />
           )
         ) : null}
-      </div>
+      </div> */}
 
+      <hr className={classes.divider} />
       {productData.features != null ? (
         <>
           <h4>Key Features</h4>
@@ -86,11 +90,12 @@ function ProductInfo({ productData }) {
           </div>
         </>
       ) : null}
+      <hr className={classes.divider} />
 
       <button className={classes.explorebutton}>Access</button>
-      {userType == "user" && (
+      {/* {userType == "user" && (
         <button className={classes.explorebutton}>Subscribe</button>
-      )}
+      )} */}
     </div>
   ) : null;
 }

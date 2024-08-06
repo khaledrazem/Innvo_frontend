@@ -1,31 +1,27 @@
+import { useEffect } from "react";
 import {
   Navigate,
   Route,
   Routes,
   useLocation,
   useNavigate,
-  useResolvedPath,
 } from "react-router-dom";
-import Footer from "src/components/footer/footer";
-import SideNavBar from "src/components/side-navbar/side-navbar";
+import InvoHeader from "src/components/header/invo-header";
 import "src/variables.css";
+import CommunityPage from "./community/community";
 import DashboardPage from "./dashboard/dashboard";
 import classes from "./developer-page.module.css";
 import DiscoverPage from "./discover/discover";
 import EditToolsPage from "./edit-tools/edit-tools";
 import MyToolsPage from "./my-tools/my-tools";
-import ProductPage from "./product/product";
-import TestPage from "./test/test";
-import ProfilePage from "./profile/profile";
-import InvoHeader from "src/components/header/invo-header";
-import CommunityPage from "./community/community";
-import SubscriptionsPage from "./subscriptions/subscriptions";
 import NotificationsCenterPage from "./notifications/notifications-center";
 import PinsCenterPage from "./pins/pins-center";
-import WorkspacePage from "./workspace/workspace";
-import { useContext, useEffect, useState } from "react";
-import { UserSessionContext } from "src/contexts/UserSessionContext";
+import ProductPage from "./product/product";
+import ProfilePage from "./profile/profile";
 import ReportPage from "./report/report";
+import SubscriptionsPage from "./subscriptions/subscriptions";
+import TestPage from "./test/test";
+import WorkspacePage from "./workspace/workspace";
 
 function DeveloperPage() {
   const url = useLocation();
@@ -40,7 +36,7 @@ function DeveloperPage() {
     <div className="App">
       <InvoHeader searchbar={url.pathname.includes("discover")} />
 
-      <SideNavBar />
+      {/* <SideNavBar /> */}
 
       <div className={classes.devbody}>
         <Routes>

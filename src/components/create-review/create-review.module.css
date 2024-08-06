@@ -4,7 +4,8 @@
   width: 100%;
   box-sizing: border-box;
   padding: 7% 6% 3% 3.8%;
-  border: 2px solid transparent;
+  border: 2px solid var(--color-grey);
+  opacity: 50%;
   border-radius: 2vh;
   text-align: left;
   -webkit-user-select: none;
@@ -14,7 +15,8 @@
 }
 
 .container:hover {
-  border: 2px solid var(--color-secondary);
+  opacity: 100%;
+  border: 2px solid var(--color-primary);
 }
 
 h3 {
@@ -95,8 +97,9 @@ h3 {
 }
 
 .buttons:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-background);
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .ratings {
@@ -124,7 +127,7 @@ h3 {
 }
 
 .ratings:hover {
-  border: 2px solid var(--color-secondary);
+  border: 2px solid var(--color-primary);
 }
 .ratingsblank {
   color: var(--color-main-text);
@@ -132,6 +135,6 @@ h3 {
 }
 
 .ratingsfill {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   cursor: pointer;
 }

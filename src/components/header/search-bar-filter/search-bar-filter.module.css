@@ -10,11 +10,11 @@
 }
 
 .headersearch {
-  width: 57.1%;
-  height: 64%;
+  width: 30.5%;
+  height: 48%;
   display: flex;
-  gap: 2%;
-  margin-left: 7.4%;
+  gap: 3%;
+  margin-left: 3.7%;
 }
 
 .reseticon {
@@ -33,6 +33,6 @@
 
 .search {
   position: relative;
-  width: 39%;
+  width: 79%;
   height: 100%;
 }

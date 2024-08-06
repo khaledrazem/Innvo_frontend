@@ -1,6 +1,7 @@
 .logo {
   color: var(--color-main-text);
   font-size: 2vw;
+  line-height: 2vw;
   font-weight: 700;
   position: relative;
   width: 9%;
@@ -14,7 +15,7 @@
 }
 
 .logo:hover {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   transition: all 0.3s ease-out;
 }
 

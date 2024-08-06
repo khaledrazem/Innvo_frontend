@@ -59,7 +59,7 @@
 }
 
 .ratingsfill {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 .ratingvalue {
   font-size: 1.5em;
@@ -106,7 +106,7 @@
 
 .ratingbar .bar .fill {
   height: 175%;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   position: absolute;
   top: -25%;
 }

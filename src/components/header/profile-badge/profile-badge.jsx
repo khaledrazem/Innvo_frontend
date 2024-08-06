@@ -27,13 +27,13 @@ function ProfileBadge({ userData }) {
           <PinIcon />
         </div>
       )} */}
-      <div className={classes.notification}>
+      {/* <div className={classes.notification}>
         <a
           className={classes.productlink}
           onClick={() => navigate("/marketplace/notifications")}
         />
         {notifications > 0 ? <NotificationOnIcon /> : <NotificationOffIcon />}
-      </div>
+      </div> */}
 
       <div className={classes.profile}>
         <a

@@ -54,8 +54,6 @@ function DiscoverPage() {
             </div>
           </div>
         </div>
-        <br />
-        <br />
       </div>
       <Footer></Footer>
     </>

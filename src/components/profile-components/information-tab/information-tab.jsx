@@ -31,44 +31,48 @@ function InformationTab({ data, register, errors }) {
   return (
     <div className={classes.container}>
       <div className={classes.summarybanner}>
+        <div className={classes.banner}>
+          <img src={bannerImg || data.banner.src}></img>
+          <div className={classes.imageinput}>
+            <EditIcon></EditIcon>
+            <input
+              type="file"
+              accept="image/*"
+              {...register("bannerImage.src", {
+                onChange: (event) => {
+                  const file = event.target.files[0];
+                  console.log(file);
+                  setBannerImg(URL.createObjectURL(file));
+                },
+              })}
+            />
+          </div>
+        </div>
+
         <div className={classes.summary}>
           <div className={classes.profileimage}>
             <img src={profileImg || data.profileImg.src}></img>
             {/* TODO: add placeholder */}
-            <input
-              type="file"
-              accept="image/*"
-              {...register("profileImage.src", {
-                onChange: (event) => {
-                  const file = event.target.files[0];
-                  console.log(file);
-                  setProfileImg(URL.createObjectURL(file));
-                },
-              })}
-            />
+            <div className={classes.profileimageinput}>
+              <EditIcon></EditIcon>
+              <input
+                type="file"
+                accept="image/*"
+                {...register("profileImage.src", {
+                  onChange: (event) => {
+                    const file = event.target.files[0];
+                    console.log(file);
+                    setProfileImg(URL.createObjectURL(file));
+                  },
+                })}
+              />
+            </div>
           </div>
           <div className={classes.summaryinfo}>
             <h4>{data.companyName}</h4>
             {userType === "dev" && <label>{data.secondaryCompanyName}</label>}
             <label>{data.devName}</label>
           </div>
-        </div>
-        <div className={classes.dividervertical} />
-
-        <div className={classes.banner}>
-          <img src={bannerImg || data.banner.src}></img>
-          <EditIcon></EditIcon>
-          <input
-            type="file"
-            accept="image/*"
-            {...register("bannerImage.src", {
-              onChange: (event) => {
-                const file = event.target.files[0];
-                console.log(file);
-                setBannerImg(URL.createObjectURL(file));
-              },
-            })}
-          />
         </div>
       </div>
 
@@ -160,7 +164,7 @@ function InformationTab({ data, register, errors }) {
               />
             </div>
           ))}
-          {extraWebsites < 2 ? (
+          {extraWebsites < 1 ? (
             <AddIcon
               className={classes.AddIcon}
               onClick={() => setExtraWebsites((prev) => Math.min(2, prev + 1))}

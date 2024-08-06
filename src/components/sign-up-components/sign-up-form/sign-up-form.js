@@ -177,10 +177,15 @@ function SignUpForm({ register, errors, getValues }) {
               )}
             </label>
             <select
+              defaultValue={"select"}
               {...register("gender", {
                 required: " is required",
+                validate: (value) => value !== "select" || " is required",
               })}
             >
+              <option disabled value={"select"}>
+                Select Gender
+              </option>
               <option value={"male"}>Male</option>
               <option value={"female"}>Female</option>
             </select>
@@ -188,19 +193,14 @@ function SignUpForm({ register, errors, getValues }) {
 
           <div className={classes.inputfield}>
             <label>
-              Industry*
+              Industry
               {errors.industry && (
                 <label className={classes.error}>
                   {errors.industry.message}
                 </label>
               )}
             </label>
-            <input
-              type="text"
-              {...register("industry", {
-                required: " is required",
-              })}
-            />
+            <input type="text" {...register("industry")} />
           </div>
 
           <div className={classes.inputfield}>
@@ -220,19 +220,14 @@ function SignUpForm({ register, errors, getValues }) {
 
           <div className={classes.inputfield}>
             <label>
-              Company Size*
+              Company Size
               {errors.companysize && (
                 <label className={classes.error}>
                   {errors.companysize.message}
                 </label>
               )}
             </label>
-            <input
-              type="text"
-              {...register("companysize", {
-                required: " is required",
-              })}
-            />
+            <input type="text" {...register("companysize")} />
           </div>
         </div>
       </div>

@@ -26,7 +26,6 @@ function ProfilePage() {
 
   return (
     <div className={classes.container}>
-      <h3>My Profile</h3>
       {/* <br />
       <div className={classes.bubblecontainer}> */}
       <div className={classes.pagecontainer}>

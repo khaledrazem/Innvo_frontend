@@ -34,7 +34,7 @@ function ProductCard({ productData }) {
         to={"/marketplace/discover/product/" + productData.id}
       />
 
-      {pinned === true ? (
+      {/* {pinned === true ? (
         <BluePinIcon
           className={classes.pinicon}
           onClick={() => setPinned(!pinned)}
@@ -44,7 +44,7 @@ function ProductCard({ productData }) {
           className={classes.pinicon}
           onClick={() => setPinned(!pinned)}
         />
-      )}
+      )} */}
 
       <div className={classes.logo}>
         <img src={productData.logo.url}></img>

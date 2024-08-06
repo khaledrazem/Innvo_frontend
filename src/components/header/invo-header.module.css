@@ -1,28 +1,37 @@
 .header {
   background-color: var(--color-background);
   padding-bottom: 0;
-  padding-left: 7%;
+  padding-left: 3.1%;
   padding-right: 1%;
-  padding-top: calc(17.2vh * 0.62);
+  padding-top: calc(15.8vh * 0.46);
   display: flex;
-  height: 17.2vh;
+  height: 15.8vh;
   position: sticky;
   top: 0;
   z-index: 800;
   box-sizing: border-box;
 }
 
+.header:after {
+  content: "";
+  position: absolute;
+  left: 15.5%;
+  width: 69%;
+  bottom: 0;
+  border-bottom: 1px solid var(--color-grey);
+}
+
 .signinbutton {
-  background-color: var(--color-background);
+  background-color: var(--color-main-text);
   border-radius: 2vh;
-  color: var(--color-secondary);
-  border: 2px solid var(--color-secondary);
+  color: var(--color-background);
+  border: none;
   height: 4vh;
-  font-weight: 600;
-  font-size: 0.8vw;
+  font-weight: 500;
+  font-size: 0.85vw;
   width: 5.5vw;
   position: absolute;
-  left: 84.5vw;
+  left: 78.2vw;
   padding: 0.4vw;
 }
 

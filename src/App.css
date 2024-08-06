@@ -50,7 +50,7 @@ button {
 }
 
 button:hover {
-  background: var(--color-secondary);
+  background: var(--color-primary);
   border-color: transparent;
   color: var(--color-background);
   transition: all 0.3s ease-out;
@@ -60,14 +60,19 @@ input:hover,
 input:focus,
 select:hover,
 textarea:hover {
-  border-color: var(--color-secondary) !important;
-  color: var(--color-secondary) !important;
-  fill: var(--color-secondary);
+  border-color: var(--color-primary) !important;
+  color: var(--color-primary) !important;
+  fill: var(--color-primary);
   transition: all 0.3s ease-out;
+  outline: none;
 }
 input:hover::placeholder,
 input:focus::placeholder,
 select:hover::placeholder,
 textarea:hover::placeholder {
-  color: var(--color-secondary) !important;
+  color: var(--color-primary) !important;
+}
+
+* {
+  transition: all 0.3s ease-out;
 }

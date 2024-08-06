@@ -1,19 +1,17 @@
 .container {
   flex-direction: column;
-  margin-right: auto;
-  width: 100%;
+  width: 85%;
   display: flex;
   height: 100%;
-  padding-left: 4%;
-  padding-top: 4vh;
+  padding-top: 7.4vh;
   box-sizing: border-box;
+  padding-left: 15.6vw;
 }
 
 .carouselcotainer {
   display: flex;
   box-sizing: border-box;
   width: 40vw;
-  margin-right: 2vw;
 }
 
 .info {
@@ -21,8 +19,9 @@
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  gap: 2.3vw;
 }
 
 .bodies {
-  width: 53%;
+  width: 58%;
 }
