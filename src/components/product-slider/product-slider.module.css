@@ -15,7 +15,7 @@
 
 .productcardcont {
   width: 20.3vw;
-  height: 17.7vh;
+  aspect-ratio: 2.3;
 }
 
 .productlist {
