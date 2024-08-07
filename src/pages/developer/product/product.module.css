@@ -25,3 +25,14 @@
 .bodies {
   width: 58%;
 }
+
+.divider {
+  border-top: 1px solid var(--color-light-grey);
+  margin: 0;
+  margin-top: 7.4vh;
+  margin-bottom: 9.1vh;
+}
+
+.productslidercont {
+  width: 85%;
+}

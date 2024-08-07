@@ -1,8 +1,6 @@
 import { useContext } from "react";
 import UploadImage from "src/components/data-input/upload-image/upload-image";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
-import { ReactComponent as AppleLogo } from "src/public/svg/Apple Logo.svg";
-import { ReactComponent as GoogleLogo } from "src/public/svg/Google Logo.svg";
 import classes from "./sign-up-form.module.css";
 
 function SignUpForm({ register, errors, getValues }) {
@@ -14,7 +12,7 @@ function SignUpForm({ register, errors, getValues }) {
         <h1>INVVO</h1>
 
         <label className={classes.welcometext}>Create Your Account</label>
-
+        {/* 
         <div className={classes.signinbuttons}>
           <button type="button">
             <GoogleLogo />
@@ -24,7 +22,7 @@ function SignUpForm({ register, errors, getValues }) {
             <AppleLogo />
             <label>Continue with Apple</label>
           </button>
-        </div>
+        </div> */}
       </div>
 
       <div className={classes.formcontainer}>
@@ -216,18 +214,6 @@ function SignUpForm({ register, errors, getValues }) {
                 required: " is required",
               })}
             />
-          </div>
-
-          <div className={classes.inputfield}>
-            <label>
-              Company Size
-              {errors.companysize && (
-                <label className={classes.error}>
-                  {errors.companysize.message}
-                </label>
-              )}
-            </label>
-            <input type="text" {...register("companysize")} />
           </div>
         </div>
       </div>

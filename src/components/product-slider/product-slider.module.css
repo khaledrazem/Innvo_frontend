@@ -14,7 +14,7 @@
 }
 
 .productcardcont {
-  width: 20.3vw;
+  width: 100%;
   aspect-ratio: 2.3;
 }
 
@@ -57,6 +57,7 @@ button {
   height: 1vh;
   border-radius: 50%;
   background-color: var(--color-main-text);
+  border: 1px solid var(--color-main-text);
 }
 
 .leftarrow,

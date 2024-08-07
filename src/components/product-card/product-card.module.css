@@ -9,13 +9,14 @@
   background-color: var(--color-background);
   box-sizing: border-box;
   align-items: flex-start;
-  padding: 10.5% 6% 4% 8%;
+  padding: 8.5% 6% 4% 8%;
   border-radius: 8px;
   border: 2px solid transparent;
 }
 
 .container:hover {
   background-color: var(--color-off-background);
+  box-shadow: 0 0 10px 10px var(--color-light-grey);
 
   svg {
     opacity: 100%;
@@ -56,10 +57,10 @@
 }
 
 .body {
-  font-size: 1.35vh;
-  font-weight: 500;
+  font-size: 1.3vh;
+  font-weight: 400;
   text-align: justify;
-  line-height: 1.35vh;
+  line-height: 1.3vh;
   text-wrap: nowrap;
   text-overflow: ellipsis;
 }
@@ -88,7 +89,7 @@
   gap: 0.06vw;
 }
 .ratingsblank {
-  color: var(--color-main-text);
+  color: var(--color-primary);
   width: 0.77vw;
 }
 

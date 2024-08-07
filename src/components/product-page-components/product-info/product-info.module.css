@@ -2,8 +2,7 @@
   text-align: start;
   flex-direction: column;
   display: flex;
-  height: 100%;
-  min-height: 40vh;
+  height: 47vh;
   width: 38%;
   h4 {
     font-size: 1vw;
@@ -25,10 +24,10 @@
 }
 
 .summary {
-  font-size: 1.65vh;
+  font-size: 0.8vw;
   font-weight: 400;
-  text-align: justify;
-  line-height: 1.85vh;
+  text-align: left;
+  line-height: 0.8vw;
   margin-top: 0.8vh;
 }
 .subscriptionelite,
@@ -96,12 +95,14 @@
 }
 
 .features {
-  margin-top: 1vh;
+  margin-top: 1.85vh;
+  margin-bottom: 0.8vh;
   ul {
     padding: 0;
     list-style-position: inside;
-    line-height: 0.9vw;
-    font-size: 0.83vw;
+    text-wrap: nowrap;
+    line-height: 0.76vw;
+    font-size: 0.76vw;
     margin: 0;
     display: flex;
     gap: 0.9vh;
@@ -126,7 +127,7 @@
   font-size: 1.2vw;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  margin-top: auto;
 }
 
 .explorebutton:hover {
@@ -170,7 +171,7 @@
   width: 100%;
   text-align: start;
   display: flex;
-  gap: 0.3vw;
+  gap: 0.7vw;
   margin-top: 2.3vh;
   margin-bottom: 0.5vh;
 }
@@ -180,7 +181,7 @@
 .subscriptionboxcategory {
   color: var(--color-background);
   background-color: var(--color-secondary);
-  border: 2px solid var(--color-main-text);
+  border: 1px solid var(--color-main-text);
   box-sizing: border-box;
   font-size: 0.85vw;
   line-height: 0.85vw;

@@ -89,12 +89,13 @@ function ProductPage() {
         <ProductInfo productData={productData}></ProductInfo>
       </div>
       <br /> <br />
+      <br />
       <div className={classes.bodies}>
         <ProductDescription
           productName={productData.title}
           productDescription={productData.description}
         />
-        <br /> <br /> <br /> <br />
+        <hr className={classes.divider}></hr>
         {/* <ProductFaq productQuestions={productData.faq} />
         <br /> <br /> <br /> <br /> */}
         <CreateReview />
@@ -106,17 +107,21 @@ function ProductPage() {
       </div>
       {/* <ProductPrivacy></ProductPrivacy> 
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> */}
-      <ProductSlider
-        titleText={"More From Innovator"}
-        productData={prodDatajson.products}
-        itemsPerPage={3}
-      />
+      <div className={classes.productslidercont}>
+        <ProductSlider
+          titleText={"More From Innovator"}
+          productData={prodDatajson.products}
+          itemsPerPage={3}
+        />
+      </div>
       <br /> <br />
-      <ProductSlider
-        titleText={"Related Tools"}
-        productData={prodDatajson.products}
-        itemsPerPage={3}
-      />
+      <div className={classes.productslidercont}>
+        <ProductSlider
+          titleText={"Related Tools"}
+          productData={prodDatajson.products}
+          itemsPerPage={3}
+        />
+      </div>
       <br /> <br />
     </div>
   );

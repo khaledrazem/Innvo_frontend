@@ -25,58 +25,58 @@ function CreateReview({}) {
   };
 
   return (
-    <div className={classes.container}>
+    <form
+      className={classes.container}
+      onSubmit={handleSubmit(onSubmit, onError)}
+    >
       <h3>Write a Review</h3>
 
-      <form
-        className={classes.createpostform}
-        onSubmit={handleSubmit(onSubmit, onError)}
-      >
-        <div className={classes.forms}>
-          <div className={classes.inputform}>
-            <label>Title:</label>
-            <input
-              type="text"
-              placeholder="Upcoming Updates and Changes"
-              {...register("title")}
-            ></input>
-          </div>
+      <div className={classes.forms}>
+        <div className={classes.inputform}>
+          <label>Title:</label>
+          <input
+            type="text"
+            placeholder="Upcoming Updates and Changes"
+            {...register("title")}
+          ></input>
+        </div>
 
-          <div className={classes.inputform}>
-            <label>Rating:</label>
-            <div className={classes.ratings}>
-              {[...Array(ratingValue)].map((e, i) => (
-                <StarFillIcon
-                  onClick={() => setRatingValue(i + 1)}
-                  className={classes.ratingsfill}
-                  key={i}
-                />
-              ))}
-              {[...Array(5 - ratingValue)].map((e, i) => (
-                <StarEmptyIcon
-                  onClick={() => setRatingValue(ratingValue + i + 1)}
-                  className={classes.ratingsblank}
-                  key={i}
-                />
-              ))}
-              <label>{ratingValue}</label>
-            </div>
+        <div className={classes.inputform}>
+          <label>Rating:</label>
+          <div className={classes.ratings}>
+            {[...Array(ratingValue)].map((e, i) => (
+              <StarFillIcon
+                onClick={() =>
+                  i + 1 === ratingValue
+                    ? setRatingValue(0)
+                    : setRatingValue(i + 1)
+                }
+                className={classes.ratingsfill}
+                key={i}
+              />
+            ))}
+            {[...Array(5 - ratingValue)].map((e, i) => (
+              <StarEmptyIcon
+                onClick={() => setRatingValue(ratingValue + i + 1)}
+                className={classes.ratingsblank}
+                key={i}
+              />
+            ))}
+            <label>{ratingValue}</label>
           </div>
+        </div>
 
-          <div className={classes.inputform}>
-            <label>Review Body:</label>
-            <textarea
-              placeholder="We’ll post official announcements and detailed information about new features, bug fixes,  
+        <div className={classes.inputform}>
+          <label>Review Body:</label>
+          <textarea
+            placeholder="We’ll post official announcements and detailed information about new features, bug fixes,  
                 and improvements. Feel free to discuss and provide feedback on these updates."
-              {...register("body")}
-            ></textarea>
-          </div>
+            {...register("body")}
+          ></textarea>
         </div>
-        <div className={classes.footer}>
-          <button className={classes.buttons}>Post</button>
-        </div>
-      </form>
-    </div>
+      </div>
+      <button className={classes.buttons}>Post</button>
+    </form>
   );
 }
 

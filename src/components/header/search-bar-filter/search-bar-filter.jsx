@@ -2,7 +2,7 @@ import { useState } from "react";
 import categoriesData from "src/data/categories.json";
 import classes from "./search-bar-filter.module.css";
 
-import Dropdown from "src/components/data-input/dropdown/dropdown";
+import CustomDropdown from "src/components/data-input/dropdown/dropdown";
 import SearchBar from "src/components/data-input/search-bar/search-bar";
 
 function HeaderSearchBar() {
@@ -25,7 +25,7 @@ function HeaderSearchBar() {
       </div>
       {/* <div className={classes.filters}> */}
       <div className={classes.filter}>
-        <Dropdown
+        <CustomDropdown
           options={categoriesData}
           selectedOption={selectedCategories}
           setSelectedOption={setSelectedCategories}

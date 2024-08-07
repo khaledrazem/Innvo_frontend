@@ -32,14 +32,19 @@
 
   button {
     box-sizing: border-box;
-    width: 8vw;
-    height: 4.5vh;
-    background: var(--color-background);
+    width: 7.8vw;
+    height: 4.2vh;
+    background: var(--color-light-grey);
     border-radius: 4vh;
     font-size: 0.85vw;
     font-weight: 600;
     border-width: 2px;
-    color: var(--color-main-text);
+    color: var(--color-background);
+    border: none;
     cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--color-main-text);
   }
 }

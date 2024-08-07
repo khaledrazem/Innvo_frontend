@@ -56,12 +56,15 @@ button:hover {
   transition: all 0.3s ease-out;
 }
 
+select:hover {
+  color: var(--color-primary);
+}
+
 input:hover,
 input:focus,
 select:hover,
 textarea:hover {
   border-color: var(--color-primary) !important;
-  color: var(--color-primary) !important;
   fill: var(--color-primary);
   transition: all 0.3s ease-out;
   outline: none;
@@ -70,7 +73,6 @@ input:hover::placeholder,
 input:focus::placeholder,
 select:hover::placeholder,
 textarea:hover::placeholder {
-  color: var(--color-primary) !important;
 }
 
 * {

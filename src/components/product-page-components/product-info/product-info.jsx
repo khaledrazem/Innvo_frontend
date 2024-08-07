@@ -32,7 +32,7 @@ function ProductInfo({ productData }) {
       <div className={classes.subscriptions}>
         {productData.free === true ? (
           <>
-            <label className={classes.subscriptionboxfree}>Free</label>
+            <label className={classes.subscriptionboxfree}>Free Trial</label>
           </>
         ) : null}
         {productData.paid === true ? (

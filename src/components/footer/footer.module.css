@@ -10,7 +10,7 @@
   color: var(--color-background);
   justify-content: center;
   text-align: left;
-  gap: 10vw;
+  gap: 12vw;
   a:active,
   a:focus,
   a:hover {

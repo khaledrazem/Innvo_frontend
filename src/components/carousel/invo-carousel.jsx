@@ -55,7 +55,14 @@ function InvoCarousel({ images, videos, height, width }) {
             })
           : null}
         {images.map((image) => {
-          return <img src={image} style={imageStyle(width, height)} />;
+          return (
+            <img
+              src={image}
+              width={width}
+              height={height}
+              style={imageStyle(width, height)}
+            />
+          );
         })}
       </Carousel>
       <div className={classes.arrowContainer}>

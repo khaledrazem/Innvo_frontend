@@ -1,13 +1,13 @@
-import classes from "./dashboard.module.css";
-import AnalyticBubble from "src/components/analytic-bubble/analytic-bubble";
-import analDatajson from "src/data/analytics.json";
-import Dropdown from "src/components/data-input/dropdown/dropdown";
 import { useState } from "react";
-import { ReactComponent as UserIcon } from "src/public/svg/User Inputs.svg";
+import AnalyticBubble from "src/components/analytic-bubble/analytic-bubble";
+import CustomDropdown from "src/components/data-input/dropdown/dropdown";
 import DateBarChart from "src/components/date-bar-chart/date-bar-chart";
 import AddGoal from "src/components/goal-components/add-goal/add-goal";
 import EditGoal from "src/components/goal-components/edit-goal/edit-goal";
 import GoalProgress from "src/components/goal-components/goal-progress/goal-progress";
+import analDatajson from "src/data/analytics.json";
+import { ReactComponent as UserIcon } from "src/public/svg/User Inputs.svg";
+import classes from "./dashboard.module.css";
 
 function DashboardPage() {
   let analyticsData = analDatajson.analytics;
@@ -62,7 +62,7 @@ function DashboardPage() {
         <div className={classes.yearanalytics}>
           <div className={classes.dropdown}>
             <div className={classes.dropdowncomponent}>
-              <Dropdown
+              <CustomDropdown
                 options={[
                   { id: 1, displayName: "users" },
                   { id: 2, displayName: "slots" },
