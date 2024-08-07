@@ -8,6 +8,7 @@ const imageStyle = (width, height) => ({
 });
 
 function ProductDescription({
+  productName = null,
   productDescription = null,
   imageWidth = 768,
   imageHeight = 432,
@@ -17,14 +18,14 @@ function ProductDescription({
   return productDescription != null ? (
     <div className={classes.container}>
       <div className={classes.descriptiontitle}>
-        <h3>From The Innovator</h3>
+        <h3>What is {productName}</h3>
       </div>
       <div className={classes.descriptioncontainer}>
         <div className={classes.bio}>
           <label>{productDescription.bio}</label>
         </div>
 
-        <div className={classes.descriptionimages}>
+        {/* <div className={classes.descriptionimages}>
           {Array.isArray(productDescription.images) &&
           productDescription.images.length > 0
             ? productDescription.images.map((image) => {
@@ -56,7 +57,7 @@ function ProductDescription({
                 );
               })
             : null}
-        </div>
+        </div> */}
       </div>
     </div>
   ) : null;

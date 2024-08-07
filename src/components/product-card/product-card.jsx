@@ -3,9 +3,6 @@ import { ReactComponent as StarEmptyIcon } from "src/public/svg/Review_star empt
 import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.svg";
 import classes from "./product-card.module.css";
 
-import { ReactComponent as PinIcon } from "src/public/svg/Pin-Black.svg";
-import { ReactComponent as BluePinIcon } from "src/public/svg/Pin_Fill.svg";
-
 import { Link } from "react-router-dom";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
 
@@ -72,7 +69,7 @@ function ProductCard({ productData }) {
           </div>
         </div>
         <div className={classes.subscriptions}>
-          {productData.free === true ? (
+          {/* {productData.free === true ? (
             <>
               <label className={classes.subscriptionboxfree}>Free</label>
             </>
@@ -81,7 +78,7 @@ function ProductCard({ productData }) {
             <>
               <label className={classes.subscriptionboxpaid}>Paid</label>
             </>
-          ) : null}
+          ) : null} */}
           {productData.category ? (
             <>
               <label className={classes.subscriptionboxcategory}>

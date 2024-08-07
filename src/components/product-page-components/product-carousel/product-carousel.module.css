@@ -82,19 +82,16 @@
   cursor: pointer;
   flex-grow: 1;
   width: 100%;
-  transition: all 0.3s ease-out;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 
 .imagelist > div > img:hover {
   border-color: var(--color-primary);
-  transition: all 0.3s ease-out;
 }
 
 .activeimage {
   img {
-    border-width: 3px !important;
+    border-width: 1px !important;
     border-color: var(--color-main-text) !important;
-    transition: all 0.3s ease-out;
   }
 }

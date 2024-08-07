@@ -26,7 +26,7 @@ function CreateReview({}) {
 
   return (
     <div className={classes.container}>
-      <h3>Add a Review</h3>
+      <h3>Write a Review</h3>
 
       <form
         className={classes.createpostform}

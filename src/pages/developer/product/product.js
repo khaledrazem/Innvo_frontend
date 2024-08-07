@@ -80,18 +80,20 @@ function ProductPage() {
             height={432}
             width={768}
             images={[
-              "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
-              "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
-              "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
+              "https://i.ibb.co/yWwNCTL/Image-5.webp",
+              "https://i.ibb.co/RSwGKF1/Image-1.jpg",
+              "https://i.ibb.co/GkSMPzj/Image-2.webp",
             ]}
           />
         </div>
-
         <ProductInfo productData={productData}></ProductInfo>
       </div>
       <br /> <br />
       <div className={classes.bodies}>
-        <ProductDescription productDescription={productData.description} />
+        <ProductDescription
+          productName={productData.title}
+          productDescription={productData.description}
+        />
         <br /> <br /> <br /> <br />
         {/* <ProductFaq productQuestions={productData.faq} />
         <br /> <br /> <br /> <br /> */}

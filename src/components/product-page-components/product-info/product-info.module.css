@@ -28,7 +28,7 @@
   font-size: 1.65vh;
   font-weight: 400;
   text-align: justify;
-  line-height: 1.65vh;
+  line-height: 1.85vh;
   margin-top: 0.8vh;
 }
 .subscriptionelite,
@@ -180,6 +180,7 @@
 .subscriptionboxcategory {
   color: var(--color-background);
   background-color: var(--color-secondary);
+  border: 2px solid var(--color-main-text);
   box-sizing: border-box;
   font-size: 0.85vw;
   line-height: 0.85vw;
@@ -191,7 +192,6 @@
 .subscriptionboxfree {
   background-color: var(--color-background);
   color: var(--color-main-text);
-  border: 2px solid var(--color-main-text);
 }
 .subscriptionboxpaid {
   background-color: var(--color-main-text);

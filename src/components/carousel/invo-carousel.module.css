@@ -5,6 +5,11 @@
   user-select: none;
 }
 
+.container:hover {
+  box-shadow: 0 0 10px 10px var(--color-light-grey);
+  border-radius: 15px;
+}
+
 .arrowContainer {
   align-self: center;
   height: 0;
@@ -54,8 +59,8 @@
     position: absolute !important;
     opacity: 0 !important;
     cursor: pointer !important;
-    height: 1.4vh !important;
-    width: 1.4vh !important;
+    height: 1.3vh !important;
+    width: 1.3vh !important;
     margin: 0 !important;
     left: 0 !important;
   }
@@ -63,8 +68,8 @@
   :global(.rs-carousel-label-wrapper) > input:checked ~ label {
     background-color: var(--color-main-text) !important;
     transition: all 0.3s ease-out;
-    height: 1.4vh !important;
-    width: 1.4vh !important;
+    height: 1.3vh !important;
+    width: 1.3vh !important;
   }
 
   :global(.rs-carousel-label) {
@@ -72,8 +77,8 @@
     background-color: var(--color-grey);
 
     cursor: pointer !important;
-    height: 1.4vh !important;
-    width: 1.4vh !important;
+    height: 1.3vh !important;
+    width: 1.3vh !important;
     margin: 0 !important;
     left: 0 !important;
   }
@@ -97,8 +102,8 @@
   :global(.rs-carousel-label-wrapper) {
     cursor: pointer !important;
     position: relative !important;
-    height: 1.4vh !important;
-    width: 1.4vh !important;
+    height: 1.3vh !important;
+    width: 1.3vh !important;
     box-sizing: content-box;
     border-radius: 50% !important;
     margin: 0 5px !important;
