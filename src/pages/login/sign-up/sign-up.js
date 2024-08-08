@@ -1,12 +1,14 @@
 import { useForm } from "react-hook-form";
 import SignUpForm from "src/components/sign-up-components/sign-up-form/sign-up-form";
 import classes from "./sign-up.module.css";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import TermsOfService from "src/components/sign-up-components/tos/tos";
 import { Link, useNavigate } from "react-router-dom";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
 
 function SignUpPage() {
   const navigate = useNavigate();
+  const { handleSignup } = useContext(UserSessionContext);
 
   const [tos, setTos] = useState(false);
 
@@ -28,7 +30,8 @@ function SignUpPage() {
 
   const onSubmit = (data, e) => {
     console.log(data, e);
-    navigate("/login/sign-in");
+    handleSignup(data);
+    navigate("/marketplace");
   };
   const onError = (errors, e) => {
     console.log(getValues());
@@ -63,7 +66,7 @@ function SignUpPage() {
           />
           <button
             className={classes.createbutton}
-            type="button"
+            type="submit"
             onClick={handleCreate}
           >
             Create
