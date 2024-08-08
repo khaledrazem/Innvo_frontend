@@ -20,8 +20,6 @@ function ProductSlider({
   );
 
   useEffect(() => {
-    console.log(currentProducts);
-    console.log(productData);
     currentProducts = productData.slice(
       (currentPage - 1) * itemsPerPage,
       currentPage * itemsPerPage
@@ -29,14 +27,10 @@ function ProductSlider({
   }, [productData]);
   const handlePreviousPage = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
-    console.log(currentProducts);
-    console.log(productData);
   };
 
   const handleNextPage = () => {
     setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
-    console.log(currentProducts);
-    console.log(productData);
   };
 
   return (
