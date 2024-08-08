@@ -42,15 +42,15 @@ function SignUpForm({ register, errors, getValues }) {
           <div className={classes.inputfield}>
             <label>
               Full Name*
-              {errors.fullname && (
+              {errors.full_name && (
                 <label className={classes.error}>
-                  {errors.fullname.message}
+                  {errors.full_name.message}
                 </label>
               )}
             </label>
             <input
               type="text"
-              {...register("fullname", {
+              {...register("full_name", {
                 required: " is required",
               })}
             />
@@ -204,13 +204,13 @@ function SignUpForm({ register, errors, getValues }) {
           <div className={classes.inputfield}>
             <label>
               Job Title/Role*
-              {errors.job && (
-                <label className={classes.error}>{errors.job.message}</label>
+              {errors.job_title && (
+                <label className={classes.error}>{errors.job_title.message}</label>
               )}
             </label>
             <input
               type="text"
-              {...register("job", {
+              {...register("job_title", {
                 required: " is required",
               })}
             />
