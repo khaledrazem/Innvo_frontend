@@ -104,7 +104,6 @@ function MyToolsPage() {
       );
 
       setToolsFolderData(updatedFolders);
-      console.log(updatedFolders);
 
       // if (parsedData.folder) {
       //   const removedItems = removeToolFromFolder(parsedData, updatedFolders);

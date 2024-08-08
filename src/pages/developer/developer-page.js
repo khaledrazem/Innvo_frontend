@@ -1,10 +1,8 @@
-import { useEffect } from "react";
 import {
   Navigate,
   Route,
   Routes,
   useLocation,
-  useNavigate,
 } from "react-router-dom";
 import InvoHeader from "src/components/header/invo-header";
 import "src/variables.css";
@@ -25,12 +23,6 @@ import WorkspacePage from "./workspace/workspace";
 
 function DeveloperPage() {
   const url = useLocation();
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    console.log("?????????????");
-    console.log(url.pathname);
-  }, [url]);
 
   return (
     <div className="App">
