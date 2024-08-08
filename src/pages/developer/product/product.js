@@ -7,70 +7,54 @@ import ProductInfo from "src/components/product-page-components/product-info/pro
 import ProductReviews from "src/components/product-page-components/product-reviews/product-reviews";
 import ProductSlider from "src/components/product-slider/product-slider";
 import ReviewPage from "src/components/review-pages/review-pages";
-import prodDatajson from "src/data/products.json";
 import ratingDatajson from "src/data/ratings.json";
 import classes from "./product.module.css";
 
 function ProductPage() {
-  const [productData, setProductData] = useState(prodDatajson.products[0]);
+  const location = useLocation();
+  const [productData, setProductData] = useState({});
+  const [topRated, setTopRated] = useState([]);
+  const [productId, setProductId] = useState(0);
   let reviewData = ratingDatajson[0];
 
-  let { state } = useLocation();
+  useEffect(() => {
+    setProductId((prev) => parseInt(location.pathname.split("/").pop()));
 
-  function transformData(data) {
-    console.log("VVVVV");
-    console.log(data);
-    const product = {
-      id: 1,
-      logo: { url: data.productImages.images.filter((image) => image)[0] },
-      title: data.productInfo.title,
-      summary: data.productDescription.bio,
-      features: JSON.stringify(data.productInfo.features),
-      rating: 2,
-      downloads: 1234,
-      ratingscount: 6435,
-      reviewscount: 6435,
-      subscription: data.productInfo.subscription,
-      description: {
-        bio: data.productDescription.bio,
-        images: data.productDescription.largeImages,
-        labelledImages: data.productDescription.labelledImages.map((item) => ({
-          url: item.url,
-          label: item.labels,
-          type: item.type,
-        })),
-      },
-      faq: data.productFaq.reduce((acc, item) => {
-        if (item.question && item.answer) {
-          acc.push({
-            question: item.question,
-            answer: item.answer,
-          });
+    fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/top-rated`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
         }
-        return acc;
-      }, []),
-      reviews: {
-        totalReviews: 1024,
-        averageRating: 4,
-        ranking: 124,
-        ratings: [],
-      },
-    };
-
-    console.log("CCCC");
-    console.log(product);
-
-    return product;
-  }
+        return response.json();
+      })
+      .then((data) => {
+        setTopRated((prev) => [...data]);
+      })
+      .catch((error) => {
+        console.error("Fetch error:", error);
+      });
+  }, []);
 
   useEffect(() => {
-    console.log("Aadsdw");
-
-    if (state) {
-      setProductData(transformData(state));
+    if (productId === 0) {
+      return;
     }
-    console.log(state);
-  }, [state]);
+
+    fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/get?app_id=${productId}`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setProductData((prev) => data);
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Fetch error:", error);
+      });
+  }, [productId]);
 
   return (
     <div className={classes.container}>
@@ -107,21 +91,23 @@ function ProductPage() {
       </div>
       {/* <ProductPrivacy></ProductPrivacy> 
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> */}
-      <div className={classes.productslidercont}>
+
+      {topRated && topRated.length > 0 ? (
         <ProductSlider
           titleText={"More From Innovator"}
-          productData={prodDatajson.products}
+          productData={topRated}
           itemsPerPage={3}
         />
-      </div>
+      ) : null}
       <br /> <br />
-      <div className={classes.productslidercont}>
+      {topRated && topRated.length > 0 ? (
         <ProductSlider
           titleText={"Related Tools"}
-          productData={prodDatajson.products}
+          productData={topRated}
           itemsPerPage={3}
         />
-      </div>
+      ) : null}
+
       <br /> <br />
     </div>
   );
