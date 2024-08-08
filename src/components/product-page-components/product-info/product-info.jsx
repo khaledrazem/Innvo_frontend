@@ -83,7 +83,7 @@ function ProductInfo({ productData }) {
           <h4>Key Features</h4>
           <div className={classes.features}>
             <ul>
-              {JSON.parse(productData.features).map((feature, index) => (
+              {productData.features.map((feature, index) => (
                 <li key={index}>{feature}</li>
               ))}
             </ul>

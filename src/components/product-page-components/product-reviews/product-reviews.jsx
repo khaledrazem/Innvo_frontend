@@ -3,7 +3,7 @@ import { ReactComponent as StarFillIcon } from "src/public/svg/Review_star fill.
 import classes from "./product-reviews.module.css";
 
 function ProductReviews({ productReviews = null }) {
-  return productReviews != null ? (
+  return productReviews !== null ? (
     <div className={classes.container}>
       <div className={classes.header}>
         <h3>Community Reviews</h3>
