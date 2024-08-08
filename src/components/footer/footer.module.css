@@ -10,7 +10,7 @@
   color: var(--color-background);
   justify-content: center;
   text-align: left;
-
+  gap: 12vw;
   a:active,
   a:focus,
   a:hover {
@@ -18,15 +18,15 @@
     color: var(--color-main-text);
   }
   h5 {
-    font-size: 1.2vw;
-    margin-bottom: 8%;
+    font-size: 1vw;
+    line-height: 1vw;
+    margin-bottom: 0.5vh;
   }
 }
 
 .signature {
   display: flex;
   flex-direction: column;
-  margin-right: 4.8vw;
 
   label {
     font-size: 0.8vw;
@@ -52,7 +52,6 @@
   flex-direction: column;
   font-size: 0.85vw;
   font-weight: 500;
-  margin-right: 5vw;
 
   h5 {
     margin: 0;
@@ -67,12 +66,12 @@
 .company {
   display: flex;
   flex-direction: column;
-  margin-right: 5vw;
   align-self: start;
   margin-top: 4%;
   label {
-    line-height: 25px;
-    font-size: 14px;
+    line-height: 1.2vw;
+    font-size: 0.8vw;
+    font-weight: 300;
     cursor: pointer;
   }
 }
@@ -80,30 +79,30 @@
 .information {
   display: flex;
   flex-direction: column;
-  margin-right: 5vw;
   align-self: start;
   margin-top: 4%;
   label {
-    line-height: 25px;
-    font-size: 14px;
+    line-height: 1.2vw;
+    font-size: 0.8vw;
+    font-weight: 300;
     cursor: pointer;
   }
 }
 
 .social {
   align-self: start;
-  margin-top: 4%;
+  margin-top: 3.8%;
   display: flex;
   flex-direction: column;
 }
 
 .socialicons {
   display: flex;
-  gap: 10px;
-
+  gap: 0.5vw;
+  margin-top: 1vh;
   svg {
-    width: 30px;
-    height: 30px;
+    line-height: 1.1vw;
+    width: 1.5vw;
     cursor: pointer;
   }
 }

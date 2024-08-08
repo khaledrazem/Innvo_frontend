@@ -1,8 +1,6 @@
 import { useContext } from "react";
 import UploadImage from "src/components/data-input/upload-image/upload-image";
 import { UserSessionContext } from "src/contexts/UserSessionContext";
-import { ReactComponent as AppleLogo } from "src/public/svg/Apple Logo.svg";
-import { ReactComponent as GoogleLogo } from "src/public/svg/Google Logo.svg";
 import classes from "./sign-up-form.module.css";
 
 function SignUpForm({ register, errors, getValues }) {
@@ -14,7 +12,7 @@ function SignUpForm({ register, errors, getValues }) {
         <h1>INVVO</h1>
 
         <label className={classes.welcometext}>Create Your Account</label>
-
+        {/* 
         <div className={classes.signinbuttons}>
           <button type="button">
             <GoogleLogo />
@@ -24,7 +22,7 @@ function SignUpForm({ register, errors, getValues }) {
             <AppleLogo />
             <label>Continue with Apple</label>
           </button>
-        </div>
+        </div> */}
       </div>
 
       <div className={classes.formcontainer}>
@@ -177,10 +175,15 @@ function SignUpForm({ register, errors, getValues }) {
               )}
             </label>
             <select
+              defaultValue={"select"}
               {...register("gender", {
                 required: " is required",
+                validate: (value) => value !== "select" || " is required",
               })}
             >
+              <option disabled value={"select"}>
+                Select Gender
+              </option>
               <option value={"male"}>Male</option>
               <option value={"female"}>Female</option>
             </select>
@@ -188,19 +191,14 @@ function SignUpForm({ register, errors, getValues }) {
 
           <div className={classes.inputfield}>
             <label>
-              Industry*
+              Industry
               {errors.industry && (
                 <label className={classes.error}>
                   {errors.industry.message}
                 </label>
               )}
             </label>
-            <input
-              type="text"
-              {...register("industry", {
-                required: " is required",
-              })}
-            />
+            <input type="text" {...register("industry")} />
           </div>
 
           <div className={classes.inputfield}>
@@ -213,23 +211,6 @@ function SignUpForm({ register, errors, getValues }) {
             <input
               type="text"
               {...register("job", {
-                required: " is required",
-              })}
-            />
-          </div>
-
-          <div className={classes.inputfield}>
-            <label>
-              Company Size*
-              {errors.companysize && (
-                <label className={classes.error}>
-                  {errors.companysize.message}
-                </label>
-              )}
-            </label>
-            <input
-              type="text"
-              {...register("companysize", {
                 required: " is required",
               })}
             />

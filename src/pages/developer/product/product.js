@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import CreateReview from "src/components/create-review/create-review";
 import ProductCarousel from "src/components/product-page-components/product-carousel/product-carousel";
 import ProductDescription from "src/components/product-page-components/product-description/product-description";
-import ProductFaq from "src/components/product-page-components/product-faq/product-faq";
 import ProductInfo from "src/components/product-page-components/product-info/product-info";
 import ProductReviews from "src/components/product-page-components/product-reviews/product-reviews";
 import ProductSlider from "src/components/product-slider/product-slider";
@@ -81,21 +80,24 @@ function ProductPage() {
             height={432}
             width={768}
             images={[
-              "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
-              "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
-              "https://i.ibb.co/s1tZrLB/000000-text-this-is-product.png",
+              "https://i.ibb.co/yWwNCTL/Image-5.webp",
+              "https://i.ibb.co/RSwGKF1/Image-1.jpg",
+              "https://i.ibb.co/GkSMPzj/Image-2.webp",
             ]}
           />
         </div>
-
         <ProductInfo productData={productData}></ProductInfo>
       </div>
       <br /> <br />
+      <br />
       <div className={classes.bodies}>
-        <ProductDescription productDescription={productData.description} />
-        <br /> <br /> <br /> <br />
-        <ProductFaq productQuestions={productData.faq} />
-        <br /> <br /> <br /> <br />
+        <ProductDescription
+          productName={productData.title}
+          productDescription={productData.description}
+        />
+        <hr className={classes.divider}></hr>
+        {/* <ProductFaq productQuestions={productData.faq} />
+        <br /> <br /> <br /> <br /> */}
         <CreateReview />
         <br /> <br /> <br /> <br /> <br /> <br /> <br />
         <ProductReviews productReviews={productData.reviews} />
@@ -105,17 +107,21 @@ function ProductPage() {
       </div>
       {/* <ProductPrivacy></ProductPrivacy> 
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> */}
-      <ProductSlider
-        titleText={"More From Innovator"}
-        productData={prodDatajson.products}
-        itemsPerPage={3}
-      />
+      <div className={classes.productslidercont}>
+        <ProductSlider
+          titleText={"More From Innovator"}
+          productData={prodDatajson.products}
+          itemsPerPage={3}
+        />
+      </div>
       <br /> <br />
-      <ProductSlider
-        titleText={"Related Tools"}
-        productData={prodDatajson.products}
-        itemsPerPage={3}
-      />
+      <div className={classes.productslidercont}>
+        <ProductSlider
+          titleText={"Related Tools"}
+          productData={prodDatajson.products}
+          itemsPerPage={3}
+        />
+      </div>
       <br /> <br />
     </div>
   );

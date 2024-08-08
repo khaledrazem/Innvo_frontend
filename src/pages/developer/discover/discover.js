@@ -94,9 +94,10 @@ const DiscoverPage = React.memo(() => {
           height={268}
           width={1309}
           images={[
-            "https://i.ibb.co/cQ1rkPT/000000-text-Dummy-header-test.png",
-            "https://i.ibb.co/cQ1rkPT/000000-text-Dummy-header-test.png",
-            "https://i.ibb.co/cQ1rkPT/000000-text-Dummy-header-test.png",
+            "https://i.ibb.co/zFztgN8/Image-2-3.webp",
+            "https://i.ibb.co/xhKZTbB/Image-4.png",
+            "https://i.ibb.co/RSwGKF1/Image-1.jpg",
+            "https://i.ibb.co/HPXmXpH/Image-5.webp",
           ]}
         />
       </div>  

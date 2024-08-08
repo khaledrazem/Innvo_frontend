@@ -4,7 +4,7 @@
   box-sizing: border-box;
   -webkit-user-select: none;
   user-select: none;
-  border: 2px solid var(--color-main-text);
+  border: 1px solid var(--color-main-text);
   border-radius: 4vh;
   overflow: hidden;
   position: relative;
@@ -39,7 +39,7 @@
 
   svg {
     width: 38%;
-    border: 2px solid var(--color-main-text);
+    border: 1px solid var(--color-main-text);
     aspect-ratio: 1;
     border-radius: 50px;
     box-sizing: border-box;

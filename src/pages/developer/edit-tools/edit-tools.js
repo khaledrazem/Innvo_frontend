@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useParams } from "react-router-dom";
-import Dropdown from "src/components/data-input/dropdown/dropdown";
+import CustomDropdown from "src/components/data-input/dropdown/dropdown";
 import AddProductDescription from "src/components/my-tools-page-components/add-product-description/add-product-description";
 import AddProductFaq from "src/components/my-tools-page-components/add-product-faq/add-product-faq";
 import AddProductInfo from "src/components/my-tools-page-components/add-product-info/add-product-info";
@@ -36,7 +36,7 @@ function EditToolsPage() {
       <form onSubmit={handleSubmit(onSubmit, onError)}>
         <div className={classes.filters}>
           <div className={classes.filter}>
-            <Dropdown
+            <CustomDropdown
               options={categoriesData}
               register={register}
               placeholder="Categories"
@@ -44,7 +44,7 @@ function EditToolsPage() {
             />
           </div>
           <div className={classes.filter}>
-            <Dropdown
+            <CustomDropdown
               options={pricingsData}
               register={register}
               placeholder="Pricing"
@@ -52,7 +52,7 @@ function EditToolsPage() {
             />
           </div>{" "}
           <div className={classes.filter}>
-            <Dropdown
+            <CustomDropdown
               options={tagsData}
               register={register}
               placeholder="Tags"

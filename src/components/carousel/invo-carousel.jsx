@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import classes from "./invo-carousel.module.css";
+import { useEffect, useState } from "react";
 import { Carousel } from "rsuite";
+import classes from "./invo-carousel.module.css";
 
 import { ReactComponent as UpDownArrow } from "src/public/svg/UP-Down Arrow.svg";
 
@@ -8,6 +8,7 @@ const imageStyle = (width, height) => ({
   maxWidth: width,
   maxHeight: height,
   aspectRatio: width / height,
+  objectFit: "cover",
 });
 
 function InvoCarousel({ images, videos, height, width }) {
@@ -52,7 +53,14 @@ function InvoCarousel({ images, videos, height, width }) {
             })
           : null}
         {images.map((image) => {
-          return <img src={image} style={imageStyle(width, height)} />;
+          return (
+            <img
+              src={image}
+              width={width}
+              height={height}
+              style={imageStyle(width, height)}
+            />
+          );
         })}
       </Carousel>
       <div className={classes.arrowContainer}>

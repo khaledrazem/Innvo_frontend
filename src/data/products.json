@@ -3,11 +3,11 @@
     {
       "id": 1,
       "logo": {
-        "url": "https://i.ibb.co/kBYsM6C/testprofd.png"
+        "url": "https://i.ibb.co/cv9JWtS/Cohere-Logo.png"
       },
-      "title": "Product 1",
-      "summary": "This is a summary for Product 1 of a long message to test how long messages will look like in the bubble. again and again and again and again it will look like in the bubble. again and again and again and again",
-      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers faq, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
+      "title": "Cohere",
+      "summary": "Cohere provides industry-leading large language models",
+      "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers questions, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
       "rating": 4,
       "downloads": 1234,
       "ratingscount": 431,
@@ -16,8 +16,9 @@
       "subscription": "professional",
       "free": true,
       "paid": true,
+      "category": "Productivity",
       "description": {
-        "bio": "a bio about the program and the app and the developer hopefully spanning a few sentences so it can be tested",
+        "bio": "Cohere is the leading data security-focused enterprise AI company. It is a global technology company co-headquartered in Toronto and San Francisco, with key offices in London and New York.",
         "images": [
           {
             "url": "https://i.ibb.co/HH8D9Jf/1d1f3b-text-description.png",

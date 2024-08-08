@@ -14,15 +14,15 @@
 }
 
 .productcardcont {
-  width: 20.65vw;
-  height: 18.2vh;
+  width: 100%;
+  aspect-ratio: 2.3;
 }
 
 .productlist {
   display: grid;
   position: relative;
-  row-gap: 2.3vh;
-  column-gap: 2.5vw;
+  row-gap: 3.8vh;
+  column-gap: 2.8vw;
 
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
@@ -31,7 +31,7 @@
 .paginationcontrols {
   display: flex;
   align-items: center;
-  margin-top: 2.8vh;
+  margin-top: 3.2vh;
   align-self: center;
 }
 
@@ -57,6 +57,7 @@ button {
   height: 1vh;
   border-radius: 50%;
   background-color: var(--color-main-text);
+  border: 1px solid var(--color-main-text);
 }
 
 .leftarrow,

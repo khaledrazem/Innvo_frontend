@@ -10,7 +10,7 @@
 }
 
 .container:hover {
-  border: 2px solid var(--color-secondary);
+  border: 2px solid var(--color-primary);
   border-radius: 1.5vh;
   transition: all 0.3s ease-out;
 }
@@ -92,7 +92,7 @@
 }
 
 .ratingsfill {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .review {
@@ -144,15 +144,21 @@
   scale: -1;
 }
 
-.likeactive,
 .dislikeactive {
+  fill: var(--color-primary);
+
+  label {
+    color: var(--color-primary);
+  }
+}
+
+.likeactive {
   fill: var(--color-secondary);
 
   label {
     color: var(--color-secondary);
   }
 }
-
 .interactions label {
   font-size: 0.7vw;
   cursor: pointer;

@@ -2,7 +2,8 @@
   flex-direction: column;
   display: flex;
   height: 100%;
-  padding-left: 7.4%;
+  width: 84%;
+  padding-left: 15.5%;
   box-sizing: border-box;
   text-align: left;
   h3 {
@@ -17,7 +18,7 @@
   border-radius: 25px;
   box-sizing: border-box;
   padding: 2%;
-  width: 85.5%;
+  width: 100%;
   min-height: 72vh;
   display: flex;
   flex-direction: column;
@@ -61,15 +62,15 @@
   color: var(--color-main-text);
   border-radius: 16px;
   border: 2px solid var(--color-main-text);
-  margin-left: auto;
-  margin-right: 1.5%;
+  align-self: center;
   font-size: 1vw;
   font-weight: 600;
 }
 
 .submitbutton:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-background);
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .formcontainer {
@@ -81,10 +82,10 @@
 }
 
 .pagecontainer {
-  width: 81.4%;
+  width: 100%;
   min-height: 72vh;
   display: flex;
   flex-direction: column;
-  margin-top: 1.7vh;
+  margin-top: 4.8vh;
   gap: 3.9vh;
 }

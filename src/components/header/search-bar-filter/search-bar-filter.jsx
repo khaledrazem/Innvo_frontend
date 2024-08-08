@@ -1,12 +1,9 @@
 import { useState } from "react";
 import categoriesData from "src/data/categories.json";
-import pricingData from "src/data/pricings.json";
-import tagsData from "src/data/tags.json";
 import classes from "./search-bar-filter.module.css";
 
-import Dropdown from "src/components/data-input/dropdown/dropdown";
+import CustomDropdown from "src/components/data-input/dropdown/dropdown";
 import SearchBar from "src/components/data-input/search-bar/search-bar";
-import { ReactComponent as ResetIcon } from "src/public/svg/Reset.svg";
 
 function HeaderSearchBar() {
   const [selectedCategories, setSelectedCategories] = useState("");
@@ -26,16 +23,16 @@ function HeaderSearchBar() {
       <div className={classes.search}>
         <SearchBar searchData={searchData} setSearchData={setSearchData} />
       </div>
-      <div className={classes.filters}>
-        <div className={classes.filter}>
-          <Dropdown
-            options={categoriesData}
-            selectedOption={selectedCategories}
-            setSelectedOption={setSelectedCategories}
-            placeholder="Categories"
-          />
-        </div>
-        <div className={classes.filter}>
+      {/* <div className={classes.filters}> */}
+      <div className={classes.filter}>
+        <CustomDropdown
+          options={categoriesData}
+          selectedOption={selectedCategories}
+          setSelectedOption={setSelectedCategories}
+          placeholder="Categories"
+        />
+      </div>
+      {/* <div className={classes.filter}>
           <Dropdown
             options={tagsData}
             selectedOption={selectedTags}
@@ -50,10 +47,10 @@ function HeaderSearchBar() {
             setSelectedOption={setSelectedPricing}
             placeholder="Pricing"
           />
-        </div>{" "}
-      </div>
+        </div>{" "} */}
+      {/* </div> */}
 
-      <ResetIcon onClick={resetFilters} className={classes.reseticon} />
+      {/* <ResetIcon onClick={resetFilters} className={classes.reseticon} /> */}
     </div>
   );
 }
