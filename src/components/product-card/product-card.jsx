@@ -11,10 +11,6 @@ function ProductCard({ productData }) {
 
   const [pinned, setPinned] = useState(false);
 
-  useEffect(() => {
-    console.log("ProductCard productData:", productData);
-  }, [productData]);
-
   function truncateDescription(text) {
     const maxLength = 100;
     if (text.length > maxLength) {
