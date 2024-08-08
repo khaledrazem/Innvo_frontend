@@ -63,11 +63,7 @@ function ProductPage() {
           <ProductCarousel
             height={432}
             width={768}
-            images={[
-              "https://i.ibb.co/yWwNCTL/Image-5.webp",
-              "https://i.ibb.co/RSwGKF1/Image-1.jpg",
-              "https://i.ibb.co/GkSMPzj/Image-2.webp",
-            ]}
+            images={productData?.images ? productData.images.map((image) => image.url) : []}
           />
         </div>
         <ProductInfo productData={productData}></ProductInfo>
