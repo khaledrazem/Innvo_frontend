@@ -8,21 +8,16 @@ const imageStyle = (width, height) => ({
 });
 
 function ProductDescription({
-  productName = null,
-  productDescription = null,
-  imageWidth = 768,
-  imageHeight = 432,
-  labelledImageWidth = 256,
-  labelledImageHeight = 144,
+  prod = null,
 }) {
-  return productDescription != null ? (
+  return prod !== null ? (
     <div className={classes.container}>
       <div className={classes.descriptiontitle}>
-        <h3>What is {productName}</h3>
+        <h3>What is {prod.title}</h3>
       </div>
       <div className={classes.descriptioncontainer}>
         <div className={classes.bio}>
-          <label>{productDescription.bio}</label>
+          <label>{prod.bio}</label>
         </div>
 
         {/* <div className={classes.descriptionimages}>

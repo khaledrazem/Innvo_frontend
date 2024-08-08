@@ -71,10 +71,7 @@ function ProductPage() {
       <br /> <br />
       <br />
       <div className={classes.bodies}>
-        <ProductDescription
-          productName={productData.title}
-          productDescription={productData.description}
-        />
+        <ProductDescription prod={productData} />
         <hr className={classes.divider}></hr>
         {/* <ProductFaq productQuestions={productData.faq} />
         <br /> <br /> <br /> <br /> */}
