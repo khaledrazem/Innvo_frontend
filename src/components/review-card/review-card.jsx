@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import replyDatajson from "src/data/ratingreply.json";
 import { ReactComponent as LikeIcon } from "src/public/svg/Like.svg";
 import { ReactComponent as StarEmptyIcon } from "src/public/svg/Review_star empty.svg";
@@ -17,10 +17,6 @@ function ReviewCard({
 
   const [expanded, setExpanded] = useState(false);
   const [liked, setLiked] = useState(0);
-
-  useEffect(() => {
-    console.log(reviewData);
-  }, [reviewData]);
 
   const formatDate = (timestamp) => {
     const options = { day: "numeric", month: "long", year: "numeric" };

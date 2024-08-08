@@ -49,7 +49,6 @@ function ProductPage() {
       })
       .then((data) => {
         setProductData((prev) => data);
-        console.log(data);
       })
       .catch((error) => {
         console.error("Fetch error:", error);
