@@ -18,7 +18,7 @@ const DiscoverPage = React.memo(() => {
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/top-rated`)
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
@@ -32,7 +32,7 @@ const DiscoverPage = React.memo(() => {
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/most-used`)
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
@@ -46,7 +46,7 @@ const DiscoverPage = React.memo(() => {
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/rising-stars`)
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
@@ -60,7 +60,7 @@ const DiscoverPage = React.memo(() => {
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/noteworthy`)
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
@@ -74,7 +74,7 @@ const DiscoverPage = React.memo(() => {
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/explore`)
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
@@ -84,15 +84,14 @@ const DiscoverPage = React.memo(() => {
       .catch((error) => {
         console.error("Fetch error:", error);
       });
-
   }, []);
 
   return (
     <div className={classes.container}>
       <div className={classes.carouselcontainer}>
         <InvoCarousel
-          height={268}
-          width={1309}
+          height={536}
+          width={2618}
           images={[
             "https://i.ibb.co/zFztgN8/Image-2-3.webp",
             "https://i.ibb.co/xhKZTbB/Image-4.png",
@@ -100,7 +99,7 @@ const DiscoverPage = React.memo(() => {
             "https://i.ibb.co/HPXmXpH/Image-5.webp",
           ]}
         />
-      </div>  
+      </div>
       <div className={classes.productsliderlist}>
         {topRated && topRated.length > 0 ? (
           <ProductSlider
@@ -110,7 +109,7 @@ const DiscoverPage = React.memo(() => {
         ) : (
           <p>No top rated products available</p>
         )}
-      
+
         {mostUsed && mostUsed.length > 0 ? (
           <ProductSlider
             titleText={"Most Used"}
@@ -151,15 +150,15 @@ const DiscoverPage = React.memo(() => {
             <p>No explore products available</p>
           )}
 
-        <div className={classes.explorebutton}>
-          {!expanded && (
-            <button onClick={() => setExpanded(true)}>View more</button>
-          )}
+          <div className={classes.explorebutton}>
+            {!expanded && (
+              <button onClick={() => setExpanded(true)}>View more</button>
+            )}
+          </div>
         </div>
+        <br />
+        <br />
       </div>
-      <br />
-      <br />
-    </div>
       <Footer></Footer>
     </div>
   );
