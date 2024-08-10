@@ -159,7 +159,6 @@ const DiscoverPage = React.memo(() => {
         <br />
         <br />
       </div>
-      <Footer></Footer>
     </div>
   );
 });
