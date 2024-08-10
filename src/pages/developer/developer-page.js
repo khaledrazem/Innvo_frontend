@@ -1,9 +1,4 @@
-import {
-  Navigate,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import InvoHeader from "src/components/header/invo-header";
 import "src/variables.css";
 import CommunityPage from "./community/community";
@@ -20,6 +15,7 @@ import ReportPage from "./report/report";
 import SubscriptionsPage from "./subscriptions/subscriptions";
 import TestPage from "./test/test";
 import WorkspacePage from "./workspace/workspace";
+import Footer from "./../../components/footer/footer";
 
 function DeveloperPage() {
   const url = useLocation();
@@ -52,6 +48,7 @@ function DeveloperPage() {
 
           <Route path="test" element={<TestPage />} />
         </Routes>
+        <Footer></Footer>
       </div>
     </div>
   );
