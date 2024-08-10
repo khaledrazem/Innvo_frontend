@@ -13,8 +13,8 @@ function DiscoverPage() {
       <div className={classes.container}>
         <div className={classes.carouselcontainer}>
           <InvoCarousel
-            height={268}
-            width={1309}
+            height={536}
+            width={2618}
             images={[
               "https://i.ibb.co/zFztgN8/Image-2-3.webp",
               "https://i.ibb.co/xhKZTbB/Image-4.png",

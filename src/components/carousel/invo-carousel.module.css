@@ -110,3 +110,16 @@
   background-color: inherit !important;
   padding-bottom: 3.8vh !important;
 }
+
+:global(.rs-carousel-content:hover) {
+}
+
+.customslider:hover {
+  box-shadow: 1.3vh -2.2vh 1.67vh -4px var(--color-grey),
+    -1.3vh -2.2vh 1.67vh -4px var(--color-grey);
+
+  :global(.rs-carousel-content) {
+    box-shadow: 0 1.3vh 2.2vh 4px var(--color-grey),
+      0 -1.3vh 2.2vh 4px var(--color-grey);
+  }
+}
