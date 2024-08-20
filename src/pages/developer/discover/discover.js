@@ -1,20 +1,27 @@
-import { useState } from "react";
+import React, { useContext, useState } from "react";
 import InvoCarousel from "src/components/carousel/invo-carousel";
-import Footer from "src/components/footer/footer";
 import ProductSlider from "src/components/product-slider/product-slider";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
+import prodDatajson from "src/data/products.json";
 import "src/variables.css";
 import classes from "./discover.module.css";
-import React from "react";
 
 const DiscoverPage = React.memo(() => {
-  const [topRated, setTopRated] = React.useState([]);
-  const [mostUsed, setMostUsed] = React.useState([]);
-  const [risingStars, setRisingStars] = React.useState([]);
-  const [noteworthy, setNoteworthy] = React.useState([]);
-  const [explore, setExplore] = React.useState([]);
+  const [topRated, setTopRated] = React.useState(prodDatajson.products);
+  const [mostUsed, setMostUsed] = React.useState(prodDatajson.products);
+  const [risingStars, setRisingStars] = React.useState(prodDatajson.products);
+  const [noteworthy, setNoteworthy] = React.useState(prodDatajson.products);
+  const [explore, setExplore] = React.useState(prodDatajson.products);
   const [expanded, setExpanded] = useState(false);
 
+  const { useBackend } = useContext(UserSessionContext);
+
   React.useEffect(() => {
+    console.log("BACKEND");
+    console.log(useBackend);
+    if (!useBackend) {
+      return;
+    }
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/top-rated`)
       .then((response) => {
         if (!response.ok) {

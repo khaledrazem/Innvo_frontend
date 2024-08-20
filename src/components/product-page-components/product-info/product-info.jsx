@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import classes from "./product-info.module.css";
 
@@ -8,7 +8,13 @@ function ProductInfo({ productData }) {
   const { userType } = useContext(UserSessionContext);
   const [pinned, setPinned] = useState(false);
 
-  return productData != null ? (
+  useEffect(() => {
+    console.log("NNNNNN" + "productData");
+    console.log(Object.keys(productData).length);
+    console.log(productData);
+  });
+
+  return productData != null && Object.keys(productData).length != 0 ? (
     <div className={classes.container}>
       <div className={classes.title}>
         <h4>{productData.title}</h4>
@@ -83,7 +89,7 @@ function ProductInfo({ productData }) {
           <h4>Key Features</h4>
           <div className={classes.features}>
             <ul>
-              {productData.features.map((feature, index) => (
+              {JSON.parse(productData.features).map((feature, index) => (
                 <li key={index}>{feature}</li>
               ))}
             </ul>

@@ -6,6 +6,11 @@
         "url": "https://i.ibb.co/cv9JWtS/Cohere-Logo.png"
       },
       "title": "Cohere",
+      "images": [
+        { "url": "https://i.ibb.co/yWwNCTL/Image-5.webp" },
+        { "url": "https://i.ibb.co/RSwGKF1/Image-1.jpg" },
+        { "url": "https://i.ibb.co/GkSMPzj/Image-2.webp" }
+      ],
       "summary": "Cohere provides industry-leading large language models",
       "features": "[\"Delivers human-like text responses using advanced deep learning.\", \"Answers questions, offers advice, and generates content.\", \"Supports multiple languages and adapts to user communication styles.\", \"Continuously updates its knowledge for improved accuracy.\", \"Easily integrates with platforms via APIs to enhance interactions.\"]",
       "rating": 4,

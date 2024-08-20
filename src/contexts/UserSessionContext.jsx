@@ -14,6 +14,7 @@ export const UserSessionProvider = ({ children }) => {
   const [subscriptionDays, setSubscriptionDays] = useState(54);
   const [notifications, setNotifications] = useState(3);
   const [authToken, setAuthToken] = useState(null);
+  const [useBackend, setUseBackend] = useState(false);
 
   // Load user session from local storage when the component mounts
   useEffect(() => {
@@ -49,11 +50,14 @@ export const UserSessionProvider = ({ children }) => {
     try {
       const { name, email } = data;
 
-      const response = await fetch(`${process.env.REACT_APP_API_DOMAIN}/cms/register`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        `${process.env.REACT_APP_API_DOMAIN}/cms/register`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        }
+      );
       const resp = await response.json();
       if (response.ok) {
         setAuthToken(resp.token);
@@ -73,10 +77,10 @@ export const UserSessionProvider = ({ children }) => {
   const handleLogin = async (email, password) => {
     try {
       // Implement your login logic here, e.g., call an API
-      const response = await fetch('/api/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password })
+      const response = await fetch("/api/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
       });
       const data = await response.json();
       if (response.ok) {
@@ -125,6 +129,7 @@ export const UserSessionProvider = ({ children }) => {
         handleSignup, // Provide signup function to context
         handleLogin, // Provide login function to context
         handleLogout, // Provide logout function to context
+        useBackend,
       }}
     >
       {children}

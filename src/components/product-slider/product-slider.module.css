@@ -11,6 +11,7 @@
   justify-content: start;
   align-self: start;
   flex-direction: column;
+  width: 100%;
 }
 
 .productcardcont {

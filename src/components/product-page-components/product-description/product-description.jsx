@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "src/variables.css";
 import classes from "./product-description.module.css";
 
@@ -7,9 +8,12 @@ const imageStyle = (width, height) => ({
   aspectRatio: width / height,
 });
 
-function ProductDescription({
-  prod = null,
-}) {
+function ProductDescription({ prod = null }) {
+  useEffect(() => {
+    console.log("prod.description");
+
+    console.log(prod.description);
+  }, []);
   return prod !== null ? (
     <div className={classes.container}>
       <div className={classes.descriptiontitle}>
@@ -17,7 +21,7 @@ function ProductDescription({
       </div>
       <div className={classes.descriptioncontainer}>
         <div className={classes.bio}>
-          <label>{prod.bio}</label>
+          <label>{prod.description.bio}</label>
         </div>
 
         {/* <div className={classes.descriptionimages}>

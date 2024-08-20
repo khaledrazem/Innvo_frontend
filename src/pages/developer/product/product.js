@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import CreateReview from "src/components/create-review/create-review";
 import ProductCarousel from "src/components/product-page-components/product-carousel/product-carousel";
@@ -7,23 +7,46 @@ import ProductInfo from "src/components/product-page-components/product-info/pro
 import ProductReviews from "src/components/product-page-components/product-reviews/product-reviews";
 import ProductSlider from "src/components/product-slider/product-slider";
 import ReviewPage from "src/components/review-pages/review-pages";
+import { UserSessionContext } from "src/contexts/UserSessionContext";
+import prodDatajson from "src/data/products.json";
 import ratingDatajson from "src/data/ratings.json";
 import classes from "./product.module.css";
 
 function ProductPage() {
   const location = useLocation();
-  const [productData, setProductData] = useState({});
+  const [productData, setProductData] = useState(prodDatajson.products[0]);
   const [topRated, setTopRated] = useState([]);
   const [productId, setProductId] = useState(0);
   let reviewData = ratingDatajson[0];
 
+  const { useBackend } = useContext(UserSessionContext);
+
   useEffect(() => {
+    console.log("TTTT" + useBackend);
+    if (!useBackend) {
+      console.log("productData");
+      setProductData(prodDatajson.products[0]);
+      console.log(prodDatajson);
+
+      console.log(productData);
+      return;
+    }
+  }, []);
+
+  useEffect(() => {
+    console.log("TTTT" + useBackend);
+    if (!useBackend) {
+      console.log("productData");
+
+      console.log(productData);
+      return;
+    }
     setProductId((prev) => parseInt(location.pathname.split("/").pop()));
 
     fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/top-rated`)
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
@@ -40,10 +63,12 @@ function ProductPage() {
       return;
     }
 
-    fetch(`${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/get?app_id=${productId}`)
+    fetch(
+      `${process.env.REACT_APP_API_DOMAIN}/api/v1/cms/app/get?app_id=${productId}`
+    )
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
@@ -62,7 +87,11 @@ function ProductPage() {
           <ProductCarousel
             height={432}
             width={768}
-            images={productData?.images ? productData.images.map((image) => image.url) : []}
+            images={
+              productData?.images
+                ? productData.images.map((image) => image.url)
+                : []
+            }
           />
         </div>
         <ProductInfo productData={productData}></ProductInfo>
@@ -83,7 +112,6 @@ function ProductPage() {
       </div>
       {/* <ProductPrivacy></ProductPrivacy> 
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> */}
-
       {topRated && topRated.length > 0 ? (
         <ProductSlider
           titleText={"More From Innovator"}
@@ -99,7 +127,6 @@ function ProductPage() {
           itemsPerPage={3}
         />
       ) : null}
-
       <br /> <br />
     </div>
   );
