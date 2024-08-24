@@ -1,6 +1,8 @@
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import InvoHeader from "src/components/header/invo-header";
+import SideNavBar from "src/components/side-navbar/side-navbar";
 import "src/variables.css";
+import Footer from "./../../components/footer/footer";
 import CommunityPage from "./community/community";
 import DashboardPage from "./dashboard/dashboard";
 import classes from "./developer-page.module.css";
@@ -15,7 +17,6 @@ import ReportPage from "./report/report";
 import SubscriptionsPage from "./subscriptions/subscriptions";
 import TestPage from "./test/test";
 import WorkspacePage from "./workspace/workspace";
-import Footer from "./../../components/footer/footer";
 
 function DeveloperPage() {
   const url = useLocation();
@@ -24,7 +25,7 @@ function DeveloperPage() {
     <div className="App">
       <InvoHeader searchbar={url.pathname.includes("discover")} />
 
-      {/* <SideNavBar /> */}
+      <SideNavBar />
 
       <div className={classes.devbody}>
         <Routes>

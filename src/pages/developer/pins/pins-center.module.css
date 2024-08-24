@@ -9,6 +9,8 @@
   grid-template-columns: repeat(3, 1fr);
   row-gap: 3.5vh;
   column-gap: 2.85vw;
+  padding-top: 2.2%;
+  padding-bottom: 5.5%;
 }
 
 .productcardcont {

@@ -71,17 +71,15 @@ function ToolCard({ toolData, setDraggable, draggable }) {
         </button>
       )}
 
-      {userType == "user" && (
-        <div className={classes.buttons}>
-          <button>
-            <Link
-              className={classes.toollink}
-              to={"/marketplace/my-tools/edit/" + toolData.id}
-            />
-            Access
-          </button>
-        </div>
-      )}
+      <div className={classes.buttons}>
+        <button>
+          <Link
+            className={classes.toollink}
+            to={"/marketplace/my-tools/edit/" + toolData.id}
+          />
+          Access
+        </button>
+      </div>
 
       <Dropdown
         renderToggle={(props, ref) => (

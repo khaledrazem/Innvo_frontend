@@ -70,8 +70,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 1.05vh;
-  margin-bottom: 4%;
+  margin-top: 1vh;
+  margin-bottom: 0.8vh;
 }
 
 .text {
@@ -90,16 +90,16 @@
 }
 .ratingsblank {
   color: var(--color-primary);
-  width: 0.77vw;
+  width: 1vh;
 }
 
 .ratingsfill {
-  width: 0.77vw;
+  width: 1vh;
   color: var(--color-primary);
 }
 
 .ratings label {
-  font-size: 0.8vw;
+  font-size: 1vh;
   margin-left: 0.2vw;
 }
 
@@ -173,7 +173,7 @@
   color: var(--color-background);
   background-color: var(--color-secondary);
   box-sizing: border-box;
-  font-size: 0.55vw;
+  font-size: 1vh;
   line-height: 0.5vw;
   font-weight: 600;
   padding: 2.8% 4%;
